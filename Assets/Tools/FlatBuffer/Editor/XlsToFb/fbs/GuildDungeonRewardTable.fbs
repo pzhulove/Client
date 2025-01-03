@@ -1,0 +1,22 @@
+namespace ProtoTable.GuildDungeonRewardTable;
+enum eCrypt :int{
+	code = 1182288942,}
+
+namespace ProtoTable;
+table GuildDungeonRewardTable{
+	ID:int32;
+	rewardType:int32;
+	dungeonType:int32;
+	damageWeight:int32;
+	rewardGroup:[int32];
+	rewardCount:[int32];
+	rewardWeight:[int32];
+	rewardSchemeCnt:[int32];
+	schemeWeight:[int32];
+	fixPrice:[int32];
+	auctionPrice:[int32];
+	addPirce:[int32];
+	rewardShow:[string];
+}
+
+root_type GuildDungeonRewardTable;

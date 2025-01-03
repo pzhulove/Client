@@ -1,0 +1,13 @@
+namespace ProtoTable.ItemBuffTable;
+enum eCrypt :int{
+	code = -983801236,}
+
+namespace ProtoTable;
+table ItemBuffTable{
+	ID:int32;
+	buffName:string;
+	buffId:int32;
+	buffMaxLvl:int32;
+}
+
+root_type ItemBuffTable;

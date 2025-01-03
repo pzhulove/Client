@@ -1,0 +1,36 @@
+
+namespace FBDungeonData;
+
+table DSceneDataConnect 
+{
+    isconnect:[bool];
+    linkAreaIndex:[int];
+    areaindex:int = -1;
+    id:int;
+    sceneareapath:string;
+
+    positionx:int = -1;
+    positiony:int = -1;
+
+    isboss:bool;
+    isstart:bool;
+    isegg:bool;
+
+    isnothell:bool = false;
+    treasureType:ubyte = 0;
+}
+
+table DDungeonData
+{
+    name:string;
+
+    height:int = 3;
+    weidth:int = 3;
+
+    startindex:int = 0;
+
+    areaconnectlist:[DSceneDataConnect];
+}
+
+root_type DDungeonData;
+file_identifier "DUNG";

@@ -1,0 +1,14 @@
+namespace ProtoTable.ChijiRewardTable;
+enum eCrypt :int{
+	code = -480087552,}
+
+namespace ProtoTable;
+table ChijiRewardTable{
+	ID:int32;
+	Name:string;
+	MinRank:int32;
+	MaxRank:int32;
+	RewardBoxID:int32;
+}
+
+root_type ChijiRewardTable;

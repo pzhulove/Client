@@ -1,0 +1,13 @@
+namespace ProtoTable.ChapterTable;
+enum eCrypt :int{
+	code = 1366078111,}
+
+namespace ProtoTable;
+table ChapterTable{
+	ID:int32;
+	ChapterName:string;
+	RewardIsOpen:int32;
+	ChapterIconPath:string;
+}
+
+root_type ChapterTable;

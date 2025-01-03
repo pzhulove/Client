@@ -1,0 +1,13 @@
+namespace ProtoTable.FatigueMakeUpPrice;
+enum eCrypt :int{
+	code = -840572113,}
+
+namespace ProtoTable;
+table FatigueMakeUpPrice{
+	ID:int32;
+	FatigueSection:[int32];
+	LowPrice:int32;
+	HiPrice:int32;
+}
+
+root_type FatigueMakeUpPrice;

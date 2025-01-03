@@ -1,0 +1,104 @@
+namespace ProtoTable.EqualPvPEuqipTable;
+enum eSubType:int { 
+	ST_NONE = 0,    // 无
+	WEAPON = 1,    // 武器
+	HEAD = 2,    // 头部
+	CHEST = 3,    // 胸
+	BELT = 4,    // 腰带
+	LEG = 5,    // 护腿
+	BOOT = 6,    // 鞋子
+	RING = 7,    // 戒指
+	NECKLASE = 8,    // 项链
+	BRACELET = 9,    // 手镯
+	TITLE = 10,    // 称号
+	FASHION_HAIR = 11,    // 时装光环
+	FASHION_HEAD = 12,    // 时装头饰
+	FASHION_SASH = 13,    // 时装腰饰
+	FASHION_CHEST = 14,    // 时装上装
+	FASHION_LEG = 15,    // 时装下装
+	FASHION_EPAULET = 16,    // 时装胸饰
+	GOLD = 17,    // 金币
+	POINT = 18,    // 点券
+	EXP = 19,    // 经验
+	DRUG = 20,    // 药品
+	WARRIOR_SOUL = 22,    // 勇者之魂
+	DUEL_COIN = 23,    // 斗兽币
+	MATERIAL_JINGPO = 24,    // 精魄
+	EnchantmentsCard = 25,    // 附魔卡
+	ResurrectionCcurrency = 26,    // 复活币
+	BindGOLD = 27,    // 绑定金币
+	BindPOINT = 28,    // 绑定点券
+	GiftPackage = 29,    // 礼包
+	GuildContri = 30,    // 公会贡献
+	SP = 31,    // 技能点
+	EnergyStone = 32,    // 能量石
+	Coupon = 33,    // 强化券
+	MonthCard = 34,    // 月卡
+	Jar = 35,    // 随机罐子
+	GiftBox = 36,    // 礼盒（带预览）
+	FatigueDrug = 37,    // 疲劳药
+	Drawing = 38,    // 图纸残卷
+	Fragment = 39,    // 碎片
+	VipExp = 40,    // VIP经验
+	ExperiencePill = 41,    // 经验丸
+	GoldJarPoint = 42,    // 金罐积分
+	MagicJarPoint = 43,    // 魔罐积分
+	PetEgg = 44,    // 宠物蛋
+	ST_FASHION_COMPOSER = 45,    // 时装合成器
+	MoneyManageCard = 46,    // 理财卡
+	Hp = 50,    // hp药水
+	Mp = 51,    // mp药水
+	HpMp = 52,    // hp+mp药水
+	ChangeName = 53,    // 改名卡
+	Bead = 54,    // 宝珠
+	MagicBox = 55,    // 魔盒
+	MagicHammer = 56,    // 魔锤
+	Param = 57,    // 无色晶体
+	ST_JAR_GIFT = 58,    // 魔罐规则的礼包
+	ChargeActivityScore = 60,    // 充值活动积分
+	ST_ADD_VIP_POINT = 61,    // 补VIP积分
+	AttributeDrug = 62,    // 属性药水
+	ST_APPOINTMENT_COIN = 70,    // 预约币
+	LOTTERY_COIN = 71,    // 抽奖币
+	Perfect_washing = 72,    // 完美洗炼卷
+	ST_CONSUME_JAR_GIFT = 73,    // 开启需要消耗道具的魔罐规则的礼包
+	ST_MASTER_ACADEMIC_VALUE = 78,    // 师门学业成长值
+	ST_MASTER_GOODTEACH_VALUE = 79,    // 良师值
+	ST_RETURN_TOKEN = 80,    // 回归硬币
+	FASHION_WEAPON = 81,    // 时装武器
+	ST_CHANGE_FASHION_ACTIVE_TICKET = 82,    // 换装券
+	ST_DRESS_INTEGRAL_VALUE = 83,    // 换装积分
+	ST_WEAPON_LEASE_TICKET = 84,    // 好运符
+	ST_PEARL_HAMMER = 89,    // 金刚锤
+	ST_DIAMOND_HAMMER = 90,    // 钻石锤
+}
+enum eType:int { 
+	Type_None = 0,   // default
+	EQUIP = 1,    // 装备
+	EXPENDABLE = 2,    // 消耗
+	MATERIAL = 3,    // 材料
+	TASK = 4,    // 任务
+	FASHION = 5,    // 装扮
+	INCOME = 6,    // 收益
+	ENERGY = 7,    // 能量石
+	FUCKTITTLE = 8,    // 称号系统
+	VirtualPack = 9,    // 虚拟礼包
+	PET = 10,    // 宠物
+	HEAD_FRAME = 12,    // 头像框
+}
+namespace ProtoTable.EqualPvPEuqipTable;
+enum eCrypt :int{
+	code = 615822232,}
+
+namespace ProtoTable;
+table EqualPvPEuqipTable{
+	ID:int32;
+	Occu:int32;
+	SubType:EqualPvPEuqipTable.eSubType;
+	EquipName:string;
+	EquipID:int32;
+	StrengthenLv:int32;
+	Type:EqualPvPEuqipTable.eType;
+}
+
+root_type EqualPvPEuqipTable;

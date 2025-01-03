@@ -1,0 +1,14 @@
+namespace ProtoTable.AdventureTeamTable;
+enum eCrypt :int{
+	code = 847890401,}
+
+namespace ProtoTable;
+table AdventureTeamTable{
+	ID:int32;
+	Exp:string;
+	ClearDungeonExpAddition:int32;
+	ExpSource:string;
+	PropertyIncomeDesc:string;
+}
+
+root_type AdventureTeamTable;

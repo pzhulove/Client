@@ -1,0 +1,17 @@
+namespace ProtoTable.PkHPProfessionAdjustTable;
+enum eCrypt :int{
+	code = 181084950,}
+
+namespace ProtoTable;
+table PkHPProfessionAdjustTable{
+	ID:int32;
+	ProfessionDesc1:string;
+	factor:int32;
+	DamageFactor:int32;
+	factor_3v3:int32;
+	DamageFactor_3v3:int32;
+	factor_chiji:int32;
+	DamageFactor_chiji:int32;
+}
+
+root_type PkHPProfessionAdjustTable;

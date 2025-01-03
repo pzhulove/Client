@@ -1,0 +1,34 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.MechanismTable;
+enum eCrypt :int{
+	code = -1599982151,}
+
+namespace ProtoTable;
+table MechanismTable{
+	ID:int32;
+	Description:string;
+	Index:int32;
+	BTPath:string;
+	RemoveFlag:int32;
+	StringDescriptionA:string;
+	StringValueA:[string];
+	DescriptionA:string;
+	ValueA:[UnionCell];
+	DescriptionB:string;
+	ValueB:[UnionCell];
+	DescriptionC:string;
+	ValueC:[UnionCell];
+	DescriptionD:string;
+	ValueD:[UnionCell];
+	DescriptionE:string;
+	ValueE:[UnionCell];
+	DescriptionF:string;
+	ValueF:[UnionCell];
+	DescriptionG:string;
+	ValueG:[UnionCell];
+	DescriptionH:string;
+	ValueH:[UnionCell];
+}
+
+root_type MechanismTable;

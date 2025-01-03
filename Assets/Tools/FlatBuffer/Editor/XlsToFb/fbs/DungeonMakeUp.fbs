@@ -1,0 +1,21 @@
+namespace ProtoTable.DungeonMakeUp;
+enum eCrypt :int{
+	code = 658933059,}
+
+namespace ProtoTable;
+table DungeonMakeUp{
+	ID:int32;
+	Level:int32;
+	DungeonID:int32;
+	NormalItemId:[int32];
+	NormalNum:[int32];
+	PerfectItemId:[int32];
+	CostNum:[int32];
+	GoldCost:int32;
+	PointCost:int32;
+	CountMax:int32;
+	VipCountMax:int32;
+	VipLevel:int32;
+}
+
+root_type DungeonMakeUp;

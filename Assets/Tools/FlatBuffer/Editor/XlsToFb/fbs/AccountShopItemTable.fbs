@@ -1,0 +1,32 @@
+namespace ProtoTable.AccountShopItemTable;
+enum eCrypt :int{
+	code = 736413346,}
+
+namespace ProtoTable;
+table AccountShopItemTable{
+	ID:int32;
+	ShopItemName:string;
+	ShopId:int32;
+	TabType:int32;
+	JobType:int32;
+	ItemDatId:int32;
+	ItemNum:int32;
+	CostItems:string;
+	TimeCalcType:int32;
+	StartTime:string;
+	EndTime:string;
+	AccountRefreshType:int32;
+	AccountRefreshTimePoint:string;
+	AccountLimitBuyType:int32;
+	AccountLimitBuyNum:int32;
+	RoleRefreshType:int32;
+	RoleRefreshTimePoint:string;
+	RoleLimitBuyType:int32;
+	RoleLimitBuyNum:int32;
+	ExtensibleCondition:int32;
+	NeedPreviewFunc:int32;
+	ShowLevelLimit:int32;
+	Rank:int32;
+}
+
+root_type AccountShopItemTable;

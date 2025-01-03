@@ -1,0 +1,14 @@
+namespace ProtoTable.AuctionMagicExpectUpTimesTable;
+enum eCrypt :int{
+	code = 1816831156,}
+
+namespace ProtoTable;
+table AuctionMagicExpectUpTimesTable{
+	ID:int32;
+	Type:int32;
+	Quality:int32;
+	Strengthenlv:int32;
+	ExpectUpTimes:int32;
+}
+
+root_type AuctionMagicExpectUpTimesTable;

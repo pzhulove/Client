@@ -1,0 +1,60 @@
+namespace ProtoTable.VipPrivilegeTable;
+enum eType:int { 
+	None = 0,    // 无
+	DUNGEON_EXP = 1,    // 关卡结算经验
+	FREE_REVIVE = 2,    // 免费复活
+	DUNGEON_DROP_GOLD = 3,    // 副本掉落金币
+	PK_MONEY_LIMIT = 4,    // 决斗币上限
+	GOLDBOX_FREEOPEN_NUM = 5,    // 黄金宝箱免费开启次数
+	BLACKMARKET_NOBILITY_GOODS = 6,    // 黑市贵族商品
+	WARRIOR_TOWER_REBEGIN_NUM = 7,    // 勇者之塔可重置次数
+	MAGIC_VEIN_NUM = 8,    // 魔晶矿脉次数
+	MYSTERIOUS_SHOP_REFRESH_NUM = 9,    // 神秘商店刷新次数
+	GUILD_TICKET_DONATE_DAILY = 10,    // 公会点券捐献每日次数
+	OFFLINE_FIND_FATIGUE_LIMIT = 11,    // 离线找回精力上限
+	GUILD_LUXURY_WORSHIP = 12,    // 公会豪华膜拜
+	PERFECT_FIND = 13,    // 完美找回
+	SIGN_IN_DOUBLE = 14,    // 签到双倍
+	FATIGUE_DRUG_USE_NUM = 15,    // 小疲劳药每日可使用次数
+	GUILD_PRIVATECOST_REDPACKET = 16,    // 公会自费红包
+	TEAM_BOSS_NUM = 17,    // 组队BOSS次数
+	AUTO_EATING = 18,    // 自动战斗吃药
+	WORLD_CHAT_FREE_TIMES = 19,    // 世界聊天免费次数
+	AUTION_VIP_COMMISSION_PRIVILEGE = 20,    // 拍卖行VIP手续费特权
+	BACKPACK_VIP_TITLE = 21,    // 时装背包栏位增加
+	BACKPACK_VIP_FASHION = 22,    // 称号背包栏位增加
+}
+enum eDataType:int { 
+	DataType_None = 0,   // default
+	INT = 1,    // int数据类型
+	FLOAT = 2,    // float数据类型
+}
+namespace ProtoTable.VipPrivilegeTable;
+enum eCrypt :int{
+	code = -623361718,}
+
+namespace ProtoTable;
+table VipPrivilegeTable{
+	ID:int32;
+	Name:string;
+	Type:VipPrivilegeTable.eType;
+	Description:string;
+	DataType:VipPrivilegeTable.eDataType;
+	VIP0:int32;
+	VIP1:int32;
+	VIP2:int32;
+	VIP3:int32;
+	VIP4:int32;
+	VIP5:int32;
+	VIP6:int32;
+	VIP7:int32;
+	VIP8:int32;
+	VIP9:int32;
+	VIP10:int32;
+	VIP11:int32;
+	IconPath:string;
+	VIPDisplay:string;
+	DisplayIndex:int32;
+}
+
+root_type VipPrivilegeTable;

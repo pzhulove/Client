@@ -1,0 +1,20 @@
+namespace ProtoTable.ChargeDisplayTable;
+enum eType:int { 
+	Texture = 0,    // 贴图
+	Model = 1,    // 模型
+}
+namespace ProtoTable.ChargeDisplayTable;
+enum eCrypt :int{
+	code = -991510898,}
+
+namespace ProtoTable;
+table ChargeDisplayTable{
+	ID:int32;
+	ActivityID:int32;
+	Type:ChargeDisplayTable.eType;
+	ItemID:string;
+	IconPath:string;
+	ModelPath:string;
+}
+
+root_type ChargeDisplayTable;

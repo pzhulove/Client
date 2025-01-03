@@ -1,0 +1,12 @@
+namespace ProtoTable.AuctionBoothTable;
+enum eCrypt :int{
+	code = -1347207501,}
+
+namespace ProtoTable;
+table AuctionBoothTable{
+	ID:int32;
+	CostItemID:int32;
+	Num:int32;
+}
+
+root_type AuctionBoothTable;

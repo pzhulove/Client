@@ -1,0 +1,14 @@
+namespace ProtoTable.EquipStrModIndAtkTable;
+enum eCrypt :int{
+	code = 8120504,}
+
+namespace ProtoTable;
+table EquipStrModIndAtkTable{
+	ID:int32;
+	WpStrenthMod_1:[int32];
+	WpColorQaMod_1:[int32];
+	WpColorQbMod_1:[int32];
+	EquipMod:[int32];
+}
+
+root_type EquipStrModIndAtkTable;

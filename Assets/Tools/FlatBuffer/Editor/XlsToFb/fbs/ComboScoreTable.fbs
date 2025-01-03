@@ -1,0 +1,15 @@
+namespace ProtoTable.ComboScoreTable;
+enum eCrypt :int{
+	code = -1753797086,}
+
+namespace ProtoTable;
+table ComboScoreTable{
+	ID:int32;
+	JobID:int32;
+	JobDes:string;
+	Percent:int32;
+	BaseScore:int32;
+	MinCombo:int32;
+}
+
+root_type ComboScoreTable;

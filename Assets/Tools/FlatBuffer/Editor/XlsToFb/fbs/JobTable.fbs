@@ -1,0 +1,118 @@
+namespace ProtoTable.JobTable;
+enum esex:int { 
+	Male = 0,    // 男
+	Female = 1,    // 女
+}
+namespace ProtoTable.JobTable;
+enum eCrypt :int{
+	code = 487660145,}
+
+namespace ProtoTable;
+table JobTable{
+	ID:int32;
+	Name:string;
+	AwakenJobName:[string];
+	JobAttribute:int32;
+	JobType:int32;
+	prejob:int32;
+	sex:JobTable.esex;
+	OppositeSexJob:int32;
+	Open:int32;
+	CanCreateRole:int32;
+	AuctionJob:int32;
+	Diffcult:int32;
+	ComboFactor:int32;
+	Mode:int32;
+	RecProperty:string;
+	RecDefence:string;
+	RecWeapon:string;
+	Weight:int32;
+	IdleAniName:string;
+	WalkAniName:string;
+	RunAniName:string;
+	DeadAniName:string;
+	DefaultBoxRadius:int32;
+	DefaultHitEffect:string;
+	DefaultHitSFXID:int32;
+	DefaultWeaponTag:int32;
+	DefaultWeaponType:int32;
+	DefaultWeaponPath:string;
+	DefaultWeaponLocator:string;
+	InputConfigPath:string;
+	InitSkills:[int32];
+	MaxSkillPanelIndex:int32;
+	AwakenSkills:[int32];
+	ProJobSkills:int32;
+	PreJobDialogID:[int32];
+	FightID:int32;
+	ToJob:[int32];
+	NormalAttackID:int32;
+	ChijiNormalAttackID:int32;
+	JumpAttackID:int32;
+	RunAttackID:int32;
+	JumpAttackNum:int32;
+	AIConfig1:string;
+	AIConfig2:string;
+	AIConfig3:string;
+	AIKeepDistance:int32;
+	ToJobGift:int32;
+	JobCreateName:string;
+	JobPortrayal:string;
+	JobHalfBody:string;
+	JobHead:string;
+	JobWeaponIcon:string;
+	JobBody:string;
+	JobIcon:string;
+	SkillIcon:[string];
+	JobDes:[string];
+	JobSimpleDes:string;
+	AwakeJobIcon:string;
+	AwakeJobName:string;
+	AwakeSkillName:string;
+	JobShowPath:[string];
+	FirstPayWeapon:string;
+	PayItems:[string];
+	AbilityChart:[int32];
+	Video:string;
+	JobImage:string;
+	OffSetXFriendInfo:int32;
+	SuitArmorType:int32;
+	JobFashionImage:string;
+	GoodsRecommendBG:string;
+	TownStatueFace:int32;
+	Job_xuanjue_zhiye:string;
+	changeFinishShowSkills:[int32];
+	LoadingPrefab
+:string;
+	PKMatchShowPrefab
+:string;
+	PKResultPrefab
+:string;
+	PKMatchResultHeadIconPath
+:string;
+	ChangJobTaskPrompt:string;
+	AppointmentRoleID:int32;
+	JobSort:int32;
+	JobPortrayalPosX:int32;
+	JobPortrayalPosY:int32;
+	FirstPayModelTransform:[int32];
+	FashionMergeFastBuyID:int32;
+	ChangJobPromptButtonPos:string;
+	RecommendedAttribute:string;
+	RecommendedAttributeIndex:[int32];
+	AttachMonsterResID:int32;
+	CharacterCollectionPhoto:string;
+	CharacterCollectionArtLetting:string;
+	AppointmentJobImage:string;
+	BaseJobSort:int32;
+	EqualPvPSP:int32;
+	Height:int32;
+	ChiJiOccu:int32;
+	BattleTestUseSkills:[int32];
+	JobNameImgPaths:[string];
+	Tips:string;
+	ChangeOccuSkills:[int32];
+	ChangeOccuEquips:[int32];
+}
+
+root_type JobTable;

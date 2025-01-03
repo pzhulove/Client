@@ -1,0 +1,18 @@
+namespace ProtoTable.ChiJiGiftTable;
+enum eCrypt :int{
+	code = 595813643,}
+
+namespace ProtoTable;
+table ChiJiGiftTable{
+	ID:int32;
+	ItemID:int32;
+	GiftPackID:int32;
+	ItemCount:int32;
+	RecommendJobs:[int32];
+	Weight:int32;
+	Levels:[int32];
+	EquipType:int32;
+	Strengthen:int32;
+}
+
+root_type ChiJiGiftTable;

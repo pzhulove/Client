@@ -1,0 +1,12 @@
+namespace ProtoTable.RoleValueTotalScoreCalcTable;
+enum eCrypt :int{
+	code = -294344558,}
+
+namespace ProtoTable;
+table RoleValueTotalScoreCalcTable{
+	ID:int32;
+	AllRoleValueScoreLevel:string;
+	RoleValueScoreProb:int32;
+}
+
+root_type RoleValueTotalScoreCalcTable;

@@ -1,0 +1,29 @@
+namespace ProtoTable.BeadTable;
+enum eCrypt :int{
+	code = 127561488,}
+
+namespace ProtoTable;
+table BeadTable{
+	ID:int32;
+	Color:int32;
+	Parts:[int32];
+	PropType:[int32];
+	PropValue:[int32];
+	BuffInfoIDPve:[int32];
+	BuffInfoIDPvp:[int32];
+	SkillAttributes:string;
+	Level:int32;
+	NextLevPrecbeadID:string;
+	UpConsume:string;
+	AddtionBuffPro:int32;
+	BuffGroup:int32;
+	BeadName:int32;
+	Instruction:string;
+	BeadType:int32;
+	ReplacePearl:[int32];
+	ProminentAtt:int32;
+	Score:int32;
+	SameBeadID:[int32];
+}
+
+root_type BeadTable;

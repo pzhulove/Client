@@ -1,0 +1,17 @@
+namespace ProtoTable.GuildDungeonTypeTable;
+enum eCrypt :int{
+	code = -57312859,}
+
+namespace ProtoTable;
+table GuildDungeonTypeTable{
+	ID:int32;
+	buildLvl:int32;
+	dungeonType:int32;
+	rewardItem:[string];
+	challengeTime:string;
+	recommendLv:int32;
+	recommendEquip:string;
+	recommendPlayerNum:int32;
+}
+
+root_type GuildDungeonTypeTable;

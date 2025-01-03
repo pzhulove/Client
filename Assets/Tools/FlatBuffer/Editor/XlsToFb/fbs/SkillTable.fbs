@@ -1,0 +1,160 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.SkillTable;
+enum eSkillType:int { 
+	SkillType_None = 0,   // default
+	ACTIVE = 1,    // 主动
+	PASSIVE = 2,    // 被动
+}
+enum eSkillEffect:int { 
+	NONE = 0,    // 没类型
+	START_SKILL = 1,    // 起手技能
+	CONTINUOUS_SKILL = 2,    // 连招技能
+	HURT_SKILL = 3,    // 输出技能
+	DISPLACEMENT_SKILL = 4,    // 跑位技能
+	CONTROL_SKILL = 5,    // 控制技能
+	GRAB_SKILL = 6,    // 抓取技能
+	DEFENSE_SKILL = 7,    // 防御技能
+	ASSISTANT_SKILL = 8,    // 辅助技能
+	PHYSICAL_SKILL = 9,    // 物理
+	MAGIC_SKILL = 10,    // 魔法
+	NEAR_SKILL = 11,    // 近战
+	FAR_SKILL = 12,    // 远程
+}
+enum ePreCondition:int { 
+	PreCondition_None = 0,   // default
+	STAND = 1,    // 站立
+	WALK = 2,    // 走路
+	RUN = 3,    // 跑步
+	JUMP = 4,    // 跳跃
+	BEHIT = 5,    // 被击
+	ENTERSCENE = 6,    // 进场景
+	INIT = 7,    // 技能加载
+	LOWHP = 8,    // 低血量狂暴
+	DAODI = 9,    // 倒地
+	MASTER_ATTACK = 10,    // 主人被击
+	JUMP_BACK = 11,    // 后跳
+	OWN_BUFF = 12,    // 拥有buff
+}
+enum eSkillTarget:int { 
+	SkillTarget_None = 0,   // default
+	FRIENDLY = 1,    // 我方
+	ENEMY = 2,    // 敌方
+}
+namespace ProtoTable.SkillTable;
+enum eCrypt :int{
+	code = -1406489137,}
+
+namespace ProtoTable;
+table SkillTable{
+	ID:int32;
+	Name:string;
+	EnglishName:string;
+	SmallIcon:string;
+	Icon:string;
+	JobID:[int32];
+	Speed:int32;
+	SpeedEffectType:int32;
+	PhaseRelatedSpeed:int32;
+	SkillType:SkillTable.eSkillType;
+	SkillCategory:int32;
+	MasterSkillID:int32;
+	SkillEffect:[SkillTable.eSkillEffect];
+	IsBuff:int32;
+	IsQTE:int32;
+	IsRunAttack:int32;
+	SkillPressType:int32;
+	PressBackJumpCancel:int32;
+	WatchBuffID:int32;
+	CanSwithWeapon:int32;
+	CDPhase:int32;
+	IsAttackCombo:int32;
+	CanUseInPVP:int32;
+	AttackScalePVP:int32;
+	PreCondition:[SkillTable.ePreCondition];
+	OwnBuffID:[int32];
+	LowHpPercent:int32;
+	Probability:UnionCell;
+	HitEffectIDs:[int32];
+	HitEffectIDsPVP:[int32];
+	BuffInfoIDs:[int32];
+	BuffInfoIDsPVP:[int32];
+	MechismIDs:[int32];
+	MechismIDsPVP:[int32];
+	InterruptSkills:string;
+	HitInterruptSkills:[int32];
+	IsResetCamera:bool;
+	IsForce:bool;
+	IsCanCancel:bool;
+	IsCanDispose:bool;
+	IsChargeEnable:bool;
+	HideSpellBar:int32;
+	IsWalkEnable:bool;
+	WalkMode:int32;
+	WalkSpeed:UnionCell;
+	WalkSpeedPVP:UnionCell;
+	SummonRestrainEffectID:int32;
+	CostMode:int32;
+	HPCostPercent:UnionCell;
+	HPCost:UnionCell;
+	MPCost:UnionCell;
+	CrystalCost:UnionCell;
+	SpellTime:int32;
+	SpellTimePVP:int32;
+	RefreshTime:UnionCell;
+	InitCD:UnionCell;
+	MinCD:UnionCell;
+	RefreshTimePVP:UnionCell;
+	InitCDPVP:UnionCell;
+	MinCDPVP:UnionCell;
+	SkillTarget:SkillTable.eSkillTarget;
+	SkillAttri:int32;
+	IsPreJob:int32;
+	IsStudy:int32;
+	LevelLimit:int32;
+	LevelLimitAmend:int32;
+	TopLevelLimit:int32;
+	TopLevel:int32;
+	PreSkills:[int32];
+	PreSkillsLevel:[int32];
+	PostSkills:[int32];
+	NeedLevel:[int32];
+	LearnSPCost:int32;
+	LearnGoodCost:int32;
+	IsForceSync:int32;
+	SkillSpeechID:int32;
+	SkillSpeech:string;
+	SkillSpeechRand:int32;
+	SkillDealText:string;
+	SkillDealTextDuration:int32;
+	SwitchSkillID:int32;
+	RangeX:int32;
+	RangeY:int32;
+	BackRangeX:int32;
+	Weight:int32;
+	AttackInfo:string;
+	Zscale:UnionCell;
+	PVPZscale:UnionCell;
+	SkillOperation:int32;
+	SkillOpTarget:int32;
+	SkillOpVar:string;
+	SkillOpValue:UnionCell;
+	SkillOpSkillIDs:[int32];
+	NeedWeaponType:int32;
+	DescriptionA:string;
+	ValueA:[UnionCell];
+	DescriptionB:string;
+	ValueB:[UnionCell];
+	DescriptionC:string;
+	ValueC:[UnionCell];
+	DescriptionD:string;
+	ValueD:[UnionCell];
+	DescriptionE:string;
+	ValueE:[UnionCell];
+	DescriptionF:string;
+	ValueF:[UnionCell];
+	DescriptionG:string;
+	ValueG:[UnionCell];
+}
+
+root_type SkillTable;

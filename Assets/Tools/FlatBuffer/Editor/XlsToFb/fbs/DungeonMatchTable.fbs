@@ -1,0 +1,11 @@
+namespace ProtoTable.DungeonMatchTable;
+enum eCrypt :int{
+	code = -31842059,}
+
+namespace ProtoTable;
+table DungeonMatchTable{
+	ID:int32;
+	MatchPlayerNum:int32;
+}
+
+root_type DungeonMatchTable;

@@ -1,0 +1,22 @@
+namespace ProtoTable.ActivitySystemConfig;
+enum eActivitySystem:int { 
+	ACTEM_NONE = 0,    // 无
+	ACTEM_VETERAN_RETURN = 1,    // 老兵回归
+}
+namespace ProtoTable.ActivitySystemConfig;
+enum eCrypt :int{
+	code = 379250962,}
+
+namespace ProtoTable;
+table ActivitySystemConfig{
+	ID:int32;
+	ActivitySystem:ActivitySystemConfig.eActivitySystem;
+	OpActivities:string;
+	MallItems:string;
+	Activities:string;
+	PushInfos:string;
+	IsClose:int32;
+	ReturnActId:int32;
+}
+
+root_type ActivitySystemConfig;

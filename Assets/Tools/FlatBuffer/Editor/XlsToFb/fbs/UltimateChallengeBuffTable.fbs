@@ -1,0 +1,14 @@
+namespace ProtoTable.UltimateChallengeBuffTable;
+enum eCrypt :int{
+	code = -1636419005,}
+
+namespace ProtoTable;
+table UltimateChallengeBuffTable{
+	ID:int32;
+	buffID:int32;
+	Description:string;
+	target:int32;
+	sustain:int32;
+}
+
+root_type UltimateChallengeBuffTable;

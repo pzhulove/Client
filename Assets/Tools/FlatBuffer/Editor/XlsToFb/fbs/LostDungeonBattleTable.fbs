@@ -1,0 +1,18 @@
+namespace ProtoTable.LostDungeonBattleTable;
+enum eCrypt :int{
+	code = 1806213936,}
+
+namespace ProtoTable;
+table LostDungeonBattleTable{
+	ID:int32;
+	Name:string;
+	Desc:string;
+	CommonTask:string;
+	DiffTask:string;
+	MaxPlayerNum:int32;
+	MapPath:string;
+	MapId:int32;
+	PassExitDoorId:int32;
+}
+
+root_type LostDungeonBattleTable;

@@ -1,0 +1,24 @@
+namespace ProtoTable.PushExhibitionTable;
+enum eCrypt :int{
+	code = -7804209,}
+
+namespace ProtoTable;
+table PushExhibitionTable{
+	ID:int32;
+	Name:string;
+	FinishLevel:int32;
+	IconPath:string;
+	LinkInfo:string;
+	StartTime:int32;
+	EndTime:int32;
+	AfterStartServer:int32;
+	AfterStartServerDays:int32;
+	OpenInterval:string;
+	CloseInterval:string;
+	LoadingIcon:string;
+	SortNum:int32;
+	IsShowTime:int32;
+	IsSetNative:int32;
+}
+
+root_type PushExhibitionTable;

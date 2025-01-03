@@ -1,0 +1,15 @@
+namespace ProtoTable.ChiJiNpcRewardTable;
+enum eCrypt :int{
+	code = 628208941,}
+
+namespace ProtoTable;
+table ChiJiNpcRewardTable{
+	ID:int32;
+	npcId:int32;
+	param:int32;
+	param2:int32;
+	rewards:[int32];
+	NpcDialogue:string;
+}
+
+root_type ChiJiNpcRewardTable;

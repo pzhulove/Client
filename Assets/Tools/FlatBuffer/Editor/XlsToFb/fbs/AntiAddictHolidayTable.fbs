@@ -1,0 +1,11 @@
+namespace ProtoTable.AntiAddictHolidayTable;
+enum eCrypt :int{
+	code = -491144707,}
+
+namespace ProtoTable;
+table AntiAddictHolidayTable{
+	ID:int32;
+	HolidayDate:int32;
+}
+
+root_type AntiAddictHolidayTable;

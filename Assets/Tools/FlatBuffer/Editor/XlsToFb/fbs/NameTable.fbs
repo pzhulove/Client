@@ -1,0 +1,12 @@
+namespace ProtoTable.NameTable;
+enum eCrypt :int{
+	code = 111743053,}
+
+namespace ProtoTable;
+table NameTable{
+	ID:int32;
+	NameType:int32;
+	NameText:string;
+}
+
+root_type NameTable;

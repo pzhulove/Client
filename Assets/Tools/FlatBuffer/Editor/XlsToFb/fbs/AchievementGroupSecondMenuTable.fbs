@@ -1,0 +1,13 @@
+namespace ProtoTable.AchievementGroupSecondMenuTable;
+enum eCrypt :int{
+	code = -533477339,}
+
+namespace ProtoTable;
+table AchievementGroupSecondMenuTable{
+	ID:int32;
+	Name:string;
+	Icon:string;
+	SubItemID:[int32];
+}
+
+root_type AchievementGroupSecondMenuTable;

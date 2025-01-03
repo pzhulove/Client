@@ -1,0 +1,25 @@
+namespace ProtoTable.InscriptionSynthesisTable;
+enum eColor:int { 
+	CL_NONE = 0,    // 没有
+	WHITE = 1,    // 白
+	BLUE = 2,    // 蓝
+	PURPLE = 3,    // 紫
+	GREEN = 4,    // 绿
+	PINK = 5,    // 粉
+	YELLOW = 6,    // 橙
+}
+namespace ProtoTable.InscriptionSynthesisTable;
+enum eCrypt :int{
+	code = 913657090,}
+
+namespace ProtoTable;
+table InscriptionSynthesisTable{
+	ID:int32;
+	Color:InscriptionSynthesisTable.eColor;
+	SynthesisNum:int32;
+	GenerateInscription:string;
+	IsMaxSynthesisNum:int32;
+	GenerateInscriptionPreView:string;
+}
+
+root_type InscriptionSynthesisTable;

@@ -1,0 +1,15 @@
+namespace ProtoTable.LostDungeonTreasureChestTable;
+enum eCrypt :int{
+	code = -1318332236,}
+
+namespace ProtoTable;
+table LostDungeonTreasureChestTable{
+	ID:int32;
+	Name:string;
+	Desc:string;
+	Type:int32;
+	ParmDesc:string;
+	Gifts:int32;
+}
+
+root_type LostDungeonTreasureChestTable;

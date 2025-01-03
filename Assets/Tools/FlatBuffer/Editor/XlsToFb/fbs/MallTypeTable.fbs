@@ -1,0 +1,66 @@
+namespace ProtoTable.MallTypeTable;
+enum eFuncType:int { 
+	FT_NONE = 0,    // 无
+	FT_GIFT = 9,    // 礼包
+}
+enum eMoneyType:int { 
+	MT_NONE = 0,    // 人民币充值
+	MT_TICKET = 1,    // 点券
+	MT_BIND_TICKET = 2,    // 绑点
+	MT_MALL_POINT = 3,    // 商城积分
+}
+enum eMallType:int { 
+	MallType_None = 0,   // default
+	SN_HOT = 1,    // 热门
+	SN_EQUIP = 2,    // 装备
+	SN_COST = 3,    // 消耗品
+	SN_FASHION = 4,    // 时装
+	SN_GOLD = 5,    // 金币
+	SN_GIFT = 6,    // 礼包
+	SN_ACTIVITY_GIFT = 7,    // 活动礼包
+	SN_FASHION_GIFT = 8,    // 时装套礼包
+	SN_NEW_SERVER_GIFT = 9,    // 超级新服活动礼包
+	SN_RECOMMEND = 10,    // 推荐
+	SN_MATERIAL = 11,    // 材料
+	SN_NATIONAL_DAY = 14,    // 国庆礼包
+	SN_ITEM = 15,    // 道具
+	SN_FUNCTION = 16,    // 功能
+	SN_EXCHANGE = 17,    // 兑换
+	SN_MEDICINE = 18,    // 药品
+	SN_MALL_POINT_ITEM = 19,    // 道具
+	SN_ASCEND_GIFT = 20,    // 飞升礼包
+	SN_GRATITUDE_GIFT = 21,    // 感恩礼包
+	SN_GRATITUDE_LUCKYBAG = 22,    // 感恩福袋
+	SN_STARSTONE_GIFT = 23,    // 星芒石礼包
+	SN_VOUCHER = 24,    // 抵扣券
+}
+enum eMallSubType:int { 
+	MST_NONE = 0,    // 无
+	MST_HEAD = 1,    // 头饰
+	MST_UPWEAR = 2,    // 上装
+	MST_CHEST = 3,    // 胸饰
+	MST_DOWNWEAR = 4,    // 下装
+	MST_BELT = 5,    // 腰饰
+	MST_ALL = 6,    // 时装套
+	MST_WEAPON = 7,    // 武器外观
+}
+namespace ProtoTable.MallTypeTable;
+enum eCrypt :int{
+	code = -1598275002,}
+
+namespace ProtoTable;
+table MallTypeTable{
+	ID:int32;
+	MainTypeName:string;
+	FuncType:MallTypeTable.eFuncType;
+	MoneyType:MallTypeTable.eMoneyType;
+	MoneyID:int32;
+	MallType:MallTypeTable.eMallType;
+	MallSubType:[MallTypeTable.eMallSubType];
+	ScrollViewRootIndex:int32;
+	ClassifyJob:int32;
+	Use:int32;
+	IsForActivity:int32;
+}
+
+root_type MallTypeTable;

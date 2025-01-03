@@ -1,0 +1,56 @@
+namespace ProtoTable.CitySceneTable;
+enum eSceneType:int { 
+	SceneType_None = 0,   // default
+	NORMAL = 1,    // 普通地图
+	SINGLE = 9,    // 个人场景
+	DUNGEON_ENTRY = 10,    // 地下城选择场景
+	PK_PREPARE = 11,    // 战斗准备场景
+	PK = 12,    // 决斗场景
+	ACTIVITY = 13,    // 活动场景
+	BATTLE = 4,    // 战场场景
+	BATTLEPEPARE = 14,    // 吃鸡准备场景
+	TEAMDUPLICATION = 15,    // 团本
+}
+enum eSceneSubType:int { 
+	NULL = 0,    // 无
+	TRADITION = 1,    // 传统决斗场
+	BUDO = 2,    // 武道会
+	GuildBattle = 3,    // 公会战
+	MoneyRewards = 4,    // 赏金联赛
+	Pk3v3 = 5,    // 3v3决斗场
+	CrossGuildBattle = 6,    // 跨服公会战
+	CrossPk3v3 = 7,    // 3v3决斗场(积分赛)
+	Guild = 8,    // 公会场景
+	Battle = 9,    // 吃鸡战场
+	BattlePrepare = 10,    // 吃鸡准备
+	FairDuelPrepare = 11,    // 公平决斗场准备
+	TeamDuplicationBuid = 12,    // 团本组队场景
+	TeamDuplicationFight = 13,    // 团本攻坚场景
+	Melee2v2Cross = 14,    // 跨服2v2乱斗准备场景
+}
+namespace ProtoTable.CitySceneTable;
+enum eCrypt :int{
+	code = 1787894359,}
+
+namespace ProtoTable;
+table CitySceneTable{
+	ID:int32;
+	Name:string;
+	Desc:string;
+	AreaID:int32;
+	TownID:int32;
+	BirthCity:int32;
+	TraditionSceneID:int32;
+	BudoSceneID:int32;
+	ResPath:string;
+	SceneType:CitySceneTable.eSceneType;
+	SceneSubType:CitySceneTable.eSceneSubType;
+	SyncRange:int32;
+	ChapterData:[string];
+	BGMPath:string;
+	EnvironmenBGMtPath:string;
+	LevelLimit:int32;
+	ExchangeStoreEntrance:string;
+}
+
+root_type CitySceneTable;

@@ -1,0 +1,30 @@
+{
+"group": "YouMiVoice",
+"libs": [
+  	"libc++.1.tbd",
+    "libsqlite3.0.tbd",
+    "libresolv.9.tbd",
+    "libz.tbd",
+	"libc++.tbd",
+	"libz.1.2.5.tbd"
+],
+"frameworks": [
+    "SystemConfiguration.framework",
+    "CoreTelephony.framework",
+    "AVFoundation.framework",
+    "AudioToolbox.framework",
+    "AddressBook.framework",
+    "CoreLocation.framework",
+    "Contacts.framework:weak"
+],
+"headerpaths": [],
+"files":   ["YouMiVoice/AliyunNlsSdk.framework"],
+"folders": [],
+"excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$"],
+"compiler_flags": [],
+"embed_binaries":["YouMiVoice/AliyunNlsSdk.framework"],
+"plist": "YouMiVoice/mergePlist.xml",
+"linker_flags": [
+        "-ObjC"
+]
+}

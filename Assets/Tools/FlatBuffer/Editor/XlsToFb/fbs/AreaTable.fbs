@@ -1,0 +1,14 @@
+namespace ProtoTable.AreaTable;
+enum eCrypt :int{
+	code = 136518473,}
+
+namespace ProtoTable;
+table AreaTable{
+	ID:int32;
+	Name:string;
+	MainlandID:int32;
+	TownIDs:[int32];
+	LoadBG:string;
+}
+
+root_type AreaTable;

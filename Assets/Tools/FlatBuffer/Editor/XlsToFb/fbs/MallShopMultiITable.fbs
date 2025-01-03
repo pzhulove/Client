@@ -1,0 +1,14 @@
+namespace ProtoTable.MallShopMultiITable;
+enum eCrypt :int{
+	code = -1291395942,}
+
+namespace ProtoTable;
+table MallShopMultiITable{
+	ID:int32;
+	StartTime:string;
+	EndTime:string;
+	Malls:string;
+	Multiple:int32;
+}
+
+root_type MallShopMultiITable;

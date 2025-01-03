@@ -1,0 +1,13 @@
+namespace ProtoTable.TeamDuplicationSetTable;
+enum eCrypt :int{
+	code = -86472745,}
+
+namespace ProtoTable;
+table TeamDuplicationSetTable{
+	ID:int32;
+	TeamType:int32;
+	Type:int32;
+	Number:int32;
+}
+
+root_type TeamDuplicationSetTable;

@@ -1,0 +1,17 @@
+namespace ProtoTable.EquipStrColorRatioTable;
+enum eCrypt :int{
+	code = -1294104621,}
+
+namespace ProtoTable;
+table EquipStrColorRatioTable{
+	ID:int32;
+	Lv:int32;
+	WhiteRatio:[int32];
+	BlueRatio:[int32];
+	PurpleRatio:[int32];
+	GreenRatio:[int32];
+	PinkRatio:[int32];
+	YellowRatio:[int32];
+}
+
+root_type EquipStrColorRatioTable;

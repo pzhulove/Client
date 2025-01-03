@@ -1,0 +1,12 @@
+namespace ProtoTable.ChiJiShopTimeTable;
+enum eCrypt :int{
+	code = 1947864910,}
+
+namespace ProtoTable;
+table ChiJiShopTimeTable{
+	ID:int32;
+	StartTime:int32;
+	ShopID:int32;
+}
+
+root_type ChiJiShopTimeTable;

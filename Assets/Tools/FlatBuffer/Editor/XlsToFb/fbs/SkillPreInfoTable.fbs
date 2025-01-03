@@ -1,0 +1,13 @@
+namespace ProtoTable.SkillPreInfoTable;
+enum eCrypt :int{
+	code = -882410950,}
+
+namespace ProtoTable;
+table SkillPreInfoTable{
+	ID:int32;
+	Name:string;
+	Path:string;
+	Count:int32;
+}
+
+root_type SkillPreInfoTable;

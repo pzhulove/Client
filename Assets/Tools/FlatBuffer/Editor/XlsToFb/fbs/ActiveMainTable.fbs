@@ -1,0 +1,44 @@
+namespace ProtoTable.ActiveMainTable;
+enum eActivityType:int { 
+	None = 0,    // 无
+	ExchangeActivity = 1,    // 兑换活动
+	KillBossActivity = 2,    // 击杀boss活动
+	QuestActivity = 3,    // 任务类活动(完成任务领取奖励)
+}
+namespace ProtoTable.ActiveMainTable;
+enum eCrypt :int{
+	code = 1839457437,}
+
+namespace ProtoTable;
+table ActiveMainTable{
+	ID:int32;
+	SortID:int32;
+	ActivityType:ActiveMainTable.eActivityType;
+	Name:string;
+	RedPointPath:string;
+	RedPointLocalPath:string;
+	UpdateMainKeys:string;
+	TabInitDesc:string;
+	FrameTemplate:string;
+	PurDesc:string;
+	ParticularDesc:string;
+	Desc:string;
+	prefabDesc:string;
+	awardparent:string;
+	templateName:string;
+	bUseTemplate:int32;
+	MainStatusDesc:string;
+	PrefabStatusDesc:string;
+	PrefabStatusShowDesc:[int32];
+	MainInitDesc:string;
+	FunctionParse:string;
+	ActiveFrame:string;
+	ActiveFrameTabPath:string;
+	ActiveTypeID:int32;
+	BossId:string;
+	BgPath:string;
+	TownBtIconPath:string;
+	TownBtText:string;
+}
+
+root_type ActiveMainTable;

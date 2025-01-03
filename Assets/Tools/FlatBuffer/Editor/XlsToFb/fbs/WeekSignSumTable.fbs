@@ -1,0 +1,14 @@
+namespace ProtoTable.WeekSignSumTable;
+enum eCrypt :int{
+	code = 264522694,}
+
+namespace ProtoTable;
+table WeekSignSumTable{
+	ID:int32;
+	opActType:int32;
+	weekSum:int32;
+	rewardId:int32;
+	rewardNum:int32;
+}
+
+root_type WeekSignSumTable;

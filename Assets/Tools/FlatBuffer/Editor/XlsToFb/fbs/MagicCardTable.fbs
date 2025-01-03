@@ -1,0 +1,34 @@
+namespace ProtoTable.MagicCardTable;
+enum eCrypt :int{
+	code = 1085107691,}
+
+namespace ProtoTable;
+table MagicCardTable{
+	ID:int32;
+	Name:string;
+	Color:int32;
+	Stage:int32;
+	Parts:[int32];
+	PropType:[int32];
+	PropValue:[int32];
+	PropValue_PVP:[int32];
+	BuffID:[int32];
+	BuffID_PVP:[int32];
+	MaxLevel:int32;
+	UpValue:[int32];
+	UpValue_PVP:[int32];
+	UpBuffID:[int32];
+	UpBuffID_PVP:[int32];
+	BuffDescribe:string;
+	Weight:int32;
+	Rate:int32;
+	SkillAttributes:string;
+	CostItemId:int32;
+	CostNum:int32;
+	Score:int32;
+	UpAddScore:int32;
+	SameCardID:[string];
+	MagicCardTableID:int32;
+}
+
+root_type MagicCardTable;

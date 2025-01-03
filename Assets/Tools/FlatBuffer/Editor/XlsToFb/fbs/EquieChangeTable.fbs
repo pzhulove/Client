@@ -1,0 +1,15 @@
+namespace ProtoTable.EquieChangeTable;
+enum eCrypt :int{
+	code = -2015942963,}
+
+namespace ProtoTable;
+table EquieChangeTable{
+	ID:int32;
+	Name:string;
+	JobID:[int32];
+	ConvertType:int32;
+	UseEquipSuit:[int32];
+	Level:[int32];
+}
+
+root_type EquieChangeTable;

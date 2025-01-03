@@ -1,0 +1,14 @@
+namespace ProtoTable.JarItemShowPool;
+enum eCrypt :int{
+	code = 1647923331,}
+
+namespace ProtoTable;
+table JarItemShowPool{
+	ID:int32;
+	JarType:int32;
+	ItemID:int32;
+	ItemNum:int32;
+	Visible:[int32];
+}
+
+root_type JarItemShowPool;

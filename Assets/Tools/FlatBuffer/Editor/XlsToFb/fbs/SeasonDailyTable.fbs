@@ -1,0 +1,12 @@
+namespace ProtoTable.SeasonDailyTable;
+enum eCrypt :int{
+	code = 1570894362,}
+
+namespace ProtoTable;
+table SeasonDailyTable{
+	ID:int32;
+	MatchScore:[int32];
+	Rewards:[string];
+}
+
+root_type SeasonDailyTable;

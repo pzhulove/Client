@@ -1,0 +1,70 @@
+namespace ProtoTable.ActivityDungeonTable;
+enum eActivityType:int { 
+	None = 0,    // 空类型
+	TimeLimit = 1,    // 限时活动
+	Daily = 2,    // 每日活动
+	Reward = 3,    // 奖励界面
+}
+enum eDropType:int { 
+	DropType_None = 0,   // default
+	DungeonDrop = 1,    // 根据地下城ID
+	CustomDrop = 2,    // 自定义名字
+}
+enum eSubItemOpenType:int { 
+	SubItemOpenType_None = 0,   // default
+	DungeonFrame = 1,    // 根据地下城ID
+	CommonFrame = 2,    // 通用活动界面
+}
+enum eSubNameType:int { 
+	SubNameType_None = 0,   // default
+	DungeonName = 1,    // 根据地下城ID
+	CustomName = 2,    // 自定义名字
+}
+enum eDescriptionType:int { 
+	DescriptionType_None = 0,   // default
+	DungeonDescription = 1,    // 根据地下城ID
+	CustomDescription = 2,    // 自定义名字
+}
+namespace ProtoTable.ActivityDungeonTable;
+enum eCrypt :int{
+	code = 1582105103,}
+
+namespace ProtoTable;
+table ActivityDungeonTable{
+	ID:int32;
+	Name:string;
+	ActivityID:[int32];
+	ImagePath:string;
+	OpenTime:string;
+	OpenTimeHaveBg:string;
+	ShowModeFlag:bool;
+	ModeBoardPath:string;
+	ModeIconPath:string;
+	Mode:string;
+	ActivityType:ActivityDungeonTable.eActivityType;
+	ActivityTypeDesc:string;
+	SingleTabIcon:string;
+	DungeonID:int32;
+	CollectDataPath:string;
+	ShowCount:bool;
+	ShowCountDesc:string;
+	DropType:ActivityDungeonTable.eDropType;
+	DropItems:[int32];
+	DropShow1:[int32];
+	DropShow2:[int32];
+	DropShow3:[int32];
+	TabPriority:int32;
+	TabName:string;
+	SubPriority:int32;
+	SubItemOpenType:ActivityDungeonTable.eSubItemOpenType;
+	SubNameType:ActivityDungeonTable.eSubNameType;
+	SubName:string;
+	DescriptionType:ActivityDungeonTable.eDescriptionType;
+	Description:string;
+	ExtraDescription:string;
+	PlayDescription:string;
+	GoLinkInfo:string;
+	DailyActivityType:int32;
+}
+
+root_type ActivityDungeonTable;

@@ -1,0 +1,16 @@
+namespace ProtoTable.LegendMainTable;
+enum eCrypt :int{
+	code = 89418144,}
+
+namespace ProtoTable;
+table LegendMainTable{
+	ID:int32;
+	SortID:int32;
+	Desc:string;
+	LinkItems:[int32];
+	UnLockLevel:int32;
+	Icons:[string];
+	missionIds:[int32];
+}
+
+root_type LegendMainTable;

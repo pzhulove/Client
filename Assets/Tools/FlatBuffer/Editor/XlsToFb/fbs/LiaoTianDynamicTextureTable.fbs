@@ -1,0 +1,21 @@
+namespace ProtoTable.LiaoTianDynamicTextureTable;
+enum eType:int { 
+	Image = 0,    // 纹理
+	FrameSprite = 1,    // 序列帧 
+}
+namespace ProtoTable.LiaoTianDynamicTextureTable;
+enum eCrypt :int{
+	code = -437325895,}
+
+namespace ProtoTable;
+table LiaoTianDynamicTextureTable{
+	ID:int32;
+	Icon:string;
+	Width:int32;
+	Height:int32;
+	Size:int32;
+	Type:LiaoTianDynamicTextureTable.eType;
+	Param:[string];
+}
+
+root_type LiaoTianDynamicTextureTable;

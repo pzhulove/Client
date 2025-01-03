@@ -1,0 +1,14 @@
+namespace ProtoTable.SeasonTable;
+enum eCrypt :int{
+	code = -767684625,}
+
+namespace ProtoTable;
+table SeasonTable{
+	ID:int32;
+	SeasonEventType:int32;
+	SeasonCyclesType:int32;
+	StartDay:int32;
+	StartTime:int32;
+}
+
+root_type SeasonTable;

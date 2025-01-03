@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Skill_Ch03_sxshz_bingpojian_05
+  m_Shader: {fileID: 4800000, guid: 25a72fea2cd7a464792a173d754d949c, type: 3}
+  m_ShaderKeywords: _Distortion_Dissolve _PARTICLESORMESH_ON _SoftDissolveMode
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: db3ce7b2bb7af1548945f4a349825f4d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 2800000, guid: 32815cef31717fa4789541bfbfa3748b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: 4751a8cd8f913234ba88785026b10b86, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Displacement:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissipateCutoutTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveNoise:
+        m_Texture: {fileID: 2800000, guid: f7b50daa5c3b1e34b921bc88ea3f3b41, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTex:
+        m_Texture: {fileID: 2800000, guid: f7b50daa5c3b1e34b921bc88ea3f3b41, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionTex:
+        m_Texture: {fileID: 2800000, guid: a730c68c591a9db47a3adae230d66b03, type: 3}
+        m_Scale: {x: 0.3, y: 0.5}
+        m_Offset: {x: 0.1, y: -0.02}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: bd33d97bf0bbad440a4e21271f7499d5, type: 3}
+        m_Scale: {x: -1.15, y: 0.9}
+        m_Offset: {x: 1.11, y: -0.27}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTexture:
+        m_Texture: {fileID: 2800000, guid: 198736859a855e14590ccb1b0581596e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: 1c614f0cea01aa4438128376b11a1c58, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 0fcbbbc158418a343a02e93d287bf2c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _T_mask:
+        m_Texture: {fileID: 2800000, guid: 198736859a855e14590ccb1b0581596e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - UI_MASKABLE: 0
+    - _0_: 0.1
+    - _1_: 0
+    - _2_diffuse: 3
+    - _Alpha: 2
+    - _AlphaCutoff: 0
+    - _Alpha_Intensity: 1
+    - _BloomIntensity: 2
+    - _Brightness: 1
+    - _Conster: 1
+    - _Cutoff: 0.5
+    - _DD: 1
+    - _Depth: 0
+    - _Desaturate: 0
+    - _DestBlend: 10
+    - _DetailAddorMultiply: 0
+    - _DetailChoiceRGB: 0
+    - _DetailTexAngle: 0
+    - _DetailTexSpeed_U: 0
+    - _DetailTexSpeed_V: 0
+    - _DetailTexStrength: 1
+    - _Displacement_x_intensity: 0
+    - _Displacement_y_intensity: 0
+    - _DissipateAmount: 0
+    - _DissipateCutoutThreshold: 0.015
+    - _DissipateSoftCutout: 1
+    - _Disslove: 0
+    - _Dissolve: 0
+    - _DissolveAmount: 0.1
+    - _DissolveMode: 0
+    - _DissolveRange: 0.01
+    - _DissolveSchedule: -0.44
+    - _DistForceU: 1
+    - _DistForceV: 1
+    - _DistTime: 0.1
+    - _DistortionIntensity: 0.1
+    - _DistortionSpeedU: 0
+    - _DistortionSpeedV: 0
+    - _EdgeHighlight: 0
+    - _EdgeWidth: 0
+    - _Exp: 1
+    - _ForceX: 0.03
+    - _ForceY: 0.03
+    - _FresnelInt: 1
+    - _FresnelToggle: 0
+    - _FxCullMode: 0
+    - _FxDstBlend: 10
+    - _FxSrcBlend: 5
+    - _HeatTime: 0.2
+    - _Intensity: 1
+    - _InvFade: 1
+    - _MMultiplier: 6
+    - _MainSpeedU: 0
+    - _MainSpeedV: 0
+    - _MainTexAngle: 0
+    - _MainTexPannerX: 0
+    - _MainTexPannerY: 0
+    - _MainTexSpeed_U: 0
+    - _MainTexSpeed_V: 0
+    - _MainTexStrength: 1
+    - _MaskAlphaCutoff: 0
+    - _MaskSpeedU: 0
+    - _MaskSpeedV: 0
+    - _MaskTexAngle: 0
+    - _MaskToggle: 0
+    - _MaskUVSpeedMode: 0
+    - _Mesh_depth: 0
+    - _Mesh_depth_Intensity: 0
+    - _N_BY_KD: 0
+    - _N_BY_QD: 1
+    - _N_mask: 0.8
+    - _Particlesormesh: 1
+    - _RgbAsAlpha: 0
+    - _RimLightAlpha: 1
+    - _RimLightCenterAlpha: 1
+    - _RimLightIntensity: 1
+    - _RimLightPower: 1
+    - _Scroll2X: 0
+    - _Scroll2Y: 0
+    - _ScrollX: 0
+    - _ScrollY: 0
+    - _SineAmplX: 0
+    - _SineAmplX2: 0
+    - _SineAmplY: 0
+    - _SineAmplY2: 0
+    - _SineFreqX: 0
+    - _SineFreqX2: 0
+    - _SineFreqY: 0
+    - _SineFreqY2: 0
+    - _SoftDissolveMode: 1
+    - _SoftEdge: 0.714
+    - _U_Mirror: 0
+    - _UesZW: 0
+    - _UseParticlesAlphaCutout: 0
+    - _V_Mirror: 0
+    - _VertexAnimation: 0
+    - _WindEdgeFlutter: 0.5
+    - _WindEdgeFlutterFreqScale: 0.5
+    - _ZTest: 4
+    - _dis_x_time: 0
+    - _dis_y_time: 0
+    - _fororones: 0
+    - _mask_x_speed: 0
+    - _mask_y_speed: 0
+    - _roralpha: 0
+    - _testValue: 1
+    m_Colors:
+    - _3_color: {r: 1, g: 1, b: 1, a: 1}
+    - _C_BYcolor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissipateColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveColor: {r: 0.9632353, g: 0.9632353, b: 0.9632353, a: 1}
+    - _DistRGBA: {r: 0, g: 0, b: 0, a: 1}
+    - _EdgeColor: {r: 0.004240712, g: 0, b: 0.028301895, a: 0.60784316}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MaskRGBA: {r: 0, g: 0, b: 0, a: 1}
+    - _RimLightColor: {r: 1, g: 1, b: 0, a: 1}
+    - _Speed: {r: 0, g: 0, b: 0, a: 0}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UIMaskRect: {r: 1, g: 1, b: 1, a: 1}
+    - _Wind: {r: 1, g: 1, b: 1, a: 1}

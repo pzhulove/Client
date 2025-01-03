@@ -1,0 +1,98 @@
+namespace ProtoTable.NewbieGuideTable;
+enum eNewbieGuideTask:int { 
+	None = 0,    // 无
+	FirstFight = 1,    // 第一场战斗引导
+	AutoTraceGuide = 2,    // 自动寻路引导
+	GuanKaGuide = 3,    // 关卡选择引导
+	DoubleClickRunGuide = 4,    // 双击奔跑引导
+	DungeonRewardGuide = 5,    // 翻卡牌引导
+	ReturnToTownGuide = 6,    // 回城引导
+	EquipmentGuide = 7,    // 装备引导
+	AutoTraceGuide2 = 8,    // 自动寻路引导2
+	JumpBackGuide = 9,    // 后跳引导
+	QuickEquipGuide = 10,    // 快速穿戴引导
+	RewardBoxGuide = 11,    // 关卡宝箱引导
+	EvaluateGuide = 12,    // 评价引导
+	DrugGuide = 13,    // 单局药品使用引导
+	SuperArmorGuide = 14,    // 霸体引导
+	CounterGuide = 15,    // 破招引导
+	MagicPotGuide = 16,    // 魔罐引导
+	SkillGuide = 17,    // 技能引导
+	DrugSetGuide = 18,    // 药品配置引导
+	SkillLevelUpGuide = 19,    // 技能升级引导
+	RankListGuide = 20,    // 排行榜引导
+	WelfareGuide = 21,    // 福利界面引导
+	ForgeGuide = 22,    // 锻冶引导
+	DuelGuide = 23,    // 决斗场引导
+	MakeEquipGuide = 24,    // 打造引导
+	EntourageGuide = 25,    // 随从引导
+	EntourageSkillGuide = 26,    // 随从技能引导
+	EntourageSkillLvUpGuide = 27,    // 随从技能升级引导
+	AutoFightGuide = 28,    // 自动战斗引导
+	MarketGuide = 29,    // 拍卖行引导
+	DailyTaskGuide = 30,    // 日常任务引导
+	TitleGuide = 31,    // 称号引导
+	BattlePreJobSkillGuide = 32,    // 单局内预转职技能引导
+	ArmorMasterGuide = 33,    // 护甲精通引导
+	BufferSkillGuide = 34,    // 增益技能引导
+	DeathTowerGuide = 35,    // 死亡塔引导
+	BeatCowGuide = 36,    // 牛头怪乐园引导
+	GuildGuide = 37,    // 公会引导
+	EnchantGuide = 38,    // 附魔引导
+	DegeneratorGuide = 39,    // 次元石引导
+	ChangeJobChoiceGuide = 40,    // 转职选择职业引导
+	TeamBossGuide = 41,    // 组队Boss引导
+	EntourageWashGuide = 42,    // 随从洗练引导
+	FriendGuide = 43,    // 好友引导
+	TeamGuide = 44,    // 组队引导
+	MissionGuide = 45,    // 任务面板引导
+	ChangeJobSkillGuide = 46,    // 转职后技能引导
+	FirstChargeGuide = 47,    // 首冲引导
+	ArmorPunishGuide = 48,    // 护甲惩罚引导
+	BreakDownHaveWhiteGuide = 49,    // 有白色装备时一键分解引导
+	BreakDownHavenotWhiteGuide = 50,    // 无白色装备时一键分解引导
+	NextBoxGuide = 51,    // 魔盒引导
+	SkillComboGuide1 = 52,    // 连招教学1
+	SkillComboGuide2 = 53,    // 连招教学2
+	TwoWeaponsGuide = 54,    // 双武器引导
+	AbyssGuide1 = 55,    // 深渊引导1
+	AbyssGuide2 = 56,    // 深渊引导2
+	AbyssGuide3 = 57,    // 深渊引导3
+	HandbookGuide = 58,    // 装备图鉴引导
+	ExchangeShopGuide = 59,    // 兑换商店引导
+	AncientGuide = 60,    // 远古副本引导
+	YiJieOpenGuide = 61,    // 异界章节引导
+}
+enum eNewbieGuideType:int { 
+	NGT_None = 0,    // 无
+	        NGT_FORCE = 1,    // 强制引导
+	        NGT_WEAK = 2,    // 弱引导
+	        NGT_ALL = 3,    // 总数
+}
+enum eGuideSubType:int { 
+	GST_NONE = 0,    // 无
+	        GST_ALONE = 1,    // 单独触发
+	        GST_FINISH_TALK_DIALOG = 2,    // 完成对话时触发
+	GST_ACCEPT_MISSION = 3,    // 接取任务时触发
+	GST_FINISH_MISSION = 4,    // 完成任务时触发
+	GST_RECEIVE_MISSION_AWARD = 5,    // 完成任务领取奖励时触发
+}
+namespace ProtoTable.NewbieGuideTable;
+enum eCrypt :int{
+	code = 1395428350,}
+
+namespace ProtoTable;
+table NewbieGuideTable{
+	ID:int32;
+	Name:string;
+	NewbieGuideTask:NewbieGuideTable.eNewbieGuideTask;
+	Order:int32;
+	IsOpen:int32;
+	NewbieGuideType:NewbieGuideTable.eNewbieGuideType;
+	GuideSubType:NewbieGuideTable.eGuideSubType;
+	CloseFrames:bool;
+	ScriptDataPath:string;
+	AudioIDList:[int32];
+}
+
+root_type NewbieGuideTable;

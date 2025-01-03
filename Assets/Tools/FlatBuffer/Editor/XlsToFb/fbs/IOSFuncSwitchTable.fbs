@@ -1,0 +1,31 @@
+namespace ProtoTable.IOSFuncSwitchTable;
+enum eType:int { 
+	NONE = 0,    // 无效
+	SEVEN_AWARDS = 1,    // 七日活动及引导
+	GAME_CDK = 2,    // 游戏cdk
+	GAME_SERVICE = 3,    // 游戏客服
+	SERVICE_LIST = 4,    // 苹果服务器默认列表
+	PAY_CHANNEL_CHANGE = 5,    // 苹果支付与渠道切换
+	LIMITTIME_GIFT = 6,    // 限时条件礼包(弹窗&商城页签)
+	LIMITTIME_ACTIVITY = 7,    // 限时活动
+	ADS_PUSH = 8,    // 推送和进度条
+	LIMITTIME_JAR = 9,    // 限时袖珍罐
+	SHARE_TEXT_CHANGE = 10,    // 分享功能改字
+	SELECT_CREATE_ROLE_TAB = 11,    // 选角页签
+	MAINTAIN_TIPS = 12,    // 维护提示中的QQ提示信息修改
+	GAME_WAIGUA = 13,    // 防外挂功能
+	Bounty_League = 14,    // 赏金联赛
+}
+namespace ProtoTable.IOSFuncSwitchTable;
+enum eCrypt :int{
+	code = 1359211187,}
+
+namespace ProtoTable;
+table IOSFuncSwitchTable{
+	ID:int32;
+	Name:string;
+	Type:IOSFuncSwitchTable.eType;
+	Value:int32;
+}
+
+root_type IOSFuncSwitchTable;

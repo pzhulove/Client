@@ -1,0 +1,16 @@
+namespace ProtoTable.BeadConvertDropTable;
+enum eCrypt :int{
+	code = 514040138,}
+
+namespace ProtoTable;
+table BeadConvertDropTable{
+	ID:int32;
+	DropPackID:int32;
+	ItemID:int32;
+	ItemNum:int32;
+	ItemName:int32;
+	Weight:int32;
+	Text:string;
+}
+
+root_type BeadConvertDropTable;

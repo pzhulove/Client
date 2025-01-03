@@ -1,0 +1,14 @@
+namespace ProtoTable.LimiteBargainShowTable;
+enum eCrypt :int{
+	code = -961920999,}
+
+namespace ProtoTable;
+table LimiteBargainShowTable{
+	ID:int32;
+	ShowType:int32;
+	ShowItem:int32;
+	GoblinCoins:int32;
+	Price:int32;
+}
+
+root_type LimiteBargainShowTable;

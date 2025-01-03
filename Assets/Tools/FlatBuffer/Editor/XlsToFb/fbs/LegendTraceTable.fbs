@@ -1,0 +1,19 @@
+namespace ProtoTable.LegendTraceTable;
+enum eCrypt :int{
+	code = -1734328602,}
+
+namespace ProtoTable;
+table LegendTraceTable{
+	ID:int32;
+	Title:string;
+	ItemIds:[int32];
+	ItemCounts:[int32];
+	Icons:[string];
+	ActionDesc:[string];
+	LinkInfo:string;
+	KeyValueDesc:string;
+	LinkMissionID:int32;
+	IsShowNumber:int32;
+}
+
+root_type LegendTraceTable;

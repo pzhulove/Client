@@ -1,0 +1,13 @@
+namespace ProtoTable.ActivityJarTable;
+enum eCrypt :int{
+	code = 79917002,}
+
+namespace ProtoTable;
+table ActivityJarTable{
+	ID:int32;
+	JarID:int32;
+	ActivityBG:string;
+	ActivityRule:string;
+}
+
+root_type ActivityJarTable;

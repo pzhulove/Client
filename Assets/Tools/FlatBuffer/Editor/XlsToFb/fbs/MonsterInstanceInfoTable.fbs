@@ -1,0 +1,16 @@
+namespace ProtoTable.MonsterInstanceInfoTable;
+enum eCrypt :int{
+	code = -949526359,}
+
+namespace ProtoTable;
+table MonsterInstanceInfoTable{
+	ID:int32;
+	Name:string;
+	Sight:int32;
+	AIActionPath:string;
+	BornBuffIDs:[int32];
+	BornBuffInfoIDs:[int32];
+	BornMechismIDs:[int32];
+}
+
+root_type MonsterInstanceInfoTable;

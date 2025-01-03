@@ -1,0 +1,14 @@
+namespace ProtoTable.BetHorseMap;
+enum eCrypt :int{
+	code = 2141412036,}
+
+namespace ProtoTable;
+table BetHorseMap{
+	ID:int32;
+	MapPhase:int32;
+	NextMap:int32;
+	Name:string;
+	TerrainPaths:[string];
+}
+
+root_type BetHorseMap;

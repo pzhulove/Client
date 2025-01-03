@@ -1,0 +1,12 @@
+namespace ProtoTable.ChampionBattleTable;
+enum eCrypt :int{
+	code = -146039425,}
+
+namespace ProtoTable;
+table ChampionBattleTable{
+	ID:int32;
+	Name:string;
+	Icon:string;
+}
+
+root_type ChampionBattleTable;

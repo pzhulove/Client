@@ -1,0 +1,13 @@
+namespace ProtoTable.AntiAddictTimeTable;
+enum eCrypt :int{
+	code = -2080035546,}
+
+namespace ProtoTable;
+table AntiAddictTimeTable{
+	ID:int32;
+	IsHoliday:int32;
+	Age:int32;
+	GameTime:int32;
+}
+
+root_type AntiAddictTimeTable;

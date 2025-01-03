@@ -1,0 +1,15 @@
+namespace ProtoTable.AdventurePassRewardTable;
+enum eCrypt :int{
+	code = -320472002,}
+
+namespace ProtoTable;
+table AdventurePassRewardTable{
+	ID:int32;
+	Season:int32;
+	Lv:int32;
+	Normal:string;
+	High:string;
+	Exp:int32;
+}
+
+root_type AdventurePassRewardTable;

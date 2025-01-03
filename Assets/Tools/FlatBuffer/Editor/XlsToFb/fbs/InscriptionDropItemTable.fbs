@@ -1,0 +1,20 @@
+namespace ProtoTable.InscriptionDropItemTable;
+enum eCrypt :int{
+	code = 853950550,}
+
+namespace ProtoTable;
+table InscriptionDropItemTable{
+	ID:int32;
+	 GroupID:int32;
+	ChooseNumSet:[int32];
+	NumProbSet:[int32];
+	DataType:int32;
+	ItemID:int32;
+	ItemProb:int32;
+	ItemNum:[int32];
+	OccuAddition:[int32];
+	AdditionProb:int32;
+	Text:string;
+}
+
+root_type InscriptionDropItemTable;

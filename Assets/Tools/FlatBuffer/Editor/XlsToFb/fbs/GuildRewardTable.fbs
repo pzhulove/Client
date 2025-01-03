@@ -1,0 +1,12 @@
+namespace ProtoTable.GuildRewardTable;
+enum eCrypt :int{
+	code = 28736830,}
+
+namespace ProtoTable;
+table GuildRewardTable{
+	ID:int32;
+	TargetScore:int32;
+	ItemReward:[string];
+}
+
+root_type GuildRewardTable;

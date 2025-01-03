@@ -1,0 +1,17 @@
+namespace ProtoTable.MagicCardComposTable;
+enum eCrypt :int{
+	code = 1962639266,}
+
+namespace ProtoTable;
+table MagicCardComposTable{
+	ID:int32;
+	Color:int32;
+	Stage:int32;
+	TargetColor:int32;
+	TargetStage:int32;
+	Rate:int32;
+	CostItemId:int32;
+	CostNum:int32;
+}
+
+root_type MagicCardComposTable;

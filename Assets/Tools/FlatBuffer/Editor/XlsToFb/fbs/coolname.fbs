@@ -1,0 +1,11 @@
+namespace ProtoTable.coolname;
+enum eCrypt :int{
+	code = 498103660,}
+
+namespace ProtoTable;
+table coolname{
+	ID:int32;
+	Char:int32;
+}
+
+root_type coolname;

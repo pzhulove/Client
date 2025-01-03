@@ -1,0 +1,28 @@
+namespace ProtoTable.ResTable;
+enum eType:int { 
+	Type_None = 0,   // default
+	ACTOR = 1,    // 角色
+	ENTITY = 2,    // 实体
+	DESTROYABLE = 3,    // 可破坏物
+	DECORATOR = 4,    // 修饰物
+	EQUIP = 5,    // 装备 
+}
+namespace ProtoTable.ResTable;
+enum eCrypt :int{
+	code = 482489050,}
+
+namespace ProtoTable;
+table ResTable{
+	ID:int32;
+	Name:string;
+	Type:ResTable.eType;
+	newFashion:bool;
+	IconPath:string;
+	ParentName:string;
+	ModelPath:string;
+	ActionConfigPath:[string];
+	ActionConfigPath2:string;
+	WeaponHitSFX:int32;
+}
+
+root_type ResTable;

@@ -1,0 +1,18 @@
+namespace ProtoTable.HireTask;
+enum eCrypt :int{
+	code = 486286475,}
+
+namespace ProtoTable;
+table HireTask{
+	ID:int32;
+	Type:int32;
+	FullCnt:int32;
+	Rewards:string;
+	RefreshType:int32;
+	Identify:int32;
+	Param:[int32];
+	Describe:string;
+	Link:int32;
+}
+
+root_type HireTask;

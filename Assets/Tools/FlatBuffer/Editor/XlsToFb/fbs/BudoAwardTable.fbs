@@ -1,0 +1,18 @@
+namespace ProtoTable.BudoAwardTable;
+enum eCrypt :int{
+	code = 41054139,}
+
+namespace ProtoTable;
+table BudoAwardTable{
+	ID:int32;
+	Times:int32;
+	MaxTimes:int32;
+	JarType:[int32];
+	desc:string;
+	wins:string;
+	news:string;
+	idles:string;
+	GetPreview:string;
+}
+
+root_type BudoAwardTable;

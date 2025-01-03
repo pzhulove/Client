@@ -1,0 +1,24 @@
+namespace ProtoTable.AccountCounterTable;
+enum eAccountCounterType:int { 
+	ACC_COUNTER_INVALID = 0,    // 非法值
+	ACC_COUNTER_BLESS_CRYSTAL = 1,    // 佣兵勋章
+	ACC_COUNTER_BLESS_CRYSTAL_EXP = 2,    // 佣兵勋章经验
+	ACC_COUNTER_INHERIT_BLESS = 3,    // 成长药剂
+	ACC_COUNTER_INHERIT_BLESS_EXP = 4,    // 成长药剂经验
+	 ACC_COUNTER_BOUNTY = 6,    // 赏金
+	ACC_GUILD_REDPACKET_DAILY_MAX = 7,    // 公会红包账号日领取上线
+	ACC_COUNTER_LOGIC_WEEK_REFRESH = 100,    // 账号逻辑周刷新
+}
+namespace ProtoTable.AccountCounterTable;
+enum eCrypt :int{
+	code = 44849655,}
+
+namespace ProtoTable;
+table AccountCounterTable{
+	ID:int32;
+	AccountCounterType:AccountCounterTable.eAccountCounterType;
+	RefreshType:int32;
+	RefreshTimePoint:string;
+}
+
+root_type AccountCounterTable;

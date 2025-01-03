@@ -1,0 +1,32 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.OneKeyWearTable;
+enum eEquipType:int { 
+	EQUIP_NORMAL = 0,    // 普通装备
+	EQUIP_HAVE_SMELL = 1,    // 带气息的装备
+	EQUIP_RED = 2,    // 红字装备
+}
+enum eEnhanceType:int { 
+	ENHANCE_INVALID = 0,    // 无效
+	ENHANCE_STRENTH = 1,    // 力量
+	ENHANCE_INTELLECT = 2,    // 智力
+	ENHANCE_STAMINA = 3,    // 体力
+	ENHANCE_SPIRIT = 4,    // 精神
+}
+namespace ProtoTable.OneKeyWearTable;
+enum eCrypt :int{
+	code = -1060501672,}
+
+namespace ProtoTable;
+table OneKeyWearTable{
+	ID:int32;
+	Job:int32;
+	JobName:string;
+	Name:string;
+	EquipList:[UnionCell];
+	FashionList:[UnionCell];
+	EquipType:OneKeyWearTable.eEquipType;
+	EnhanceType:OneKeyWearTable.eEnhanceType;
+}
+
+root_type OneKeyWearTable;

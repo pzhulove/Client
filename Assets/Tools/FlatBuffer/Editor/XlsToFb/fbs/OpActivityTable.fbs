@@ -1,0 +1,115 @@
+namespace ProtoTable.OpActivityTable;
+enum eTmplateType:int { 
+	TmplateType_None = 0,   // default
+	OAT_DAY_LOGIN = 10,    // 每日登陆
+	OAT_PLAYER_LEVEL_UP = 15,    // 玩家升级
+	OAT_BIND_PHONE = 16,    // 手机绑定
+	OAT_MALL_DISCOUNT_FOR_NEW_SERVER = 1000,    // 新服商城时装打折
+	OAI_LEVEL_FIGHTING_FOR_NEW_SERVER = 1001,    // 新服冲级赛竞争阶段
+	OAI_LEVEL_SHOW_FOR_NEW_SERVER = 1002,    // 新服冲级赛公示阶段
+	OAT_DUNGEON_DROP_ACTIVITY = 1100,    // 地下城掉落活动
+	OAT_DUNGEON_EXP_ADDITION = 1200,    // 地下城结算经验加成
+	OAT_PVP_PK_COIN = 1300,    // 决斗币奖励
+	OAT_APPOINTMENT_OCCU = 1400,    // 预约职业活动
+	OAT_HELL_TICKET_FOR_DRAW_PRIZE = 1500,    // 深渊票消耗得抽奖
+	OAT_FATIGUE_FOR_BUFF = 1600,    // 疲劳消耗得BUFF
+	OAT_FATIGUE_FOR_TOKEN_COIN = 1700,    // 疲劳消耗得代币
+	OAT_FATIGUE_BURNING = 1800,    // 疲劳燃烧
+	OAT_GAMBING = 1900,    // 夺宝活动
+	OAT_DAILY_REWARD = 2000,    // 每日奖励
+	OAT_MAGPIE_BRIDGE = 2100,    // 七夕鹊桥
+	OAT_MONTH_CARD = 2200,    // 月卡活动
+	OAT_BUFF_ADDITION = 2300,    // BUFF加成活动
+	OAT_DUNGEON_DROP_RATE_ADDITION = 2400,    // 掉落倍率加成
+	OAT_CHANGE_FASHION = 2500,    // 百变换装
+	OAT_CHANGE_FASHION_EXCHANGE = 2600,    // 绝版兑换
+	OAT_CHANGE_FASHION_WELFARE = 2700,    // 换装福利
+	OAT_DUNGEON_RANDOM_BUFF  = 2800,    // 地下城随机buff活动
+	OAT_DUNGEON_CLEAR_GET_REWARD = 2900,    // 地下城通关得奖励
+	OAT_BUY_FASHION_TICKET = 3000,    // 换装卷购买活动
+	OAT_BUFF_PRAY = 3100,    // BUFF祈福
+	OAT_STRENGTHEN_TICKET_MERGE = 3200,    // 强化券合成
+	OAT_CHANGE_FASHION_ACT = 3300,    // 百变换装节大活动
+	OAT_MALL_BUY_GOT = 3400,    // 商城购买活动
+	OAT_ARTIFACT_JAR = 3500,    // 神器罐子活动
+	OAT_JAR_DRAW_LOTTERY = 3600,    // 罐子抽奖活动
+	OAT_LIMIT_TIME_HELL = 3700,    // 地下城限时活动
+	OAT_PET_GIFT_PACK = 3800,    // 宠物礼包活动
+	OAT_MALL_BINDINGGOLD = 3900,    // 绑金商店活动
+	OAT_BLACK_MARKET_SHOP = 4000,    // 黑市商人活动
+	OAT_RETURN_GIFT = 4100,    // 回归赠礼活动
+	OAT_ACCOUNT_SHOP = 4200,    // 账号兑换活动
+	OAT_RETURN_REBATE = 4300,    // 回归返利
+	OAT_CHALLENGE_CHAPTER = 4400,    // 挑战深渊
+	OAT_RETURN_PRIVILEGE = 4500,    // 回归特权
+	OAT_WEEK_DEEP = 4600,    // 周常深渊
+	OAT_BUY_PRRSENT = 4700,    // 购买赠送
+	OAT_CUMULATE_LOGIN_REWARD = 4800,    // 累计登录领奖
+	OAT_PASS_DUNGEON_REWARD = 4900,    // 累计通关地下城领奖
+	OAT_LIMIT_TIME_GIFT_PACK = 5000,    // 限时礼包
+	OAT_HORSE_GAMBLING = 5100,    // 赌马
+	OAT_ARTIFACT_JAR_SHOW = 5200,    // 神器罐展示活动
+	OAT_PROMOTE_EQUIP_STRENGTHEN_RATE = 5300,    // 提升装备强化成功概率
+	OAT_WEEK_SIGN_ACTIVITY = 5500,    // 活动周签到活动
+	OAT_WEEK_CHALLENGE = 5600,    // 每周挑战活动
+	OAT_FLYUP_GIFT = 5900,    // 不在商城出售的礼包
+	OAT_TEAM_COPY_SUPPORT = 6000,    // 团本扶持
+	OAT_ANNIVE_CUMULATE_ONLINE = 6100,    // 周年庆累计在线
+	OAT_HALLOWEEN_PUMPKIN_HELMET = 6300,    // 万圣节南瓜头
+	OAT_NEW_YEAR_2020 = 6400,    // 元旦2020
+	OAT_MONEY_CONSUME_REBATE = 6500,    // 点券消费返利
+	OAT_CHALLENGE_HUB = 6600,    // 挑战者俱乐部
+	OAT_NEW_SERVER_GIFT_DISCOUNT = 6800,    // 新服礼包折扣
+	OAT_CHALLENGE_HUB_SCORE = 7200,    // 挑战者俱乐部积分
+	OAT_SPRING_CHALLENGE = 7300,    // 春季挑战活动
+	OAT_SPRING_CHALLENGE_SCORE = 7400,    // 春季挑战积分活动
+	OAT_WEEK_SIGN_SPRING = 7500,    // 2020春季每周签到
+	OAT_ONLINE_GIFT = 7600,    // 在线礼包
+	OAT_PLANT_TREE = 7700,    // 植树大挑战
+	OAT_FASHION_COMP = 7800,    // 时装合成活动
+	OAT_GNOME_COIN_GIFT = 7900,    // 地精币回馈大礼
+	OAT_WHOLE_BARGAIN_DISCOUNT = 50001,    // 全民砍价打折
+	OAT_WHOLE_BARGAIN_SHOP = 50002,    // 全民砍价团购
+}
+namespace ProtoTable.OpActivityTable;
+enum eCrypt :int{
+	code = 1784045956,}
+
+namespace ProtoTable;
+table OpActivityTable{
+	ID:int32;
+	TmplateType:OpActivityTable.eTmplateType;
+	Name:string;
+	Tag:int32;
+	PrepareTime:int32;
+	TagEndTime:int32;
+	StartTime:int32;
+	EndTime:int32;
+	PlayerLevelLimit:int32;
+	MinLevel:int32;
+	MaxLevel:int32;
+	NeedStartServiceTime:string;
+	StartTimeFromService:string;
+	EndTimeFromService:string;
+	StartTimeFromFirstService:string;
+	EndTimeFromFirstService:string;
+	OpenInterval:string;
+	CloseInterval:string;
+	Description:string;
+	RuleDscription:string;
+	CircleType:int32;
+	Param:int32;
+	Param2:[int32];
+	Task:string;
+	LogoDesc:string;
+	BgPath:string;
+	TextIconPath:string;
+	SuperNewService:int32;
+	CountParam:string;
+	Param3:[int32];
+	PrefabPath:string;
+	LogoPath:string;
+	paramStr:string;
+}
+
+root_type OpActivityTable;

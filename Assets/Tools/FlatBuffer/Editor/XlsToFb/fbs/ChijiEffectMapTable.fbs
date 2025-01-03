@@ -1,0 +1,25 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.ChijiEffectMapTable;
+enum eCrypt :int{
+	code = 196207592,}
+
+namespace ProtoTable;
+table ChijiEffectMapTable{
+	ID:int32;
+	Name:string;
+	DamageRatePVP:UnionCell;
+	DamageFixedValuePVP:UnionCell;
+	Attack:UnionCell;
+	FloatingRate:UnionCell;
+	HitFloatXForce:UnionCell;
+	HitFloatYForce:UnionCell;
+	SummonLevel:UnionCell;
+	BuffLevel:UnionCell;
+	AttachBuffRate:UnionCell;
+	AttachBuffTime:UnionCell;
+	BuffAttack:UnionCell;
+	PVPBuffInfoID:[int32];
+}
+
+root_type ChijiEffectMapTable;

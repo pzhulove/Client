@@ -1,0 +1,12 @@
+namespace ProtoTable.BuffRandomTable;
+enum eCrypt :int{
+	code = 2130836854,}
+
+namespace ProtoTable;
+table BuffRandomTable{
+	ID:int32;
+	BuffId:int32;
+	Weight:int32;
+}
+
+root_type BuffRandomTable;

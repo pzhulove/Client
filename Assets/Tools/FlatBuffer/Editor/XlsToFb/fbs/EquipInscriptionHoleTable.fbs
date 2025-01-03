@@ -1,0 +1,42 @@
+namespace ProtoTable.EquipInscriptionHoleTable;
+enum eColor:int { 
+	CL_NONE = 0,    // 没有
+	WHITE = 1,    // 白
+	BLUE = 2,    // 蓝
+	PURPLE = 3,    // 紫
+	GREEN = 4,    // 绿
+	PINK = 5,    // 粉
+	YELLOW = 6,    // 橙
+}
+enum eSubType:int { 
+	SubType_None = 0,   // default
+	WEAPON = 1,    // 武器
+	HEAD = 2,    // 头部
+	CHEST = 3,    // 胸
+	BELT = 4,    // 腰带
+	LEG = 5,    // 护腿
+	BOOT = 6,    // 鞋子
+	RING = 7,    // 戒指
+	NECKLASE = 8,    // 项链
+	BRACELET = 9,    // 手镯
+	ST_ASSIST_EQUIP = 99,    // 辅助装备
+	ST_MAGICSTONE_EQUIP = 100,    // 魔法石
+	ST_EARRINGS_EQUIP = 101,    // 耳环
+}
+namespace ProtoTable.EquipInscriptionHoleTable;
+enum eCrypt :int{
+	code = -1881302628,}
+
+namespace ProtoTable;
+table EquipInscriptionHoleTable{
+	ID:int32;
+	Color:EquipInscriptionHoleTable.eColor;
+	Color2:int32;
+	SubType:EquipInscriptionHoleTable.eSubType;
+	InscriptionHoleNum:int32;
+	InscriptionHoleColor:string;
+	ItemConsume:string;
+	GoldConsume:string;
+}
+
+root_type EquipInscriptionHoleTable;

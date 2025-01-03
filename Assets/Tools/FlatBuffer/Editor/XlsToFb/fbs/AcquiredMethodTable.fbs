@@ -1,0 +1,19 @@
+namespace ProtoTable.AcquiredMethodTable;
+enum eCrypt :int{
+	code = 1117580373,}
+
+namespace ProtoTable;
+table AcquiredMethodTable{
+	ID:int32;
+	Name:string;
+	LinkZone:string;
+	ActionDesc:string;
+	IsLink:int32;
+	FuncitonID:int32;
+	ProbilityDesc:string;
+	LinkInfo:string;
+	ReLinks:[int32];
+	ItemId:int32;
+}
+
+root_type AcquiredMethodTable;

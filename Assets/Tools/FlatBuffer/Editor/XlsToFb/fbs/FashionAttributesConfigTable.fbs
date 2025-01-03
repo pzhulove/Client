@@ -1,0 +1,15 @@
+namespace ProtoTable.FashionAttributesConfigTable;
+enum eCrypt :int{
+	code = -707526069,}
+
+namespace ProtoTable;
+table FashionAttributesConfigTable{
+	ID:int32;
+	Name:string;
+	DefaultAttribute_1:int32;
+	Attributes:[int32];
+	DefaultAttribute:int32;
+	FreeSelecteTimes:int32;
+}
+
+root_type FashionAttributesConfigTable;

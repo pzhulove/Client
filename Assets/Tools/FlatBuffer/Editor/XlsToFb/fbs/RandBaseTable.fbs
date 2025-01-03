@@ -1,0 +1,14 @@
+namespace ProtoTable.RandBaseTable;
+enum eCrypt :int{
+	code = 991702902,}
+
+namespace ProtoTable;
+table RandBaseTable{
+	ID:int32;
+	BaseRatio:int32;
+	QLP:[int32];
+	QLOMin:[int32];
+	QLOMax:[int32];
+}
+
+root_type RandBaseTable;

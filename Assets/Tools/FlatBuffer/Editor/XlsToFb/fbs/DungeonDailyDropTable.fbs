@@ -1,0 +1,12 @@
+namespace ProtoTable.DungeonDailyDropTable;
+enum eCrypt :int{
+	code = 223055862,}
+
+namespace ProtoTable;
+table DungeonDailyDropTable{
+	ID:int32;
+	DailyLimit:int32;
+	Items:string;
+}
+
+root_type DungeonDailyDropTable;

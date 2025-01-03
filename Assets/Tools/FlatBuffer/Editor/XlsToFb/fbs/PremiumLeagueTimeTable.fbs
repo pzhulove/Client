@@ -1,0 +1,26 @@
+namespace ProtoTable.PremiumLeagueTimeTable;
+enum eStatus:int { 
+	PLS_INIT = 0,    // 未开始
+	PLS_ENROLL = 1,    // 报名
+	PLS_PRELIMINAY = 2,    // 预选赛
+	PLS_FINAL_EIGHT_PREPARE = 3,    // 8强准备
+	PLS_FINAL_EIGHT = 4,    // 8强
+	PLS_FINAL_FOUR = 5,    // 4强
+	PLS_FINAL = 6,    // 决赛
+	PLS_FINAL_END = 7,    // 决赛结束
+}
+namespace ProtoTable.PremiumLeagueTimeTable;
+enum eCrypt :int{
+	code = 1851077999,}
+
+namespace ProtoTable;
+table PremiumLeagueTimeTable{
+	ID:int32;
+	Desc:string;
+	Status:PremiumLeagueTimeTable.eStatus;
+	Week:int32;
+	Time:string;
+	DurningTime:int32;
+}
+
+root_type PremiumLeagueTimeTable;

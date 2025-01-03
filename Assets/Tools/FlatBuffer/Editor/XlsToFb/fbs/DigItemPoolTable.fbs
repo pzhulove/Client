@@ -1,0 +1,30 @@
+namespace ProtoTable.DigItemPoolTable;
+enum eDigType:int { 
+	DIG_INVALID = 0,    // 无效
+	DIG_GLOD = 1,    // 金挖宝点
+	DIG_SILVER = 2,    // 银挖宝点
+}
+enum eDigItemType:int { 
+	DIT_INVALID = 0,    // 无效
+	DIT_NORMAL = 1,    // 普通
+	DIT_HIGHEST_GRADE = 2,    // 极品
+}
+namespace ProtoTable.DigItemPoolTable;
+enum eCrypt :int{
+	code = -351814127,}
+
+namespace ProtoTable;
+table DigItemPoolTable{
+	ID:int32;
+	DigType:DigItemPoolTable.eDigType;
+	DigItemType:DigItemPoolTable.eDigItemType;
+	Group:int32;
+	Priority:int32;
+	ItemID:int32;
+	ItemNum:int32;
+	BoxWeight:int32;
+	DigWeight:int32;
+	RewardID:int32;
+}
+
+root_type DigItemPoolTable;

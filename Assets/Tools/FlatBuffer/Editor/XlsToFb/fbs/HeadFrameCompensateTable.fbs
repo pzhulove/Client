@@ -1,0 +1,13 @@
+namespace ProtoTable.HeadFrameCompensateTable;
+enum eCrypt :int{
+	code = 502817246,}
+
+namespace ProtoTable;
+table HeadFrameCompensateTable{
+	ID:int32;
+	Type:int32;
+	NeedVal:int32;
+	HeadFrameId:int32;
+}
+
+root_type HeadFrameCompensateTable;

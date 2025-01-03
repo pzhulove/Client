@@ -1,0 +1,22 @@
+namespace ProtoTable.InstituteTable;
+enum eCrypt :int{
+	code = 696711107,}
+
+namespace ProtoTable;
+table InstituteTable{
+	ID:int32;
+	JobID:int32;
+	DifficultyType:int32;
+	Type:int32;
+	Title:string;
+	LevelLimit:int32;
+	MissionID:int32;
+	DungeonID:int32;
+	BuffID:[int32];
+	EnemyBuffID:[int32];
+	EquipmentID:[int32];
+	Resource:string;
+	Tip:string;
+}
+
+root_type InstituteTable;

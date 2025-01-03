@@ -1,0 +1,49 @@
+namespace ProtoTable.ChiJiTimeTable;
+enum eChickenType:int { 
+	ChickenType_None = 0,   // default
+	CHOOSE_ROLE = 1,    // 选角色
+	CHOOSE_JOB = 2,    // 选职业
+	PREPARE_TIME = 3,    // 准备时间
+	PUT_ITEM = 4,    // 道具投放波次
+	START_PK = 5,    // 开启战斗
+	POSION_SCOPE = 6,    // 毒圈
+}
+enum eBattleStage:int { 
+	BS_NONE = 0,    // 无
+	BS_CHOOSE_ROLE = 1,    // 选角色
+	BS_CHOOSE_JOB = 2,    // 选职业
+	BS_PREPARE_TIME = 3,    // 准备时间
+	BS_SAFE_AREA_0 = 4,    // 第0波安全区
+	BS_PUT_ITEM_1 = 5,    // 第一波投道具
+	BS_START_PK = 6,    // 开启战斗
+	BS_NPC_1 = 7,    // 第1波npc
+	BS_SAFE_AREA_1 = 8,    // 第1波安全区
+	BS_NPC_2 = 9,    // 第2波npc
+	BS_PUT_ITEM_2 = 10,    // 第2波投道具
+	BS_SAFE_AREA_2 = 11,    // 第2波安全区
+	BS_NPC_3 = 12,    // 第3波npc
+	BS_PUT_ITEM_3 = 13,    // 第3波投道具
+	BS_SAFE_AREA_3 = 14,    // 第3波安全区
+}
+namespace ProtoTable.ChiJiTimeTable;
+enum eCrypt :int{
+	code = 613655378,}
+
+namespace ProtoTable;
+table ChiJiTimeTable{
+	ID:int32;
+	ChickenType:ChiJiTimeTable.eChickenType;
+	ChickenTypeName:string;
+	BattleStage:ChiJiTimeTable.eBattleStage;
+	ChickenParameter:int32;
+	StartTime:int32;
+	ContinueTime:int32;
+	NextStage:int32;
+	ProgressTime:int32;
+	ContinueInjury:int32;
+	NextDuquanID:int32;
+	packIDs:[int32];
+	StageTip:string;
+}
+
+root_type ChiJiTimeTable;

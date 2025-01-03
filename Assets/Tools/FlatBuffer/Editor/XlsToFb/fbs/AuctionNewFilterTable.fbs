@@ -1,0 +1,14 @@
+namespace ProtoTable.AuctionNewFilterTable;
+enum eCrypt :int{
+	code = 787285637,}
+
+namespace ProtoTable;
+table AuctionNewFilterTable{
+	ID:int32;
+	FilterItemType:int32;
+	Name:string;
+	Sort:int32;
+	Parameter:[int32];
+}
+
+root_type AuctionNewFilterTable;

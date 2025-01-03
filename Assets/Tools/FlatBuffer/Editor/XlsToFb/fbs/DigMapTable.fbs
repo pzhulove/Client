@@ -1,0 +1,21 @@
+namespace ProtoTable.DigMapTable;
+enum eCrypt :int{
+	code = 2096015056,}
+
+namespace ProtoTable;
+table DigMapTable{
+	ID:int32;
+	Name:string;
+	GoldDigMinNum:int32;
+	GoldDigMaxNum:int32;
+	GoldRefreshHour:int32;
+	SilverDigMinNum:int32;
+	SilverDigMaxNum:int32;
+	SilverRefreshHour:int32;
+	DigMaxNum:int32;
+	MapResPath:string;
+	AtlasResPath:string;
+	MapRouteResPath:string;
+}
+
+root_type DigMapTable;

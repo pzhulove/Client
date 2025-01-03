@@ -1,0 +1,42 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.SummonInfoTable;
+enum eSummonPosType:int { 
+	FACE = 0,    // 面前一个单位
+	ORIGIN = 1,    // 原地
+	FACE_OFFSET = 2,    // 偏移自身指定的距离（*）
+	POSITION = 3,    // 指定坐标（*）
+	RANDOM = 4,    // 随机范围（*）
+}
+namespace ProtoTable.SummonInfoTable;
+enum eCrypt :int{
+	code = 769209279,}
+
+namespace ProtoTable;
+table SummonInfoTable{
+	ID:int32;
+	SummonID:int32;
+	Name:string;
+	SummonPosType:SummonInfoTable.eSummonPosType;
+	ConsiderBlock:int32;
+	SummonParam:[int32];
+	SummonDir:int32;
+	isSummonEnterVisionForbid:bool;
+	SummonDisplay:int32;
+	SummonNum:UnionCell;
+	SummonLevel:UnionCell;
+	SummonNumLimit:int32;
+	SummonGroupNumLimit:UnionCell;
+	SummonGroup:int32;
+	SummonRelation:int32;
+	SummonRandList:[int32];
+	KillLastSummon:int32;
+	ForceFollow:int32;
+	BirthActionName:string;
+	LifeTime:int32;
+	UseCampInTable:bool;
+	IsNotShowHpBar:bool;
+	IsNameNotShowLv:bool;
+}
+
+root_type SummonInfoTable;

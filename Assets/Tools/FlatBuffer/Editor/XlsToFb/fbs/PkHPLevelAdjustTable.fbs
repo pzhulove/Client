@@ -1,0 +1,14 @@
+namespace ProtoTable.PkHPLevelAdjustTable;
+enum eCrypt :int{
+	code = -1033802426,}
+
+namespace ProtoTable;
+table PkHPLevelAdjustTable{
+	ID:int32;
+	factor:int32;
+	Attackfactor:int32;
+	factor_chiji:int32;
+	Attackfactor_chiji:int32;
+}
+
+root_type PkHPLevelAdjustTable;

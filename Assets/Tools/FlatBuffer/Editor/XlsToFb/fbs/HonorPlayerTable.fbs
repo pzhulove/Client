@@ -1,0 +1,14 @@
+namespace ProtoTable.HonorPlayerTable;
+enum eCrypt :int{
+	code = -1904858675,}
+
+namespace ProtoTable;
+table HonorPlayerTable{
+	ID:int32;
+	name:string;
+	HornorPlayIcon:string;
+	Sort:int32;
+	OpenWeekDay:string;
+}
+
+root_type HonorPlayerTable;

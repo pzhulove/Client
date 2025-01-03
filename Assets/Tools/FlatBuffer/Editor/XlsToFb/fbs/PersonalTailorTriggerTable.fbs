@@ -1,0 +1,19 @@
+namespace ProtoTable.PersonalTailorTriggerTable;
+enum eCrypt :int{
+	code = -2059962389,}
+
+namespace ProtoTable;
+table PersonalTailorTriggerTable{
+	ID:int32;
+	SubCond:int32;
+	ActivateGoodsId:int32;
+	ActivateSubType:int32;
+	PlayerLevelLimit:int32;
+	LimitInterval:int32;
+	RoleActivateTimesLimit:int32;
+	Describing:string;
+	BgPath:string;
+	TypeID:int32;
+}
+
+root_type PersonalTailorTriggerTable;

@@ -1,0 +1,21 @@
+namespace ProtoTable.StrengthenTicketSynthesisTable;
+enum eCrypt :int{
+	code = 650780000,}
+
+namespace ProtoTable;
+table StrengthenTicketSynthesisTable{
+	ID:int32;
+	Name:string;
+	StrengthenLv:int32;
+	Binding:int32;
+	Amplitude:int32;
+	CostMaterial:[string];
+	Lower:int32;
+	Upper:int32;
+	Mu:int32;
+	Sigmal:int32;
+	SynthProbOfPerfect:int32;
+	DisplayItemIndex:int32;
+}
+
+root_type StrengthenTicketSynthesisTable;

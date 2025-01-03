@@ -1,0 +1,42 @@
+namespace ProtoTable.FashionDecomposeTable;
+enum eSubType:int { 
+	SubType_None = 0,   // default
+	FASHION_HAIR = 11,    // 时装翅膀
+	FASHION_HEAD = 12,    // 时装头饰（头部）
+	FASHION_SASH = 13,    // 时装腰饰（手饰）
+	FASHION_CHEST = 14,    // 时装上装
+	FASHION_LEG = 15,    // 时装下装
+	FASHION_EPAULET = 16,    // 时装胸饰（头饰）
+	FASHION_AURAS = 92,    // 时装光环
+}
+enum eThirdType:int { 
+	TT_NONE = 0,    // 无
+	FASHION_JUNIOR = 100,    // 初级时装
+	FASHION_SENIOR = 101,    // 高级时装
+	FASHION_FESTIVAL = 102,    // 节庆时装
+}
+enum eColor:int { 
+	CL_NONE = 0,    // 没有
+	WHITE = 1,    // 白
+	BLUE = 2,    // 蓝
+	PURPLE = 3,    // 紫
+	GREEN = 4,    // 绿
+	PINK = 5,    // 粉
+	YELLOW = 6,    // 橙
+}
+namespace ProtoTable.FashionDecomposeTable;
+enum eCrypt :int{
+	code = 491160631,}
+
+namespace ProtoTable;
+table FashionDecomposeTable{
+	ID:int32;
+	SubType:FashionDecomposeTable.eSubType;
+	ThirdType:FashionDecomposeTable.eThirdType;
+	Color:FashionDecomposeTable.eColor;
+	FashionID:int32;
+	 GroupID:int32;
+	Text:[int32];
+}
+
+root_type FashionDecomposeTable;

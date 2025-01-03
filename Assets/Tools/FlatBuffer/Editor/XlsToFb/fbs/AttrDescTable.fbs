@@ -1,0 +1,14 @@
+namespace ProtoTable.AttrDescTable;
+enum eCrypt :int{
+	code = 758544612,}
+
+namespace ProtoTable;
+table AttrDescTable{
+	ID:int32;
+	Name:string;
+	Desc:string;
+	DescNagative:string;
+	IconPath:string;
+}
+
+root_type AttrDescTable;

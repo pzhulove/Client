@@ -1,0 +1,15 @@
+namespace ProtoTable.DropStrengthenControlTable;
+enum eCrypt :int{
+	code = 903271090,}
+
+namespace ProtoTable;
+table DropStrengthenControlTable{
+	ID:int32;
+	Lv:int32;
+	Color:int32;
+	Color2:int32;
+	Strengthen:[int32];
+	Weight:[int32];
+}
+
+root_type DropStrengthenControlTable;

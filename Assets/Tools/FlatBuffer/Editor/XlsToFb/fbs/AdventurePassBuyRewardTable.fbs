@@ -1,0 +1,27 @@
+namespace ProtoTable.AdventurePassBuyRewardTable;
+enum eCrypt :int{
+	code = -410530372,}
+
+namespace ProtoTable;
+table AdventurePassBuyRewardTable{
+	ID:int32;
+	Season:int32;
+	KingLevel:int32;
+	KingReward:string;
+	TopKingLevel:int32;
+	TopKingReward:string;
+	KingPrice:int32;
+	TopKingPrice:int32;
+	buyType:int32;
+	KingRewardBanner1:string;
+	KingRewardBanner1Text:string;
+	KingRewardBanner2:string;
+	KingRewardBanner2Text:string;
+	KingRewardBanner3:string;
+	KingRewardBanner3Text:string;
+	GiftBagID:string;
+	Normal:string;
+	High:string;
+}
+
+root_type AdventurePassBuyRewardTable;

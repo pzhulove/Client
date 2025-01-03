@@ -1,0 +1,16 @@
+namespace ProtoTable.EquipEnhanceAttributeTable;
+enum eCrypt :int{
+	code = -845456548,}
+
+namespace ProtoTable;
+table EquipEnhanceAttributeTable{
+	ID:int32;
+	Quality:int32;
+	EnhanceLevel:int32;
+	Level:int32;
+	EnhanceAttribute:int32;
+	EnhanceAttributePVP:int32;
+	eqScore:int32;
+}
+
+root_type EquipEnhanceAttributeTable;

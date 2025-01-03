@@ -1,0 +1,16 @@
+namespace ProtoTable.GuidanceMainItemTable;
+enum eCrypt :int{
+	code = 146672630,}
+
+namespace ProtoTable;
+table GuidanceMainItemTable{
+	ID:int32;
+	Icon:string;
+	Desc:string;
+	FunctionId:int32;
+	recommandLv:int32;
+	LinkInfo:string;
+	bCloseFrame:int32;
+}
+
+root_type GuidanceMainItemTable;

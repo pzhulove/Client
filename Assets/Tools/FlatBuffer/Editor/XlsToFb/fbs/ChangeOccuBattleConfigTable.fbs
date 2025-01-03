@@ -1,0 +1,12 @@
+namespace ProtoTable.ChangeOccuBattleConfigTable;
+enum eCrypt :int{
+	code = -1590366210,}
+
+namespace ProtoTable;
+table ChangeOccuBattleConfigTable{
+	ID:int32;
+	Skills:[int32];
+	Equips:[int32];
+}
+
+root_type ChangeOccuBattleConfigTable;

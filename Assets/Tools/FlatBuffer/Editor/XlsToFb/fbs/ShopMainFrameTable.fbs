@@ -1,0 +1,13 @@
+namespace ProtoTable.ShopMainFrameTable;
+enum eCrypt :int{
+	code = -1299368992,}
+
+namespace ProtoTable;
+table ShopMainFrameTable{
+	ID:int32;
+	ShopName:string;
+	HelpID:int32;
+	Children:[int32];
+}
+
+root_type ShopMainFrameTable;

@@ -1,0 +1,16 @@
+namespace ProtoTable.GuildBuildInfoTable;
+enum eCrypt :int{
+	code = -1348486067,}
+
+namespace ProtoTable;
+table GuildBuildInfoTable{
+	ID:int32;
+	buildType:int32;
+	buildName:string;
+	buildIconPath:string;
+	buildNamePath:string;
+	buildDesc:string;
+	isOpen:bool;
+}
+
+root_type GuildBuildInfoTable;

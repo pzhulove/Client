@@ -1,0 +1,12 @@
+namespace ProtoTable.EquipRecoScUpPrbWeightTable;
+enum eCrypt :int{
+	code = -596189940,}
+
+namespace ProtoTable;
+table EquipRecoScUpPrbWeightTable{
+	ID:int32;
+	UpScore:int32;
+	ProbWeight:int32;
+}
+
+root_type EquipRecoScUpPrbWeightTable;

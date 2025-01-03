@@ -1,0 +1,18 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.GoldRushTable;
+enum eCrypt :int{
+	code = 887037330,}
+
+namespace ProtoTable;
+table GoldRushTable{
+	ID:int32;
+	TimeLimit:int32;
+	WaveInterval:UnionCell;
+	waveTipContent:string;
+	waveTipTime:int32;
+	BossDamageRatio:int32;
+	BossDamageGold:int32;
+}
+
+root_type GoldRushTable;

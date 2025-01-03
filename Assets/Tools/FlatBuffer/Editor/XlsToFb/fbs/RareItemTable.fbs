@@ -1,0 +1,22 @@
+namespace ProtoTable.RareItemTable;
+enum eCrypt :int{
+	code = 754270407,}
+
+namespace ProtoTable;
+table RareItemTable{
+	ID:int32;
+	Type:int32;
+	Value:int32;
+	MinPay:int32;
+	TimeLimit:int32;
+	PersonalDailyNum:int32;
+	PersonalWeeklyNum:int32;
+	PersonalMonthlyNum:int32;
+	PersonalTotalNum:int32;
+	ServerDailyNum:int32;
+	ServerWeeklyNum:int32;
+	ServerMonthlyNum:int32;
+	ServerTotalNum:int32;
+}
+
+root_type RareItemTable;

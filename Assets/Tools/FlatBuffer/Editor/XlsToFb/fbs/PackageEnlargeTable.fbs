@@ -1,0 +1,21 @@
+namespace ProtoTable.PackageEnlargeTable;
+enum eItemEnlargeType:int { 
+	ITEM_ENLARGE_TYPE_PACKAGE = 0,    // 扩展包裹
+	ITEM_ENLARGE_TYPE_STORAGE = 1,    // 仓库标签
+	ITEM_ENLARGE_TYPE_ACCOUNT_STORAGE = 2,    // 账号仓库标签
+}
+namespace ProtoTable.PackageEnlargeTable;
+enum eCrypt :int{
+	code = -1536308738,}
+
+namespace ProtoTable;
+table PackageEnlargeTable{
+	ID:int32;
+	ItemEnlargeType:PackageEnlargeTable.eItemEnlargeType;
+	GridSize:int32;
+	AddGrid:int32;
+	Consume:string;
+	NeedLevel:int32;
+}
+
+root_type PackageEnlargeTable;

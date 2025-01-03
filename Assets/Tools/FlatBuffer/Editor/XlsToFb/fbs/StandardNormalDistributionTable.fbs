@@ -1,0 +1,12 @@
+namespace ProtoTable.StandardNormalDistributionTable;
+enum eCrypt :int{
+	code = -1196071976,}
+
+namespace ProtoTable;
+table StandardNormalDistributionTable{
+	ID:int32;
+	InputValue:int32;
+	OutputValue:int32;
+}
+
+root_type StandardNormalDistributionTable;

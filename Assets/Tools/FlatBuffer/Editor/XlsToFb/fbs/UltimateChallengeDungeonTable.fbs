@@ -1,0 +1,21 @@
+namespace ProtoTable.UltimateChallengeDungeonTable;
+enum eCrypt :int{
+	code = 1968689288,}
+
+namespace ProtoTable;
+table UltimateChallengeDungeonTable{
+	ID:int32;
+	level:int32;
+	dungeonID:int32;
+	randomBuff:string;
+	limitTime:int32;
+	expendItem:string;
+	hpRecover:int32;
+	mpRecover:int32;
+	MaxhpRecover:int32;
+	MaxmpRecover:int32;
+	courageBuff:string;
+	IsDifficulty:int32;
+}
+
+root_type UltimateChallengeDungeonTable;

@@ -1,0 +1,164 @@
+0x87797771|@@| [AddBuff] BuffID:{0} Pos:{1},{2},{3} Speed:{4},{5},{6} Face:{7}, HP:{8}, MP:{9}, PID:{10} StateTag:{11}, Attack:{12}, Name:{13}, Reason:{14}
+
+0x8779779|@@| PID:{0}-{12} townbuffList {1} pos: ({2},{3},{4}) speed: ({5},{6},{7}) face:{8} hp:{9} mp:{10} tag:{11} attack:{12}
+
+0x8779781|@@| [BATTLE]PID:{0}-{1} Reborn
+
+0x8779783|@@| [SetAutoFight]PID:{0}-{2} auto : {1}
+
+0x8779785|@@| [AI]PID:{0}-{13} ENTER Do Destination:{12} Pos:({1},{2},{3}),Speed:({4},{5},{6}),Face:{7},Hp:{8},Mp:{9},Flag:{10},curSkillId:{11}
+
+0x8779890|@@| [AI]PID:{0}-{17} Do Destination {18} ({1},{2}) targetpos:({3},{4},{5}) selfpos:({6},{7},{8}) speed:({9},{10},{11}) face:{12} hp:{13} mp:{14} tag:{15} attack:{16}
+
+0x877978F|@@| [AI]PID:{0}-{15} Do Destination {16} within(1.1f) targetpos:({1},{2},{3}) selfpos:({4},{5},{6}) speed:({7},{8},{9}) face:{10} hp:{11} mp:{12} tag:{13} attack:{14}
+
+0x877978E|@@| [AI]PID:{0}-{5} Do Destination {6} ({1},{2}) selfpos:({3},{4})
+
+0x877978D|@@| [AI]PID:{0}-{5} Do Destination {6} ({1},{2}) selfpos:({3},{4})
+
+0x877978B|@@| [AI]PID:{0}-{5} Do Destination {6} ({1},{2}) selfpos:({3},{4})
+
+0x877978C|@@| [AI]PID:{0}-{3} Do Destination {4} ({1},{2})
+
+0x877978A|@@| [AI]PID:{0}-{1} Do Destination {2} no need follow
+
+0x8779989|@@| [AI]PID:{0}-{5} Do Destination {6} ({1},{2}) selfpos:({3},{4})
+
+0x8779789|@@| [AI]PID:{0}-{3} Do Destination {4} ({1},{2})
+
+0x779786|@@| [AI]PID:{0}-{5} Do Destination {6} ({1},{2}) selfpos:({3},{4})
+
+0x8779787|@@| [AI]PID:{0}-{1} DoIdle
+
+0x8779788|@@| PID:{0}-{13} USE SKILL {1} Pos:({2},{3},{4}) Speed:({5},{6},{7}) Face:{8} Hp:{9} Mp:{10} tag:{11} attack:{12}
+
+0x8779A89|@@| PID:{0}-{14} USE SKILL{1} - sub id {2} Pos:({3},{4},{5}),Speed:({6},{7},{8}),Face: {9},Hp: {10},Mp: {11},Flag: {12},attack: {13}
+
+0x8779790|@@| [BATTLE]ai path: {12} PID:{0},Name:{13},Pos:({1},{2},{3}),Speed:({4},{5},{6}),Face:{7},Hp:{8},Mp:{9},Flag:{10},curSkillId:{11}
+
+0x8779791|@@| [AI]PID:{0}-{5} do next move pos:({1},{2},{3}) dir:{4}
+
+0x8779792|@@| PID:{0}-{2} TryAddBuff {1}
+
+0x8779793|@@| PID:{0}-{13} AddBuff {1} Pos:({2},{3},{4}),Speed:({5},{6},{7}),Face:{8},Hp:{9},Mp:{10},Flag:{11},attack:{12}
+
+0x8779794|@@| [BATTLE]StartFight dungeon id:{0}
+
+0x6666666|@@| [BATTLE]FinishFight
+
+0x8779795|@@| [BATTLE]change face:{7} PID:{0}-{12} Pos:({1},{2},{3}),Speed:({4},{5},{6}) Hp:{8},Mp:{9},Flag:{10},curSkillId:{11}
+
+0x8779796|@@| ResetActionInfo PID:{0},name {12} Pos:({1},{2},{3}),Speed:({4},{5},{6}),Face: {7},Hp: {8},Mp: {9},Flag: {10},curSkillId: {11}
+
+0x8779797|@@| 没有技能配置文件 PID:{0},name: {12} actionName: {13},Pos:({1},{2},{3}),Speed:({4},{5},{6}),Face: {7},Hp: {8},Mp: {9},Flag: {10},curSkillId: {11} 
+
+0x8779798|@@| m_cpkCurEntityActionInfo is null PID:{0}, actionName: {12} name {13} Pos:({1},{2},{3}),Speed:({4},{5},{6}),Face: {7},Hp: {8},Mp: {9},Flag: {10},curSkillId: {11}
+
+0x88888|@@| [BATTLE]PID:{0}-{26} attack PID:{1}-{27} ret:{2} final:{3} [name:{26} pos:({4},{5},{6}) speed:({7},{8},{9}) face:{10} hp:{11} mp:{12} flag:{13} attack:{14}][name:{27} pos:({15},{16},{17}) speed:({18},{19},{20}) face:{21} hp:{22} mp:{23} flag:{24} attack:{25}]
+
+0x8779799|@@| Create-Doors position:({0},{1},{2}) doorType: {3}
+
+0x8779800|@@| PID: {0} summon monsterID: {1}
+
+0x8779801|@@| create hell monster PID:{1}-{0} dataPos{2} monsterPos{3}
+
+0x8779802|@@| create hell monster {0} {1} dataPos{2} monsterPos{3}
+
+0x8779803|@@| PID:{0}-{16} SWITCH STATE {15} pos:({1},{2},{3}) speed:({4},{5},{6}) face:{7} duration:{8} force:{9} forcexy({10},{11}),{12},hp:{13} mp:{14}
+
+0x786676|@@| [BATTLE]PID:{0}-{1} Action_GenRandom
+
+0x7777777|@@| BOSS阶段上报 阶段:{0}
+
+0x8779804|@@| [CMD]PID:{0}-{12} real ExecCommand:{13} Pos:({1},{2},{3}),Speed:({4},{5},{6}),Face: {7},Hp: {8},Mp: {9},Flag: {10},curSkillId: {11}
+
+0x12980286|@@| [CMD]PID:{0}-{4} Ignore SkillCommand Frame:{1} Seat:{2} Skill Slot:{3}
+
+0x12980285|@@| [BATTLE] {0} reconnect
+
+0x7779802|@@| [BATTLE] {0} leave
+
+0x8779714|@@| [CMD]ExecCommand:{0}
+
+0x8779805|@@| ExecCommand:{0}
+
+0x8779806|@@| ExecCommand cmd:{0}
+
+0x3798516|@@| [BATTLE]_doorCallback FROM {0} TO {1} area:{2}
+
+0x3297516|@@| [AI]PID:{0} StopCurrentComand
+
+0x3197516|@@| [BATTLE]mid:{0} player reborn
+
+0xb8522742|@@| [SCENE]_onAreaClear
+
+0x3297576|@@| [BATTLE]mid:{0} player dead
+
+0x3197216|@@| [BATTLE]PID:{0} playerName:{1} _onPlayerLeave
+
+0x3197016|@@| [BATTLE]PID:{0} playerName:{1} _onPlayerBack
+
+0xb7522742|@@| this actor is dead
+
+0x3197200|@@| [BATTLE]Race End _getDungeonRaceEndReq lastFrame {0}
+
+0xb7122742|@@| [BATTLE]Race End
+
+0x8779807|@@| ExecCommand cmd:{0}
+
+0x8779808|@@| [BATTLE]_createBase {0}
+
+0x888888|@@| [BATTLE]_createEntitys
+
+0x88778766|@@| ClearedDungeonIds:{0}
+
+0xa141440|@@| start frame!!!
+
+0x7777778|@@| [ChijiPVP] PID:{0} HP:{1} rate:{2} MaxHP:{3}
+
+0xa142441|@@| BossID01{0} curHP01 {1},BossID02{2} curHP02 {3}
+
+0xb141442|@@| PlayerBuffs {0}
+
+0xb141440|@@| Boss curHP  {0}
+
+0xb141480|@@| PlayerBuffs {0}
+
+0xb88788|@@| SetBossHP {0} [PID:{11} name:{9} pos:({1},{2},{3}) speed:({4},{5},{6}) face:{7} hp:{8} mp:{9} attack:{13} tag:{12}]
+
+0x1779600|@@| [BATTLE]mid:{0} player reborn
+
+0x1779500|@@| [BATTLE]mid:{0} player dead
+
+0xb2457246|@@| [SCENE]_onAreaClear
+
+0x1779511|@@| [BATTLE]PID:{0} playerName:{1} _onPlayerLeave
+
+0xb2452746|@@| [SCENE]Open Hell Close
+
+0x8779809|@@| [BATTLE]Race End _getDungeonRaceEndReq lastFrame {0}
+
+0x8779810|@@| [BATTLE]Race End _getDungeonRaceEndReqWithCount lastFrame {0}
+
+0xb2452741|@@| [BATTLE]Race End
+
+0x8779900|@@| [SCENE]_onAreaClear
+
+0xb4422741|@@| this actor is dead
+
+0x8779811|@@| [BATTLE]_doorCallback FROM {0} TO {1} area:{2}
+
+0x8779812|@@| [AI]PID:{0} StopCurrentComand
+
+0x8779813|@@| [BATTLE]mid:{0} player reborn
+
+0x8779814|@@| [BATTLE]mid:{0} player dead
+
+0x8779815|@@| [BATTLE]PID:{0} playerName:{1} _onPlayerLeave
+
+0x8779816|@@| [BATTLE]PID:{0} playerName:{1} _onPlayerBack
+
+0xb8422741|@@| start frame!!!
+
+0xb8422742|@@| [BATTLE]Race End
+

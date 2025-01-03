@@ -1,0 +1,12 @@
+namespace ProtoTable.AreaProvinceTable;
+enum eCrypt :int{
+	code = 704479087,}
+
+namespace ProtoTable;
+table AreaProvinceTable{
+	ID:int32;
+	FirstLetter:string;
+	Name:string;
+}
+
+root_type AreaProvinceTable;

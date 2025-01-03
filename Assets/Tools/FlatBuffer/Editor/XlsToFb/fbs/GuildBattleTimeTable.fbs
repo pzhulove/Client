@@ -1,0 +1,30 @@
+namespace ProtoTable.GuildBattleTimeTable;
+enum eType:int { 
+	GBT_INVALID = 0,    // 无效
+	GBT_NORMAL = 1,    // 普通
+	GBT_CHALLENGE = 2,    // 宣战
+	GBT_CROSS = 3,    // 跨服
+}
+enum eStatus:int { 
+	GBS_INVALID = 0,    // 未开始
+	GBS_ENROLL = 1,    // 报名
+	GBS_PREPARE = 2,    // 准备
+	GBS_BATTLE = 3,    // 战斗
+	GBS_REWARD = 4,    // 领奖
+}
+namespace ProtoTable.GuildBattleTimeTable;
+enum eCrypt :int{
+	code = 287298126,}
+
+namespace ProtoTable;
+table GuildBattleTimeTable{
+	ID:int32;
+	Group:int32;
+	Type:GuildBattleTimeTable.eType;
+	Status:GuildBattleTimeTable.eStatus;
+	Week:int32;
+	Time:string;
+	IsOpen:int32;
+}
+
+root_type GuildBattleTimeTable;

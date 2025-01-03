@@ -1,0 +1,15 @@
+namespace ProtoTable.PkLevelTable;
+enum eCrypt :int{
+	code = 1616207787,}
+
+namespace ProtoTable;
+table PkLevelTable{
+	ID:int32;
+	PkLevelType:int32;
+	Level:int32;
+	MinPkValue:int32;
+	Path:string;
+	Name:string;
+}
+
+root_type PkLevelTable;

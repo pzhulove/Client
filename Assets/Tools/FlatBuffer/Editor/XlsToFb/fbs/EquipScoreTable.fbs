@@ -1,0 +1,101 @@
+namespace ProtoTable.EquipScoreTable;
+enum eType:int { 
+	None = 0,    // 无
+	STR = 1,    // 力量
+	INT = 2,    // 智力
+	STAM = 3,    // 体力
+	SPR = 4,    // 精神
+	HP = 5,    // HP
+	MP = 6,    // MP
+	HPRECVR = 7,    // HP回复
+	MPRECVR = 8,    // MP回复
+	PHYATK = 9,    // 物攻
+	MAGATK = 10,    // 法攻
+	PHYDEF = 11,    // 物防
+	MAGDEF = 12,    // 法防
+	DISPHYATK = 13,    // 无视物攻
+	DISMAGATK = 14,    // 无视法攻
+	PHYDMGRDC = 15,    // 物理伤害追加减少
+	MAGDMGRDC = 16,    // 魔法伤害追加减少
+	ATKSPD = 17,    // 攻速
+	MAGSPD = 18,    // 施法速度
+	MVSPD = 19,    // 移动速度
+	PHYCRT = 20,    // 物理暴击
+	MAGCRT = 21,    // 魔法暴击
+	CRTDMG = 22,    // 暴击伤害
+	HIT = 23,    // 命中率
+	MISS = 24,    // 回避率
+	JZ = 25,    // 僵直
+	YZ = 26,    // 硬直
+	Light = 27,    // 光属性攻击
+	Fire = 28,    // 火属性攻击
+	Ice = 29,    // 冰属性攻击
+	Dark = 30,    // 暗属性攻击
+	LightAttack = 31,    // 光属性强化
+	FireAttack = 32,    // 火属性强化
+	IceAttack = 33,    // 冰属性强化
+	DarkAttack = 34,    // 暗属性强化
+	LightDefence = 35,    // 光属性抗性
+	FireDefence = 36,    // 火属性抗性
+	IceDefence = 37,    // 冰属性抗性
+	DarkDefence = 38,    // 暗属性抗性
+	GDKX = 39,    // 感电抗性
+	CXKX = 40,    // 出血抗性
+	ZSKX = 41,    // 灼烧抗性
+	ZDKX = 42,    // 中毒抗性
+	SMKX = 43,    // 失明抗性
+	XYKX = 44,    // 眩晕抗性
+	SHKX = 45,    // 石化抗性
+	BDKX = 46,    // 冰冻抗性
+	SLKX = 47,    // 睡眠抗性
+	HLKX = 48,    // 混乱抗性
+	SFKX = 49,    // 束缚抗性
+	JSKX = 50,    // 减速抗性
+	ZZKX = 51,    // 诅咒抗性
+	HSWORD = 100,    // 巨剑
+	TD = 101,    // 太刀
+	ZL = 102,    // 左轮
+	SP = 103,    // 手炮
+	FZ = 104,    // 法杖
+	MZ = 105,    // 魔杖
+	BJ = 106,    // 布甲
+	PJ = 107,    // 皮甲
+	DJ = 108,    // 短剑
+	QJ = 109,    // 轻甲
+	ZJ = 110,    // 重甲
+	BA = 111,    // 板甲
+	OFG = 112,    // 拳套
+	EAST_STICK = 113,    // 东方棍
+	GLOVE = 114,    // 手套
+	BIKAI = 115,    // 臂铠
+	CLAW = 116,    // 爪
+	NUJIAN = 117,    // 弩箭
+	BUQIANG = 118,    // 步枪
+	GUANGJIAN = 119,    // 光刃
+	SICKLE = 120,    // 镰刀
+	TOTEM = 121,    // 图腾
+	AXE = 122,    // 战斧
+	BEADS = 123,    // 念珠
+	CROSS = 124,    // 十字架
+	SPEAR = 125,    // 矛
+	STICK = 126,    // 棍棒
+	ATTACK = 200,    // 攻击力评分系数
+	POWER = 201,    // 四维相关评分系数
+	REDUCE = 202,    // 减伤系数
+	DISPHYATTACK = 203,    // 无视防御评分系数
+	DISPHYREDUCE = 204,    // 无视攻击评分系数
+	FUJIA = 205,    // 附加评分系数
+	Independent = 206,    // 独立评分系数
+}
+namespace ProtoTable.EquipScoreTable;
+enum eCrypt :int{
+	code = 265134066,}
+
+namespace ProtoTable;
+table EquipScoreTable{
+	ID:int32;
+	Type:EquipScoreTable.eType;
+	Value:int32;
+}
+
+root_type EquipScoreTable;

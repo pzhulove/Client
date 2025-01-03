@@ -1,0 +1,16 @@
+namespace ProtoTable.MissionScoreTable;
+enum eCrypt :int{
+	code = 634797042,}
+
+namespace ProtoTable;
+table MissionScoreTable{
+	ID:int32;
+	Name:string;
+	UnOpenedChestBoxIcon:string;
+	OpenedChestBoxIcon:string;
+	Score:int32;
+	TotalScore:int32;
+	Awards:[string];
+}
+
+root_type MissionScoreTable;

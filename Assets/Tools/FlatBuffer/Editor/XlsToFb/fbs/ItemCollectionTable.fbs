@@ -1,0 +1,28 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.ItemCollectionTable;
+enum eTipsType:int { 
+	TipsType_None = 0,   // default
+	SINGLE = 1,    // 单个
+	COLLECTION = 2,    // 集合
+}
+namespace ProtoTable.ItemCollectionTable;
+enum eCrypt :int{
+	code = -1978091175,}
+
+namespace ProtoTable;
+table ItemCollectionTable{
+	ID:int32;
+	Name:string;
+	Icon:string;
+	Level:string;
+	Color:[int32];
+	Color2:int32;
+	TipsType:ItemCollectionTable.eTipsType;
+	ItemID:int32;
+	Desc:string;
+	TipsContent:[UnionCell];
+	Items:[string];
+}
+
+root_type ItemCollectionTable;

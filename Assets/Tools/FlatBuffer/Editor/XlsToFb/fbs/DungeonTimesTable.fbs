@@ -1,0 +1,20 @@
+namespace ProtoTable.DungeonTimesTable;
+enum eCrypt :int{
+	code = 23225696,}
+
+namespace ProtoTable;
+table DungeonTimesTable{
+	ID:int32;
+	BaseTimes:int32;
+	BaseBuyTimes:int32;
+	BuyTimesVipPrivilege:int32;
+	BuyTimesCostItemID:int32;
+	BuyTimesCost:[int32];
+	UsedTimesCounter:string;
+	BuyTimesCounter:string;
+	WeekUsedTimesCounter:string;
+	WeekTimesLimit:int32;
+	AccountDailyTimesLimit:int32;
+}
+
+root_type DungeonTimesTable;

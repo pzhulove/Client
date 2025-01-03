@@ -1,0 +1,23 @@
+namespace ProtoTable.SDKClientResTable;
+enum eSDK:int { 
+	OPPO = 0,    // oppo渠道
+	VIVO = 1,    // vivo渠道
+}
+enum eFuncType:int { 
+	GotoCommunity = 0,    // 前往社区
+}
+namespace ProtoTable.SDKClientResTable;
+enum eCrypt :int{
+	code = -112053201,}
+
+namespace ProtoTable;
+table SDKClientResTable{
+	ID:int32;
+	SDK:SDKClientResTable.eSDK;
+	FuncType:SDKClientResTable.eFuncType;
+	Open:bool;
+	IconDesc:string;
+	IconImgPath:string;
+}
+
+root_type SDKClientResTable;

@@ -1,0 +1,19 @@
+namespace ProtoTable.CurrencyConfigureTable;
+enum eType:int { 
+	CCT_NONE = 0,    // 无效
+	CCT_AUCTION_REFRESH = 1,    // 拍卖行刷新
+}
+namespace ProtoTable.CurrencyConfigureTable;
+enum eCrypt :int{
+	code = 1624557565,}
+
+namespace ProtoTable;
+table CurrencyConfigureTable{
+	ID:int32;
+	Des:string;
+	Type:CurrencyConfigureTable.eType;
+	CostItemID:int32;
+	Num:int32;
+}
+
+root_type CurrencyConfigureTable;

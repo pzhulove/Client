@@ -1,0 +1,26 @@
+namespace ProtoTable.ActivityMonsterTable;
+enum eCrypt :int{
+	code = 322105103,}
+
+namespace ProtoTable;
+table ActivityMonsterTable{
+	ID:int32;
+	Name:string;
+	StartDate:string;
+	EndDate:string;
+	StartTime:string;
+	PerRollMonsterNum:int32;
+	PerRollDurningSec:int32;
+	PointType:int32;
+	GroupID:int32;
+	Prob:int32;
+	DropIDs:[string];
+	DropItems:string;
+	StartNotice:[int32];
+	KillNotice:[int32];
+	ClearNotice:[int32];
+	OverNotice:[int32];
+	NeedDungeonLevel:[int32];
+}
+
+root_type ActivityMonsterTable;

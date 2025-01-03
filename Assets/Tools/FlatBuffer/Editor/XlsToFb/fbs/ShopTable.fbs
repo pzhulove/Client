@@ -1,0 +1,118 @@
+namespace ProtoTable.ShopTable;
+enum eShopKind:int { 
+	SK_Ancient = 0,    // 远古商店
+	SK_Mystery = 1,    // 神秘商店
+	SK_Forge = 2,    // 打造商店
+	SK_Brave = 3,    // 勇者商店
+	SK_Fight = 4,    // 决斗商店
+	SK_Guild = 5,    // 公会商店
+	SK_Magic = 6,    // 魔罐商店
+	SK_Gold = 7,    // 金罐商店
+	SK_Abyss = 8,    // 深渊商店
+	SK_Warehouse = 9,    // 仓库采购
+	SK_Activity = 10,    // 活动商店
+	SK_Master = 12,    // 良师商店
+	SK_Lease = 13,    // 租赁商店
+	SK_BlessCrystal = 14,    // 祝福水晶商店
+	SK_BindCoin = 17,    // 绑金帐号商店
+	SK_AdventureCoin = 18,    // 通行证商店
+	SK_RecruitShop = 19,    // 招募商店
+}
+enum eFilter:int { 
+	SF_NONE = 0,    // 无
+	SF_OCCU = 1,    // 职业
+	SF_ARMOR = 2,    // 护甲
+	SF_OCCU2 = 3,    // 小职业
+	SF_PLAY_OCCU = 4,    // 本职业
+	SF_LEVEL = 5,    // 等级
+	SF_COUNT = 6,    // 数量
+}
+enum eSubType:int { 
+	ST_NONE = 0,    // 无
+	ST_MATERIAL = 1,    // 奖励
+	ST_WEAPON = 2,    // 武器
+	ST_ARMOR = 3,    // 防具
+	ST_JEWELRY = 4,    // 首饰
+	ST_COST = 5,    // 消耗品
+	ST_VALUABLE = 6,    // 珍品
+	ST_RETINUE = 7,    // 随从
+	ST_TITLE = 8,    // 称号
+	ST_ENERGY = 9,    // 能量石
+	ST_FASHION = 10,    // 时装
+	ST_ORDINARY = 11,    // 普通
+	ST_DAILY = 12,    // 每日
+	ST_GOODS = 13,    // 商品
+	ST_EQUIP = 14,    // 装备
+	ST_EXP = 15,    // 经验
+	ST_GOLDJAR = 16,    // 金罐
+}
+enum eRefreshCycle:int { 
+	REFRESH_CYCLE_NONE = 0,    // 无周期
+	REFRESH_CYCLE_DAILY = 1,    // 每日
+	REFRESH_CYCLE_WEEK = 2,    // 每周
+	REFRESH_CYCLE_MONTH = 3,    // 每月
+	REFRESH_CYCLE_ACTIVITY = 4,    // 活动
+}
+enum eSubTypeOrder:int { 
+	STO_NONE = 0,    // 无
+	STO_EQUIP = 1,    // 装备
+	STO_EXPENDABLE = 2,    // 消耗
+	STO_MATERIAL = 3,    // 材料
+	STO_TASK = 4,    // 任务
+	STO_FASHION = 5,    // 装扮
+}
+enum eBindType:int { 
+	ROLE_BIND = 0,    // 角色绑定
+	ACCOUNT_BIND = 1,    // 账号绑定
+}
+namespace ProtoTable.ShopTable;
+enum eCrypt :int{
+	code = 182865018,}
+
+namespace ProtoTable;
+table ShopTable{
+	ID:int32;
+	ShopName:string;
+	ShopNamePath:string;
+	ShopMallIcon:string;
+	ShopSimpleName:string;
+	Link:string;
+	ShopKind:ShopTable.eShopKind;
+	HelpID:int32;
+	Param1:int32;
+	IsGuildShop:int32;
+	Children:[int32];
+	Filter:[ShopTable.eFilter];
+	Filter2:[int32];
+	HideFilterItem:[int32];
+	IsShowFilterTitle:[int32];
+	SubType:[ShopTable.eSubType];
+	ExtraShowMoneys:string;
+	NeedRefreshTabs:[int32];
+	Refresh:int32;
+	RefreshCycle:[ShopTable.eRefreshCycle];
+	OpenLevel:int32;
+	RefreshCost:[int32];
+	RefreshTime:[int32];
+	OnSaleNum:int32;
+	SubTypeOrder:[ShopTable.eSubTypeOrder];
+	LimitGood1:int32;
+	LimitGood2:int32;
+	VIPLv:[int32];
+	VIPDiscount:[int32];
+	Version:int32;
+	ShopNpcBody:string;
+	RareControlType:int32;
+	IsExchangeShopShow:int32;
+	ExchangeShopOrder:int32;
+	ExchangeShopShowImage:string;
+	ExchangeShopNameImage:string;
+	BindType:ShopTable.eBindType;
+	HonorDiscount:int32;
+	ShopItemRefreshDesc:string;
+	CurrencyShowType:int32;
+	CurrencyExtraItem:[string];
+	ShowExchangeCoinItem:[int32];
+}
+
+root_type ShopTable;

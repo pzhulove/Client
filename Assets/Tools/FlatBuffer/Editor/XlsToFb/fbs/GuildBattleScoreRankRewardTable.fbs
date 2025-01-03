@@ -1,0 +1,12 @@
+namespace ProtoTable.GuildBattleScoreRankRewardTable;
+enum eCrypt :int{
+	code = -1386602394,}
+
+namespace ProtoTable;
+table GuildBattleScoreRankRewardTable{
+	ID:int32;
+	TitleId:int32;
+	TitleDueTime:int32;
+}
+
+root_type GuildBattleScoreRankRewardTable;

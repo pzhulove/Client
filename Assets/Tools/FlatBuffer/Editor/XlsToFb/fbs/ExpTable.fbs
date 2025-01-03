@@ -1,0 +1,19 @@
+namespace ProtoTable.ExpTable;
+enum eCrypt :int{
+	code = 487311095,}
+
+namespace ProtoTable;
+table ExpTable{
+	ID:int32;
+	TotalExp:int32;
+	Sp:int32;
+	SkillNum:int32;
+	DailyTaskSelector:int32;
+	RetinueNum:int32;
+	SpLeft:int32;
+	SpPvp:int32;
+	AdventureTeamExpAddition:int32;
+	Score:int32;
+}
+
+root_type ExpTable;

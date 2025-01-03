@@ -1,0 +1,13 @@
+namespace ProtoTable.GuildProsperityTable;
+enum eCrypt :int{
+	code = -1869684804,}
+
+namespace ProtoTable;
+table GuildProsperityTable{
+	ID:int32;
+	DismissLevel:int32;
+	MidLevel:int32;
+	HighLevel:int32;
+}
+
+root_type GuildProsperityTable;

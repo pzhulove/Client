@@ -1,0 +1,24 @@
+namespace ProtoTable.MagicCardUpdateTable;
+enum eCrypt :int{
+	code = 356485126,}
+
+namespace ProtoTable;
+table MagicCardUpdateTable{
+	ID:int32;
+	MagicCardID:int32;
+	Name:string;
+	MinLevel:int32;
+	MaxLevel:int32;
+	UpgradeMaterials_1:[string];
+	BaseRate_1:[string];
+	UpgradeMaterials_2:[string];
+	BaseRate_2:[string];
+	UpgradeMaterials_3:[string];
+	BaseRate_3:[string];
+	LevelAddRate:[string];
+	SameCardID:[string];
+	SameCardAddRate:[string];
+	UpConsume:string;
+}
+
+root_type MagicCardUpdateTable;

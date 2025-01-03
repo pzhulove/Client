@@ -1,0 +1,61 @@
+namespace ProtoTable.AuctionNewFrameTable;
+enum eMenuType:int { 
+	Auction_Menu_None = 0,    // 无
+	Auction_Menu_Notice = 1,    // 关注
+}
+enum eJob:int { 
+	AC_JIANSHI = 0,    // 鬼剑士
+	AC_QIANGSHOU = 1,    // 神枪手
+	AC_FASHI = 2,    // 魔法师
+	AC_GEDOU = 3,    // 格斗家
+	AC_SHENGZHIZHE = 4,    // 圣职者
+	AC_JOB_ALL = 100,    // 全部
+}
+enum eMainItemType:int { 
+	MIT_NONE = 0,    // 无
+	MIT_WEAPON = 1,    // 武器
+	MIT_ARMOR = 2,    // 防具
+	MIT_JEWELRY = 3,    // 首饰
+	MIT_COST = 4,    // 消耗品
+	MIT_MATERIAL = 5,    // 材料
+	MIT_SPECIAL = 6,    // 特殊装备
+}
+enum eFilterItemType:int { 
+	FIT_NONE = 0,    // 无
+	FIT_QUALITY = 1,    // 品质
+	FIT_LEVEL = 2,    // 等级
+	FIT_SUCCEEDRAT = 3,    // 成功率
+	FIT_PRICE = 4,    // 价格
+	FIT_JOB = 5,    // 职业
+}
+namespace ProtoTable.AuctionNewFrameTable;
+enum eCrypt :int{
+	code = 1527745024,}
+
+namespace ProtoTable;
+table AuctionNewFrameTable{
+	ID:int32;
+	Layer:int32;
+	Name:string;
+	Sort:int32;
+	MenuType:AuctionNewFrameTable.eMenuType;
+	LayerRelation:[int32];
+	PageDisplay:int32;
+	DeleteLayerID:[int32];
+	Job:AuctionNewFrameTable.eJob;
+	MainItemType:AuctionNewFrameTable.eMainItemType;
+	SubType:[int32];
+	ThirdType:[int32];
+	FilterItemType:[AuctionNewFrameTable.eFilterItemType];
+	FilterSortType:[int32];
+	ChooseLogic:int32;
+	JobBaseId:int32;
+	SpecialParametersType:int32;
+	SpecialParameters:int32;
+	IsShow:int32;
+	IconPath:string;
+	RecommendedJob:string;
+	BaseMap:string;
+}
+
+root_type AuctionNewFrameTable;

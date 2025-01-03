@@ -1,0 +1,12 @@
+namespace ProtoTable.MonthSignCollectAward;
+enum eCrypt :int{
+	code = 764791480,}
+
+namespace ProtoTable;
+table MonthSignCollectAward{
+	ID:int32;
+	ItemID:int32;
+	ItemNum:int32;
+}
+
+root_type MonthSignCollectAward;

@@ -1,0 +1,22 @@
+namespace ProtoTable.HitEffectInfoTable;
+enum eCrypt :int{
+	code = -727248362,}
+
+namespace ProtoTable;
+table HitEffectInfoTable{
+	ID:int32;
+	Name:string;
+	 Mirror:bool;
+	OffsetX:[int32];
+	OffsetY:[int32];
+	FloatOffsetX:[int32];
+	FloatOffsetY:[int32];
+	RotateX:[int32];
+	RotateY:[int32];
+	RotateZ:[int32];
+	Scale:[int32];
+	Type:int32;
+	Loop:int32;
+}
+
+root_type HitEffectInfoTable;

@@ -1,0 +1,21 @@
+{
+    "group": "PhotoManager",
+    "libs": [
+    			"libz.tbd", 
+    			"libc++.tbd"
+    		],
+    "frameworks": ["Photos.framework"],
+    "headerpaths": [],
+    "files":   [
+    				"PhotoManager/PhotoManager.h",
+    				"PhotoManager/PhotoManager.mm"
+                ],
+    "folders": [],    
+    "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$"],
+    "compiler_flags": [],
+	"plist": "PhotoManager/mergePlist.xml",
+    "linker_flags": [
+    					"-ObjC"
+    				]
+
+}

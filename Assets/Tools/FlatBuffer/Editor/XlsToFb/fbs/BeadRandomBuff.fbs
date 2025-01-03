@@ -1,0 +1,16 @@
+namespace ProtoTable.BeadRandomBuff;
+enum eCrypt :int{
+	code = -803912890,}
+
+namespace ProtoTable;
+table BeadRandomBuff{
+	ID:int32;
+	BuffGroup:int32;
+	WeightedValue:int32;
+	BuffinfoID:int32;
+	BuffExplain:int32;
+	PropType:[int32];
+	PropValue:[int32];
+}
+
+root_type BeadRandomBuff;

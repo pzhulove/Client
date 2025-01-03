@@ -1,0 +1,12 @@
+namespace ProtoTable.AppraisalProbabilityTable;
+enum eCrypt :int{
+	code = 1737830770,}
+
+namespace ProtoTable;
+table AppraisalProbabilityTable{
+	ID:int32;
+	section:string;
+	weight:string;
+}
+
+root_type AppraisalProbabilityTable;

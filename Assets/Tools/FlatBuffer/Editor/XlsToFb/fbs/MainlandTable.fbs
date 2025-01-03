@@ -1,0 +1,12 @@
+namespace ProtoTable.MainlandTable;
+enum eCrypt :int{
+	code = -981910982,}
+
+namespace ProtoTable;
+table MainlandTable{
+	ID:int32;
+	Name:string;
+	AreaIDs:[int32];
+}
+
+root_type MainlandTable;

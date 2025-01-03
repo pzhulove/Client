@@ -1,0 +1,17 @@
+namespace ProtoTable.LostDungeonResourcesTable;
+enum eCrypt :int{
+	code = -1182957717,}
+
+namespace ProtoTable;
+table LostDungeonResourcesTable{
+	ID:int32;
+	Name:int32;
+	Desc:int32;
+	ResourceGroupId:int32;
+	Items:int32;
+	InitRefreshTime:int32;
+	IntervalRefreshTime:int32;
+	MapId:int32;
+}
+
+root_type LostDungeonResourcesTable;

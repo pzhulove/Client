@@ -1,0 +1,18 @@
+namespace ProtoTable.BuffDrugConfigInfoTable;
+enum eValueType:int { 
+	Value = 0,    // 值
+	Rate100 = 1,    // 百分比
+	Rate1000 = 2,    // 千分比
+}
+namespace ProtoTable.BuffDrugConfigInfoTable;
+enum eCrypt :int{
+	code = 1618238745,}
+
+namespace ProtoTable;
+table BuffDrugConfigInfoTable{
+	ID:int32;
+	Filed:string;
+	ValueType:BuffDrugConfigInfoTable.eValueType;
+}
+
+root_type BuffDrugConfigInfoTable;

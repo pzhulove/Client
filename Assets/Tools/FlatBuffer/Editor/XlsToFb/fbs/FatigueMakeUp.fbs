@@ -1,0 +1,17 @@
+namespace ProtoTable.FatigueMakeUp;
+enum eCrypt :int{
+	code = 1519808350,}
+
+namespace ProtoTable;
+table FatigueMakeUp{
+	ID:int32;
+	LowEXP:int32;
+	LowNeedMoneyItem:int32;
+	HiEXP:int32;
+	HiNeedMoneyItem:int32;
+	FatigueMax:int32;
+	VipFatigueMax:int32;
+	VipLevel:int32;
+}
+
+root_type FatigueMakeUp;

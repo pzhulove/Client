@@ -1,0 +1,14 @@
+namespace ProtoTable.JuedouchangItemPropellingTable;
+enum eCrypt :int{
+	code = -1702050784,}
+
+namespace ProtoTable;
+table JuedouchangItemPropellingTable{
+	ID:int32;
+	Name:string;
+	NeedMinLevel:int32;
+	NeedMaxLevel:int32;
+	ItemLevel:int32;
+}
+
+root_type JuedouchangItemPropellingTable;

@@ -1,0 +1,22 @@
+namespace ProtoTable.GuildStatueTable;
+enum eWorship:int { 
+	Normal = 0,    // 普通
+	Middle = 1,    // 中级
+	High = 2,    // 豪华
+}
+namespace ProtoTable.GuildStatueTable;
+enum eCrypt :int{
+	code = 140612475,}
+
+namespace ProtoTable;
+table GuildStatueTable{
+	ID:int32;
+	Worship:GuildStatueTable.eWorship;
+	CostItemID:int32;
+	CostItemCount:int32;
+	GetItemID:int32;
+	GetItemCount:int32;
+	GetBuffID:int32;
+}
+
+root_type GuildStatueTable;

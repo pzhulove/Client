@@ -1,0 +1,14 @@
+namespace ProtoTable.MonsterSpeech;
+enum eCrypt :int{
+	code = 1217104176,}
+
+namespace ProtoTable;
+table MonsterSpeech{
+	ID:int32;
+	Rate:int32;
+	Time:int32;
+	Speech:string;
+	DialogType:int32;
+}
+
+root_type MonsterSpeech;

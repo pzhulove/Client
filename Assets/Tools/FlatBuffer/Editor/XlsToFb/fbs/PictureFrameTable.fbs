@@ -1,0 +1,14 @@
+namespace ProtoTable.PictureFrameTable;
+enum eCrypt :int{
+	code = -395137297,}
+
+namespace ProtoTable;
+table PictureFrameTable{
+	ID:int32;
+	Name:string;
+	TabID:int32;
+	IconPath:string;
+	Conditions:string;
+}
+
+root_type PictureFrameTable;

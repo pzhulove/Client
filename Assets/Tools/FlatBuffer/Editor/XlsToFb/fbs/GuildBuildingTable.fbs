@@ -1,0 +1,21 @@
+namespace ProtoTable.GuildBuildingTable;
+enum eCrypt :int{
+	code = 200448191,}
+
+namespace ProtoTable;
+table GuildBuildingTable{
+	ID:int32;
+	MainCost:int32;
+	ShopCost:int32;
+	TableCost:int32;
+	DungeonCost:int32;
+	StatueCost:int32;
+	BattleCost:int32;
+	WelfareCost:int32;
+	HonourCost:int32;
+	FeteCost:int32;
+	ShopId:int32;
+	WelfareGiftId:int32;
+}
+
+root_type GuildBuildingTable;

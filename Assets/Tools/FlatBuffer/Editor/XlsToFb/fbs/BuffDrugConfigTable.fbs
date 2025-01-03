@@ -1,0 +1,13 @@
+namespace ProtoTable.BuffDrugConfigTable;
+enum eCrypt :int{
+	code = 1664964467,}
+
+namespace ProtoTable;
+table BuffDrugConfigTable{
+	ID:int32;
+	Name:string;
+	Description:string;
+	FreeUseLevel:int32;
+}
+
+root_type BuffDrugConfigTable;

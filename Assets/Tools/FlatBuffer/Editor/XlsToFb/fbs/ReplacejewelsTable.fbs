@@ -1,0 +1,16 @@
+namespace ProtoTable.ReplacejewelsTable;
+enum eCrypt :int{
+	code = 1471005552,}
+
+namespace ProtoTable;
+table ReplacejewelsTable{
+	ID:int32;
+	Colour:int32;
+	Grades:int32;
+	BeadType:int32;
+	CostItem:int32;
+	CostNum:int32;
+	ReplaceNum:int32;
+}
+
+root_type ReplacejewelsTable;

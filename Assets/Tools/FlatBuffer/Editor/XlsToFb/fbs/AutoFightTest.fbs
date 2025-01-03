@@ -1,0 +1,14 @@
+namespace ProtoTable.AutoFightTest;
+enum eCrypt :int{
+	code = 637706797,}
+
+namespace ProtoTable;
+table AutoFightTest{
+	ID:int32;
+	Type:int32;
+	ChapterId:int32;
+	DungeonId:int32;
+	Name:string;
+}
+
+root_type AutoFightTest;

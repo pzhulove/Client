@@ -1,0 +1,12 @@
+namespace ProtoTable.TestInDes;
+enum eCrypt :int{
+	code = 201224843,}
+
+namespace ProtoTable;
+table TestInDes{
+	ID:int32;
+	channel:string;
+	des:string;
+}
+
+root_type TestInDes;

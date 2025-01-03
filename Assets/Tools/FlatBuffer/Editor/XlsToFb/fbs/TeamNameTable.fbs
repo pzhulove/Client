@@ -1,0 +1,11 @@
+namespace ProtoTable.TeamNameTable;
+enum eCrypt :int{
+	code = 224544348,}
+
+namespace ProtoTable;
+table TeamNameTable{
+	ID:int32;
+	Name:string;
+}
+
+root_type TeamNameTable;

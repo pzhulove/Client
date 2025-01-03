@@ -1,0 +1,37 @@
+namespace ProtoTable.TeamCopyFieldTable;
+enum ePresentedType:int { 
+	PresentedType_None = 0,   // default
+	BeginAppear = 1,    // 一开始就出现
+	UnlockByPreFightPoint = 2,    // 前置关卡歼灭后解锁
+	BossFightPoint = 3,    // boss据点
+	BossRelationFightPoint = 4,    // boss衍生据点
+}
+namespace ProtoTable.TeamCopyFieldTable;
+enum eCrypt :int{
+	code = 666151196,}
+
+namespace ProtoTable;
+table TeamCopyFieldTable{
+	ID:int32;
+	Name:string;
+	TeamGrade:int32;
+	StrongholdDesc:string;
+	DungeonId:int32;
+	PresentedType:TeamCopyFieldTable.ePresentedType;
+	DefeatCond:int32;
+	RebornTime:int32;
+	UnlockedCond:[int32];
+	appearStatus:int32;
+	UpdateFieldStatus:[string];
+	PreFieldPointId:int32;
+	PositionIndex:int32;
+	UnLockTip:int32;
+	NormalIconPath:string;
+	SelectedIconPath:string;
+	BossSecondStageNormalIconPath:string;
+	BossSecondStageSelectedIconPath:string;
+	BossThirdStageNormalIconPath:string;
+	BossThirdStageSelectedIconPath:string;
+}
+
+root_type TeamCopyFieldTable;

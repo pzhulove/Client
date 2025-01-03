@@ -1,0 +1,50 @@
+namespace ProtoTable.GlobalSettingTable;
+enum eCrypt :int{
+	code = -1582321333,}
+
+namespace ProtoTable;
+table GlobalSettingTable{
+	ID:int32;
+	walkSpeed:[int32];
+	runSpeed:[int32];
+	townWalkSpeed:[int32];
+	townRunSpeed:[int32];
+	hurtTime:[int32];
+	frozenPercent:int32;
+	jumpBackSpeed:[int32];
+	gravity:int32;
+	fallGravityReduceFactor:int32;
+	defaultFloatHurt:int32;
+	defaultFloatLevelHurat:int32;
+	defaultGroundHurt:int32;
+	defaultStandHurt:int32;
+	fallProtectGravityAddFactor:int32;
+	protectClearDuration:int32;
+	zDimFactor:int32;
+	aiWanderRange:int32;
+	aiWAlkBackRange:int32;
+	aiMaxWalkCmdCount:int32;
+	aiMaxWalkCmdCount_RANGED:int32;
+	aiMaxIdleCmdcount:int32;
+	aiSkillAttackPassive:int32;
+	monsterGetupBatiFactor:int32;
+	degangBackDistance:int32;
+	monsterWalkSpeed:[int32];
+	monsterRunSpeed:[int32];
+	forceUseAutoFight:bool;
+	afThinkTerm:int32;
+	afFindTargetTerm:int32;
+	afChangeDestinationTerm:int32;
+	autoCheckRestoreInterval:int32;
+	monsterWalkSpeedFactor:int32;
+	monsterSightFactor:int32;
+	dunFuTime:int32;
+	pvpDunFuTime:int32;
+	pkDamageAdjustFactor:int32;
+	pkHPAdjustFactor:int32;
+	pkUseMaxLevel:bool;
+	pkHitRateAdd:int32;
+	SwitchWeaponCD:int32;
+}
+
+root_type GlobalSettingTable;

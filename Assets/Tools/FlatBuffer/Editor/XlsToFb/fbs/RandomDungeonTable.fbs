@@ -1,0 +1,12 @@
+namespace ProtoTable.RandomDungeonTable;
+enum eCrypt :int{
+	code = 2129423425,}
+
+namespace ProtoTable;
+table RandomDungeonTable{
+	ID:int32;
+	dungeonType:int32;
+	DungeonRoom:string;
+}
+
+root_type RandomDungeonTable;

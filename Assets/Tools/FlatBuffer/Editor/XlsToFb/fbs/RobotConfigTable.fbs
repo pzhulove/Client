@@ -1,0 +1,14 @@
+namespace ProtoTable.RobotConfigTable;
+enum eCrypt :int{
+	code = -1538225668,}
+
+namespace ProtoTable;
+table RobotConfigTable{
+	ID:int32;
+	Level:int32;
+	Occu:int32;
+	Skills:[int32];
+	Fashions:[int32];
+}
+
+root_type RobotConfigTable;

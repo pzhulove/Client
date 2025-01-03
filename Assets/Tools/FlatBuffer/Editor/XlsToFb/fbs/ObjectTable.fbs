@@ -1,0 +1,26 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.ObjectTable;
+enum eCrypt :int{
+	code = 1694884891,}
+
+namespace ProtoTable;
+table ObjectTable{
+	ID:int32;
+	Zscale:UnionCell;
+	PVPZscale:UnionCell;
+	Scale:UnionCell;
+	PVPScale:UnionCell;
+	IsTouchGround:int32;
+	ShadowScaleX:int32;
+	ShadowScaleZ:int32;
+	Duration:UnionCell;
+	GenRune:int32;
+	ClearRune:int32;
+	Name:string;
+	UseOwnerPos:bool;
+	IsRemoveByAirWall:bool;
+	UseOffset:bool;
+}
+
+root_type ObjectTable;

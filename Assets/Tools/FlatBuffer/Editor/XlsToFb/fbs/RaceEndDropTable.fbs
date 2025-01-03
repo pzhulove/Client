@@ -1,0 +1,13 @@
+namespace ProtoTable.RaceEndDropTable;
+enum eCrypt :int{
+	code = 2027005669,}
+
+namespace ProtoTable;
+table RaceEndDropTable{
+	ID:int32;
+	DungeonID:int32;
+	LevelRange:int32;
+	DropSets:string;
+}
+
+root_type RaceEndDropTable;

@@ -1,0 +1,13 @@
+namespace ProtoTable.ChiJiPkSceneTable;
+enum eCrypt :int{
+	code = -1069274954,}
+
+namespace ProtoTable;
+table ChiJiPkSceneTable{
+	ID:int32;
+	Name:string;
+	DungeonID:int32;
+	SceneRange:[int32];
+}
+
+root_type ChiJiPkSceneTable;

@@ -1,0 +1,20 @@
+namespace ProtoTable.AIConfigTable;
+enum eCrypt :int{
+	code = -2012602248,}
+
+namespace ProtoTable;
+table AIConfigTable{
+	ID:int32;
+	JobID:int32;
+	AIType:int32;
+	AIAttackDelay:int32;
+	AIDestinationChangeTerm:int32;
+	AIThinkTargetTerm:int32;
+	AIKeepDistance:int32;
+	AIActionPath:string;
+	AIDestinationSelectPath:string;
+	AIEventPath:string;
+	Equips:[int32];
+}
+
+root_type AIConfigTable;

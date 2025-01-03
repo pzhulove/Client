@@ -1,0 +1,22 @@
+namespace ProtoTable.ChargeMallTable;
+enum eCrypt :int{
+	code = 1118665560,}
+
+namespace ProtoTable;
+table ChargeMallTable{
+	ID:int32;
+	Sort:int32;
+	Desc:string;
+	Tags:[string];
+	ChargeMoney:int32;
+	VipScore:int32;
+	DailyLimitNum:int32;
+	itemID:int32;
+	itemNum:int32;
+	FirstAddNum:int32;
+	UnFirstAddNum:int32;
+	Icon:int32;
+	Name:string;
+}
+
+root_type ChargeMallTable;

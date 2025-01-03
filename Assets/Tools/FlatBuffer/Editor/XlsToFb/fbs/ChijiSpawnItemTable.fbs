@@ -1,0 +1,18 @@
+namespace ProtoTable.ChijiSpawnItemTable;
+enum eCrypt :int{
+	code = -730451159,}
+
+namespace ProtoTable;
+table ChijiSpawnItemTable{
+	ID:int32;
+	Times:int32;
+	PackID:int32;
+	ItemID:int32;
+	Name:int32;
+	Weight:int32;
+	MinNumber:int32;
+	MaxNumber:int32;
+	MapID:int32;
+}
+
+root_type ChijiSpawnItemTable;

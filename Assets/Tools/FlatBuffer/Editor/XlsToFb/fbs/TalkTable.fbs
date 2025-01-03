@@ -1,0 +1,19 @@
+namespace ProtoTable.TalkTable;
+enum eCrypt :int{
+	code = 182457828,}
+
+namespace ProtoTable;
+table TalkTable{
+	ID:int32;
+	ObjectName:string;
+	NpcID:int32;
+	TalkText:string;
+	NextID:int32;
+	MissionID:int32;
+	TakeFinish:int32;
+	FrameClassName:string;
+	AttachClassName:string;
+	TalkAbbreviation:string;
+}
+
+root_type TalkTable;

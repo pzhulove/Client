@@ -1,0 +1,21 @@
+namespace ProtoTable.HonorLevelTable;
+enum eCrypt :int{
+	code = -1857185564,}
+
+namespace ProtoTable;
+table HonorLevelTable{
+	ID:int32;
+	name:string;
+	HonorLvlGrade:int32;
+	NeedExp:int32;
+	WeekAddLimit:int32;
+	ShopDiscount:[string];
+	LvlNeedRankRate:int32;
+	RankLeastNum:int32;
+	Title:int32;
+	TitleDueTime:int32;
+	TitleFlag:string;
+	UnlockItem:string;
+}
+
+root_type HonorLevelTable;

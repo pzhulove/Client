@@ -1,0 +1,22 @@
+namespace ProtoTable.ScoreWarTable;
+enum eStatus:int { 
+	SWS_INVALID = 0,    // 未开始
+	SWS_PREPARE = 1,    // 准备
+	SWS_BATTLE = 2,    // 战斗
+	SWS_WAIT_END = 3,    // 等待结束
+}
+namespace ProtoTable.ScoreWarTable;
+enum eCrypt :int{
+	code = 294447050,}
+
+namespace ProtoTable;
+table ScoreWarTable{
+	ID:int32;
+	Group:int32;
+	Status:ScoreWarTable.eStatus;
+	Week:int32;
+	Time:string;
+	IsOpen:int32;
+}
+
+root_type ScoreWarTable;

@@ -1,0 +1,19 @@
+namespace ProtoTable.TeamCopyTargetTable;
+enum eCrypt :int{
+	code = -941830157,}
+
+namespace ProtoTable;
+table TeamCopyTargetTable{
+	ID:int32;
+	TeamCopyId:int32;
+	TeamGrade:int32;
+	Stage:int32;
+	TargetDifficulty:int32;
+	TargetType:int32;
+	FeildId:[string];
+	NextTarget:int32;
+	Description:string;
+	SubDescription:string;
+}
+
+root_type TeamCopyTargetTable;

@@ -1,0 +1,19 @@
+namespace ProtoTable.GuildTable;
+enum eCrypt :int{
+	code = -1737620587,}
+
+namespace ProtoTable;
+table GuildTable{
+	ID:int32;
+	MemberNum:int32;
+	ShopLevel:int32;
+	TableLevel:int32;
+	DungeonLevel:int32;
+	StatueLevel:int32;
+	BattleLevel:int32;
+	WelfareLevel:int32;
+	HonourLevel:int32;
+	FeteLevel:int32;
+}
+
+root_type GuildTable;

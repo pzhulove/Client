@@ -1,0 +1,12 @@
+namespace ProtoTable.AuctionNoTreasAverPriceMinNum;
+enum eCrypt :int{
+	code = -1934113566,}
+
+namespace ProtoTable;
+table AuctionNoTreasAverPriceMinNum{
+	ID:int32;
+	Name:string;
+	MinNum:int32;
+}
+
+root_type AuctionNoTreasAverPriceMinNum;

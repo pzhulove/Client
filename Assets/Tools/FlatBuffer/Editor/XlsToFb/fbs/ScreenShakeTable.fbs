@@ -1,0 +1,20 @@
+namespace ProtoTable.ScreenShakeTable;
+enum eCrypt :int{
+	code = -612408714,}
+
+namespace ProtoTable;
+table ScreenShakeTable{
+	ID:int32;
+	Mode:int32;
+	Radius:int32;
+	TotalTime:int32;
+	Num:int32;
+	Xrange:int32;
+	Yrange:int32;
+	Decelerate:int32;
+	Xreduce:int32;
+	Yreduce:int32;
+	CDTime:int32;
+}
+
+root_type ScreenShakeTable;

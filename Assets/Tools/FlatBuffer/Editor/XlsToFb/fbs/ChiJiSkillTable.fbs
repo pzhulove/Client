@@ -1,0 +1,13 @@
+namespace ProtoTable.ChiJiSkillTable;
+enum eCrypt :int{
+	code = 881621158,}
+
+namespace ProtoTable;
+table ChiJiSkillTable{
+	ID:int32;
+	MaxLvl:int32;
+	Job:string;
+	Name:string;
+}
+
+root_type ChiJiSkillTable;

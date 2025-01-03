@@ -1,0 +1,25 @@
+namespace ProtoTable.LostDungeonFloorTable;
+enum eCrypt :int{
+	code = -1652106902,}
+
+namespace ProtoTable;
+table LostDungeonFloorTable{
+	ID:int32;
+	Floor:int32;
+	Name:string;
+	Desc:string;
+	Battles:string;
+	FailHandle:int32;
+	FailDecScore:int32;
+	ArtifactItemID:int32;
+	ArtifactItemDesc:string;
+	ExistMysticShop:int32;
+	NodeNumm:int32;
+	HardBattle:string;
+	TreasChest:string;
+	TreasChestIds:string;
+	NotFallItemId:int32;
+	AgainItemId:int32;
+}
+
+root_type LostDungeonFloorTable;

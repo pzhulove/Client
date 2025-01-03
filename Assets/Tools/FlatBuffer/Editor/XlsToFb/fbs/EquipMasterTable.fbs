@@ -1,0 +1,36 @@
+namespace ProtoTable.EquipMasterTable;
+enum eCrypt :int{
+	code = 1673379914,}
+
+namespace ProtoTable;
+table EquipMasterTable{
+	ID:int32;
+	JobID:int32;
+	Quality:int32;
+	Part:int32;
+	MaterialType:int32;
+	Atk:[int32];
+	MagicAtk:[int32];
+	Def:[int32];
+	MagicDef:[int32];
+	Strenth:[int32];
+	Intellect:[int32];
+	Spirit:[int32];
+	Stamina:[int32];
+	HPMax:[int32];
+	MPMax:[int32];
+	HPRecover:[int32];
+	MPRecover:[int32];
+	AttackSpeedRate:[int32];
+	FireSpeedRate:[int32];
+	MoveSpeedRate:[int32];
+	HitRate:[int32];
+	AvoidRate:[int32];
+	PhysicCrit:[int32];
+	MagicCrit:[int32];
+	IsMaster:int32;
+	Spasticity:[int32];
+	Descs:[string];
+}
+
+root_type EquipMasterTable;

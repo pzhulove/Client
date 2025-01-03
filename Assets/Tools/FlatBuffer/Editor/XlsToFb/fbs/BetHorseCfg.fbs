@@ -1,0 +1,27 @@
+namespace ProtoTable.BetHorseCfg;
+enum eCrypt :int{
+	code = 2141410366,}
+
+namespace ProtoTable;
+table BetHorseCfg{
+	ID:int32;
+	StakeMax:int32;
+	ShooterNum:int32;
+	RefreshOddsInterval:int32;
+	StakeEndTime:int32;
+	AdjustEndTime:int32;
+	StartTime:string;
+	bulletID:int32;
+	StartStakePublic:int32;
+	EndStakePublic:int32;
+	BattleStartPublic:int32;
+	OpenRewardPublic:int32;
+	EndWarnTime:string;
+	MysteryRate:int32;
+	BaseWinRate:int32;
+	BulletMallItemId:int32;
+	initOddsMin:int32;
+	initOddsMax:int32;
+}
+
+root_type BetHorseCfg;

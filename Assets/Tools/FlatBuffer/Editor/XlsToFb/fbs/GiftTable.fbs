@@ -1,0 +1,18 @@
+namespace ProtoTable.GiftTable;
+enum eCrypt :int{
+	code = 114988718,}
+
+namespace ProtoTable;
+table GiftTable{
+	ID:int32;
+	ItemID:int32;
+	GiftPackID:int32;
+	ItemCount:int32;
+	RecommendJobs:[int32];
+	Weight:int32;
+	Levels:[int32];
+	EquipType:int32;
+	Strengthen:int32;
+}
+
+root_type GiftTable;

@@ -1,0 +1,22 @@
+namespace ProtoTable.GuildActivityTable;
+enum eCrypt :int{
+	code = 71967124,}
+
+namespace ProtoTable;
+table GuildActivityTable{
+	ID:int32;
+	activityName:string;
+	activityDesc:string;
+	iconPath:string;
+	openTime:string;
+	activityUnLockConditon:string;
+	btnDefaultText:string;
+	btnCallBack:string;
+	stateUpdateCallBack:string;
+	activityUnLockCallBack:string;
+	openWeek:string;
+	openHourStart:string;
+	redPointUpdateCallBack:string;
+}
+
+root_type GuildActivityTable;

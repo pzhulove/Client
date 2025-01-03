@@ -1,0 +1,125 @@
+namespace ProtoTable.FunctionUnLock;
+enum eType:int { 
+	Type_None = 0,   // default
+	Func = 1,    // 功能解锁
+	Area = 2,    // 区域解锁
+}
+enum eFuncType:int { 
+	None = 0,    // 无
+	Skill = 1,    // 技能
+	Forge = 3,    // 锻冶
+	Achievement = 4,    // 成就
+	Ranklist = 5,    // 排行榜
+	Welfare = 6,    // 福利
+	Duel = 7,    // 决斗
+	Entourage = 8,    // 随从解锁
+	EntourageLvUp = 9,    // 随从升级
+	DailyTask = 10,    // 每日任务
+	Title = 11,    // 称号
+	DeathTower = 14,    // 勇者之塔
+	Guild = 15,    // 公会
+	BeatCow = 16,    // 斗牛节
+	Enchant = 17,    // 附魔
+	Auction = 18,    // 拍卖行
+	Degenerator = 19,    // 次元石
+	MagicMale = 20,    // 魔晶矿脉
+	WashEntourage = 21,    // 随从洗练
+	DeepDungeon = 23,    // 深渊地下城
+	AncientDungeon = 24,    // 远古地下城
+	ArmorMastery = 25,    // 护甲精通
+	Team = 30,    // 组队
+	Friend = 31,    // 好友
+	ActivitySevenDays = 32,    // 七日狂欢
+	FirstReChargeActivity = 34,    // 首充
+	Shop = 35,    // 商店
+	Jar = 36,    // 魔罐
+	Mall = 37,    // 商城
+	FashionMerge = 45,    // 时装合成
+	FashionAttrSel = 54,    // 时装属性选择
+	Fashion = 55,    // 时装入口
+	AutoFight = 56,    // 自动战斗
+	OnLineGift = 57,    // 在线礼包
+	ActivityJar = 58,    // 限时活动罐
+	Pet = 59,    // 宠物
+	Legend = 60,    // 传奇之路
+	BattleDrugs = 61,    // 战斗药水
+	TAPSystem = 62,    // 师徒系统
+	ActivityLimitTime = 63,    // 限时活动
+	FestivalActivity = 64,    // 节日活动
+	Bead = 66,    // 宝珠入口
+	AchievementG = 67,    // 成就集
+	MagicJarLv55 = 68,    // 珍宝魔罐
+	SideWeapon = 69,    // 副武器配置
+	EquipHandBook = 70,    // 装备图鉴
+	YijieAreaOpen = 75,    // 虚空裂缝
+	RandomTreasure = 76,    // 月卡随机宝箱
+	HorseGambling = 77,    // 赌马
+	VanityFracture = 80,    // 虚空裂缝
+	ReportingFunction = 82,    // 举报功能
+	WeaponLease = 83,    // 租赁
+	EquipUpgrade = 84,    // 装备升级
+	BlackMarket = 85,    // 黑市商人
+	AdventureTeam = 86,    // 佣兵团
+	PVETrain = 87,    // 修炼场
+	PVEDamage = 88,    // 伤害分析
+	DailyTodo = 89,    // 每日必做
+	KingTower = 90,    // 王者之塔
+	TeamCopy = 91,    // 团本
+	Inscription = 92,    // 铭文
+	AdventurePassSeason = 93,    // 冒险者通行证
+	Questionnaire = 94,    // 调查问卷
+	Honour = 95,    // 荣誉
+	Enhance = 96,    // 激化
+	RightDown = 98,    // 右下角更多
+	LeftUp = 99,    // 左上角更多
+	ChangeJob = 100,    // 切换职业
+	LevelGift = 101,    // 等级礼包
+}
+enum eLocationType:int { 
+	MainTown = 0,    // 城镇
+	BottomRightExpand = 1,    // 右下角更多
+	TopLeftExpand = 2,    // 左上角更多
+	ComTalk = 3,    // 聊天信息
+}
+enum eExpandType:int { 
+	ET_Null = 0,    // 无
+	ET_TopRight = 1,    // 右上按钮
+}
+enum eBindType:int { 
+	BT_RoleBind = 0,    // 角色绑定
+	BT_AccBind = 1,    // 帐号绑定
+}
+namespace ProtoTable.FunctionUnLock;
+enum eCrypt :int{
+	code = 1970490982,}
+
+namespace ProtoTable;
+table FunctionUnLock{
+	ID:int32;
+	Name:string;
+	Type:FunctionUnLock.eType;
+	FuncType:FunctionUnLock.eFuncType;
+	CommDescID:int32;
+	StartLevel:int32;
+	FinishLevel:int32;
+	IsOpen:bool;
+	StartTaskID:int32;
+	FinishTaskID:int32;
+	PosPriority:int32;
+	LocationType:FunctionUnLock.eLocationType;
+	TargetBtnPos:string;
+	bPlayAnim:int32;
+	bShowBtn:int32;
+	IconPath:string;
+	AreaID:int32;
+	Award:string;
+	Explanation:string;
+	ExpandType:FunctionUnLock.eExpandType;
+	BindType:FunctionUnLock.eBindType;
+	ShowFunctionOpen:int32;
+	OpenArea:int32;
+	ShowOpenEffect:int32;
+	ShowNextOpen:int32;
+}
+
+root_type FunctionUnLock;

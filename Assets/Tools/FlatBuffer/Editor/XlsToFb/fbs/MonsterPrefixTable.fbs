@@ -1,0 +1,13 @@
+namespace ProtoTable.MonsterPrefixTable;
+enum eCrypt :int{
+	code = -1718048358,}
+
+namespace ProtoTable;
+table MonsterPrefixTable{
+	ID:int32;
+	type:int32;
+	Name:string;
+	BufferInfoID:[int32];
+}
+
+root_type MonsterPrefixTable;

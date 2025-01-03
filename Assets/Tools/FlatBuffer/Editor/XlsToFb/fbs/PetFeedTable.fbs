@@ -1,0 +1,19 @@
+namespace ProtoTable.PetFeedTable;
+enum eType:int { 
+	Type_None = 0,   // default
+	PET_FEED_GOLD = 1,    // 金币
+	PET_FEED_POINT = 2,    // 点卷
+	PET_FEED_ITEM = 3,    // 物品
+}
+namespace ProtoTable.PetFeedTable;
+enum eCrypt :int{
+	code = 1919976737,}
+
+namespace ProtoTable;
+table PetFeedTable{
+	ID:int32;
+	Type:PetFeedTable.eType;
+	ConsumeItem:[string];
+}
+
+root_type PetFeedTable;

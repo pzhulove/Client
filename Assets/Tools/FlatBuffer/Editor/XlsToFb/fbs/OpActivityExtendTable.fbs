@@ -1,0 +1,11 @@
+namespace ProtoTable.OpActivityExtendTable;
+enum eCrypt :int{
+	code = 629740478,}
+
+namespace ProtoTable;
+table OpActivityExtendTable{
+	ID:int32;
+	tags:[int32];
+}
+
+root_type OpActivityExtendTable;

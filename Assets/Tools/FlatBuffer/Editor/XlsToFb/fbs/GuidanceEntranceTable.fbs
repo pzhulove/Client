@@ -1,0 +1,14 @@
+namespace ProtoTable.GuidanceEntranceTable;
+enum eCrypt :int{
+	code = 477889616,}
+
+namespace ProtoTable;
+table GuidanceEntranceTable{
+	ID:int32;
+	Name:string;
+	FunctionId:int32;
+	Icon:string;
+	LinkInfo:string;
+}
+
+root_type GuidanceEntranceTable;

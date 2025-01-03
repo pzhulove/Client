@@ -1,0 +1,292 @@
+namespace ProtoTable.ChijiItemTable;
+enum eType:int { 
+	Type_None = 0,   // default
+	EQUIP = 1,    // 装备
+	EXPENDABLE = 2,    // 消耗
+	MATERIAL = 3,    // 材料
+	TASK = 4,    // 任务
+	FASHION = 5,    // 装扮
+	INCOME = 6,    // 收益
+	ENERGY = 7,    // 能量石
+	FUCKTITTLE = 8,    // 称号系统
+	VirtualPack = 9,    // 虚拟礼包
+	PET = 10,    // 宠物
+	GUILD_BUFF = 11,    // 公会地下城buff
+	HEAD_FRAME = 12,    // 头像框
+	SKILL_CHIJI = 13,    // 吃鸡技能
+}
+enum eEPrompt:int { 
+	EPT_NONE = 0,    // 否
+	EPT_NEW_EQUIP = 1,    // 新装备
+	EPT_RED_POINT = 2,    // 红点
+}
+enum eSubType:int { 
+	ST_NONE = 0,    // 无
+	WEAPON = 1,    // 武器
+	HEAD = 2,    // 头部
+	CHEST = 3,    // 胸
+	BELT = 4,    // 腰带
+	LEG = 5,    // 护腿
+	BOOT = 6,    // 鞋子
+	RING = 7,    // 戒指
+	NECKLASE = 8,    // 项链
+	BRACELET = 9,    // 手镯
+	TITLE = 10,    // 称号
+	FASHION_HAIR = 11,    // 时装光环
+	FASHION_HEAD = 12,    // 时装头饰（头部）
+	FASHION_SASH = 13,    // 时装腰饰（手饰）
+	FASHION_CHEST = 14,    // 时装上装
+	FASHION_LEG = 15,    // 时装下装
+	FASHION_EPAULET = 16,    // 时装胸饰（头饰）
+	GOLD = 17,    // 金币
+	POINT = 18,    // 点券
+	EXP = 19,    // 经验
+	DRUG = 20,    // 药品
+	WARRIOR_SOUL = 22,    // 勇者之魂
+	DUEL_COIN = 23,    // 斗兽币
+	MATERIAL_JINGPO = 24,    // 精魄
+	EnchantmentsCard = 25,    // 附魔卡
+	ResurrectionCcurrency = 26,    // 复活币
+	BindGOLD = 27,    // 绑定金币
+	BindPOINT = 28,    // 绑定点券
+	GiftPackage = 29,    // 礼包
+	GuildContri = 30,    // 公会贡献
+	SP = 31,    // 技能点
+	EnergyStone = 32,    // 能量石
+	Coupon = 33,    // 强化券
+	MonthCard = 34,    // 月卡
+	Jar = 35,    // 随机罐子
+	GiftBox = 36,    // 礼盒（带预览）
+	FatigueDrug = 37,    // 疲劳药
+	Drawing = 38,    // 图纸残卷
+	Fragment = 39,    // 碎片
+	VipExp = 40,    // VIP经验
+	ExperiencePill = 41,    // 经验丸
+	GoldJarPoint = 42,    // 金罐积分
+	MagicJarPoint = 43,    // 魔罐积分
+	PetEgg = 44,    // 宠物蛋
+	ST_FASHION_COMPOSER = 45,    // 时装合成器
+	MoneyManageCard = 46,    // 理财卡
+	Hp = 50,    // hp药水
+	Mp = 51,    // mp药水
+	HpMp = 52,    // hp+mp药水
+	ChangeName = 53,    // 改名卡
+	Bead = 54,    // 宝珠
+	MagicBox = 55,    // 魔盒
+	MagicHammer = 56,    // 魔锤
+	Param = 57,    // 无色晶体
+	ST_JAR_GIFT = 58,    // 魔罐规则的礼包
+	ChargeActivityScore = 60,    // 充值活动积分
+	ST_ADD_VIP_POINT = 61,    // 补VIP积分
+	AttributeDrug = 62,    // 属性药水
+	ST_APPOINTMENT_COIN = 70,    // 预约币
+	LOTTERY_COIN = 71,    // 抽奖币
+	Perfect_washing = 72,    // 完美洗炼卷
+	ST_CONSUME_JAR_GIFT = 73,    // 开启需要消耗道具的魔罐规则的礼包
+	ST_PRIMARY_RAFFLE_TICKETS = 74,    // 初级抽奖券
+	ST_MIDDLE_RAFFLE_TICKETS = 75,    // 中级抽奖券
+	ST_SENIOR_RAFFLE_TICKETS = 76,    // 高级抽奖券
+	ST_MASTER_ACADEMIC_VALUE = 78,    // 师门学业成长值
+	ST_MASTER_GOODTEACH_VALUE = 79,    // 良师值
+	ST_RETURN_TOKEN = 80,    // 回归硬币
+	FASHION_WEAPON = 81,    // 时装武器
+	ST_CHANGE_FASHION_ACTIVE_TICKET = 82,    // 换装券
+	ST_DRESS_INTEGRAL_VALUE = 83,    // 换装积分
+	ST_WEAPON_LEASE_TICKET = 84,    // 好运符
+	ST_EXTENSIBLE_ROLE_CARD = 85,    // 角色栏扩展卡
+	ST_UP_LEVEL_BOOK = 86,    // 升级书
+	ST_BLESS_CRYSTAL_VALUE = 87,    // 赐福水晶
+	ST_INHERIT_BLESS_VALUE = 88,    // 传承祝福
+	ST_PEARL_HAMMER = 89,    // 金刚锤
+	ST_DIAMOND_HAMMER = 90,    // 钻石锤
+	ST_GOLD_REWARD_VALUE = 91,    // 赏金
+	FASHION_AURAS = 92,    // 时装光环
+	DiscountCoupon = 93,    // 折扣劵
+	ChijiHp = 95,    // 吃鸡hp药水
+	ChijiMoveSpeed = 96,    // 吃鸡移速药水
+	ChijiGrenade = 97,    // 吃鸡手雷
+	ChijiBuff = 98,    // 法阵
+	ST_CHIJI_TRAP = 110,    // 陷阱
+	ST_CHIJI_SHOP_COIN = 129,    // 吃鸡商店货币
+}
+enum eThirdType:int { 
+	TT_NONE = 0,    // 无
+	HUGESWORD = 1,    // 重剑
+	KATANA = 2,    // 武士刀
+	SHORTSWORD = 3,    // 轻剑
+	BEAMSWORD = 4,    // 光刃
+	BLUNT = 5,    // 钝器
+	REVOLVER = 6,    // 手枪
+	CROSSBOW = 7,    // 弩
+	HANDCANNON = 8,    // 重机炮
+	RIFLE = 9,    // 步枪
+	PISTOL = 10,    // 手枪
+	STAFF = 11,    // 法杖
+	WAND = 12,    // 魔杖
+	SPEAR = 13,    // 矛
+	STICK = 14,    // 棍棒
+	BESOM = 15,    // 扫把
+	GLOVE = 16,    // 拳刃
+	BIKAI = 17,    // 臂铠
+	CLAW = 18,    // 爪
+	OFG = 19,    // 拳套
+	EAST_STICK = 20,    // 旋棍
+	SICKLE = 21,    // 镰刀
+	TOTEM = 22,    // 图腾
+	AXE = 23,    // 战斧
+	BEADS = 24,    // 念珠
+	CROSS = 25,    // 十字架
+	CLOTH = 51,    // 布甲
+	SKIN = 52,    // 皮夹
+	LIGHT = 53,    // 轻甲
+	HEAVY = 54,    // 锁甲
+	PLATE = 55,    // 板甲
+	FASHION_JUNIOR = 100,    // 初级时装
+	FASHION_SENIOR = 101,    // 高级时装
+	FASHION_FESTIVAL = 102,    // 节庆时装
+	COMPOSER_JUNIOR = 103,    // 初级时装合成器
+	COMPOSER_SENIOR = 104,    // 高级时装合成器
+	SmallFatigueDrug = 300,    // 小疲劳药
+	MiddleFatigueDrug = 301,    // 中疲劳药
+	BigFatigueDrug = 302,    // 大疲劳药
+	BatteDrug = 401,    // 战斗中可以使用的药品
+	ChangePlayerName = 500,    // 玩家改名卡
+	ChangeGuildName = 501,    // 公会改名卡
+	GoldTitle = 502,    // 金币称号
+	ChangeAdventureName = 503,    // 冒险队改名卡
+	ExtensibleRoleCard = 504,    // 角色栏位扩展卡
+	UpLevelBook = 505,    // 升级书
+	GoddessTear = 600,    // 女神之泪
+	PowerGem = 611,    // 力量宝珠
+	IntelligenceGem = 612,    // 智力宝珠
+	LivesGem = 613,    // 体力宝珠
+	SpiritGem = 614,    // 精神宝珠
+	CritsGem = 615,    // 物暴宝珠
+	MagicGem = 616,    // 魔暴宝珠
+	PreciseGem = 617,    // 精准宝珠
+	RapidlyGem = 618,    // 急速宝珠
+	DischargeGem = 619,    // 吟唱宝珠
+	ElementGem = 620,    // 元素宝珠
+	SkillGem = 621,    // 技能宝珠
+	UseToSelf = 701,    // 对自己使用
+	UseToOther = 702,    // 对别人使用
+	ChijiGiftPackage = 703,    // 吃鸡礼包
+	ST_CHIJI_MIANZHAN = 129,    // 吃鸡免战
+}
+enum eColor:int { 
+	CL_NONE = 0,    // 没有
+	WHITE = 1,    // 白
+	BLUE = 2,    // 蓝
+	PURPLE = 3,    // 紫
+	GREEN = 4,    // 绿
+	PINK = 5,    // 粉
+	YELLOW = 6,    // 橙
+}
+enum eCanUse:int { 
+	CanNot = 0,    // 不能使用
+	UseOne = 1,    // 只能单个使用
+	UseTotal = 2,    // 可以一键使用全部
+}
+enum eOwner:int { 
+	Owner_None = 0,   // default
+	NOTBIND = 1,    // 非绑定
+	ROLEBIND = 2,    // 角色绑定
+	ACCBIND = 3,    // 账号绑定
+}
+enum eComeType:int { 
+	CT_SHOP = 0,    // 商店
+	CT_MISSION = 1,    // 任务
+	CT_ACTIVITY = 2,    // 活动
+}
+enum eUseLimiteType:int { 
+	NOLIMITE = 0,    // 无限制
+	DAYLIMITE = 1,    // 日限制
+	VIPLIMITE = 2,    // vip限制
+}
+namespace ProtoTable.ChijiItemTable;
+enum eCrypt :int{
+	code = 121260803,}
+
+namespace ProtoTable;
+table ChijiItemTable{
+	ID:int32;
+	Name:string;
+	IdSequence:int32;
+	Type:ChijiItemTable.eType;
+	TypeName:string;
+	EPrompt:ChijiItemTable.eEPrompt;
+	SubType:ChijiItemTable.eSubType;
+	SubTypeName:string;
+	ThirdType:ChijiItemTable.eThirdType;
+	ThirdTypeName:string;
+	Occu:[int32];
+	Occu2:[int32];
+	Color:ChijiItemTable.eColor;
+	Color2:int32;
+	NeedLevel:int32;
+	MaxLevel:int32;
+	BaseAttackSpeedRate:int32;
+	CanUse:ChijiItemTable.eCanUse;
+	CanTrade:bool;
+	Owner:ChijiItemTable.eOwner;
+	IsSeal:bool;
+	SealMax:int32;
+	IsDecompose:bool;
+	SellItemID:int32;
+	Price:int32;
+	CdGroup:int32;
+	CoolTime:int32;
+	TimeLeft:int32;
+	MaxNum:int32;
+	EffectDescription:string;
+	Description:string;
+	ComeLink:[int32];
+	RelationID:[int32];
+	Icon:string;
+	ModelPath:string;
+	Path2:[string];
+	OnUseBuffId:int32;
+	OnGetBuffId:int32;
+	CanDungeonUse:bool;
+	CanPKUse:bool;
+	RecommendPrice:int32;
+	ComeType:ChijiItemTable.eComeType;
+	ComeDesc:string;
+	ResID:int32;
+	Tag:int32;
+	SuitID:int32;
+	EquipPropID:int32;
+	MutexBuff:[int32];
+	CanAnnounce:bool;
+	LinkInfo:string;
+	bNeedJump:int32;
+	FunctionID:int32;
+	UseLimiteType:ChijiItemTable.eUseLimiteType;
+	UseLimiteValue:int32;
+	Abandon:int32;
+	PackageID:int32;
+	OldTitle:int32;
+	ForbidAuctionCopy:int32;
+	RenewInfo:[string];
+	AuctionMinPrice:int32;
+	AuctionMaxPrice:int32;
+	CanMasterGive:int32;
+	GetLimitNum:int32;
+	jarGiftConsumeItem:[int32];
+	doubleCheckDesc:string;
+	IsTransparentFashion:int32;
+	Inlaidhole1:string;
+	Inlaidhole2:string;
+	StrenTicketDataIndex:int32;
+	BeadLevel:int32;
+	BeadType:int32;
+	IsTreas:int32;
+	TradeCD1:int32;
+	TradeCD2:int32;
+	LvAdaptation:[int32];
+	DescriptionLink:int32;
+	IsRecordLog:int32;
+	DiscountCouponProp:int32;
+}
+
+root_type ChijiItemTable;

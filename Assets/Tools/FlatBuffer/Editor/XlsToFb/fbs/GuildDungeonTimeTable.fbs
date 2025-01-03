@@ -1,0 +1,14 @@
+namespace ProtoTable.GuildDungeonTimeTable;
+enum eCrypt :int{
+	code = -64003044,}
+
+namespace ProtoTable;
+table GuildDungeonTimeTable{
+	ID:int32;
+	Week:int32;
+	Status:int32;
+	Time:string;
+	isOpen:int32;
+}
+
+root_type GuildDungeonTimeTable;

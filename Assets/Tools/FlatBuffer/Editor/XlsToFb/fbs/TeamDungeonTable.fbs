@@ -1,0 +1,31 @@
+namespace ProtoTable.TeamDungeonTable;
+enum eType:int { 
+	DUNGEON = 0,    // 关卡
+	MENU = 1,    // 菜单
+	CityMonster = 2,    // 城镇怪物
+}
+enum eMatchType:int { 
+	QUICK_MATCH = 0,    // 快速匹配
+	QUICK_JOIN = 1,    // 快速加入
+}
+namespace ProtoTable.TeamDungeonTable;
+enum eCrypt :int{
+	code = 1083265799,}
+
+namespace ProtoTable;
+table TeamDungeonTable{
+	ID:int32;
+	Name:string;
+	Type:TeamDungeonTable.eType;
+	MenuID:int32;
+	DungeonID:int32;
+	MatchType:TeamDungeonTable.eMatchType;
+	MinLevel:int32;
+	RecoLevel:int32;
+	MinPlayerNum:int32;
+	MaxPlayerNum:int32;
+	ShowIndependent:int32;
+	AutoKick:int32;
+}
+
+root_type TeamDungeonTable;

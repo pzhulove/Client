@@ -1,0 +1,12 @@
+namespace ProtoTable.GuildDungeonDamageCoeffTable;
+enum eCrypt :int{
+	code = -1838784585,}
+
+namespace ProtoTable;
+table GuildDungeonDamageCoeffTable{
+	ID:int32;
+	Name:string;
+	coefficient:int32;
+}
+
+root_type GuildDungeonDamageCoeffTable;

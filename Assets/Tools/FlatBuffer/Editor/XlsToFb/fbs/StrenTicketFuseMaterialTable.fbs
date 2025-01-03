@@ -1,0 +1,12 @@
+namespace ProtoTable.StrenTicketFuseMaterialTable;
+enum eCrypt :int{
+	code = 522136054,}
+
+namespace ProtoTable;
+table StrenTicketFuseMaterialTable{
+	ID:int32;
+	Material:string;
+	PickCondOfStrenLv:string;
+}
+
+root_type StrenTicketFuseMaterialTable;

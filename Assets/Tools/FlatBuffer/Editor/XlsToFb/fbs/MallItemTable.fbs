@@ -1,0 +1,56 @@
+namespace ProtoTable.MallItemTable;
+enum eCrypt :int{
+	code = -1595037077,}
+
+namespace ProtoTable;
+table MallItemTable{
+	ID:int32;
+	giftpackname:string;
+	type:int32;
+	subtype:int32;
+	jobtype:int32;
+	itemid:int32;
+	groupnum:int32;
+	price:int32;
+	disprice:int32;
+	moneytype:int32;
+	limittype:int32;
+	limitnum:int32;
+	giftpackitems:string;
+	giftpackicon:string;
+	TimeCalcType:int32;
+	limtstarttime:int32;
+	limitendtime:int32;
+	StartTimeFromService:string;
+	EndTimeFromService:string;
+	StartTimeFromFirstService:string;
+	EndTimeFromFirstService:string;
+	openInterval:int32;
+	cloesdInterval:int32;
+	limitetotlenum:int32;
+	vipscore:int32;
+	tagtype:int32;
+	sort:int32;
+	hotsort:int32;
+	goodsType:int32;
+	goodsSubType:int32;
+	goodsState:int32;
+	isRecommend:int32;
+	PersonalTailID:int32;
+	discountRate:int32;
+	loginPushId:int32;
+	FashionImagePath:string;
+	Desc:string;
+	BuyGotInfo:string;
+	ExtParams:string;
+	PlayerLevelLimit:int32;
+	MallPushCond:int32;
+	AccountRefreshType:int32;
+	AccountRefreshTimePoint:string;
+	AccountLimitBuyNum:int32;
+	DiscountCoupon:int32;
+	multiple:int32;
+	deductionCoupon:int32;
+}
+
+root_type MallItemTable;

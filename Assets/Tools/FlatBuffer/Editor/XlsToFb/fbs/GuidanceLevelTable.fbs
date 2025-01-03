@@ -1,0 +1,11 @@
+namespace ProtoTable.GuidanceLevelTable;
+enum eCrypt :int{
+	code = 1028261162,}
+
+namespace ProtoTable;
+table GuidanceLevelTable{
+	ID:int32;
+	RelationIds:[int32];
+}
+
+root_type GuidanceLevelTable;

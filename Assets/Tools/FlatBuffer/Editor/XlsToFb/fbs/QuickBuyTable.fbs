@@ -1,0 +1,13 @@
+namespace ProtoTable.QuickBuyTable;
+enum eCrypt :int{
+	code = -1474022939,}
+
+namespace ProtoTable;
+table QuickBuyTable{
+	ID:int32;
+	CostItemID:int32;
+	CostNum:int32;
+	multiple:int32;
+}
+
+root_type QuickBuyTable;

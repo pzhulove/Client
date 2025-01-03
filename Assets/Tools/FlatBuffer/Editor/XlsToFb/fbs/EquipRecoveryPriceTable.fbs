@@ -1,0 +1,13 @@
+namespace ProtoTable.EquipRecoveryPriceTable;
+enum eCrypt :int{
+	code = -979817284,}
+
+namespace ProtoTable;
+table EquipRecoveryPriceTable{
+	ID:int32;
+	Blue:string;
+	Purple:string;
+	Pink:string;
+}
+
+root_type EquipRecoveryPriceTable;

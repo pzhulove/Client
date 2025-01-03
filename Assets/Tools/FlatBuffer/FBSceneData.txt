@@ -1,0 +1,281 @@
+
+namespace FBSceneData;
+
+struct Vector2
+{
+    x:float;
+    y:float;
+}
+
+struct Vector3
+{
+    x:float;
+    y:float;
+    z:float;
+}
+
+struct Quaternion
+{
+    x:float;
+    y:float;
+    z:float;
+    w:float;
+}
+
+struct Color
+{
+    r:float;
+    g:float;
+    b:float;
+    a:float;
+}
+
+enum DEntityType:byte
+{
+    NPC = 0,
+    MONSTER,
+    DECORATOR,
+    DESTRUCTIBLE,
+    REGION,
+    TRANSPORTDOOR,
+    BOSS,
+    ELITE,
+    BIRTHPOSITION,
+    TOWNDOOR,
+    FUNCTION_PREFAB,
+    MONSTERDESTRUCT,
+    HELLBIRTHPOSITION,
+    MAX
+}
+
+table DEntityInfo
+{
+    globalid:int;
+    resid:int;
+    name:string;
+    path:string;
+    description:string;
+    type:DEntityType;
+    type_name:string;
+    position:Vector3;
+
+    scale:float = 1.0;
+    color:Color;
+}
+
+enum FunctionType:byte
+{
+    FT_FollowPet = 0,
+    FT_FollowPet2,
+    FT_COUNT
+}
+
+table FunctionPrefab
+{
+    super:DEntityInfo;
+    eFunctionType:FunctionType;
+}
+
+table DNPCInfo
+{
+    super:DEntityInfo;
+          
+    rotation:Quaternion;
+    minFindRange:Vector2;// TODO = new Vector2(1.0f, 3.0f);
+    maxFindRange:Vector2;// TODO = new Vector2(2.5f, 5.0f);
+}
+
+enum MonsterSwapType:byte
+{
+    POINT_SWAP,
+    CIRCLE_SWAP,
+    RECT_SWAP,
+}
+
+enum FaceType:byte
+{
+    Right,
+    Left,
+    Random
+}
+
+enum FlowRegionType:byte
+{
+    None,
+    Region,
+    Destruct,
+}
+
+table DMonsterInfo
+{
+    super:DEntityInfo;
+
+    swapType:MonsterSwapType;
+    isFaceLeft:bool;
+    swapNum:int;
+    swapDelay:int;
+
+    flushGroupID:int;
+    subGroupID:int;
+    monsterInfoTableID:int;
+
+    flowRegionType:FlowRegionType;
+    regionInfo:DRegionInfo;
+    destructInfo:DDestructibleInfo;
+    sight:int;
+    groupIndex:int;
+    
+    aiActionPath:string;
+    aiScenarioPath:string;
+}
+
+table DTransferInfo
+{
+    super:DEntityInfo;
+	regionId:int;
+}
+
+table DDecoratorInfo
+{
+    super:DEntityInfo;
+
+    localScale:Vector3;
+    rotation:Quaternion;
+}
+
+table DDestructibleInfo
+{
+    super:DEntityInfo;
+
+    rotation:Quaternion;
+
+    level:int;
+    flushGroupID:int;
+}
+
+enum RegionType:byte
+{
+    Circle = 0,
+    Rectangle
+}
+
+table DRegionInfo
+{
+    super:DEntityInfo;
+
+    regiontype:RegionType;
+    rect:Vector2;//   = Vector2.one;
+    radius:float = 1.0;
+    rotation:Quaternion;
+}
+
+enum TransportDoorType:byte
+{
+    Left = 0,
+    Top = 1,
+    Right = 2,
+    Buttom = 3,
+	None = 4,
+}
+
+enum DoorTargetType:byte
+{
+	Normal = 0,
+    PVEPracticeCourt = 1,
+} 
+
+table DTransportDoor
+{
+    super:DRegionInfo;
+    iseggdoor:bool=false;
+    doortype:TransportDoorType;
+
+    // according the id to get the scene path
+    nextsceneid:int;
+
+    townscenepath:string;
+
+    // default is top<->buttom left<->right
+    // but anything is possible
+    nextdoortype:TransportDoorType;
+
+    birthposition:Vector3;
+}
+
+table DTownDoor
+{
+    super:DRegionInfo;
+
+    SceneID:int;
+    DoorID:int;
+    BirthPos:Vector3;
+
+    TargetSceneID:int;
+    TargetDoorID:int;
+	DoorType:DoorTargetType;
+}
+
+enum EWeatherMode:byte
+{
+    None,
+    Rain,
+    Wind,
+    Snow,
+
+    MaxModeNum,
+}
+
+table DSceneData
+{
+    name:string;
+    id:int;
+    prefabpath:string;
+    CameraLookHeight:float = 1.0;
+    CameraDistance:float   = 10.0;
+    CameraAngle:float      = 20.0;
+    CameraNearClip:float   = 0.3;
+    CameraFarClip:float    = 50.0;
+    CameraSize:float       = 3.3;
+    CameraZRange:Vector2;
+    CameraXRange:Vector2;
+    CameraPersp:bool       = false;
+    CenterPostionNew:Vector3;
+    ScenePostion:Vector3;      // 图形坐标（相对于逻辑原点）
+    SceneUScale:float = 1.0;  // 图形坐标（相对于逻辑原点）
+    GridSize:Vector2;          // = new Vector2(0.25f, 0.25f);
+    LogicXSize:Vector2;
+    LogicZSize:Vector2;
+    ObjectDyeColor:Color;      // = Color.white;
+
+    LogicPos:Vector3;// = Vector3.zero;      // 逻辑原点
+
+    WeatherMode:EWeatherMode ;//= EWeatherMode.None;
+
+    TipsID:int;
+
+
+    LightmapsettingsPath:string;
+    LogicXmin:int;
+    LogicXmax:int;
+    LogicZmin:int;
+    LogicZmax:int;
+
+    entityinfo:[DEntityInfo];              
+    blocklayer:[ubyte];                     
+    npcinfo:[DNPCInfo];                    
+    monsterinfo:[DMonsterInfo];            
+    decoratorinfo:[DDecoratorInfo];        
+    desructibleinfo:[DDestructibleInfo];   
+    regioninfo:[DRegionInfo];              
+    transportdoor:[DTransportDoor]; 
+    fighterBornPosition:[DTransferInfo];	
+    birthposition:DEntityInfo;             
+    hellbirthposition:DEntityInfo;         
+    townDoor:[DTownDoor];                  
+    FunctionPrefab:[FunctionPrefab];       
+
+}
+
+
+root_type DSceneData;
+file_identifier "SCEN";

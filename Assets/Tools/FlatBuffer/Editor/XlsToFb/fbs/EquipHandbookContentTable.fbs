@@ -1,0 +1,22 @@
+namespace ProtoTable.EquipHandbookContentTable;
+enum eType:int { 
+	Collect = 0,    // 组合
+	Single = 1,    // 单页
+}
+namespace ProtoTable.EquipHandbookContentTable;
+enum eCrypt :int{
+	code = -230642203,}
+
+namespace ProtoTable;
+table EquipHandbookContentTable{
+	ID:int32;
+	Name:string;
+	SortOrder:int32;
+	Type:EquipHandbookContentTable.eType;
+	IsDefaultTab:bool;
+	IsShowEquipScore:bool;
+	IsFilterWithLevel:bool;
+	IsFilterWithEquipScore:bool;
+}
+
+root_type EquipHandbookContentTable;

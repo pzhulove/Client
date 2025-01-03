@@ -1,0 +1,14 @@
+namespace ProtoTable.ChangeFashionActiveMergeTable;
+enum eCrypt :int{
+	code = 1144610400,}
+
+namespace ProtoTable;
+table ChangeFashionActiveMergeTable{
+	ID:int32;
+	AdvanceId:int32;
+	Prob:int32;
+	GoldConsume:string;
+	TicketConsume:string;
+}
+
+root_type ChangeFashionActiveMergeTable;

@@ -1,0 +1,26 @@
+namespace ProtoTable.DungeonModelTable;
+enum eType:int { 
+	Type_None = 0,   // default
+	DeepModel = 1,    // 深渊模式
+	AncientModel = 2,    // 远古模式
+	WeekHellModel = 3,    // 周常深渊模式
+	VoidCrackModel = 4,    // 虚空裂缝模式
+	TeamDuplicationModel = 5,    // 团本模式
+}
+namespace ProtoTable.DungeonModelTable;
+enum eCrypt :int{
+	code = 63793921,}
+
+namespace ProtoTable;
+table DungeonModelTable{
+	ID:int32;
+	Name:string;
+	Type:DungeonModelTable.eType;
+	Level:int32;
+	mapID:int32;
+	DropShow:[int32];
+	CostItem:[int32];
+	IsShowSpriteConsume:int32;
+}
+
+root_type DungeonModelTable;

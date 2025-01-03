@@ -1,0 +1,13 @@
+namespace ProtoTable.ActivityMonsterProbTable;
+enum eCrypt :int{
+	code = -72917580,}
+
+namespace ProtoTable;
+table ActivityMonsterProbTable{
+	ID:int32;
+	ActivityID:int32;
+	tags:[int32];
+	Prob:int32;
+}
+
+root_type ActivityMonsterProbTable;

@@ -1,0 +1,14 @@
+namespace ProtoTable.DungeonArgsTable;
+enum eCrypt :int{
+	code = -2093642235,}
+
+namespace ProtoTable;
+table DungeonArgsTable{
+	ID:int32;
+	TimeScore:int32;
+	BackHitScore:int32;
+	CombScore:int32;
+	ComboArg:int32;
+}
+
+root_type DungeonArgsTable;

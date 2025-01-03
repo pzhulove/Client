@@ -1,0 +1,11 @@
+namespace ProtoTable.LinkTable;
+enum eCrypt :int{
+	code = 110988718,}
+
+namespace ProtoTable;
+table LinkTable{
+	ID:int32;
+	LinkInfo:string;
+}
+
+root_type LinkTable;

@@ -1,0 +1,29 @@
+namespace ProtoTable.SkillInputTable;
+enum eCrypt :int{
+	code = -1721590939,}
+
+namespace ProtoTable;
+table SkillInputTable{
+	ID:int32;
+	Name:int32;
+	Level:int32;
+	CameraDistance:int32;
+	PositionOffset:[int32];
+	Face:bool;
+	Assembling:string;
+	PreCondition:[int32];
+	LoopTime:int32;
+	Input1:[int32];
+	Input2:[int32];
+	Input3:[int32];
+	Input4:[int32];
+	Input5:[int32];
+	MonsterInfo1:[int32];
+	MonsterInfo2:[int32];
+	MonsterInfo3:[int32];
+	MonsterInfo4:[int32];
+	MonsterInfo5:[int32];
+	MonsterInfo6:[int32];
+}
+
+root_type SkillInputTable;

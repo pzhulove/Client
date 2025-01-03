@@ -1,0 +1,44 @@
+namespace ProtoTable.EquipStrModTable;
+enum eCrypt :int{
+	code = -1342801607,}
+
+namespace ProtoTable;
+table EquipStrModTable{
+	ID:int32;
+	WpStrenthMod:[int32];
+	WpColorQaMod:[int32];
+	WpColorQbMod:[int32];
+	ArmStrenthMod:[int32];
+	ArmColorQaMod:[int32];
+	ArmColorQbMod:[int32];
+	JewStrenthMod:[int32];
+	JewColorQaMod:[int32];
+	JewColorQbMod:[int32];
+	HugeSword:[int32];
+	Katana:[int32];
+	ShortSword:[int32];
+	BeamSword:[int32];
+	Blunt:[int32];
+	Revolver:[int32];
+	CrossBow:[int32];
+	HandCannon:[int32];
+	AutoRifle:[int32];
+	AutoPistal:[int32];
+	MagicStick:[int32];
+	Twig:[int32];
+	Pike:[int32];
+	Stick:[int32];
+	Besom:[int32];
+	Glove:[int32];
+	Bikai:[int32];
+	Claw:[int32];
+	Ofg:[int32];
+	East_stick:[int32];
+	SICKLE:[int32];
+	TOTEM:[int32];
+	AXE:[int32];
+	BEADS:[int32];
+	CROSS:[int32];
+}
+
+root_type EquipStrModTable;

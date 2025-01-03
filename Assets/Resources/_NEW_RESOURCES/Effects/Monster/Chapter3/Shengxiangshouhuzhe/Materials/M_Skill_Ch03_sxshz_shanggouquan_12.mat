@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Skill_Ch03_sxshz_shanggouquan_12
+  m_Shader: {fileID: 4800000, guid: 25a72fea2cd7a464792a173d754d949c, type: 3}
+  m_ShaderKeywords: _Distortion_Dissolve _RONGJIE_ON _SoftDissolveMode
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DistortionTex:
+        m_Texture: {fileID: 2800000, guid: 1d0d17fd2da531549bbddc64cd350978, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 49de3b548a8033b4f9ffd4e6f02ac7bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Textures:
+        m_Texture: {fileID: 2800000, guid: 49de3b548a8033b4f9ffd4e6f02ac7bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _wenli:
+        m_Texture: {fileID: 2800000, guid: 77b2c87402e5a744ca9cd00550148e28, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - UI_MASKABLE: 0
+    - _AlphaCutoff: 0
+    - _BloomIntensity: 2
+    - _Brightness: 1
+    - _DD: 1
+    - _DestBlend: 1
+    - _DissUPan: 0
+    - _DissVPan: 0
+    - _Dissolve: 0
+    - _DissolveMode: 0
+    - _DistortionIntensity: -0.09
+    - _DistortionSpeedU: -0.3
+    - _DistortionSpeedV: 0
+    - _EdgeHighlight: 0
+    - _EdgeWidth: 0
+    - _Exp: 1
+    - _FresnelInt: 1
+    - _FresnelToggle: 0
+    - _Intensity: 1
+    - _InvFade: 1
+    - _MainSpeedU: 0
+    - _MainSpeedV: 0
+    - _MainTexPannerX: 0
+    - _MainTexPannerY: 0
+    - _MaskAlphaCutoff: 0
+    - _MaskSpeedU: 0
+    - _MaskSpeedV: 0
+    - _MaskToggle: 0
+    - _MaskUVSpeedMode: 0
+    - _RgbAsAlpha: 0
+    - _SoftDissolveMode: 1
+    - _SoftEdge: 0.529
+    - _Tex_u_speed: 0
+    - _Tex_v_Speed: 0
+    - _UV_ON: 0
+    - _UesZW: 0
+    - _VertexAnimation: 0
+    - _WindEdgeFlutter: 0.5
+    - _WindEdgeFlutterFreqScale: 0.5
+    - _ZTest: 4
+    - _rongjie: 1
+    - _rongjie_UV: 0
+    m_Colors:
+    - _Difusecolr: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _EdgeColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Speed: {r: 0, g: 0, b: 0, a: 0}
+    - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _UIMaskRect: {r: 1, g: 1, b: 1, a: 1}
+    - _Wind: {r: 1, g: 1, b: 1, a: 1}

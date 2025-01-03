@@ -1,0 +1,12 @@
+namespace ProtoTable.WholeBargainDiscountTable;
+enum eCrypt :int{
+	code = -16543686,}
+
+namespace ProtoTable;
+table WholeBargainDiscountTable{
+	ID:int32;
+	JoinNum:int32;
+	Discount:int32;
+}
+
+root_type WholeBargainDiscountTable;

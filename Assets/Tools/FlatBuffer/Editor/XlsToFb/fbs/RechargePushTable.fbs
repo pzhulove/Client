@@ -1,0 +1,26 @@
+namespace ProtoTable.RechargePushTable;
+enum eCrypt :int{
+	code = 783499981,}
+
+namespace ProtoTable;
+table RechargePushTable{
+	ID:int32;
+	Type:int32;
+	LvLower:int32;
+	LvToplimit:int32;
+	VipLvLower:int32;
+	JudgePropID:string;
+	ParameterType:int32;
+	DaysBefore:string;
+	Parameter1:int32;
+	Recent:int32;
+	Parameter2:int32;
+	PushID:string;
+	BuyTimes:int32;
+	PushPrice:int32;
+	PushBeforePrice:int32;
+	PushCD:int32;
+	CoolCD:int32;
+}
+
+root_type RechargePushTable;

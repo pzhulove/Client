@@ -1,0 +1,21 @@
+namespace ProtoTable.VipTable;
+enum eCrypt :int{
+	code = 501515545,}
+
+namespace ProtoTable;
+table VipTable{
+	ID:int32;
+	GiftID:int32;
+	TotalRmb:int32;
+	GiftItems:[string];
+	GiftPrePrice:int32;
+	GiftDiscountPrice:int32;
+	ArtifactJarDicountRate:[string];
+	ArtifactJarDiscountProb:[string];
+	ArtifactJarDiscountEffectTimes:[string];
+	ArtifactJarDiscountETProb:[string];
+	ArtifactJarDiscountEffectTimes1:[string];
+	ArtifactJarDiscountETProb1:[string];
+}
+
+root_type VipTable;

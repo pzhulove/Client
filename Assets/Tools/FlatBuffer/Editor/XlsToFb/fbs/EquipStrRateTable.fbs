@@ -1,0 +1,29 @@
+namespace ProtoTable.EquipStrRateTable;
+enum eFail:int { 
+	NONE = 0,    // 无
+	MINUSONE = 1,    // 减一
+	ZERO = 2,    // 归零
+	BROKEN = 3,    // 破碎
+	MINUSMORE = 4,    // 随机降2-3级
+}
+namespace ProtoTable.EquipStrRateTable;
+enum eCrypt :int{
+	code = -499643615,}
+
+namespace ProtoTable;
+table EquipStrRateTable{
+	ID:int32;
+	Type:int32;
+	Strengthen:int32;
+	SucRate:[int32];
+	Fail:EquipStrRateTable.eFail;
+	Fix1:int32;
+	Fix1Max:int32;
+	Fix2:int32;
+	Fix2Max:int32;
+	Fix3Condition:[int32];
+	Fix3:int32;
+	TickAddNum:int32;
+}
+
+root_type EquipStrRateTable;

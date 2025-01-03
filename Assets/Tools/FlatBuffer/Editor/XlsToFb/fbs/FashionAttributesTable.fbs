@@ -1,0 +1,13 @@
+namespace ProtoTable.FashionAttributesTable;
+enum eCrypt :int{
+	code = -1878141935,}
+
+namespace ProtoTable;
+table FashionAttributesTable{
+	ID:int32;
+	PropType:[int32];
+	PropValue:[int32];
+	BuffID:[int32];
+}
+
+root_type FashionAttributesTable;

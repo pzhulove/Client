@@ -1,0 +1,48 @@
+namespace ProtoTable.SkillDescriptionTable;
+enum eCrypt :int{
+	code = -426948431,}
+
+namespace ProtoTable;
+table SkillDescriptionTable{
+	ID:int32;
+	Name:string;
+	Description:string;
+	DataText1:string;
+	DataNumber1:string;
+	PVPDataNum1:string;
+	DataText2:string;
+	DataNumber2:string;
+	PVPDataNum2:string;
+	DataText3:string;
+	DataNumber3:string;
+	PVPDataNum3:string;
+	DataText4:string;
+	DataNumber4:string;
+	PVPDataNum4:string;
+	DataText5:string;
+	DataNumber5:string;
+	PVPDataNum5:string;
+	DataText6:string;
+	DataNumber6:string;
+	PVPDataNum6:string;
+	DataText7:string;
+	DataNumber7:string;
+	PVPDataNum7:string;
+	DataText8:string;
+	DataNumber8:string;
+	PVPDataNum8:string;
+	DataText9:string;
+	DataNumber9:string;
+	PVPDataNum9:string;
+	DataText10:string;
+	DataNumber10:string;
+	PVPDataNum10:string;
+	DataText11:string;
+	DataNumber11:string;
+	PVPDataNum11:string;
+	DataText12:string;
+	DataNumber12:string;
+	PVPDataNum12:string;
+}
+
+root_type SkillDescriptionTable;

@@ -1,0 +1,12 @@
+namespace ProtoTable.GuildBuildingPointTable;
+enum eCrypt :int{
+	code = -789860713,}
+
+namespace ProtoTable;
+table GuildBuildingPointTable{
+	ID:int32;
+	buildLvl:[int32];
+	buildPoint:[int32];
+}
+
+root_type GuildBuildingPointTable;

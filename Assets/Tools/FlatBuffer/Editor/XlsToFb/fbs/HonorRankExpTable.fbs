@@ -1,0 +1,13 @@
+namespace ProtoTable.HonorRankExpTable;
+enum eCrypt :int{
+	code = 368717801,}
+
+namespace ProtoTable;
+table HonorRankExpTable{
+	ID:int32;
+	Rank:int32;
+	RewardExp:int32;
+	RankLvl:int32;
+}
+
+root_type HonorRankExpTable;

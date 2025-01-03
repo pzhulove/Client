@@ -1,0 +1,14 @@
+namespace ProtoTable.DungeonVerifyProbTable;
+enum eCrypt :int{
+	code = -247309266,}
+
+namespace ProtoTable;
+table DungeonVerifyProbTable{
+	ID:int32;
+	Name:string;
+	Oldname:string;
+	Sampling:string;
+	SafeModeProb:int32;
+}
+
+root_type DungeonVerifyProbTable;

@@ -1,0 +1,11 @@
+namespace ProtoTable.AdventurePassBuyLevelTable;
+enum eCrypt :int{
+	code = -51098687,}
+
+namespace ProtoTable;
+table AdventurePassBuyLevelTable{
+	ID:int32;
+	PointCost:int32;
+}
+
+root_type AdventurePassBuyLevelTable;

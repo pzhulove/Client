@@ -1,0 +1,25 @@
+namespace ProtoTable.EquipQLRandTable;
+enum eColor:int { 
+	CL_NONE = 0,    // 没有
+	WHITE = 1,    // 普通
+	BLUE = 2,    // 高级
+	PURPLE = 3,    // 稀有
+	GREEN = 4,    // 传承
+	PINK = 5,    // 神器
+	YELLOW = 6,    // 史诗
+}
+namespace ProtoTable.EquipQLRandTable;
+enum eCrypt :int{
+	code = -1155177902,}
+
+namespace ProtoTable;
+table EquipQLRandTable{
+	ID:int32;
+	Color:EquipQLRandTable.eColor;
+	Count:int32;
+	RandRange:[int32];
+	SupriseRate:int32;
+	SurpriseRange:[int32];
+}
+
+root_type EquipQLRandTable;

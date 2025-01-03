@@ -1,0 +1,12 @@
+namespace ProtoTable.AuctionRecoveItemTable;
+enum eCrypt :int{
+	code = -359186944,}
+
+namespace ProtoTable;
+table AuctionRecoveItemTable{
+	ID:int32;
+	Name:string;
+	SysRecoPriceRate:int32;
+}
+
+root_type AuctionRecoveItemTable;

@@ -1,0 +1,16 @@
+namespace ProtoTable.BetHorseRand;
+enum eCrypt :int{
+	code = -192585619,}
+
+namespace ProtoTable;
+table BetHorseRand{
+	ID:int32;
+	WeatherType:int32;
+	WeatherRate:int32;
+	TerrainType:int32;
+	TerrainRate:int32;
+	StatusType:int32;
+	StatusRate:int32;
+}
+
+root_type BetHorseRand;

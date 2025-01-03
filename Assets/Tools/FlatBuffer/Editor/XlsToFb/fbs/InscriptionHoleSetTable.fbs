@@ -1,0 +1,12 @@
+namespace ProtoTable.InscriptionHoleSetTable;
+enum eCrypt :int{
+	code = -2109726158,}
+
+namespace ProtoTable;
+table InscriptionHoleSetTable{
+	ID:int32;
+	ThirdType:[int32];
+	InscriptionHolePicture:string;
+}
+
+root_type InscriptionHoleSetTable;

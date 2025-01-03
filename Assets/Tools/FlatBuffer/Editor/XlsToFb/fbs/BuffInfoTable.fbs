@@ -1,0 +1,50 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.BuffInfoTable;
+enum eDescType:int { 
+	Common = 0,    // 通用
+	SkillLevel = 1,    // 技能等级加成
+}
+enum eBufferType:int { 
+	BTR_LV = 0,    // 等级类型加成
+	BTR_ATTR = 1,    // 属性类型加成
+}
+namespace ProtoTable.BuffInfoTable;
+enum eCrypt :int{
+	code = -337940933,}
+
+namespace ProtoTable;
+table BuffInfoTable{
+	ID:int32;
+	Name:[string];
+	Icon:string;
+	Description:[string];
+	DescType:BuffInfoTable.eDescType;
+	DetailDescription:[string];
+	SortID:int32;
+	BufferType:BuffInfoTable.eBufferType;
+	NeedHint:int32;
+	BuffID:int32;
+	MonsterTypeMap:[UnionCell];
+	BuffLevel:UnionCell;
+	BuffTarget:int32;
+	BuffTargetRadius:int32;
+	SkillID:[int32];
+	monsterModeType:int32;
+	AttachBuffRate:UnionCell;
+	AttachBuffTime:UnionCell;
+	BuffInfoStartCD:UnionCell;
+	BuffInfoCD:UnionCell;
+	BuffAttack:UnionCell;
+	BuffCondition:int32;
+	BuffDelay:int32;
+	BuffRangeRadius:UnionCell;
+	BuffRangeCheckInterval:int32;
+	ConditionSkillID:[int32];
+	RelatedSkillID:int32;
+	EffectName:string;
+	EffectLocateName:string;
+	RelatedSkillLV:[int32];
+}
+
+root_type BuffInfoTable;

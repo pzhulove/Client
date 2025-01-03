@@ -1,0 +1,12 @@
+namespace ProtoTable.StrengthenTicketFuseTable;
+enum eCrypt :int{
+	code = 1204053141,}
+
+namespace ProtoTable;
+table StrengthenTicketFuseTable{
+	ID:int32;
+	StrengthenLv:int32;
+	FixM:int32;
+}
+
+root_type StrengthenTicketFuseTable;

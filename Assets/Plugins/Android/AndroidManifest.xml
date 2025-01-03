@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hegu.dnf.test"
+    android:versionCode="1"
+    android:versionName="1.0">
+    
+ <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+	
+    <application
+        android:name="com.etond.utility.so.SoApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/app_icon"
+		tools:replace="android:icon"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:windowSoftInputMode="adjustUnspecified|stateHidden"
+        android:supportsRtl="true">
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        
+        <activity android:name="com.tm.dnl15.MainActivity"
+                  android:label="@string/app_name"
+				  android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+                  android:screenOrientation="landscape"
+                  android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+	    
+	<!--UniWebview start-->
+	  <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+    	  <meta-data android:name="android.max_aspect" android:value="2.4"/>
+          <meta-data android:name="android.notch_support" android:value="true"/>
+	  <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        </activity>
+        <activity android:name="com.onevcat.uniwebview.UniWebViewFileChooserActivity" />
+	  <!--UniWebview end-->
+	  
+	  
+	    <!--YouMe Voice SDK Start-->
+        <receiver android:name="com.youme.im.NetworkStatusReceiver" android:label="NetworkConnection" >  
+            <intent-filter>  
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />  
+            </intent-filter>
+        </receiver>
+ 
+  
+        <service android:name ="com.youme.voiceengine.VoiceEngineService"> 
+            <intent-filter> 
+                <action android:name="com.youme.voiceengine.VoiceEngineService"/> 
+                <category android:name="android.intent.category.default"/> 
+            </intent-filter> 
+        </service>
+      <!--YouMe Voice SDK End -->
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READER_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.webkit.permission.PLUGIN"/>
+   
+   
+	
+	  <!-- YouMe Voice SDK Start -->
+	  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26" />
+	  <uses-permission android:name="android.permission.INTERNET" />
+	  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+	  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	  <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	  <uses-permission android:name="android.permission.BLUETOOTH" />
+	  <!-- YouMe Voice SDK End -->
+	
+
+  
+</manifest>

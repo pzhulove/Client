@@ -1,0 +1,17 @@
+namespace ProtoTable.ExpeditionMapTable;
+enum eCrypt :int{
+	code = -1661111065,}
+
+namespace ProtoTable;
+table ExpeditionMapTable{
+	ID:int32;
+	MapName:string;
+	PlayerLevelLimit:int32;
+	AdventureTeamLevelLimit:int32;
+	RolesCapacity:int32;
+	ExpeditionTime:string;
+	BackgroundPath:string;
+	MiniMapPath:string;
+}
+
+root_type ExpeditionMapTable;

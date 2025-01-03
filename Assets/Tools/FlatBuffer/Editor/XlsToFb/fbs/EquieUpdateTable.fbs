@@ -1,0 +1,16 @@
+namespace ProtoTable.EquieUpdateTable;
+enum eCrypt :int{
+	code = 437936418,}
+
+namespace ProtoTable;
+table EquieUpdateTable{
+	ID:int32;
+	EquieID:int32;
+	JobID:int32;
+	NextLvEquieID:int32;
+	MaterialConsume:string;
+	IncreaseMaterialConsume:string;
+	AnnounceID:int32;
+}
+
+root_type EquieUpdateTable;

@@ -1,0 +1,15 @@
+namespace ProtoTable.TeamCopyBossTable;
+enum eCrypt :int{
+	code = -1989788737,}
+
+namespace ProtoTable;
+table TeamCopyBossTable{
+	ID:int32;
+	teamCopyID:int32;
+	teamGrade:int32;
+	stage:int32;
+	appearField:int32;
+	closeField:int32;
+}
+
+root_type TeamCopyBossTable;

@@ -1,0 +1,86 @@
+namespace ProtoTable.NpcTable;
+enum eFunction:int { 
+	none = 0,    // 无
+	invalid = -1,    // 无效的
+	production = 1,    // 生产
+	shopping = 2,    // 商店
+	strengthen = 3,    // 强化
+	decompose = 4,    // 分解
+	enchanting = 5,    // 附魔
+	store = 6,    // 仓库
+	mail = 7,    // 邮箱
+	Townstatue = 8,    // 城主雕像
+	RandomTreasure = 9,    // 随机宝箱
+	clicknpc = 100,    // 直接点击类
+	attackCityMonster = 200,    // 攻城怪物类
+	TAPGraduation = 300,    // 为某个徒弟出师
+	guildDungeonActivityChest = 301,    // 公会地下城活动宝箱
+	guildGuardStatue = 302,    // 公会守卫者雕像
+	BlackMarketMerchan = 303,    // 黑市商人
+	Chiji = 304,    // 吃鸡
+	AnniersaryParty = 305,    // 周年派对
+}
+enum eSubType:int { 
+	None = 0,    // 无
+	TownOwner = 1,    // 城主
+	TownViceOwner_1 = 2,    // 副城主1
+	TownViceOwner_2 = 3,    // 副城主2
+	GuildGuard1 = 4,    // 公会守卫者1
+	GuildGuard2 = 5,    // 公会守卫者2
+	GuildGuard3 = 6,    // 公会守卫者3
+	ShopNpc = 7,    // npc商店
+	MonsterNpc = 8,    // 野怪npc
+}
+enum eDialogType:int { 
+	DialogType_None = 0,   // default
+	random = 1,    // 随机
+	trival = 2,    // 顺序
+}
+enum eDialogShowType:int { 
+	DialogShowType_None = 0,   // default
+	Direct = 1,    // 直接弹
+	SecondaryInterface = 2,    // 二级界面
+}
+namespace ProtoTable.NpcTable;
+enum eCrypt :int{
+	code = 482128735,}
+
+namespace ProtoTable;
+table NpcTable{
+	ID:int32;
+	NpcName:string;
+	NpcIcon:string;
+	NpcBody:string;
+	NpcTitle:string;
+	NpcTitleIcon:string;
+	MapID:[int32];
+	Location:int32;
+	ResID:int32;
+	UnitTableID:int32;
+	NpcRandomTalk:string;
+	NpcTalk:[string];
+	Function:NpcTable.eFunction;
+	SubType:NpcTable.eSubType;
+	OpenLevel:int32;
+	FunctionIntParam:[int32];
+	FunctionIntParam2:int32;
+	FunctionIcon:string;
+	TalkContent:string;
+	Interval:int32;
+	DialogType:NpcTable.eDialogType;
+	Height:int32;
+	SEStart:[string];
+	SEEnd:[string];
+	SEStand:[string];
+	SEPeriod:int32;
+	Probability:int32;
+	ExchangeShopData:string;
+	DungeonID:int32;
+	ChallengeTimes:int32;
+	MustTeam:int32;
+	NameLocalPosY:int32;
+	Hard:int32;
+	DialogShowType:NpcTable.eDialogShowType;
+}
+
+root_type NpcTable;

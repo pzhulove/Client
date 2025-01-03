@@ -1,0 +1,15 @@
+namespace ProtoTable.DefaultAdminServerTable;
+enum eCrypt :int{
+	code = -1051300737,}
+
+namespace ProtoTable;
+table DefaultAdminServerTable{
+	ID:int32;
+	ServerID:string;
+	ServerIP:string;
+	ServerName:string;
+	ServerPort:int32;
+	ServerStaus:int32;
+}
+
+root_type DefaultAdminServerTable;

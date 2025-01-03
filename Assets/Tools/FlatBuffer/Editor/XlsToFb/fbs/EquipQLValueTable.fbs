@@ -1,0 +1,37 @@
+namespace ProtoTable.EquipQLValueTable;
+enum ePart:int { 
+	NONE = 0,    // 没有
+	WEAPON = 1,    // 武器
+	CLOTH = 2,    // 布甲
+	LEATHER = 3,    // 皮甲
+	HEAVY = 4,    // 重甲
+	PLATE = 5,    // 板甲
+	LIGHT = 6,    // 轻甲
+	JEWELRY = 7,    // 首饰
+	ASSIST = 8,    // 辅助装备
+	MAGICSTONE = 9,    // 魔法石
+	EARRINGS = 10,    // 耳环
+}
+namespace ProtoTable.EquipQLValueTable;
+enum eCrypt :int{
+	code = 571032840,}
+
+namespace ProtoTable;
+table EquipQLValueTable{
+	ID:int32;
+	Part:EquipQLValueTable.ePart;
+	AtkDef:int32;
+	FourDimensional:int32;
+	PerfectAtkDef:int32;
+	PerfectFourDimensional:int32;
+	StrProp:int32;
+	PerfectStrProp:int32;
+	DefProp:int32;
+	PerfectDefProp:int32;
+	AbnormalResists:int32;
+	PerfectAbnormalResists:int32;
+	IndependentResists:int32;
+	PerfectIndependentResists:int32;
+}
+
+root_type EquipQLValueTable;

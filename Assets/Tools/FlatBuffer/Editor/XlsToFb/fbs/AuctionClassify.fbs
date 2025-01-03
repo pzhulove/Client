@@ -1,0 +1,99 @@
+namespace ProtoTable.AuctionClassify;
+enum eType:int { 
+	AT_NONE = 0,    // 无
+	AT_EQUIP = 1,    // 装备
+	AT_DEFENCE = 2,    // 防具
+	AT_JEWELRY = 3,    // 首饰
+	AT_ARMOR = 4,    // 护甲
+	AT_QUALITY = 5,    // 品质
+	AT_EXPENDABLE = 6,    // 消耗品
+	AT_MATERIAL = 7,    // 材料
+}
+enum eSubType:int { 
+	AST_NONE = 0,    // 无
+	AST_WEAPON = 1,    // 武器
+	AST_HEAD = 2,    // 头部
+	AST_CHEST = 3,    // 胸
+	AST_BELT = 4,    // 腰带
+	AST_LEG = 5,    // 护腿
+	AST_BOOT = 6,    // 鞋子
+	AST_RING = 7,    // 戒指
+	AST_NECKLASE = 8,    // 项链
+	AST_BRACELET = 9,    // 手镯
+	AST_TITLE = 10,    // 称号
+	AST_EXP = 19,    // 经验
+	AST_EnchantmentCard = 25,    // 附魔卡
+	AST_HP_DRUG = 50,    // hp药水
+	AST_MP_DRUG = 51,    // mp药水
+	AST_BeadCard = 54,    // 宝珠卡
+	AttributeDrug = 62,    // 属性药水
+}
+enum eThirdType:int { 
+	ATT_NONE = 0,    // 无
+	ATT_HUGESWORD = 1,    // 重剑
+	ATT_KATANA = 2,    // 武士刀
+	ATT_SHORTSWORD = 3,    // 轻剑
+	ATT_BEAMSWORD = 4,    // 光剑
+	ATT_BLUNT = 5,    // 钝器
+	ATT_REVOLVER = 6,    // 手枪
+	ATT_CROSSBOW = 7,    // 弩
+	ATT_HANDCANNON = 8,    // 重机炮
+	ATT_RIFLE = 9,    // 步枪
+	ATT_PISTOL = 10,    // 手枪
+	ATT_STAFF = 11,    // 法杖
+	ATT_WAND = 12,    // 魔杖
+	ATT_SPEAR = 13,    // 矛
+	ATT_STICK = 14,    // 棍棒
+	ATT_BESOM = 15,    // 扫把
+	ATT_GLOVE = 16,    // 拳刃
+	ATT_BIKAI = 17,    // 臂铠
+	ATT_CLAW = 18,    // 爪
+	ATT_OFG = 19,    // 拳套
+	ATT_EAST_STICK = 20,    // 旋棍
+	ATT_CLOTH = 51,    // 布甲
+	ATT_SKIN = 52,    // 皮夹
+	ATT_LIGHT = 53,    // 轻甲
+	ATT_HEAVY = 54,    // 锁甲
+	ATT_PLATE = 55,    // 板甲
+	ATT_BatteDrug = 401,    // 战斗药水
+}
+enum eJob:int { 
+	AC_JIANSHI = 0,    // 鬼剑士
+	AC_QIANGSHOU = 1,    // 神枪手
+	AC_FASHI = 2,    // 魔法师
+	AC_GEDOU = 3,    // 格斗家
+	AC_JOB_ALL = 4,    // 全部
+}
+enum eQuality:int { 
+	QL_NONE = 0,    // 没有
+	QL_WHITE = 1,    // 普通
+	QL_BLUE = 2,    // 高级
+	QL_PURPLE = 3,    // 稀有
+	QL_GREEN = 4,    // 传承
+	QL_PINK = 5,    // 神器
+	QL_YELLOW = 6,    // 传说
+	QL__ALL = 7,    // 全部
+}
+enum eSum:int { 
+	SUM_SINGLE = 0,    // 单项
+	SUM_ALL = 1,    // 全部
+}
+namespace ProtoTable.AuctionClassify;
+enum eCrypt :int{
+	code = -1389355257,}
+
+namespace ProtoTable;
+table AuctionClassify{
+	ID:int32;
+	Name:string;
+	Type:AuctionClassify.eType;
+	IsFirstNode:int32;
+	SubType:AuctionClassify.eSubType;
+	ThirdType:AuctionClassify.eThirdType;
+	Job:AuctionClassify.eJob;
+	Quality:AuctionClassify.eQuality;
+	Sum:AuctionClassify.eSum;
+	ChildrenIDs:[int32];
+}
+
+root_type AuctionClassify;

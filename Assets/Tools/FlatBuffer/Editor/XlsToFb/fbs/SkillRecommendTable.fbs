@@ -1,0 +1,16 @@
+namespace ProtoTable.SkillRecommendTable;
+enum eCrypt :int{
+	code = 1198968983,}
+
+namespace ProtoTable;
+table SkillRecommendTable{
+	ID:int32;
+	JobID:int32;
+	SkillMode:int32;
+	MaxLv:int32;
+	SkillIDVec:[int32];
+	PriorityVec:[int32];
+	PosIDVec:[int32];
+}
+
+root_type SkillRecommendTable;

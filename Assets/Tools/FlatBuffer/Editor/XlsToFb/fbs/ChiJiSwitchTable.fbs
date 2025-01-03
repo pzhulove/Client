@@ -1,0 +1,13 @@
+namespace ProtoTable.ChiJiSwitchTable;
+enum eCrypt :int{
+	code = 1802735813,}
+
+namespace ProtoTable;
+table ChiJiSwitchTable{
+	ID:int32;
+	OpenTime:string;
+	CloseTime:string;
+	IsOpen:int32;
+}
+
+root_type ChiJiSwitchTable;

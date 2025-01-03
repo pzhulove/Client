@@ -1,0 +1,20 @@
+namespace ProtoTable.LostDungeonMissionTable;
+enum eCrypt :int{
+	code = 736771014,}
+
+namespace ProtoTable;
+table LostDungeonMissionTable{
+	ID:int32;
+	Name:string;
+	Desc:string;
+	Explain:string;
+	Icon:string;
+	Type:int32;
+	Value:string;
+	AcceptLimit:int32;
+	FrontCond1:int32;
+	Score:int32;
+	Grade:int32;
+}
+
+root_type LostDungeonMissionTable;

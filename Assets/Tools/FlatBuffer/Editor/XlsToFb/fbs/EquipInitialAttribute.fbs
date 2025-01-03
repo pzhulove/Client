@@ -1,0 +1,16 @@
+namespace ProtoTable.EquipInitialAttribute;
+enum eCrypt :int{
+	code = -1229955750,}
+
+namespace ProtoTable;
+table EquipInitialAttribute{
+	ID:int32;
+	ItemID:int32;
+	Strengthen:int32;
+	EquipQL:int32;
+	Lease:int32;
+	FitOccu:[string];
+	Source:int32;
+}
+
+root_type EquipInitialAttribute;

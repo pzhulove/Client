@@ -1,0 +1,124 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.EffectTable;
+enum eEffectTargetType:int { 
+	H_NONE = 0,    // 不指定
+	H_ENEMY = 1,    // 敌人
+	H_FRIEND = 2,    // 友方
+}
+enum eAvoidDamageType:int { 
+	AV_NONE = 0,    // 无
+	AV_AREA = 1,    // 指定区域
+	AV_FACINGAWAY = 2,    // 背对释放者
+}
+enum eDamageType:int { 
+	DamageType_None = 0,   // default
+	PHYSIC = 1,    // 物理
+	MAGIC = 2,    // 魔法
+}
+enum eDamageDistanceType:int { 
+	NONE = 0,    // 无距离
+	NEAR = 1,    // 近
+	FAR = 2,    // 远
+}
+enum eHitEffect:int { 
+	HIT = 0,    // 普通被击
+	HITFLY = 1,    // 击飞
+	NO_EFFECT = 2,    // 没有效果
+}
+enum eSummonPosType:int { 
+	FACE = 0,    // 面前一个单位
+	ORIGIN = 1,    // 原地
+	FACE_FORCE = 2,    // 面前一个单位不管阻挡
+	FACE_BLACK = 3,    // 面前没有遮挡的位置
+}
+enum eBuffTarget:int { 
+	SELF = 0,    // 自身
+	ENEMY = 1,    // 攻击对象
+}
+namespace ProtoTable.EffectTable;
+enum eCrypt :int{
+	code = -1867646815,}
+
+namespace ProtoTable;
+table EffectTable{
+	ID:int32;
+	Name:string;
+	SkillID:int32;
+	EffectTargetType:EffectTable.eEffectTargetType;
+	HasDamage:int32;
+	IsFriendDamage:int32;
+	AvoidDamageType:EffectTable.eAvoidDamageType;
+	DamageType:EffectTable.eDamageType;
+	DamageDistanceType:EffectTable.eDamageDistanceType;
+	DamageMaxCount:int32;
+	AttachCritical:UnionCell;
+	HitThroughRate:UnionCell;
+	MagicElementType:int32;
+	MagicElementISuse:bool;
+	HitSpreadOut:int32;
+	DamageRateAPC:UnionCell;
+	DamageRate:UnionCell;
+	DamageFixedValue:UnionCell;
+	DamageRatePVP:UnionCell;
+	DamageFixedValuePVP:UnionCell;
+	AttachMonsterRace:[int32];
+	AttachDamageRate:UnionCell;
+	IsCanMiss:bool;
+	HitGrab:bool;
+	HardValue:UnionCell;
+	UseStandardWeight:bool;
+	ClearTargetState:[int32];
+	UseNoBlock:bool;
+	FrozenDistanceMax:int32;
+	ChangeFaceDir:bool;
+	Attack:UnionCell;
+	AttackForceAcc:UnionCell;
+	AttackForceAccTime:UnionCell;
+	FloatingRate:UnionCell;
+	FloatForceAcc:UnionCell;
+	FloatForceAccTime:UnionCell;
+	HitFloatXForce:UnionCell;
+	HitFloatXForceAcc:UnionCell;
+	HitFloatXForceAccTime:UnionCell;
+	HitFloatYForce:UnionCell;
+	RepeatAttackInterval:[int32];
+	HitDeadFall:int32;
+	HitEffect:EffectTable.eHitEffect;
+	HitActionType:int32;
+	HitPause:bool;
+	HitPauseTime:int32;
+	HitTargetPause:bool;
+	HitTargetPauseTime:int32;
+	FloatTargetPauseTime:int32;
+	HitEffectPause:bool;
+	HitScreenShakeTime:int32;
+	HitScreenShakeSpeed:int32;
+	HitScreenShakeX:int32;
+	HitScreenShakeY:int32;
+	ScreenShakeID:int32;
+	AttachEntity:[int32];
+	SummonID:int32;
+	SummonPosType:EffectTable.eSummonPosType;
+	SummonPosType2:[int32];
+	SummonDisplay:int32;
+	SummonNum:UnionCell;
+	SummonLevel:UnionCell;
+	SummonNumLimit:int32;
+	SummonGroupNumLimit:UnionCell;
+	SummonGroup:int32;
+	SummonRelation:int32;
+	SummonRandList:[int32];
+	KillLastSummon:int32;
+	BuffID:int32;
+	BuffLevel:UnionCell;
+	BuffTarget:EffectTable.eBuffTarget;
+	AttachBuffRate:UnionCell;
+	AttachBuffTime:UnionCell;
+	BuffAttack:UnionCell;
+	BuffInfoID:[int32];
+	PVPBuffInfoID:[int32];
+	SummonInfoID:int32;
+}
+
+root_type EffectTable;

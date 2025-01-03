@@ -1,0 +1,12 @@
+namespace ProtoTable.AdventurePassActivityTable;
+enum eCrypt :int{
+	code = -68319084,}
+
+namespace ProtoTable;
+table AdventurePassActivityTable{
+	ID:int32;
+	Activity:int32;
+	Exp:int32;
+}
+
+root_type AdventurePassActivityTable;

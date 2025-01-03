@@ -1,0 +1,19 @@
+namespace ProtoTable.AchievementLevelInfoTable;
+enum eCrypt :int{
+	code = 182075077,}
+
+namespace ProtoTable;
+table AchievementLevelInfoTable{
+	ID:int32;
+	Name:string;
+	Title:string;
+	Icon:string;
+	TextIcon:string;
+	Min:int32;
+	Max:int32;
+	Level:int32;
+	AwardID:[int32];
+	AwardCount:[int32];
+}
+
+root_type AchievementLevelInfoTable;

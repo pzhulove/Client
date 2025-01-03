@@ -1,0 +1,17 @@
+{
+    "group": "Common",
+    "libs": [],
+    "frameworks": [
+                    "CoreFoundation.framework:weak",
+                    "WebKit.framework:weak"
+    		  ],
+    "headerpaths": [],
+    "files":   [
+                	"Common/IOSBridge.h",
+                	"Common/IOSBridge.mm"
+                ],
+    "folders": [],    
+    "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$"],
+    "compiler_flags": [],
+    "linker_flags": []
+}

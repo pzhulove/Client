@@ -1,0 +1,12 @@
+namespace ProtoTable.SeasonRewardTable;
+enum eCrypt :int{
+	code = -1237728204,}
+
+namespace ProtoTable;
+table SeasonRewardTable{
+	ID:int32;
+	RankRange:[int32];
+	Rewards:[string];
+}
+
+root_type SeasonRewardTable;

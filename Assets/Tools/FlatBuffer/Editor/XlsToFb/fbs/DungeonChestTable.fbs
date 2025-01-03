@@ -1,0 +1,16 @@
+namespace ProtoTable.DungeonChestTable;
+enum eCrypt :int{
+	code = -17028789,}
+
+namespace ProtoTable;
+table DungeonChestTable{
+	ID:int32;
+	GoldID:int32;
+	NormalChestID:int32;
+	VipChestID:int32;
+	PayChestID:int32;
+	PayChestCostItem:int32;
+	PayChestCost:int32;
+}
+
+root_type DungeonChestTable;

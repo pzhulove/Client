@@ -1,0 +1,21 @@
+namespace ProtoTable.ChargePacketTable;
+enum eCrypt :int{
+	code = -1353523056,}
+
+namespace ProtoTable;
+table ChargePacketTable{
+	ID:int32;
+	Sort:int32;
+	Name:string;
+	OldPrice:int32;
+	Price:int32;
+	VipScore:int32;
+	StartTime:int32;
+	EndTime:int32;
+	limitDailyNum:int32;
+	limitTotalNum:int32;
+	rewards:string;
+	Icon:string;
+}
+
+root_type ChargePacketTable;

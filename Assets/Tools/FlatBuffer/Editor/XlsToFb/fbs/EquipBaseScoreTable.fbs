@@ -1,0 +1,18 @@
+namespace ProtoTable.EquipBaseScoreTable;
+enum eCrypt :int{
+	code = -1655327513,}
+
+namespace ProtoTable;
+table EquipBaseScoreTable{
+	ID:int32;
+	Type:int32;
+	SubType:int32;
+	ThirdType:int32;
+	NeedLevel:int32;
+	Color:int32;
+	Color2:int32;
+	SuitId:int32;
+	Score:int32;
+}
+
+root_type EquipBaseScoreTable;

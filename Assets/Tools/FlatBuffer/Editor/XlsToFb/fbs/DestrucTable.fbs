@@ -1,0 +1,40 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.DestrucTable;
+enum eCamp:int { 
+	C_HERO = 0,    // 正义
+	C_ENEMY = 1,    // 邪恶
+	C_ENEMY2 = 2,    // 邪恶2
+}
+enum eType:int { 
+	NONE = 0,    // 无
+	CANDESTORY = 1,    // 可破坏
+	CANNOTDESTORY = 2,    // 不可破坏
+	HAVETODESTRORY = 3,    // 必须破坏
+}
+namespace ProtoTable.DestrucTable;
+enum eCrypt :int{
+	code = 1318618776,}
+
+namespace ProtoTable;
+table DestrucTable{
+	ID:int32;
+	Name:string;
+	Desc:string;
+	Camp:DestrucTable.eCamp;
+	Mode:int32;
+	Level:int32;
+	Hurt:string;
+	DeadEffect:string;
+	Exp:int32;
+	PrefixID:int32;
+	DropID:int32;
+	IdleSplitCount:UnionCell;
+	IdleCount:int32;
+	BlockPaths:[string];
+	DestructHitCount:int32;
+	Type:DestrucTable.eType;
+	IsDestruct:bool;
+}
+
+root_type DestrucTable;

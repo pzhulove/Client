@@ -1,0 +1,18 @@
+namespace ProtoTable.PetDialogBaseTable;
+enum eFilterType:int { 
+	Invalid = 0,    // 无效
+	Random = 1,    // 随机
+}
+namespace ProtoTable.PetDialogBaseTable;
+enum eCrypt :int{
+	code = 1391162910,}
+
+namespace ProtoTable;
+table PetDialogBaseTable{
+	ID:int32;
+	Desc:string;
+	FilterType:PetDialogBaseTable.eFilterType;
+	DialogIDs:[int32];
+}
+
+root_type PetDialogBaseTable;

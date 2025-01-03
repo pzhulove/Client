@@ -1,0 +1,20 @@
+
+namespace FBTransportDoorExtraData;
+
+struct Vector3
+{
+    x:float;
+    y:float;
+    z:float;
+}
+
+table DTransportDoorExtraData 
+{
+	top:Vector3;
+	buttom:Vector3;
+	left:Vector3;
+	right:Vector3;
+}
+
+root_type DTransportDoorExtraData;
+file_identifier "DTra";

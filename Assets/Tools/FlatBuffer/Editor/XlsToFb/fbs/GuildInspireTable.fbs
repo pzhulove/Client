@@ -1,0 +1,13 @@
+namespace ProtoTable.GuildInspireTable;
+enum eCrypt :int{
+	code = -598765305,}
+
+namespace ProtoTable;
+table GuildInspireTable{
+	ID:int32;
+	NeedGuildLevel:int32;
+	ConsumeItem:[string];
+	CrossConsumeItem:[string];
+}
+
+root_type GuildInspireTable;

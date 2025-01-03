@@ -1,0 +1,12 @@
+namespace ProtoTable.MoneyManageTable;
+enum eCrypt :int{
+	code = -877491173,}
+
+namespace ProtoTable;
+table MoneyManageTable{
+	ID:int32;
+	Level:int32;
+	ItemReward:[string];
+}
+
+root_type MoneyManageTable;

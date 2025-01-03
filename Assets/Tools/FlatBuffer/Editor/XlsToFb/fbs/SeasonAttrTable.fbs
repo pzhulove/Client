@@ -1,0 +1,12 @@
+namespace ProtoTable.SeasonAttrTable;
+enum eCrypt :int{
+	code = 1724784624,}
+
+namespace ProtoTable;
+table SeasonAttrTable{
+	ID:int32;
+	Descs:[string];
+	BuffIDs:[int32];
+}
+
+root_type SeasonAttrTable;

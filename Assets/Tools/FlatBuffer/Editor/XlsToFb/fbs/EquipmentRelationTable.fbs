@@ -1,0 +1,87 @@
+namespace ProtoTable.EquipmentRelationTable;
+enum eItemType:int { 
+	ItemType_None = 0,   // default
+	CONGLINYOUXIADUI = 1,    // 丛林游侠队
+	KUANGYEZHIXIN = 2,    // 狂野之心
+	HUANGZUQISHITUAN = 3,    // 皇族骑士团
+	ANYESHOUHUZHE = 4,    // 暗夜守护者
+	XIAOYUANSHIGUANG = 5,    // 校园时光
+	BINGXUEQIYUAN = 6,    // 冰雪奇缘
+	YINENGZHE = 7,    // 异能者
+	HEIQISHI = 8,    // 黑骑士
+	BAISEXIANBING = 9,    // 白色宪兵
+	YINYUESHAONIAN = 10,    // 音乐少年
+	HEIANSHITU = 11,    // 黑暗使徒
+	QINGLIANGYIXIA = 12,    // 清凉一夏
+	JINJIDEYONGSHI = 13,    // 进击的勇士
+	FANGNIUWA = 14,    // 放牛娃
+	YOUHONGMEIGUI = 15,    // 幽红玫瑰
+	JIDIBAIHU = 16,    // 极地白狐
+	DONGRINUANYANGHONG = 17,    // 冬日暖阳(红)
+	DONGRINUANYANGQING = 18,    // 冬日暖阳(青)
+	SHENGDANSHIZHE = 19,    // 圣诞使者
+	GUANGXIUQINGMINGHONG = 20,    // 广袖晴明(红)
+	GUANGXIUQINGMINGZI = 21,    // 广袖晴明(紫)
+	CHENGSHILIERENLAN = 22,    // 城市猎人(蓝)
+	CHENGSHILIERENBAI = 23,    // 城市猎人(白)
+	XINGCHENDAHAI = 24,    // 星辰大海
+	ANYEMOYIHONG = 25,    // 暗夜魔裔(红)
+	ANYEMOYIZI = 26,    // 暗夜魔裔(紫)
+	BAILINGXINGYU = 27,    // 白翎星羽
+	SHENGUANCIFUHONG = 28,    // 神官赐福(红)
+	SHENGUANCIFUZI = 29,    // 神官赐福(紫)
+	TIANYEYUEHUA = 30,    // 天夜月华
+	TIANZHOUGUANGYAO = 31,    // 天昼光耀
+	SHENGYAOLONGHUN = 32,    // 圣耀龙魂
+	KUWOPINSE = 33,    // 酷我拼色
+	KUXIA = 34,    // 酷夏
+	TOUMING = 35,    // 透明
+	ZHANGUOWUSHUANG = 36,    // 战国无双
+	WANSHENGJIE = 37,    // 万圣节
+	GUOQING = 38,    // 国庆
+	GAOJIJIERI = 39,    // 高级节日
+	XIHAXUEYUAN = 40,    // 嘻哈学园
+	SHENSHILIFU = 41,    // 绅士礼服
+	BAIYIN = 42,    // 白银
+	HUANGJIN = 43,    // 黄金
+	DONGRILIANGE = 44,    // 冬日恋歌
+	DOUZHANTIANDI = 45,    // 斗战天地
+	MOYUFEIBAI = 46,    // 墨羽飞白
+	REXUEWUXIAN = 47,    // 热血无限
+	SIYUESHIZHUANG = 48,    // 四月时装
+	WEILAIZHANSHI = 49,    // 未来战士
+	REXUEGUANLAN = 50,    // 热血灌篮
+	EMOZHIWEN = 51,    // 恶魔之吻
+	GUOSHIWUSHUANG = 52,    // 国士无双
+	JIXIANGRUYI = 53,    // 吉祥如意
+	TIANQIONGSHOUHUZHE = 54,    // 天穹守护者
+	TIANSANLAN = 55,    // 天三蓝
+	TIANSANJIN = 56,    // 天三金
+	QIMIAODONGWU = 57,    // 奇妙动物
+	CHIBANG = 100,    // 翅膀
+	QITA = 1000,    // 其他
+}
+enum eSubType:int { 
+	SubType_None = 0,   // default
+	FASHION_HAIR = 11,    // 时装翅膀
+	FASHION_HEAD = 12,    // 时装头饰
+	FASHION_SASH = 13,    // 时装腰饰
+	FASHION_CHEST = 14,    // 时装上装
+	FASHION_LEG = 15,    // 时装下装
+	FASHION_EPAULET = 16,    // 时装胸饰
+}
+namespace ProtoTable.EquipmentRelationTable;
+enum eCrypt :int{
+	code = -1537414434,}
+
+namespace ProtoTable;
+table EquipmentRelationTable{
+	ID:int32;
+	Name:string;
+	ItemType:EquipmentRelationTable.eItemType;
+	Occu:[int32];
+	Priority:int32;
+	SubType:EquipmentRelationTable.eSubType;
+}
+
+root_type EquipmentRelationTable;

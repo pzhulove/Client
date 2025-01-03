@@ -1,0 +1,27 @@
+namespace ProtoTable.AdventureTeamGradeTable;
+enum eGradeEnum:int { 
+	GradeEnum_None = 0,   // default
+	C = 1,    // C级
+	B = 2,    // B级
+	A = 3,    // A级
+	S = 4,    // S级
+	SS = 5,    // SS级
+	SSS = 6,    // SSS级
+}
+namespace ProtoTable.AdventureTeamGradeTable;
+enum eCrypt :int{
+	code = -204914404,}
+
+namespace ProtoTable;
+table AdventureTeamGradeTable{
+	ID:int32;
+	AdventureTeamGrade:string;
+	RoleValueTotalScore:string;
+	SingleServerRanking:int32;
+	CanJoinSortList:int32;
+	OptionalTasks:string;
+	NameColor:string;
+	GradeEnum:AdventureTeamGradeTable.eGradeEnum;
+}
+
+root_type AdventureTeamGradeTable;

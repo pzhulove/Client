@@ -1,0 +1,20 @@
+namespace ProtoTable.NewBieGuideJobData;
+enum eCrypt :int{
+	code = 1083542827,}
+
+namespace ProtoTable;
+table NewBieGuideJobData{
+	ID:int32;
+	Name:string;
+	CDReduceRate:int32;
+	AttackSpped:int32;
+	SpellSpeed:int32;
+	WalkSpeed:int32;
+	SkillLevel:int32;
+	SkillList:[int32];
+	EquipmentID:[int32];
+	SecondComboSkill:[int32];
+	ThirdComboSkill:[int32];
+}
+
+root_type NewBieGuideJobData;

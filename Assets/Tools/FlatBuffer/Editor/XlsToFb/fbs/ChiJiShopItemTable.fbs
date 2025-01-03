@@ -1,0 +1,57 @@
+namespace ProtoTable.ChiJiShopItemTable;
+enum eSubType:int { 
+	ST_NONE = 0,    // 无
+	ST_MATERIAL = 1,    // 奖励
+	ST_WEAPON = 2,    // 武器
+	ST_ARMOR = 3,    // 防具
+	ST_JEWELRY = 4,    // 首饰
+	ST_COST = 5,    // 消耗品
+	ST_VALUABLE = 6,    // 珍品
+	ST_RETINUE = 7,    // 随从
+	ST_TITLE = 8,    // 称号
+	ST_ENERGY = 9,    // 能量石
+	ST_FASHION = 10,    // 时装
+	ST_ORDINARY = 11,    // 普通
+	ST_DAILY = 12,    // 每日
+	ST_GOODS = 13,    // 商品
+	ST_EQUIP = 14,    // 装备
+}
+namespace ProtoTable.ChiJiShopItemTable;
+enum eCrypt :int{
+	code = 2000239930,}
+
+namespace ProtoTable;
+table ChiJiShopItemTable{
+	ID:int32;
+	CommodityName:string;
+	ShopID:int32;
+	UseEqualItem:int32;
+	ItemID:int32;
+	SortID:int32;
+	SubType:ChiJiShopItemTable.eSubType;
+	CostItemID:int32;
+	CostNum:int32;
+	OtherCostItems:string;
+	VIP:int32;
+	VIPLimite:int32;
+	NumLimite:int32;
+	LimiteOnce:int32;
+	GroupNum:int32;
+	Weight:int32;
+	ExLimite:int32;
+	ExValue:int32;
+	OldChangeNewItemID:string;
+	PlayerLevelLimit:string;
+	VipLevelLimit:string;
+	DungeonHardLimit:string;
+	DungeonSubTypeLimit:string;
+	DungeonIdLimit:string;
+	DiscountRate:string;
+	DiscountRateWeight:string;
+	MallGoodID:int32;
+	AttFit:int32;
+	ShowLevelLimit:int32;
+	BuyLimit:int32;
+}
+
+root_type ChiJiShopItemTable;

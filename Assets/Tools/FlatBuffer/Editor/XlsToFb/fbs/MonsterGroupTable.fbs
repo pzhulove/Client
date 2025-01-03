@@ -1,0 +1,17 @@
+namespace ProtoTable.MonsterGroupTable;
+enum eCrypt :int{
+	code = 1363400085,}
+
+namespace ProtoTable;
+table MonsterGroupTable{
+	ID:int32;
+	SetID:int32;
+	GroupID:int32;
+	GroupProb:int32;
+	Prob:int32;
+	LossyType:int32;
+	LossyNum:int32;
+	MonsterList:[int32];
+}
+
+root_type MonsterGroupTable;

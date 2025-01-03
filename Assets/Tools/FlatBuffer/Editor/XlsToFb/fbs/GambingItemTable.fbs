@@ -1,0 +1,23 @@
+namespace ProtoTable.GambingItemTable;
+enum eCrypt :int{
+	code = 781587562,}
+
+namespace ProtoTable;
+table GambingItemTable{
+	ID:int32;
+	ActId:int32;
+	Num:int32;
+	Sort:int32;
+	GambingItem:string;
+	TotalGrops:string;
+	CopiesOfEachGruop:int32;
+	CostCurrencyId:int32;
+	UnitPrice:int32;
+	CoolDownIntervalBetweenGroups:int32;
+	RewardsPerCopy:string;
+	WeightingStepSize:int32;
+	WeightingValue:int32;
+	IsAnnounce:int32;
+}
+
+root_type GambingItemTable;

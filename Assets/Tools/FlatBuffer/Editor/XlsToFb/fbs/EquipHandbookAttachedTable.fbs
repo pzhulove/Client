@@ -1,0 +1,16 @@
+namespace ProtoTable.EquipHandbookAttachedTable;
+enum eCrypt :int{
+	code = -1032178942,}
+
+namespace ProtoTable;
+table EquipHandbookAttachedTable{
+	ID:int32;
+	Name:string;
+	BaseOccopationLimit:[int32];
+	OccopationLimit:[int32];
+	EquipHandbookSourceIDs:[int32];
+	EquipHandbookCommentIDs:[int32];
+	EquipSourceEntrance:int32;
+}
+
+root_type EquipHandbookAttachedTable;

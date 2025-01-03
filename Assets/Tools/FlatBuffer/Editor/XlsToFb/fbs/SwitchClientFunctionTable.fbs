@@ -1,0 +1,22 @@
+namespace ProtoTable.SwitchClientFunctionTable;
+enum eCrypt :int{
+	code = -1559718353,}
+
+namespace ProtoTable;
+table SwitchClientFunctionTable{
+	ID:int32;
+	Name:string;
+	Open:bool;
+	DescA:string;
+	ValueA:int32;
+	DescB:string;
+	ValueB:int32;
+	DescC:string;
+	ValueC:int32;
+	DescD:string;
+	ValueD:[int32];
+	DescE:string;
+	ValueE:int32;
+}
+
+root_type SwitchClientFunctionTable;

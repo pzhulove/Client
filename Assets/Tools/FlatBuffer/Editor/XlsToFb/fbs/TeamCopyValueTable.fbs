@@ -1,0 +1,12 @@
+namespace ProtoTable.TeamCopyValueTable;
+enum eCrypt :int{
+	code = 695857601,}
+
+namespace ProtoTable;
+table TeamCopyValueTable{
+	ID:int32;
+	Name:string;
+	Value:int32;
+}
+
+root_type TeamCopyValueTable;

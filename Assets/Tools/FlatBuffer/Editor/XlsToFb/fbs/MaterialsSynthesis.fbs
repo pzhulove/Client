@@ -1,0 +1,12 @@
+namespace ProtoTable.MaterialsSynthesis;
+enum eCrypt :int{
+	code = 623797180,}
+
+namespace ProtoTable;
+table MaterialsSynthesis{
+	ID:int32;
+	Name:string;
+	Composites:string;
+}
+
+root_type MaterialsSynthesis;

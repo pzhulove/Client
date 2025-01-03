@@ -1,0 +1,22 @@
+namespace ProtoTable.LostDungeonElementTable;
+enum eType:int { 
+	Invalid = 0,    // 无效
+	NormalEntry = 1,    // 普通关卡
+	HardEntry = 2,    // 困难关卡
+	GiftBox = 3,    // 宝箱
+	NPC = 4,    // npc
+}
+namespace ProtoTable.LostDungeonElementTable;
+enum eCrypt :int{
+	code = 634697756,}
+
+namespace ProtoTable;
+table LostDungeonElementTable{
+	ID:int32;
+	Name:string;
+	Type:LostDungeonElementTable.eType;
+	Param:string;
+	Desc:string;
+}
+
+root_type LostDungeonElementTable;

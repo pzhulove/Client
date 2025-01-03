@@ -1,0 +1,31 @@
+namespace ProtoTable.CurrencyQuickTipsTable;
+enum eResetType:int { 
+	None = 0,    // 不刷新
+	Monthly = 1,    // 每月
+	Weekly = 2,    // 每周
+	Daily = 3,    // 每日
+	Season = 4,    // 每赛季
+}
+enum eNotifyType:int { 
+	NT_NONE = 0,    // 无
+	NT_MAGIC_INTEGRAL_EMPTYING = 7,    // 魔罐积分重置
+	NT_ADVENTURE_TEAM_BOUNTY_EMPTYING = 10,    // 佣兵团赏金重置
+	NT_ADVENTURE_TEAM_INHERIT_BLESS_EMPTYING = 11,    // 佣兵团成长药剂重置
+	NT_ADVENTURE_PASS_CARD_COIN_EMPTYING = 12,    // 冒险通行证代币重置
+}
+namespace ProtoTable.CurrencyQuickTipsTable;
+enum eCrypt :int{
+	code = 1062778574,}
+
+namespace ProtoTable;
+table CurrencyQuickTipsTable{
+	ID:int32;
+	Name:string;
+	ResetType:CurrencyQuickTipsTable.eResetType;
+	ResetTimePoint:string;
+	PromptTime:int32;
+	NotifyType:CurrencyQuickTipsTable.eNotifyType;
+	NotifyIcon:string;
+}
+
+root_type CurrencyQuickTipsTable;

@@ -1,0 +1,15 @@
+namespace ProtoTable.SoundTable;
+enum eCrypt :int{
+	code = -1302576307,}
+
+namespace ProtoTable;
+table SoundTable{
+	ID:int32;
+	Descrip:string;
+	Path:[string];
+	Loop:int32;
+	IsRandom:int32;
+	Type:int32;
+}
+
+root_type SoundTable;

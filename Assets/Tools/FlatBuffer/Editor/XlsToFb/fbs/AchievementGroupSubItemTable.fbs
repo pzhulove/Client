@@ -1,0 +1,19 @@
+namespace ProtoTable.AchievementGroupSubItemTable;
+enum eCrypt :int{
+	code = -21208349,}
+
+namespace ProtoTable;
+table AchievementGroupSubItemTable{
+	ID:int32;
+	sort0:int32;
+	sort1:int32;
+	Name:string;
+	Type:int32;
+	Icon:string;
+	PointIcon:string;
+	Desc:string;
+	FunctionID:int32;
+	LinkInfo:string;
+}
+
+root_type AchievementGroupSubItemTable;

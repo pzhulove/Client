@@ -1,0 +1,11 @@
+namespace ProtoTable.EqualItemTable;
+enum eCrypt :int{
+	code = 1619482179,}
+
+namespace ProtoTable;
+table EqualItemTable{
+	ID:int32;
+	EqualItemIDs:[int32];
+}
+
+root_type EqualItemTable;

@@ -1,0 +1,1058 @@
+Assets/Resources/Actor:
+  Assets/Resources/Actor/AvatarFallback:0MB
+
+  Assets/Resources/Actor/Hero_Fightergirl:65.99586MB
+
+  Assets/Resources/Actor/Hero_Gungirl:93.66421MB
+
+  Assets/Resources/Actor/Hero_Gunman:91.5769MB
+
+  Assets/Resources/Actor/Hero_Mage:1.90889MB
+
+  Assets/Resources/Actor/Hero_MageGirl:71.39832MB
+
+  Assets/Resources/Actor/Hero_Paladin:51.17439MB
+
+  Assets/Resources/Actor/Hero_Swordsman:118.5189MB
+
+  Assets/Resources/Actor/Huodong_Baoxing:3.75021MB
+
+  Assets/Resources/Actor/Monster_Abofeisi:0MB
+
+  Assets/Resources/Actor/Monster_Anjingling:3.562794MB
+
+  Assets/Resources/Actor/Monster_Anwangsidier:0.9846268MB
+
+  Assets/Resources/Actor/Monster_Baihu:2.250126MB
+
+  Assets/Resources/Actor/Monster_Baihu_a:0MB
+
+  Assets/Resources/Actor/Monster_Bantunvzhanshi:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Bantuzhanshi:4.876091MB
+
+  Assets/Resources/Actor/Monster_Baohadi:14.93847MB
+
+  Assets/Resources/Actor/Monster_Bianyieren:0MB
+
+  Assets/Resources/Actor/Monster_Bingnanhai:9.000126MB
+
+  Assets/Resources/Actor/Monster_Bingxuenvwang:4.500881MB
+
+  Assets/Resources/Actor/Monster_Bosilingzhu:2.781502MB
+
+  Assets/Resources/Actor/Monster_Bosishibing:12.75059MB
+
+  Assets/Resources/Actor/Monster_Buwanjia:0MB
+
+  Assets/Resources/Actor/Monster_Changyashou:3.000168MB
+
+  Assets/Resources/Actor/Monster_Chunjie:0.9377098MB
+
+  Assets/Resources/Actor/Monster_Chunjie_Boss:27.00038MB
+
+  Assets/Resources/Actor/Monster_Dahuangfeng:1.875294MB
+
+  Assets/Resources/Actor/Monster_Damowang:6.000084MB
+
+  Assets/Resources/Actor/Monster_Dunwei:0MB
+
+  Assets/Resources/Actor/Monster_Emo:0.9377098MB
+
+  Assets/Resources/Actor/Monster_Fengyinshi:2.250126MB
+
+  Assets/Resources/Actor/Monster_GeMaZuZhanShi_nv:3.094254MB
+
+  Assets/Resources/Actor/Monster_goblin:6.569387MB
+
+  Assets/Resources/Actor/Monster_Goblin_New:7.500504MB
+
+  Assets/Resources/Actor/Monster_Guihun:0.9378357MB
+
+  Assets/Resources/Actor/Monster_Guishen_Bingshuangsaya:1.000042MB
+
+  Assets/Resources/Actor/Monster_Guishen_Canyingkaijia:1.000042MB
+
+  Assets/Resources/Actor/Monster_Guishen_Daohunkazan:1.000042MB
+
+  Assets/Resources/Actor/Monster_Guishen_Mingyankaluo:0.06254196MB
+
+  Assets/Resources/Actor/Monster_Guishen_Qinshipulimeng:1.000042MB
+
+  Assets/Resources/Actor/Monster_Guishen_Wenyiluosha:1.000042MB
+
+  Assets/Resources/Actor/Monster_Gunmu:0.5626259MB
+
+  Assets/Resources/Actor/Monster_HMZD_Huimie:3.375252MB
+
+  Assets/Resources/Actor/Monster_HMZD_Hundun:3.375252MB
+
+  Assets/Resources/Actor/Monster_HMZD_Nadeer:3.375252MB
+
+  Assets/Resources/Actor/Monster_HMZD_Shufuyuanhun:2.250126MB
+
+  Assets/Resources/Actor/Monster_Huodong_Haiyao:2.500126MB
+
+  Assets/Resources/Actor/Monster_Huodong_Jijuxie:2.250126MB
+
+  Assets/Resources/Actor/Monster_Huodong_Shayu:8.250462MB
+
+  Assets/Resources/Actor/Monster_Huojian:3.000168MB
+
+  Assets/Resources/Actor/Monster_Huolong:6.000084MB
+
+  Assets/Resources/Actor/Monster_Jiangshi:2.818545MB
+
+  Assets/Resources/Actor/Monster_Jiangshi_New:3.250294MB
+
+  Assets/Resources/Actor/Monster_Jingbeiyuan:2.250126MB
+
+  Assets/Resources/Actor/Monster_Jitan:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Jixiequan:2.250126MB
+
+  Assets/Resources/Actor/Monster_Jixiezhanshi:16.81134MB
+
+  Assets/Resources/Actor/Monster_Jujishou:2.250126MB
+
+  Assets/Resources/Actor/Monster_Kelahe:1.87542MB
+
+  Assets/Resources/Actor/Monster_Kexuejia:4.235214MB
+
+  Assets/Resources/Actor/Monster_Kulou:3.610466MB
+
+  Assets/Resources/Actor/Monster_Laoshudui:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Laoshuqun:2.250126MB
+
+  Assets/Resources/Actor/Monster_Leiwosi:0.187542MB
+
+  Assets/Resources/Actor/Monster_Longqishi:3.937752MB
+
+  Assets/Resources/Actor/Monster_Longren:2.313129MB
+
+  Assets/Resources/Actor/Monster_Longtoupao:0.7501678MB
+
+  Assets/Resources/Actor/Monster_Longzi:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Luba:4.500252MB
+
+  Assets/Resources/Actor/Monster_Luosite:3.75021MB
+
+  Assets/Resources/Actor/Monster_maoyao:6.750504MB
+
+  Assets/Resources/Actor/Monster_Mengyi:0.7501678MB
+
+  Assets/Resources/Actor/Monster_Monv:0.9378357MB
+
+  Assets/Resources/Actor/Monster_Muou_New:1.500336MB
+
+  Assets/Resources/Actor/Monster_Naisi:0.7501678MB
+
+  Assets/Resources/Actor/Monster_Niutou:3.094757MB
+
+  Assets/Resources/Actor/Monster_Nsmr_Bianfu:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Nsmr_Chongjian:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Nvdaozei:4.500252MB
+
+  Assets/Resources/Actor/Monster_Nvwushen:2.750126MB
+
+  Assets/Resources/Actor/Monster_Paobing:6.750378MB
+
+  Assets/Resources/Actor/Monster_Qinglong_a:2.250126MB
+
+  Assets/Resources/Actor/Monster_Rongjieguai:0.7501678MB
+
+  Assets/Resources/Actor/Monster_SaRen_Boss:2.250126MB
+
+  Assets/Resources/Actor/Monster_Sasita:1.125252MB
+
+  Assets/Resources/Actor/Monster_Seminkete:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Shitouren:9.000378MB
+
+  Assets/Resources/Actor/Monster_Shitouren_Boss:7.50042MB
+
+  Assets/Resources/Actor/Monster_Shixiang:2.250126MB
+
+  Assets/Resources/Actor/Monster_Shujing:2.062962MB
+
+  Assets/Resources/Actor/Monster_Shujing_New:3.000168MB
+
+  Assets/Resources/Actor/Monster_Snowman:3.75021MB
+
+  Assets/Resources/Actor/Monster_Taitan:7.50042MB
+
+  Assets/Resources/Actor/Monster_Touzi:1.125126MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Chushou:12.00017MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Chushou01:9.000126MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Eyu:4.500252MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Eyu_Zhidan:4.500126MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Feiyi:0.9377098MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Fuyunchong:2.250126MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Jishengshou:1.500084MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Kexilazhiyan_01:0.6251259MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Kexilazhiyan_02:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Kexilazhiyan_03:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Kexila_Emeng:0MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Kexila_Meimeng:12.00017MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Kexila_Zhengchang:2.250126MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Kuangsha:2.250126MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Leiniao:9.000252MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Longyachong:2.250126MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Moxiangelanuo:3.500168MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Nongbaoguai:9.000126MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Nvyurenfashi:4.500252MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Shiyachong:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Xianfengjiangjun:2.500126MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Xinzangshuiren:2.250126MB
+
+  Assets/Resources/Actor/Monster_Tuanben_Zibaoguai:2.250126MB
+
+  Assets/Resources/Actor/Monster_Tulucc:1.312668MB
+
+  Assets/Resources/Actor/Monster_Tulusinv:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Tulusizu:1.125252MB
+
+  Assets/Resources/Actor/Monster_Tuluyc:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Wanjushib1:3.749374MB
+
+  Assets/Resources/Actor/Monster_Wanjushib2:1.687878MB
+
+  Assets/Resources/Actor/Monster_Weishi1:2.719925MB
+
+  Assets/Resources/Actor/Monster_Weishi2:2.016548MB
+
+  Assets/Resources/Actor/Monster_Wutouqishi:1.625336MB
+
+  Assets/Resources/Actor/Monster_Xiezi:24.00034MB
+
+  Assets/Resources/Actor/Monster_Xixifusi:4.125923MB
+
+  Assets/Resources/Actor/Monster_Xuanwu:2.250126MB
+
+  Assets/Resources/Actor/Monster_Xuanwu_a:0MB
+
+  Assets/Resources/Actor/Monster_Xueguai:1.687878MB
+
+  Assets/Resources/Actor/Monster_Xuehudie:3.75021MB
+
+  Assets/Resources/Actor/Monster_Xuemonv:6.750378MB
+
+  Assets/Resources/Actor/Monster_Xueshou:3.000168MB
+
+  Assets/Resources/Actor/Monster_Yadeyan_yadeyan:0.6279802MB
+
+  Assets/Resources/Actor/Monster_Yecha:2.062962MB
+
+  Assets/Resources/Actor/Monster_Yijie_emo_A:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Yijie_emo_B:0.8440018MB
+
+  Assets/Resources/Actor/Monster_Yijie_emo_C:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Yijie_fatgoblin:2.391254MB
+
+  Assets/Resources/Actor/Monster_Yijie_gblxiaowu:0MB
+
+  Assets/Resources/Actor/Monster_Yijie_goblinking:0.8440018MB
+
+  Assets/Resources/Actor/Monster_Yijie_goblinkingwangzuo:2.250126MB
+
+  Assets/Resources/Actor/Monster_Yijie_goblin_dapao:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Yijie_goblin_jiaodoushi:4.125923MB
+
+  Assets/Resources/Actor/Monster_Yijie_juewang:3.375252MB
+
+  Assets/Resources/Actor/Monster_Yijie_juxingbaodan:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Yijie_kelike:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Yijie_kongbu:2.250126MB
+
+  Assets/Resources/Actor/Monster_Yijie_kuangluanhua:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Yijie_Nailuoyuanhun:3.75021MB
+
+  Assets/Resources/Actor/Monster_Yijie_shirenhua:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Yijie_Wushiyuanhun:2.437668MB
+
+  Assets/Resources/Actor/Monster_Yijie_Yichanyuanhun:2.250126MB
+
+  Assets/Resources/Actor/Monster_Yilong:0.9377098MB
+
+  Assets/Resources/Actor/Monster_Yuansu:1.125252MB
+
+  Assets/Resources/Actor/Monster_Yuansu_bing:1.125252MB
+
+  Assets/Resources/Actor/Monster_Yuansu_New:10.0005MB
+
+  Assets/Resources/Actor/Monster_Yuren_jinyingyuren:9.938591MB
+
+  Assets/Resources/Actor/Monster_zhanguo_boat:8.000084MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_BOSS_Nongji:2.156544MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_BOSS_Wutianxinxuan:0.8440018MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_BOSS_Yidazhengzong:0.7501678MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_BOSS_Zahesunshi:1.031544MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_BOSS_Zhentianxingcun:1.148647MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_bubing:1.687878MB
+
+  Assets/Resources/Actor/Monster_zhanguo_cao:0MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_chibeiduiqibing:1.125252MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_daobing:0MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_dunbing:0.2813759MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_gongjianbing:0MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_gubing:0.07043839MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_huopao01:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_huopao02:0MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_huopao02_bubingL:0MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_huopao02_bubingR:0MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_huoqiangbing:0MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_nvrenzhe:1.828629MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_qibing:2.88319MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_shangshanqianxin_man:1.031544MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_shangshanqianxin_woman:1.031544MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_xiangpu:1.125252MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_Zhitianxinchang:1.406502MB
+
+  Assets/Resources/Actor/Monster_Zhanguo_Zhitianxinchang_a:1.406502MB
+
+  Assets/Resources/Actor/Monster_Zhaohuan_bingnaisi:1.502896MB
+
+  Assets/Resources/Actor/Monster_Zhaohuan_hua:2.250126MB
+
+  Assets/Resources/Actor/Monster_Zhaohuan_kaxiliya:0.5653801MB
+
+  Assets/Resources/Actor/Monster_Zhaohuan_kaxiliyasi:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Zhaohuan_Leiwosi:0MB
+
+  Assets/Resources/Actor/Monster_Zhaohuan_yadeyan:1.502765MB
+
+  Assets/Resources/Actor/Monster_Zhaohuan_yijiabeila:0.5626259MB
+
+  Assets/Resources/Actor/Monster_Zhizhu:1.687878MB
+
+  Assets/Resources/Actor/Monster_ZHS_Yuansujingling:2.500126MB
+
+  Assets/Resources/Actor/Monster_Zhuanghan:6.750378MB
+
+  Assets/Resources/Actor/Monster_Zhuque_a:2.250126MB
+
+  Assets/Resources/Actor/Monster_Zuiezhiyan:0.7501678MB
+
+  Assets/Resources/Actor/NPC_Aidi:2.226258MB
+
+  Assets/Resources/Actor/NPC_Andeliya:9.000126MB
+
+  Assets/Resources/Actor/NPC_Antibeier:2.500126MB
+
+  Assets/Resources/Actor/NPC_Aoerka_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Atu:2.750126MB
+
+  Assets/Resources/Actor/NPC_Baerleina_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Boken_01:6.187626MB
+
+  Assets/Resources/Actor/NPC_Bugeizhan:0MB
+
+  Assets/Resources/Actor/NPC_Cangku_01:0.250042MB
+
+  Assets/Resources/Actor/NPC_Diaoxiang_dizuo:0MB
+
+  Assets/Resources/Actor/NPC_Falide_01:12.00017MB
+
+  Assets/Resources/Actor/NPC_Fengjieji:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_002:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_003:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_004:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_005:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_006:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_014:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_019:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_022:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_023:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_023_a:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_024:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_024_a:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_025:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_026:0MB
+
+  Assets/Resources/Actor/NPC_Fightergirl_Shizhuang_026_a:0MB
+
+  Assets/Resources/Actor/NPC_Guildbox:2.250126MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_001:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_002:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_003:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_004:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_005:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_006:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_007:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_009:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_012:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_014:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_019:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_022:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_023:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_023_a:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_024:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_024_a:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_025:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_026:0MB
+
+  Assets/Resources/Actor/NPC_Gungirl_Shizhuang_026_a:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_001:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_001_a:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_002:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_003:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_004:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_005:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_006:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_007:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_009:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_012:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_014:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_019:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_022:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_023:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_023_a:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_024:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_024_a:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_025:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_026:0MB
+
+  Assets/Resources/Actor/NPC_Gunman_Shizhuang_026_a:0MB
+
+  Assets/Resources/Actor/NPC_Hasang_01:2.500126MB
+
+  Assets/Resources/Actor/NPC_Heerde:2.651778MB
+
+  Assets/Resources/Actor/NPC_Kaili_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Kakun_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Kelunte_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Kexila:0MB
+
+  Assets/Resources/Actor/NPC_Landeer:2.428589MB
+
+  Assets/Resources/Actor/NPC_Linnasi_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Luojie_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Luolian_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_001:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_002:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_003:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_003_a:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_004:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_005:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_006:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_007:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_009:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_010:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_014:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_019:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_022:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_023:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_023_a:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_024:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_024_a:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_025:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_026:0MB
+
+  Assets/Resources/Actor/NPC_Magegirl_Shizhuang_026_a:0MB
+
+  Assets/Resources/Actor/NPC_Miya:7.750126MB
+
+  Assets/Resources/Actor/NPC_Nike:4.750126MB
+
+  Assets/Resources/Actor/NPC_Nuodun_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Pateli:2.430599MB
+
+  Assets/Resources/Actor/NPC_Qianghuaji:1.933636MB
+
+  Assets/Resources/Actor/NPC_Ronglu:0.250042MB
+
+  Assets/Resources/Actor/NPC_Sailiya_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Shalan_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Snowman_snowman:0MB
+
+  Assets/Resources/Actor/NPC_Snowman_snowman1:0MB
+
+  Assets/Resources/Actor/NPC_Snowman_snowman2:0MB
+
+  Assets/Resources/Actor/NPC_Suoxiya_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_001:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_002:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_003:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_003_a:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_004:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_005:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_006:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_007:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_009:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_012:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_014:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_019:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_022:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_023:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_023_a:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_024:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_024_a:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_025:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_026:0MB
+
+  Assets/Resources/Actor/NPC_Swordsman_Shizhuang_026_a:0MB
+
+  Assets/Resources/Actor/NPC_Tuguan_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Wanjushib_liangchanwjsb:0MB
+
+  Assets/Resources/Actor/NPC_Wanjushib_luoleiwjsb:0MB
+
+  Assets/Resources/Actor/NPC_Wanjushib_putongwjsb:0MB
+
+  Assets/Resources/Actor/NPC_Xialuoke_01:0.5626259MB
+
+  Assets/Resources/Actor/NPC_Youjian_01:0.250042MB
+
+  Assets/Resources/Actor/NPC_Zhanguo_BOSS_Wutianxinxuan:0MB
+
+  Assets/Resources/Actor/NPC_Zhanguo_BOSS_Yidazhengzong:0MB
+
+  Assets/Resources/Actor/NPC_Zhanguo_BOSS_Zahesunshi:0MB
+
+  Assets/Resources/Actor/NPC_Zhanguo_BOSS_Zhentianxingcun:0MB
+
+  Assets/Resources/Actor/Other:0MB
+
+  Assets/Resources/Actor/Other_ShadowPlane:0MB
+
+  Assets/Resources/Actor/Pet_Aiwen:2.250126MB
+
+  Assets/Resources/Actor/Pet_baihu:0.5626259MB
+
+  Assets/Resources/Actor/Pet_Basuke:2.250126MB
+
+  Assets/Resources/Actor/Pet_caociwei:0.5626259MB
+
+  Assets/Resources/Actor/Pet_Chunjie_Nianshou:0.9375839MB
+
+  Assets/Resources/Actor/Pet_Daojian_tongren:3.000126MB
+
+  Assets/Resources/Actor/Pet_Dengshen:0.5626259MB
+
+  Assets/Resources/Actor/Pet_dujiaoshou:0.5626259MB
+
+  Assets/Resources/Actor/Pet_eggs:0.5626259MB
+
+  Assets/Resources/Actor/Pet_elfsoldier:2.187626MB
+
+  Assets/Resources/Actor/Pet_feng_hong:0.8126678MB
+
+  Assets/Resources/Actor/Pet_feng_lan:0.750042MB
+
+  Assets/Resources/Actor/Pet_Fightergirl:3.750084MB
+
+  Assets/Resources/Actor/Pet_Gaoda:0.5626259MB
+
+  Assets/Resources/Actor/Pet_Gebulin:2.250126MB
+
+  Assets/Resources/Actor/Pet_Gongfushu:4.500126MB
+
+  Assets/Resources/Actor/Pet_Gugushu:0.750042MB
+
+  Assets/Resources/Actor/Pet_gunqiushou:4.000664MB
+
+  Assets/Resources/Actor/Pet_Houzi:2.250126MB
+
+  Assets/Resources/Actor/Pet_Houzi_01:2.250126MB
+
+  Assets/Resources/Actor/Pet_hudiejingling:3.000168MB
+
+  Assets/Resources/Actor/Pet_keaihu:2.250126MB
+
+  Assets/Resources/Actor/Pet_Kexila:1.500084MB
+
+  Assets/Resources/Actor/Pet_long:1.562668MB
+
+  Assets/Resources/Actor/pet_niu:0.5626259MB
+
+  Assets/Resources/Actor/Pet_Outalei:1.500084MB
+
+  Assets/Resources/Actor/Pet_Paladin:1.500084MB
+
+  Assets/Resources/Actor/Pet_Panda:0.5626259MB
+
+  Assets/Resources/Actor/Pet_pikaqiu:0.5626259MB
+
+  Assets/Resources/Actor/Pet_Qiubite:0.5626259MB
+
+  Assets/Resources/Actor/Pet_rabbit:0.5626259MB
+
+  Assets/Resources/Actor/Pet_Xiaolan:1.125126MB
+
+  Assets/Resources/Actor/Pet_Xiaoyouling:0.3750839MB
+
+  Assets/Resources/Actor/Pet_yami:0.5626259MB
+
+  Assets/Resources/Actor/Pot:0MB
+
+  Assets/Resources/Actor/Pot02:0MB
+
+  Assets/Resources/Actor/Scene_Monseter_Flower001:0.187542MB
+
+  Assets/Resources/Actor/Scene_Monseter_Flower002:0.187542MB
+
+  Assets/Resources/Actor/Weapon:447.2333MB
+
+1607.38MB
+
+Assets/Resources/Effects:
+  Assets/Resources/Effects/Chongwu:0MB
+
+  Assets/Resources/Effects/Common:422.9053MB
+
+  Assets/Resources/Effects/DummyEffect:0MB
+
+  Assets/Resources/Effects/Eff_Equip:0MB
+
+  Assets/Resources/Effects/Eff_Guanghuan:0MB
+
+  Assets/Resources/Effects/Eff_Tongyong:0MB
+
+  Assets/Resources/Effects/Equipment:0MB
+
+  Assets/Resources/Effects/Hero_Axiuluo:0MB
+
+  Assets/Resources/Effects/Hero_Danyao:0.1597242MB
+
+  Assets/Resources/Effects/Hero_Effects:0MB
+
+  Assets/Resources/Effects/Hero_Fightergirl:0MB
+
+  Assets/Resources/Effects/Hero_Guiqi:0MB
+
+  Assets/Resources/Effects/Hero_Gungirl:0MB
+
+  Assets/Resources/Effects/Hero_Gunman:0.005670547MB
+
+  Assets/Resources/Effects/Hero_Jianhun:0MB
+
+  Assets/Resources/Effects/Hero_Jixieshi:0.2813759MB
+
+  Assets/Resources/Effects/Hero_Kuangzhan:0MB
+
+  Assets/Resources/Effects/Hero_Lifa:0MB
+
+  Assets/Resources/Effects/Hero_Mage:0.04691696MB
+
+  Assets/Resources/Effects/Hero_Manyou:0MB
+
+  Assets/Resources/Effects/Hero_Nvqiangpao:0MB
+
+  Assets/Resources/Effects/Hero_Paladin:0MB
+
+  Assets/Resources/Effects/Hero_Qiangpao:0.2539816MB
+
+  Assets/Resources/Effects/Hero_Qigongshi:0MB
+
+  Assets/Resources/Effects/Hero_Qumoshi:0MB
+
+  Assets/Resources/Effects/Hero_Sanda:0MB
+
+  Assets/Resources/Effects/Hero_shengzhizhe:0MB
+
+  Assets/Resources/Effects/Hero_Swordman:0MB
+
+  Assets/Resources/Effects/Hero_Yuansu:0MB
+
+  Assets/Resources/Effects/Hero_Zhaohuanshi:0.377758MB
+
+  Assets/Resources/Effects/Hero_Zhihuiguan:0MB
+
+  Assets/Resources/Effects/Hero_Zhuangtai:0MB
+
+  Assets/Resources/Effects/Monster_Abofeisi:0MB
+
+  Assets/Resources/Effects/Monster_Ailinisi:0MB
+
+  Assets/Resources/Effects/Monster_Bantunvzhanshi:0MB
+
+  Assets/Resources/Effects/Monster_Bantuzhanshi:0MB
+
+  Assets/Resources/Effects/Monster_Baohadi:0MB
+
+  Assets/Resources/Effects/Monster_BaoZhuJiGuanShou:0MB
+
+  Assets/Resources/Effects/Monster_Bingxuenvwang:0MB
+
+  Assets/Resources/Effects/Monster_Bingyao:0MB
+
+  Assets/Resources/Effects/Monster_Bssb:0MB
+
+  Assets/Resources/Effects/Monster_Bulanzi:0MB
+
+  Assets/Resources/Effects/Monster_Buwanjia:0MB
+
+  Assets/Resources/Effects/Monster_Chali:0MB
+
+  Assets/Resources/Effects/Monster_Chongjian:0MB
+
+  Assets/Resources/Effects/Monster_Dahuangfeng:0MB
+
+  Assets/Resources/Effects/Monster_Damowang:0MB
+
+  Assets/Resources/Effects/Monster_Daozei:0MB
+
+  Assets/Resources/Effects/Monster_Duonier:0MB
+
+  Assets/Resources/Effects/Monster_fengren:0MB
+
+  Assets/Resources/Effects/Monster_Gebulin_New:0MB
+
+  Assets/Resources/Effects/Monster_Godblin:0MB
+
+  Assets/Resources/Effects/Monster_Gonghui:0MB
+
+  Assets/Resources/Effects/Monster_Guihun:0MB
+
+  Assets/Resources/Effects/Monster_HMZD_emoA:0MB
+
+  Assets/Resources/Effects/Monster_HMZD_emoB:0MB
+
+  Assets/Resources/Effects/Monster_HMZD_emoC:0MB
+
+  Assets/Resources/Effects/Monster_HMZD_hundun:0MB
+
+  Assets/Resources/Effects/Monster_HMZD_juewang:0MB
+
+  Assets/Resources/Effects/Monster_HMZD_kongbu:0MB
+
+  Assets/Resources/Effects/Monster_HMZD_zhenshou:0MB
+
+  Assets/Resources/Effects/Monster_HMZD_zhenshou_duoluo:0MB
+
+  Assets/Resources/Effects/Monster_hundunshenyuan:0MB
+
+  Assets/Resources/Effects/Monster_huopao:0MB
+
+  Assets/Resources/Effects/Monster_huopen:0MB
+
+  Assets/Resources/Effects/Monster_huoren:0MB
+
+  Assets/Resources/Effects/Monster_Jiangshi:0MB
+
+  Assets/Resources/Effects/Monster_Jingyingliequan:0MB
+
+  Assets/Resources/Effects/Monster_Jujiaozhuangche:0MB
+
+  Assets/Resources/Effects/Monster_Juren:0MB
+
+  Assets/Resources/Effects/Monster_Kelahe:0MB
+
+  Assets/Resources/Effects/Monster_Kulou:0MB
+
+  Assets/Resources/Effects/Monster_Kuloukaien:0MB
+
+  Assets/Resources/Effects/Monster_Laoshudui:0MB
+
+  Assets/Resources/Effects/Monster_Longren:0MB
+
+  Assets/Resources/Effects/Monster_Longtoupao:0MB
+
+  Assets/Resources/Effects/Monster_Luosite:0MB
+
+  Assets/Resources/Effects/Monster_Maoyao:0MB
+
+  Assets/Resources/Effects/Monster_Mengyi:0MB
+
+  Assets/Resources/Effects/Monster_Misitimi:0MB
+
+  Assets/Resources/Effects/Monster_Monv:0MB
+
+  Assets/Resources/Effects/Monster_Naisi:0MB
+
+  Assets/Resources/Effects/Monster_Nianshou:0MB
+
+  Assets/Resources/Effects/Monster_Niutou:0MB
+
+  Assets/Resources/Effects/Monster_Nongji:0MB
+
+  Assets/Resources/Effects/Monster_nvshangshanqianxin:0MB
+
+  Assets/Resources/Effects/Monster_Nvwushen:0MB
+
+  Assets/Resources/Effects/Monster_Ougeluosi:0MB
+
+  Assets/Resources/Effects/Monster_Pite:0MB
+
+  Assets/Resources/Effects/Monster_qibing:0MB
+
+  Assets/Resources/Effects/Monster_Renoushi:0MB
+
+  Assets/Resources/Effects/Monster_Renzhe:0MB
+
+  Assets/Resources/Effects/Monster_Saigehate:0MB
+
+  Assets/Resources/Effects/Monster_Sailitijingruicqb:0MB
+
+  Assets/Resources/Effects/Monster_Shafante:0MB
+
+  Assets/Resources/Effects/Monster_shangshanqianxin:0MB
+
+  Assets/Resources/Effects/Monster_Shujing:0MB
+
+  Assets/Resources/Effects/Monster_Shuren:0MB
+
+  Assets/Resources/Effects/Monster_Sidier:0MB
+
+  Assets/Resources/Effects/Monster_taitan:0MB
+
+  Assets/Resources/Effects/Monster_Target:0.9403172MB
+
+  Assets/Resources/Effects/Monster_TB:0MB
+
+  Assets/Resources/Effects/Monster_TB02:0MB
+
+  Assets/Resources/Effects/Monster_TB03:0MB
+
+  Assets/Resources/Effects/Monster_TB_kunnan:0MB
+
+  Assets/Resources/Effects/Monster_Tulucc:0MB
+
+  Assets/Resources/Effects/Monster_Tuluyc:0MB
+
+  Assets/Resources/Effects/Monster_Wanjushib:0MB
+
+  Assets/Resources/Effects/Monster_Weibo:0MB
+
+  Assets/Resources/Effects/Monster_Weishi:0MB
+
+  Assets/Resources/Effects/Monster_wutainxinxuan:0MB
+
+  Assets/Resources/Effects/Monster_wutouqishi:0MB
+
+  Assets/Resources/Effects/Monster_Xiarihuodong:0MB
+
+  Assets/Resources/Effects/Monster_Xielongsipizi:0MB
+
+  Assets/Resources/Effects/Monster_Xiezi:0MB
+
+  Assets/Resources/Effects/Monster_Xieziwang:0MB
+
+  Assets/Resources/Effects/Monster_Xinjiaotu:0MB
+
+  Assets/Resources/Effects/Monster_Xixifusi:0MB
+
+  Assets/Resources/Effects/Monster_Xuehudie:0MB
+
+  Assets/Resources/Effects/Monster_xuren:0MB
+
+  Assets/Resources/Effects/Monster_Yecha:0MB
+
+  Assets/Resources/Effects/Monster_yidazhengzong:0MB
+
+  Assets/Resources/Effects/Monster_Yijie_goblin:0MB
+
+  Assets/Resources/Effects/Monster_Yilong:0MB
+
+  Assets/Resources/Effects/Monster_yuren:0MB
+
+  Assets/Resources/Effects/Monster_Zhangyu:0MB
+
+  Assets/Resources/Effects/Monster_zhentianxincun:0MB
+
+  Assets/Resources/Effects/Monster_Zhitianxinchang:0MB
+
+  Assets/Resources/Effects/Monster_zhizhu:0MB
+
+  Assets/Resources/Effects/Monster_Zuiezhiyan:0MB
+
+  Assets/Resources/Effects/Monster_Zuling:0MB
+
+  Assets/Resources/Effects/Monster_zuqing:0MB
+
+  Assets/Resources/Effects/Scene_effects:1.45277MB
+
+  Assets/Resources/Effects/UI:0MB
+
+  Assets/Resources/Effects/Weapon:0MB
+
+  Assets/Resources/Effects/Weapon_strengthen:0MB
+
+426.4238MB
+
+Assets/Resources/UI:
+  Assets/Resources/UI/Animation:84.59041MB
+
+  Assets/Resources/UI/Data:0MB
+
+  Assets/Resources/UI/Effect:0.7737932MB
+
+  Assets/Resources/UI/Font:0.3598032MB
+
+  Assets/Resources/UI/Image:598.7208MB
+
+  Assets/Resources/UI/Material:0MB
+
+  Assets/Resources/UI/UIEffects:14.24126MB
+
+698.686MB
+
+Assets/Resources/Scene:
+  Assets/Resources/Scene/Chapter:481.0898MB
+
+  Assets/Resources/Scene/City:186.0949MB
+
+  Assets/Resources/Scene/Other:53.07415MB
+
+  Assets/Resources/Scene/SceneEffects:5.388388MB
+
+725.6472MB
+

@@ -1,0 +1,21 @@
+namespace ProtoTable.EquipEnhanceCostTable;
+enum eCrypt :int{
+	code = -733794697,}
+
+namespace ProtoTable;
+table EquipEnhanceCostTable{
+	ID:int32;
+	Quality:int32;
+	EnhanceLevel:int32;
+	Level:int32;
+	NeedGold:int32;
+	ReturnGold:int32;
+	ItemID:int32;
+	ItemNum:int32;
+	ReturnItemID:int32;
+	ReturnItemRule:string;
+	ReturnItemID2:int32;
+	ReturnItemRule2:string;
+}
+
+root_type EquipEnhanceCostTable;

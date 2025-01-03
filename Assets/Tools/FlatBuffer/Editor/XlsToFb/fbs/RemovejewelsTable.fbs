@@ -1,0 +1,17 @@
+namespace ProtoTable.RemovejewelsTable;
+enum eCrypt :int{
+	code = -719475222,}
+
+namespace ProtoTable;
+table RemovejewelsTable{
+	ID:int32;
+	Colour:int32;
+	Grades:int32;
+	Material1:int32;
+	Num1:int32;
+	Success1:int32;
+	BeadType:int32;
+	PickNum:int32;
+}
+
+root_type RemovejewelsTable;

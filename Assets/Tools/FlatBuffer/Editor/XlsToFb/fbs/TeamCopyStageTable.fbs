@@ -1,0 +1,14 @@
+namespace ProtoTable.TeamCopyStageTable;
+enum eCrypt :int{
+	code = 297913306,}
+
+namespace ProtoTable;
+table TeamCopyStageTable{
+	ID:int32;
+	Description:string;
+	StageImagePath:string;
+	NormalBackgroundPath:string;
+	ExtraBackgroundPath:string;
+}
+
+root_type TeamCopyStageTable;

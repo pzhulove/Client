@@ -1,0 +1,26 @@
+namespace ProtoTable.GuildDungeonLvlTable;
+enum eCrypt :int{
+	code = -2111160045,}
+
+namespace ProtoTable;
+table GuildDungeonLvlTable{
+	ID:int32;
+	dungeonType:int32;
+	dungeonLvl:int32;
+	DungeonId:int32;
+	bossId:int32;
+	bossBlood:string;
+	rewardType:int32;
+	dungeonName:string;
+	dropBuff:int32;
+	iconPath:string;
+	oneStarDamage:int32;
+	twoStarDamage:int32;
+	threeStarDamage:int32;
+	playingDesc:string;
+	weaknessDesc:string;
+	recommendDesc:string;
+	miniIconPath:string;
+}
+
+root_type GuildDungeonLvlTable;

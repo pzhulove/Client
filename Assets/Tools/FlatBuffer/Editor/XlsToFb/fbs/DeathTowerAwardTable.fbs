@@ -1,0 +1,17 @@
+namespace ProtoTable.DeathTowerAwardTable;
+enum eCrypt :int{
+	code = -510387816,}
+
+namespace ProtoTable;
+table DeathTowerAwardTable{
+	ID:int32;
+	Floor:int32;
+	exp:int32;
+	WirrorSoul:int32;
+	Drop:int32;
+	AwardItem:int32;
+	AwardItemNum:int32;
+	LimitLevel:int32;
+}
+
+root_type DeathTowerAwardTable;

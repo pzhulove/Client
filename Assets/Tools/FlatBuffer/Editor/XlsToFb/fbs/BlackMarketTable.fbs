@@ -1,0 +1,14 @@
+namespace ProtoTable.BlackMarketTable;
+enum eCrypt :int{
+	code = 56829445,}
+
+namespace ProtoTable;
+table BlackMarketTable{
+	ID:int32;
+	NpcID:int32;
+	NpcPortrait:string;
+	NPCDialogue:string;
+	TransactionTypeDescribe:string;
+}
+
+root_type BlackMarketTable;

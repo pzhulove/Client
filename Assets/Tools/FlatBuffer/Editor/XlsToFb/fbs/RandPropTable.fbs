@@ -1,0 +1,33 @@
+namespace ProtoTable.RandPropTable;
+enum eRandType:int { 
+	RandType_None = 0,   // default
+	STR = 1,    // 力量
+	STA = 2,    // 体力
+	INT = 3,    // 智力
+	SPR = 4,    // 精神
+	HPMAX = 5,    // hp最大值
+	MPMAX = 6,    // mp最大值
+	HPREC = 7,    // hp恢复
+	MPREC = 8,    // mp恢复
+	HIT = 9,    // 命中率
+	DEX = 10,    // 回避率
+	PHYCRT = 11,    // 物理暴击
+	MGCCRT = 12,    // 魔法暴击
+	ATKSPD = 13,    // 攻速
+	RDYSPD = 14,    // 施放速度
+	MOVSPD = 15,    // 移动速度
+	JUMP = 16,    // 跳跃力
+	HITREC = 17,    // 硬直
+}
+namespace ProtoTable.RandPropTable;
+enum eCrypt :int{
+	code = 919218542,}
+
+namespace ProtoTable;
+table RandPropTable{
+	ID:int32;
+	RandType:RandPropTable.eRandType;
+	Weight:int32;
+}
+
+root_type RandPropTable;

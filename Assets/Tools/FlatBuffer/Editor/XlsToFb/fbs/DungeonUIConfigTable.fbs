@@ -1,0 +1,29 @@
+namespace ProtoTable.DungeonUIConfigTable;
+enum eCommon:int { 
+	NONE = 0,    // 无
+	GOLD = 1,    // 金币
+	FATIGUE = 2,    // 疲劳
+	TICKET = 3,    // 点券
+	DEADCOIN = 4,    // 死亡币
+	HELLTICKET = 5,    // 深渊票
+}
+namespace ProtoTable.DungeonUIConfigTable;
+enum eCrypt :int{
+	code = 535724232,}
+
+namespace ProtoTable;
+table DungeonUIConfigTable{
+	ID:int32;
+	Common:[DungeonUIConfigTable.eCommon];
+	ClassName:string;
+	BackgroundPath:string;
+	LeftPannelConfig:string;
+	RightPannelConfig:string;
+	AreaDialog:[string];
+	CharactorConfig:string;
+	AreaAfterDialog:[string];
+	BossKilledDialog:int32;
+	TaskID:int32;
+}
+
+root_type DungeonUIConfigTable;

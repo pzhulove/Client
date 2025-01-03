@@ -1,0 +1,20 @@
+namespace ProtoTable.BlackMarketItemTable;
+enum eCrypt :int{
+	code = 1589758824,}
+
+namespace ProtoTable;
+table BlackMarketItemTable{
+	ID:int32;
+	buyType:string;
+	groupId:int32;
+	itemId:int32;
+	recomPrice:int32;
+	lowerPrice:string;
+	lowerPriceWt:string;
+	upperPrice:string;
+	upperPriceWt:string;
+	subBuyType:string;
+	fixUplimit:int32;
+}
+
+root_type BlackMarketItemTable;

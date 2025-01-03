@@ -1,0 +1,51 @@
+namespace ProtoTable.MallLimitTimeActivity;
+enum eActivityType:int { 
+	ActivityType_None = 0,   // default
+	One_Act_Pet = 70000,    // 活动1宠物
+	One_Act_MagicCard = 70001,    // 活动1附魔卡时装
+	Two_Act_Guoqing = 70002,    // 国庆时装
+	Two_Act_feiying = 70003,    // 冬日飞影礼包
+	Two_Act_zhanhun = 70004,    // 冬日战魂礼包
+	Two_Act_jiguang = 70005,    // 极光白狐礼包
+}
+enum eActivityMode:int { 
+	ActivityMode_None = 0,   // default
+	Fashion = 1,    // 时装
+	Pet = 2,    // 宠物
+}
+enum eBuyLink:int { 
+	Direct_Buy = 0,    // 直接购买
+	Go_To_Mall_Limit_Buy = 1,    // 跳转到商城限时购买页签
+	Go_To_Prop_Mall_Limit = 2,    // 跳转到商城限时道具页签
+	Go_To_Dungeon = 3,    // 跳转到地下城
+}
+namespace ProtoTable.MallLimitTimeActivity;
+enum eCrypt :int{
+	code = -2057469539,}
+
+namespace ProtoTable;
+table MallLimitTimeActivity{
+	ID:int32;
+	Name:string;
+	IconPath:string;
+	BackgroundImgPath:string;
+	ActivityType:MallLimitTimeActivity.eActivityType;
+	DateTimePath:string;
+	IconPosX:int32;
+	IconPosY:int32;
+	ToggleName:string;
+	ToggleIconPath:string;
+	ToggleIconPathIsOn:string;
+	ToggleHotIcon:string;
+	TimeTips:string;
+	BGPath:string;
+	PricePath:string;
+	ActivityMode:MallLimitTimeActivity.eActivityMode;
+	ModePrefabIcon:string;
+	FashionTips:string;
+	FashionName:string;
+	BuyLink:MallLimitTimeActivity.eBuyLink;
+	IsExhanged:int32;
+}
+
+root_type MallLimitTimeActivity;

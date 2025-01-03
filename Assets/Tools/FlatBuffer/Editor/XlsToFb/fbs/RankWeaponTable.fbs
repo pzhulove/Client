@@ -1,0 +1,12 @@
+namespace ProtoTable.RankWeaponTable;
+enum eCrypt :int{
+	code = 915405238,}
+
+namespace ProtoTable;
+table RankWeaponTable{
+	ID:int32;
+	Name:string;
+	IsShow:bool;
+}
+
+root_type RankWeaponTable;

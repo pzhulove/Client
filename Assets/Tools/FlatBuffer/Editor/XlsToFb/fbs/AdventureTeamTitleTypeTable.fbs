@@ -1,0 +1,19 @@
+namespace ProtoTable.AdventureTeamTitleTypeTable;
+enum eLimitType:int { 
+	None = 0,    // 无
+	Ranking = 1,    // 排行榜排名
+}
+namespace ProtoTable.AdventureTeamTitleTypeTable;
+enum eCrypt :int{
+	code = -774939027,}
+
+namespace ProtoTable;
+table AdventureTeamTitleTypeTable{
+	ID:int32;
+	TitleTableID:int32;
+	LimitType:AdventureTeamTitleTypeTable.eLimitType;
+	RankingRangeMin:int32;
+	RankingRangeMax:int32;
+}
+
+root_type AdventureTeamTitleTypeTable;

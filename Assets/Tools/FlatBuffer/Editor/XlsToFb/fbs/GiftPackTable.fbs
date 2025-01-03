@@ -1,0 +1,31 @@
+namespace ProtoTable.GiftPackTable;
+enum eFilterType:int { 
+	None = 0,    // 无
+	Job = 1,    // 根据职业筛选
+	Random = 2,    // 随机获得N件
+	Custom = 3,    // 自定义选择N件
+	CustomWithJob = 4,    // 在职业符合的道具中，自定义选择N件
+}
+enum eShowAvatarModelType:int { 
+	None = 0,    // 不可预览
+	Single = 1,    // 单一预览
+	Complete = 2,    // 整套预览
+	Enumeration = 3,    // 分开预览
+	Combination = 4,    // 组合预览
+	Matching = 5,    // 组合和宠物预览
+	CompleteEnumeration = 6,    // 礼包整套分开预览
+}
+namespace ProtoTable.GiftPackTable;
+enum eCrypt :int{
+	code = -783545605,}
+
+namespace ProtoTable;
+table GiftPackTable{
+	ID:int32;
+	FilterType:GiftPackTable.eFilterType;
+	FilterCount:int32;
+	UIType:int32;
+	ShowAvatarModelType:GiftPackTable.eShowAvatarModelType;
+}
+
+root_type GiftPackTable;

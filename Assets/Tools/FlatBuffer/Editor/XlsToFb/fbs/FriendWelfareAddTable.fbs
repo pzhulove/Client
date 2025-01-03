@@ -1,0 +1,13 @@
+namespace ProtoTable.FriendWelfareAddTable;
+enum eCrypt :int{
+	code = -1924892469,}
+
+namespace ProtoTable;
+table FriendWelfareAddTable{
+	ID:int32;
+	IntimacySpan:string;
+	ExpAddProb:int32;
+	IntimacyName:string;
+}
+
+root_type FriendWelfareAddTable;

@@ -1,0 +1,18 @@
+namespace ProtoTable.ActivitySuitAdditionTable;
+enum eCrypt :int{
+	code = -872320888,}
+
+namespace ProtoTable;
+table ActivitySuitAdditionTable{
+	ID:int32;
+	Type:int32;
+	EquipList:[int32];
+	ActivityList:[int32];
+	DoubleDropItem:[int32];
+	DoubleDropRate:int32;
+	MonsterRate1:int32;
+	MonsterRate2:int32;
+	MonsterRate3:int32;
+}
+
+root_type ActivitySuitAdditionTable;

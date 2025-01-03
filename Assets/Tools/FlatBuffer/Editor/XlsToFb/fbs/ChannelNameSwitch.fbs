@@ -1,0 +1,12 @@
+namespace ProtoTable.ChannelNameSwitch;
+enum eCrypt :int{
+	code = -1972744578,}
+
+namespace ProtoTable;
+table ChannelNameSwitch{
+	ID:int32;
+	EnglishName:string;
+	ChineseName:string;
+}
+
+root_type ChannelNameSwitch;

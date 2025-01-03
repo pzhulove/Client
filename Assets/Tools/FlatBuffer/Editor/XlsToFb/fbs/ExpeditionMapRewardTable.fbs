@@ -1,0 +1,16 @@
+namespace ProtoTable.ExpeditionMapRewardTable;
+enum eCrypt :int{
+	code = 957108012,}
+
+namespace ProtoTable;
+table ExpeditionMapRewardTable{
+	ID:int32;
+	ExpeditionMapId:int32;
+	Rewards:string;
+	RequireAnyOccu:int32;
+	RequireAnySameBaseOccu:int32;
+	RequireAnyDiffBaseOccu:int32;
+	RequireAnyDiffChangedOccu:int32;
+}
+
+root_type ExpeditionMapRewardTable;

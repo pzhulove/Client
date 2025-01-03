@@ -1,0 +1,58 @@
+namespace ProtoTable.JarBonus;
+enum eType:int { 
+	NoneJar = 0,    // 缺省值
+	MagicJar = 1,    // 魔罐
+	MagicJar_Lv55 = 4,    // 55级魔罐
+	GoldJar = 2,    // 金罐
+	BudoJar = 3,    // 武道大会罐子
+	EqrecoJar = 5,    // 装备回收罐子
+	WingJar = 101,    // 翅膀袖珍罐
+	FashionJar = 102,    // 时装袖珍罐
+	EquipJar = 103,    // 装备袖珍罐
+}
+namespace ProtoTable.JarBonus;
+enum eCrypt :int{
+	code = 484252340,}
+
+namespace ProtoTable;
+table JarBonus{
+	ID:int32;
+	Name:string;
+	Type:JarBonus.eType;
+	Filter:[int32];
+	JarImage:string;
+	JarEffect:string;
+	ExBonusNum_1:int32;
+	ExBonusJarID_1:int32;
+	ExBonusNum_2:int32;
+	ExBonusJarID_2:int32;
+	GetItemsAndNum:[string];
+	BuyMoneyType:int32;
+	MoneyValue:int32;
+	DayBuyLimite:int32;
+	BuyLimitKey:string;
+	NeedExItem:int32;
+	ExItemID:int32;
+	ExItemCostNum:int32;
+	ComboBuyNum:int32;
+	SingleBuyDiscount:int32;
+	ComboBuyDiscount:int32;
+	CounterKey:string;
+	GetPointType:int32;
+	GetPointNum:int32;
+	GetPointCrit:string;
+	MaxFreeCount:int32;
+	FreeCD:int32;
+	FreeNumCounterKey:string;
+	NextFreeTimeCounterKey:string;
+	NeedRecord:int32;
+	ActJarDisMaxNum:int32;
+	ActJarDisReset:int32;
+	ActifactJarRewardTime:int32;
+	JarGiftMustOutNum:int32;
+	CurCycleIsOutTreasKey:string;
+	jarGiftOutJarId:int32;
+	SmellType:int32;
+}
+
+root_type JarBonus;

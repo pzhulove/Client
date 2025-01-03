@@ -1,0 +1,54 @@
+namespace ProtoTable.EquipStrengthenTable;
+enum eCrypt :int{
+	code = -1147709044,}
+
+namespace ProtoTable;
+table EquipStrengthenTable{
+	ID:int32;
+	Strengthen:int32;
+	Lv:[int32];
+	WhiteGoldCost:int32;
+	WhiteGoldRet:int32;
+	WhiteCost:[int32];
+	WhiteMatRet:[int32];
+	WhiteStrToTenRate:int32;
+	WhiteStrToTenNum:int32;
+	WhiteItemNum:string;
+	BlueGoldCost:int32;
+	BlueGoldRet:int32;
+	BlueCost:[int32];
+	BlueMatRet:[int32];
+	BlueStrToTenRate:int32;
+	BlueStrToTenNum:int32;
+	BlueItemNum:string;
+	PurpleGoldCost:int32;
+	PurpleGoldRet:int32;
+	PurpleCost:[int32];
+	PurpleMatRet:[int32];
+	PurpleStrToTenRate:int32;
+	PurpleStrToTenNum:int32;
+	PurpleItemNum:string;
+	GreenGoldCost:int32;
+	GreenGoldRet:int32;
+	GreenCost:[int32];
+	GreenMatRet:[int32];
+	GreenStrToTenRate:int32;
+	GreenStrToTenNum:int32;
+	GreenItemNum:string;
+	PinkGoldCost:int32;
+	PinkGoldRet:int32;
+	PinkCost:[int32];
+	PinkMatRet:[int32];
+	PinkStrToTenRate:int32;
+	PinkStrToTenNum:int32;
+	PinkItemNum:string;
+	YellowGoldCost:int32;
+	YellowGoldRet:int32;
+	YellowCost:[int32];
+	YellowMatRet:[int32];
+	YellowStrToTenRate:int32;
+	YellowStrToTenNum:int32;
+	YellowItemNum:string;
+}
+
+root_type EquipStrengthenTable;

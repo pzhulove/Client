@@ -1,0 +1,37 @@
+namespace ProtoTable.MallRecommendPageTable;
+enum eItemBelongMallType:int { 
+	ITEM_BELONG_MALL_TYPE_INVALID = 0,    // 无效
+	ITEM_BELONG_MALL_TYPE_MALL = 1,    // 商城
+	ITEM_BELONG_MALL_TYPE_NORMAL_SHOP = 2,    // 普通商店
+	ITEM_BELONG_MALL_TYPE_ACCOUNT_SHOP = 3,    // 账号商店
+}
+enum eRecommendType:int { 
+	RECOMMEND_TYPE_INVALID = 0,    // 无效
+	RECOMMEND_TYPE_GIFT1 = 1,    // 推荐礼包1
+	RECOMMEND_TYPE_GIFT2 = 2,    // 推荐礼包2
+	RECOMMEND_TYPE_GIFT3 = 3,    // 推荐礼包3
+	RECOMMEND_TYPE_ITEM = 4,    // 推荐道具
+}
+enum eLinkFunctionType:int { 
+	LINK_FUNCTION_TYPE_INVALID = 0,    // 无效
+	LINK_FUNCTION_TYPE_LINK = 1,    // 链接
+	LINK_FUNCTION_TYPE_BUY = 2,    // 购买
+}
+namespace ProtoTable.MallRecommendPageTable;
+enum eCrypt :int{
+	code = 1970921189,}
+
+namespace ProtoTable;
+table MallRecommendPageTable{
+	ID:int32;
+	MallItemId:int32;
+	ItemBelongMallType:MallRecommendPageTable.eItemBelongMallType;
+	RecommendType:MallRecommendPageTable.eRecommendType;
+	AdImagePath:string;
+	LinkFunctionType:MallRecommendPageTable.eLinkFunctionType;
+	LinkPath:string;
+	SortNum:int32;
+	IsAbandon:int32;
+}
+
+root_type MallRecommendPageTable;

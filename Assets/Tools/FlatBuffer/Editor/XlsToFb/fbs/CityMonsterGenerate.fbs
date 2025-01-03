@@ -1,0 +1,23 @@
+namespace ProtoTable.CityMonsterGenerate;
+enum eMonsterType:int { 
+	MonsterType_None = 0,   // default
+	Activity = 1,    // 活动刷怪
+	Task = 2,    // 任务刷怪
+}
+namespace ProtoTable.CityMonsterGenerate;
+enum eCrypt :int{
+	code = -1220320540,}
+
+namespace ProtoTable;
+table CityMonsterGenerate{
+	ID:int32;
+	MonsterType:CityMonsterGenerate.eMonsterType;
+	SceneID:int32;
+	PosType:int32;
+	MinNum:int32;
+	MaxNum:int32;
+	MonsterList:[int32];
+	DungeonID:int32;
+}
+
+root_type CityMonsterGenerate;

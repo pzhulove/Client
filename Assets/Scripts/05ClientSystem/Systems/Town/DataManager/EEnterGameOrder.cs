@@ -1,0 +1,33 @@
+namespace GameClient
+{
+    public enum EEnterGameOrder
+    {
+        ActivityDungeonDataManager,
+        TimeDataManager,
+        TittleBookManager,
+        ItemDataManager,
+        ActiveManager,
+        MissionManager,
+        BudoManager,
+        CountDataManager,
+        GuildDataManager,
+        RedPackDataManager,
+        TeamDataManager,
+        EquipMasterDataManager,
+        EquipSuitDataManager,
+        FaceDataManager,
+        MagicJarDataManager,
+        RelationDataManager,
+        ShopDataManager,
+        SkillDataManager,
+        StrengthenDataManager,
+        RedPointDataManager,
+        ChatDataManager,
+        ChatRecordManager,
+        PlayerBaseData,
+        PkRankData,
+        ServerSceneFuncSwitchManager,
+        SevendaysDataManager,
+        Default,
+    }
+}

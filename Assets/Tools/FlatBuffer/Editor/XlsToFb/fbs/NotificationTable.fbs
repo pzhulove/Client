@@ -1,0 +1,18 @@
+namespace ProtoTable.NotificationTable;
+enum eCrypt :int{
+	code = -870402045,}
+
+namespace ProtoTable;
+table NotificationTable{
+	ID:int32;
+	Content:string;
+	year:string;
+	month:string;
+	weekday:string;
+	day:string;
+	hour:int32;
+	minute:int32;
+	NeedClose:int32;
+}
+
+root_type NotificationTable;

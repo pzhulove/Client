@@ -1,0 +1,11 @@
+namespace ProtoTable.EquipStrenLvScoreCoeTable;
+enum eCrypt :int{
+	code = -1862351641,}
+
+namespace ProtoTable;
+table EquipStrenLvScoreCoeTable{
+	ID:int32;
+	Coefficient:int32;
+}
+
+root_type EquipStrenLvScoreCoeTable;

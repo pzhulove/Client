@@ -1,0 +1,35 @@
+namespace ProtoTable.ClientConstValueTable;
+enum eKey:int { 
+	Key_None = 0,   // default
+	ITEM_QUALITY_FONT_COLOR = 1,    // 道具品质字体颜色
+	ITEM_QUALITY_NAME = 2,    // 道具品质名
+	ITEM_QUALITY_BG_ROOT_PATH = 3,    // 道具品质框图片根路径
+	ITEM_QUALITY_BG_PATH = 4,    // 道具品质框图片路径
+	FONT_NAME = 100,    // 文本默认字体名
+	PACKAGE_EQUIP_SIZE = 5,    // 背包装备格子扩展上线
+	EQUIP_DECOMPOSE_TIP_STRENGTH_LV = 6,    // 装备分解时提示珍品的强化等级
+	REWARD_GET_BACK_NORAML_COST_ID = 20,    // 奖励普通找回消耗货币
+	REWARD_GET_BACK_PERFECT_COST_ID = 21,    // 奖励完美找回消耗货币
+	FATIGUE_GET_BACK_REWARD_ID = 22,    // 疲劳找回奖励道具ID
+	SKILL_CONFIG_SET_COUNT = 23,    // 技能可配置栏位数量
+	NORMAL_FATIGUE_BUFF_INFO_ID = 24,    // 普通精力燃烧对应buff信息id
+	HIGH_FATIGUE_BUFF_INFO_ID = 25,    // 高级精力燃烧对应buff信息id
+	TOWN_PLAYER_SIMPLE_MODE_DISTANCE = 1000,    // 城镇玩家白模显示距离
+	CHANGE_JOB_LEVEL_LIMIT = 26,    // 切换职业等级最大限制
+	CLOSE_FATIGUE_ACTIVITY_LIMIT_VALUE = 27,    // 关闭精力燃烧体力值
+	CHANGE_JOB_FINISH_DELAY_TIME = 28,    // 转职完成界面延迟时间毫秒
+	ADVENTURE_PASS_CARD_END_TIP_TIME = 30,    // 冒险通行证赛季结束提示时间
+}
+namespace ProtoTable.ClientConstValueTable;
+enum eCrypt :int{
+	code = -2010114163,}
+
+namespace ProtoTable;
+table ClientConstValueTable{
+	ID:int32;
+	IntParams:[int32];
+	StrParams:[string];
+	Key:ClientConstValueTable.eKey;
+}
+
+root_type ClientConstValueTable;

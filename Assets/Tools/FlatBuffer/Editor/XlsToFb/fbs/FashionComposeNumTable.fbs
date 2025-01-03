@@ -1,0 +1,14 @@
+namespace ProtoTable.FashionComposeNumTable;
+enum eCrypt :int{
+	code = -1437690228,}
+
+namespace ProtoTable;
+table FashionComposeNumTable{
+	ID
+:int32;
+	Part:int32;
+	Quality:int32;
+	Rate:int32;
+}
+
+root_type FashionComposeNumTable;

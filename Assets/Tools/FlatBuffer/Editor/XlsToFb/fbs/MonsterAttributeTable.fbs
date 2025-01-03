@@ -1,0 +1,39 @@
+namespace ProtoTable.MonsterAttributeTable;
+enum eCrypt :int{
+	code = 1276697354,}
+
+namespace ProtoTable;
+table MonsterAttributeTable{
+	ID:int32;
+	Difficulty:int32;
+	MonsterType:int32;
+	MonsterMode:int32;
+	level:int32;
+	maxHp:int32;
+	maxMp:int32;
+	hpRecover:int32;
+	mpRecover:int32;
+	attack:int32;
+	magicAttack:int32;
+	defence:int32;
+	magicDefence:int32;
+	attackSpeed:int32;
+	spellSpeed:int32;
+	moveSpeed:int32;
+	ciriticalAttack:int32;
+	ciriticalMagicAttack:int32;
+	dex:int32;
+	dodge:int32;
+	frozen:int32;
+	hard:int32;
+	cdReduceRate:int32;
+	exp:int32;
+	baseAtk:int32;
+	baseInt:int32;
+	sta:int32;
+	spr:int32;
+	ignoreDefAttackAdd:int32;
+	ignoreDefMagicAttackAdd:int32;
+}
+
+root_type MonsterAttributeTable;

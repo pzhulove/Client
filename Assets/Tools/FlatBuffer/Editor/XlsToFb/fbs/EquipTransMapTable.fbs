@@ -1,0 +1,13 @@
+namespace ProtoTable.EquipTransMapTable;
+enum eCrypt :int{
+	code = -1117574320,}
+
+namespace ProtoTable;
+table EquipTransMapTable{
+	ID:int32;
+	ItemId:int32;
+	Level:[int32];
+	SubTypes:[int32];
+}
+
+root_type EquipTransMapTable;

@@ -1,0 +1,33 @@
+namespace ProtoTable.VoiceTable;
+enum eVoiceType:int { 
+	VoiceType_None = 0,   // default
+	SELECTROLE = 1,    // 选择角色/随从
+	GETROLE = 2,    // 获得角色/随从
+	DUNGEONFINISH = 3,    // 关卡过关
+	DUNGEONDEAD = 4,    // 关卡死亡
+	DUNGEONKILLPOWER = 5,    // 关卡击杀强敌
+	DUNGEONCLEARROOM = 6,    // 关卡房间清空
+	DUNGEONPOWERSKILL = 7,    // 关卡觉醒技能使用
+	DIALOGBEGIN = 8,    // 对话开始
+	DIALOGEND = 9,    // 对话结束
+	NEWBIEGUIDE = 10,    // 引导
+	ASIDE = 11,    // 旁白
+	BIRTHROLE = 12,    // 角色开场
+}
+namespace ProtoTable.VoiceTable;
+enum eCrypt :int{
+	code = -1319156132,}
+
+namespace ProtoTable;
+table VoiceTable{
+	ID:int32;
+	VoicePath:string;
+	VoiceContent:string;
+	VoiceType:VoiceTable.eVoiceType;
+	VoiceWeight:int32;
+	VoiceRate:int32;
+	VoiceUnitID:[int32];
+	VoiceTag:string;
+}
+
+root_type VoiceTable;

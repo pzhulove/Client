@@ -1,0 +1,40 @@
+namespace ProtoTable.EquChangeConsumeTable;
+enum eSubType:int { 
+	ST_NONE = 0,    // 无
+	WEAPON = 1,    // 武器
+	HEAD = 2,    // 头部
+	CHEST = 3,    // 胸
+	BELT = 4,    // 腰带
+	LEG = 5,    // 护腿
+	BOOT = 6,    // 鞋子
+	RING = 7,    // 戒指
+	NECKLASE = 8,    // 项链
+	BRACELET = 9,    // 手镯
+	TITLE = 10,    // 称号
+}
+enum eColor:int { 
+	CL_NONE = 0,    // 没有
+	WHITE = 1,    // 白
+	BLUE = 2,    // 蓝
+	PURPLE = 3,    // 紫
+	GREEN = 4,    // 绿
+	PINK = 5,    // 粉
+	YELLOW = 6,    // 橙
+}
+namespace ProtoTable.EquChangeConsumeTable;
+enum eCrypt :int{
+	code = -1644211627,}
+
+namespace ProtoTable;
+table EquChangeConsumeTable{
+	ID:int32;
+	ConvertType:int32;
+	SubType:EquChangeConsumeTable.eSubType;
+	Level:int32;
+	Color:EquChangeConsumeTable.eColor;
+	Color2:int32;
+	ItemConsume:[string];
+	ConverterConsume:string;
+}
+
+root_type EquChangeConsumeTable;

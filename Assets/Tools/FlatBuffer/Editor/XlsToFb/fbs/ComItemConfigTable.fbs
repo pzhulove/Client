@@ -1,0 +1,53 @@
+namespace ProtoTable.ComItemConfigTable;
+enum eKey:int { 
+	Key_None = 0,   // default
+	Select = 1,    // 选中
+	Better = 2,    // 更好的
+	RedPoint = 3,    // 红点
+	Treasure = 4,    // 珍品
+	Lock = 5,    // 锁
+	StrengthNumBit = 6,    // 强化等级个位图片
+	StrengthNumTen = 7,    // 强化等级十位图片
+	StrengthAdd = 8,    // 强化加号图片
+	GrowthNumBit = 9,    // 激化等级个位图片
+	GrowthNumTen = 10,    // 激化等级十位图片
+	GrowthAdd = 11,    // 激化加号图片
+	New = 12,    // 新标记图片
+	PunishArrow = 13,    // 惩罚图片
+	Seal = 14,    // 封装图片
+	CDMask = 15,    // CD遮罩
+	TimeLimit = 16,    // 限时图片
+	AssistantWeapon = 17,    // 副武器图片
+	SafetyLock = 18,    // 安全锁
+	StrengthStampLock = 19,    // 强化锁
+	BreathMark = 20,    // 气息遮罩
+	FashionIcon = 21,    // 时装的图片
+	MainWeapon = 22,    // 主武器图片
+	Icon = 100,    // 图标
+	EmptyBg = 101,    // 无道具时底图花纹
+	TextLevel = 1006,    // 等级
+	TextCount = 1007,    // 数量
+	TextName = 1008,    // 名字
+}
+namespace ProtoTable.ComItemConfigTable;
+enum eCrypt :int{
+	code = 605133328,}
+
+namespace ProtoTable;
+table ComItemConfigTable{
+	ID:int32;
+	Color:[int32];
+	FontSize:int32;
+	Path:string;
+	RectTransform:[int32];
+	SiblingIndex:int32;
+	AnchorMin:[int32];
+	AnchorMax:[int32];
+	Pivot:[int32];
+	OutlineColor:[int32];
+	Overflow:[int32];
+	TextAnchor:int32;
+	Key:ComItemConfigTable.eKey;
+}
+
+root_type ComItemConfigTable;

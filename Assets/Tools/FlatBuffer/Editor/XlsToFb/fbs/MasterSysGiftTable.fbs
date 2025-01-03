@@ -1,0 +1,16 @@
+namespace ProtoTable.MasterSysGiftTable;
+enum eCrypt :int{
+	code = 387393975,}
+
+namespace ProtoTable;
+table MasterSysGiftTable{
+	ID:int32;
+	Type:int32;
+	Param:int32;
+	GiftId:int32;
+	CounterKey:string;
+	Rate:int32;
+	Desc:string;
+}
+
+root_type MasterSysGiftTable;

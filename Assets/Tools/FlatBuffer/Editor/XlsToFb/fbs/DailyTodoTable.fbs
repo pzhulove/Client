@@ -1,0 +1,53 @@
+namespace ProtoTable.DailyTodoTable;
+enum eType:int { 
+	TP_NONE = 0,    // 无
+	TP_ACTIVITY = 1,    // 活动
+	TP_FUNCTION = 2,    // 功能
+}
+enum eSubType:int { 
+	DTSTP_NONE = 0,    // 无
+	  DTSTP_DIALY_TASK = 1,    // 日常任务
+	  DTSTP_MAIN_DUNGEON = 2,    // 主线地下城
+	  DTSTP_SHENYUAN_DUNGEON = 3,    // 深渊地下城
+	  DTSTP_YUANGU_DUNGEON = 4,    // 远古地下城
+	  DTSTP_CITY_MONSTER_DUNGEON = 5,    // 怪物攻城
+	  DTSTP_XUKONG_DUNGEON = 6,    // 虚空裂缝
+	  DTSTP_HUNDUN_DUNGEON = 7,    // 混沌地下城
+	DTSTP_GROUP_DUNGEON = 8,    // 团本
+	DTSTP_ALD_BUDO = 9,    // 阿拉德武道大会
+	DTSTP_REWARD_BUDO = 10,    // 赏金武道大会
+	  DTSTP_3V3_PK = 11,    // 3V3积分赛
+	  DTSTP_GUILD_BATTLE = 12,    // 公会战
+	  DTSTP_CROSS_SERVER_GUILD_BATTLE = 13,    // 跨服公会战
+	DTSTP_GUILD_DUNGEON = 14,    // 公会地下城
+	DTSTP_2v2_SCORE_WAR = 15,    // 2v2乱斗积分赛
+	DTSTP_CHIJI_WAR = 16,    // 荣耀战场
+}
+enum eRecommendNumType:int { 
+	RT_NONE = 0,    // 无
+	RT_ACTIVE = 1,    // 活跃度
+	RT_NUMBER = 2,    // 次数
+}
+namespace ProtoTable.DailyTodoTable;
+enum eCrypt :int{
+	code = -1201138377,}
+
+namespace ProtoTable;
+table DailyTodoTable{
+	ID:int32;
+	Type:DailyTodoTable.eType;
+	SubType:DailyTodoTable.eSubType;
+	DungeonSubType:string;
+	ActivityDungeonID:int32;
+	Name:string;
+	OpenWeekDay:string;
+	OpenDayTime:string;
+	DayRecommendNum:int32;
+	WeekRecommendDayNum:int32;
+	RecommendNumType:DailyTodoTable.eRecommendNumType;
+	FuncCharacter:string;
+	LinkInfo:string;
+	BackgroundPath:string;
+}
+
+root_type DailyTodoTable;

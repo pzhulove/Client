@@ -1,0 +1,14 @@
+namespace ProtoTable.WeekSignSpringTable;
+enum eCrypt :int{
+	code = -6499428,}
+
+namespace ProtoTable;
+table WeekSignSpringTable{
+	ID:int32;
+	StartLv:int32;
+	EndLv:int32;
+	DungeonID:[int32];
+	AcquiredMethod:string;
+}
+
+root_type WeekSignSpringTable;

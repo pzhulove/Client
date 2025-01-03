@@ -1,0 +1,45 @@
+namespace ProtoTable.GuildTerritoryTable;
+enum eType:int { 
+	GTT_INVALID = 0,    // 无效
+	GTT_NORMAL = 1,    // 普通
+	GTT_CROSS = 2,    // 跨服
+}
+namespace ProtoTable.GuildTerritoryTable;
+enum eCrypt :int{
+	code = -532710575,}
+
+namespace ProtoTable;
+table GuildTerritoryTable{
+	ID:int32;
+	Name:string;
+	Type:GuildTerritoryTable.eType;
+	IsOpen:int32;
+	Level:int32;
+	NeedTerritoryId:int32;
+	NeedGuildLevel:int32;
+	NextTerritoryId:int32;
+	EnrollNumber:int32;
+	ConsumeItem:[string];
+	Score:string;
+	OccupyScore:int32;
+	BattleScoreFactor:int32;
+	LeaderReward:[string];
+	MemberReward:[string];
+	LeaderDayReward:[string];
+	DayReward:[string];
+	LoseReward:[string];
+	MatchIConsume:[string];
+	SceneID:int32;
+	ChestDoubleDungeons:string;
+	DailyChestDoubleTimes:int32;
+	ChestDoubleFlag:string;
+	DropAdditionDungeons:string;
+	DropAddition:int32;
+	PropRewards:[string];
+	LinkID:int32;
+	LeaderPveAddSkill:int32;
+	LeaderPvPAddSkill:int32;
+	iconPath:string;
+}
+
+root_type GuildTerritoryTable;

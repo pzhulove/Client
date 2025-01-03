@@ -1,0 +1,35 @@
+namespace ProtoTable.EquipHandbookCollectionTable;
+enum eOccopationLimitType:int { 
+	eAccordingAttachedItem = 0,    // 根据装备图鉴附加表
+	eAccordingOccuptionLimit = 1,    // 根据本表职业限制
+}
+enum eScreenType:int { 
+	eNull = 0,    // 无
+	eWeapon = 1,    // 武器
+	eArmor = 2,    // 防具
+	eJewelry = 3,    // 首饰
+}
+enum eType:int { 
+	eCustom = 0,    // 自定义组合
+	eEquipSuit = 1,    // 套装
+}
+namespace ProtoTable.EquipHandbookCollectionTable;
+enum eCrypt :int{
+	code = 1484894878,}
+
+namespace ProtoTable;
+table EquipHandbookCollectionTable{
+	ID:int32;
+	EquipHandbookContentID:int32;
+	Name:string;
+	SortOrder:int32;
+	Level:int32;
+	OccopationLimitType:EquipHandbookCollectionTable.eOccopationLimitType;
+	OccopationLimit:[int32];
+	ScreenType:EquipHandbookCollectionTable.eScreenType;
+	Type:EquipHandbookCollectionTable.eType;
+	EquipSuitID:int32;
+	CustomEquipIDs:[int32];
+}
+
+root_type EquipHandbookCollectionTable;

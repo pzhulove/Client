@@ -1,0 +1,12 @@
+namespace ProtoTable.EquipHandbookSourceTable;
+enum eCrypt :int{
+	code = -716887355,}
+
+namespace ProtoTable;
+table EquipHandbookSourceTable{
+	ID:int32;
+	Name:string;
+	SuperLink:string;
+}
+
+root_type EquipHandbookSourceTable;

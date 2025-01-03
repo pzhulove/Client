@@ -1,0 +1,19 @@
+namespace ProtoTable.RewardPoolTable;
+enum eCrypt :int{
+	code = -2044683795,}
+
+namespace ProtoTable;
+table RewardPoolTable{
+	ID:int32;
+	DrawPrizeTableID:int32;
+	ItemID:int32;
+	ItemNum:int32;
+	StrengthenLevel:int32;
+	ItemWeight:int32;
+	DrawPrizeCountLimit:int32;
+	ChargeCond:int32;
+	IsImportant:int32;
+	AnnounceNum:int32;
+}
+
+root_type RewardPoolTable;

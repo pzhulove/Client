@@ -1,0 +1,131 @@
+namespace ProtoTable.HelpFrameContentTable;
+enum eHelpType:int { 
+	HT_NONE = 0,    // 没有
+	HT_STRENTH = 1,    // 装备强化
+	HT_ADDMAGIC = 2,    // 装备附魔
+	HT_SEAL = 3,    // 装备封装
+	HT_MAGICCOPMOSE = 4,    // 附魔卡合成
+	HT_QUALITYCHANGE = 5,    // 品级调整
+	HT_FASHIONCOMPOSE = 6,    // 时装合成
+	HT_DIMENSION = 7,    // 次元石
+	HT_FOLLOW = 8,    // 随从
+	HT_SKILL = 9,    // 技能
+	HT_TITLE = 10,    // 称号
+	HT_GUILD = 11,    // 工会
+	HT_RELATION = 12,    // 好友
+	HT_TEAM = 13,    // 组队    
+	HT_MISSION = 14,    // 任务
+	HT_MALL = 15,    // 商城
+	HT_SHOP = 16,    // 商店
+	HT_ITEMSELLMALL = 17,    // 物品拍卖行
+	HT_GOLDSELLMALL = 18,    // 金币拍卖行
+	HT_CELEBRATE = 19,    // 开服狂欢
+	HT_MAGICJAR = 20,    // 魔罐
+	HT_GOLDJAR = 21,    // 金罐
+	HT_WORRIERTOWER = 22,    // 勇者塔
+	HT_MINOTAUR = 23,    // 牛头怪乐园
+	HT_MAGICCRYSTAL = 24,    // 魔晶矿脉
+	HT_GOBLINTRATRURE = 25,    // 哥布林宝藏
+	HT_ABYSS = 26,    // 深渊
+	HT_ANCIENT = 27,    // 远古
+	HT_STORAGE = 28,    // 仓库
+	HT_EQUIP_FORGE = 29,    // 装备打造
+	HT_FATIGUE = 30,    // 体力
+	HT_GUILD_BATTLE = 31,    // 工会战
+	HT_RED_PACK = 32,    // 红包
+	HT_PKRANK = 33,    // 段位
+	HT_SEASON_LEVEL_ATTR = 34,    //  赛季段位属性
+	HT_WUDAOHUI = 35,    // 武道会罐子
+	HT_GUILD_BATTLE_DETAIL = 36,    //  公会领地争夺战
+	HT_PACKAGE = 37,    // 背包
+	HT_MULTI_DECOMPOSE = 38,    // 一键分解
+	HT_MAGICJARSHOP = 39,    // 魔罐商店
+	HT_GOLDJARSHOP = 40,    // 金罐商店
+	HT_FASHIONCHOOSE = 41,    // 时装属性选择
+	HT_LIMITTIME_MALLGIFT = 42,    // 商城时限礼包
+	HT_PETFOLLOW = 43,    // 宠物
+	HT_TEACHER = 44,    // 师徒
+	HT_GIVE = 45,    // 赠送道具
+	HT_PEARLINLAY = 46,    // 宝珠镶嵌
+	HT_SHANGJIN = 47,    // 赏金武道大会
+	HT_3V3PK = 48,    // 3V3决斗
+	HT_CreatGuild = 49,    // 创建公会
+	HT_OPPOPrivilege = 50,    // OPPO特权
+	HT_NewYearRedPack = 51,    // 新年红包活动
+	HT_VIVOPrivilege = 52,    // VIVO特权
+	HT_TRANSFER = 53,    //   传家
+	HT_TREASURE_LOTTERY = 54,    // 全民夺宝
+	HT_EQUIP_RECOVERY = 55,    // 装备回收
+	HT_GUILD_BATTLE2 = 56,    // 跨服领地
+	HT_FINANCIALPLAN = 57,    // 理财计划
+	HT_SUMMERACTIVITY = 58,    // 夏日活动
+	HT_QIXI_QUEQIAO = 59,    // 七夕鹊桥
+	HT_LEVEL_RESISTMAGIC = 60,    // 抗魔值
+	HT_3v3_JIFENSAI = 61,    // 3v3积分争霸赛
+	HT_RANDOM_TREASURE = 62,    // 月卡随机宝箱
+	HT_HorseGambling = 63,    // 赌马
+	HT_DROP_PROGRESS = 64,    // 关卡掉落进度
+	HT_FORTIFIED_VOUCHER = 65,    // 魔导器
+	HT_CHRISTMASSNOWMAN = 66,    // 圣诞雪人
+	HT_AT_BASEINFORMATION = 67,    // 冒险队基础信息, 67
+	HT_AT_BLESS_SHOP = 68,    // 冒险队的赐福商店 68
+	HT_AT_BOUNTY_SHOP = 69,    // 冒险队的赏金商店  69
+	HT_BEADUPGRADE = 70,    // 宝珠升级
+	HT_GOBLIN_SHOP = 71,    // 地精商店 71
+	HT_WEAPONLEASE = 72,    // 武器租赁
+	HT_GUILD_DUNGEON = 73,    //  公会副本
+	HT_GUILD_DUNGEON_DAMAGE_RANK = 74,    //  公会副本伤害排行
+	HT_AUCTION_NEW = 75,    // 新拍卖行
+	HT_BEADREPLACE = 76,    // 宝珠置换
+	HT_ARTIFACTJAR_DISCOUNT = 77,    // 神器罐子抽奖界面//77
+	HT_ARTIFACTJAR_REWARD = 78,    // 神器罐子的奖励界面//78
+	HT_LANTERNFESTIVAL = 79,    // 元宵挂灯笼活动
+	HT_EQUIPUPGRADE = 80,    // 装备升级
+	HT_BLACKMARKETMERCHAN = 81,    // 黑市商人
+	HT_WEEKOFTENHELL_RESISTMAGIC = 82,    // 周常深渊抗魔值
+	HT_APRILFOOLSDAYACTIVITY = 83,    // 愚人节活动
+	HT_GUILD_AUCTION = 84,    //  公会拍卖
+	HT_WORLD_AUCTION = 85,    //  世界拍卖
+	HT_WEAPONATTACKATTR = 86,    // 武器攻击属性  
+	HT_GUILD_EMBLEM = 87,    //  公会徽记
+	HT_GUILD_DUNGEON_BOSS_DIFF_SET = 88,    //  公会副本boss难度设置
+	HT_GUILD_BUILDING_MANAGER = 89,    //  公会建筑管理
+	HT_ENCHANTMENTCARUPGRADE = 90,    //  附魔卡升级
+	HT_GUILD_MANOR = 91,    //  公会领地
+	HT_GUILD_CROSS_MANOR = 92,    //  公会跨服领地
+	HT_AT_DRAGONBOATFESTIVALACTIVITY = 93,    // 端午节活动
+	HT_GUILD_RED_PACKET = 94,    // 公会红包
+	HT_MATERIALSSYNTHESIS = 95,    // 材料合成
+	HT_MONTHLY_SIGN_IN = 96,    // 月签到
+	HT_SKILLDAMAGE = 97,    // 技能伤害面板
+	HT_ULTIMATE_CHALLENGE = 98,    // 终极试炼
+	HT_BATTLE_POTION_SET = 99,    // 药品配置
+	HT_INSCRIPTION = 100,    // 铭文
+	HT_FASHIONDECOMPOSE = 101,    // 时装分解
+	HT_FLYINGGIFTPACKACTIVITY = 102,    // 飞升献礼活动
+	HT_ELITE_DUNGEON = 103,    // 精英地下城
+	HT_ADVENTURER_PASS_CARD = 104,    // 冒险者通行证
+	HT_2V2_CROSS_MELEE = 105,    // 2v2跨服乱斗
+	HT_TREASURECONVERSION = 106,    // 宝珠转换
+	HT_SAMEEQUIPMENTCONVER = 107,    // 同套装转化
+	HT_CROSSEQUIPMENTCONVER = 108,    // 跨套装转化
+	HT_WARRIORRECUIT = 109,    // 勇士招募
+	HT_LIMITTIMEGROUPBUYACTIVITY = 110,    //  限时团购
+	HT_MallLIMITTIMEGROUPBUYACTIVITY = 111,    // 商城限时团购
+	HT_RankList = 112,    // 排行榜
+	HT_ACTIVEGROUP = 113,    // 成就
+	HT_SEVENDAY = 114,    // 七日登录
+}
+namespace ProtoTable.HelpFrameContentTable;
+enum eCrypt :int{
+	code = 1197257135,}
+
+namespace ProtoTable;
+table HelpFrameContentTable{
+	ID:int32;
+	HelpType:HelpFrameContentTable.eHelpType;
+	Content:string;
+	ExtraContent:string;
+}
+
+root_type HelpFrameContentTable;

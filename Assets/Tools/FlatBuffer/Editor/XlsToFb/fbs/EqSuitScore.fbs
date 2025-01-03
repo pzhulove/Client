@@ -1,0 +1,14 @@
+namespace ProtoTable.EqSuitScore;
+enum eCrypt :int{
+	code = 2140979931,}
+
+namespace ProtoTable;
+table EqSuitScore{
+	ID:int32;
+	Type:int32;
+	SuitNum:int32;
+	Level:int32;
+	EquipsAttrID:int32;
+}
+
+root_type EqSuitScore;

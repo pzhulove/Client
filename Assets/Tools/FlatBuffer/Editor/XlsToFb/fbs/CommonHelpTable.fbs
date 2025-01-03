@@ -1,0 +1,12 @@
+namespace ProtoTable.CommonHelpTable;
+enum eCrypt :int{
+	code = 1859016070,}
+
+namespace ProtoTable;
+table CommonHelpTable{
+	ID:int32;
+	TitleText:string;
+	Descs:string;
+}
+
+root_type CommonHelpTable;

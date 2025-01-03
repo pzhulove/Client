@@ -1,0 +1,31 @@
+namespace ProtoTable.OpActivityTaskTable;
+enum eCrypt :int{
+	code = -1204541283,}
+
+namespace ProtoTable;
+table OpActivityTaskTable{
+	ID:int32;
+	OpActivityID:int32;
+	OpActivityType:int32;
+	PreTaskId:int32;
+	NextTaskId:int32;
+	CompleteCount:string;
+	TaskReward:string;
+	TaskDescription:string;
+	TaskVar:string;
+	TaskVar2:string;
+	ConsumeScore:string;
+	Name:string;
+	TaskVarProgressName:string;
+	PlayerLevelLimit:int32;
+	AccountDailySubmitLimit:int32;
+	AccountTotalSubmitLimit:int32;
+	ResetType:int32;
+	AcceptType:int32;
+	EventType:int32;
+	SubEventType:int32;
+	AccountWeeklySubmitLimit:int32;
+	AccountTask:int32;
+}
+
+root_type OpActivityTaskTable;

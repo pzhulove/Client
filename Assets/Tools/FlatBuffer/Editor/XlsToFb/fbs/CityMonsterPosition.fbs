@@ -1,0 +1,13 @@
+namespace ProtoTable.CityMonsterPosition;
+enum eCrypt :int{
+	code = -1205593230,}
+
+namespace ProtoTable;
+table CityMonsterPosition{
+	ID:int32;
+	SceneID:int32;
+	PosType:int32;
+	Pos:int32;
+}
+
+root_type CityMonsterPosition;

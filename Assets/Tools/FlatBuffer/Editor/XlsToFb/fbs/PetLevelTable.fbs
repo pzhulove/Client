@@ -1,0 +1,16 @@
+namespace ProtoTable.PetLevelTable;
+enum eCrypt :int{
+	code = -1343709279,}
+
+namespace ProtoTable;
+table PetLevelTable{
+	ID:int32;
+	Level:int32;
+	Quality:int32;
+	UplevelExp:int32;
+	FatigueExp:int32;
+	FatigueHunger:int32;
+	SellReward:string;
+}
+
+root_type PetLevelTable;

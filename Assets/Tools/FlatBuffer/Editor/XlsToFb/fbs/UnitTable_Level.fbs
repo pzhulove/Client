@@ -1,0 +1,178 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.UnitTable_Level;
+enum eType:int { 
+	HERO = 0,    // 英雄
+	MONSTER = 1,    // 怪物
+	ELITE = 2,    // 精英
+	BOSS = 3,    // boss
+	NPC = 4,    // npc
+	HELL = 5,    // 深渊
+	ACTIVITYMONSTER = 6,    // 远古
+	ACCOMPANY = 7,    // 随从
+	SKILL_MONSTER = 8,    // 技能实现的怪物
+	EGG = 9,    // 彩蛋
+	ZHS = 10,    // 召唤兽(仅buffinfo使用)
+}
+enum eCamp:int { 
+	C_HERO = 0,    // 正义
+	C_ENEMY = 1,    // 邪恶
+	C_ENEMY2 = 2,    // 邪恶2
+}
+enum eMonsterRace:int { 
+	NONE = 0,    // 非怪物
+	EVIL = 1,    // 恶魔
+	UNDEAD = 2,    // 不死
+	ELF = 3,    // 精灵
+	HUMAN = 4,    // 人类
+	HOMINIS = 5,    // 人型
+	PUPPET = 6,    // 傀儡
+	MACHINE = 7,    // 机械
+}
+enum eBornAI:int { 
+	Start = 0,    // 运行AI
+	None = 1,    // 不运行AI
+}
+namespace ProtoTable.UnitTable_Level;
+enum eCrypt :int{
+	code = -601822511,}
+
+namespace ProtoTable;
+table UnitTable_Level{
+	ID:int32;
+	Name:string;
+	BossShowActionName:string;
+	Desc:string;
+	MonsterMode:int32;
+	Type:UnitTable_Level.eType;
+	IsShowPortrait:int32;
+	Camp:UnitTable_Level.eCamp;
+	MonsterRace:UnitTable_Level.eMonsterRace;
+	Mode:int32;
+	Weight:int32;
+	AutoFightNeedAttackFirst:int32;
+	SkillMonsterCanBeAttack:int32;
+	Scale:UnionCell;
+	enhanceRadius:int32;
+	overHeadHeight:int32;
+	buffOriginHeight:int32;
+	WalkSpeed:int32;
+	WalkAnimationSpeedPerent:int32;
+	MonsterTitle:int32;
+	AttackSkillID:int32;
+	GetupBati:int32;
+	GetupSkillRand:int32;
+	GetupSkillID:int32;
+	HitSkillRand:int32;
+	HitSkillID:int32;
+	SkillIDs:[int32];
+	Hurt:string;
+	FootEffectName:string;
+	WeaponModel:string;
+	WeaponLocator:string;
+	Exp:int32;
+	PrefixEffect:string;
+	DefaultAttackHitSFXID:int32;
+	DropID:int32;
+	AwardID:int32;
+	ExistDuration:UnionCell;
+	PVPExistDuration:UnionCell;
+	FloatValue:int32;
+	DescriptionA:string;
+	ValueA:int32;
+	WalkSpeech:[int32];
+	AttackSpeech:[int32];
+	BirthSpeech:[int32];
+	ShowName:bool;
+	ShowHPBar:bool;
+	ShowFootBar:bool;
+	AbilityChange:[int32];
+	BornBuff:[int32];
+	BornBuff2:[int32];
+	BornMechanism:[int32];
+	maxFixHp:UnionCell;
+	maxHp:int32;
+	maxMp:int32;
+	hpRecover:int32;
+	mpRecover:int32;
+	attack:int32;
+	magicAttack:int32;
+	defence:int32;
+	magicDefence:int32;
+	attackSpeed:int32;
+	spellSpeed:int32;
+	moveSpeed:int32;
+	ciriticalAttack:int32;
+	ciriticalMagicAttack:int32;
+	dex:int32;
+	dodge:int32;
+	frozen:int32;
+	hard:int32;
+	cdReduceRate:int32;
+	baseAtk:int32;
+	baseInt:int32;
+	sta:int32;
+	spr:int32;
+	ignoreDefAttackAdd:int32;
+	ignoreDefMagicAttackAdd:int32;
+	Elements:[int32];
+	LightAttack:UnionCell;
+	FireAttack:UnionCell;
+	IceAttack:UnionCell;
+	DarkAttack:UnionCell;
+	LightDefence:UnionCell;
+	FireDefence:UnionCell;
+	IceDefence:UnionCell;
+	DarkDefence:UnionCell;
+	abnormalResist1:UnionCell;
+	abnormalResist2:UnionCell;
+	abnormalResist3:UnionCell;
+	abnormalResist4:UnionCell;
+	abnormalResist5:UnionCell;
+	abnormalResist6:UnionCell;
+	abnormalResist7:UnionCell;
+	abnormalResist8:UnionCell;
+	abnormalResist9:UnionCell;
+	abnormalResist10:UnionCell;
+	abnormalResist11:UnionCell;
+	abnormalResist12:UnionCell;
+	abnormalResist13:UnionCell;
+	UseProtect:int32;
+	ProtectFloatPercent:int32;
+	ProtectFloatPercent2:int32;
+	ProtectGroundPercent:int32;
+	ProtectStandPercent:int32;
+	BornAI:UnitTable_Level.eBornAI;
+	AICombatType:int32;
+	AITargetType:[int32];
+	AISight:int32;
+	AIChase:int32;
+	AIWarlike:int32;
+	AIFollowDistance:int32;
+	AIKeepDistance:int32;
+	AIAttackDelay:int32;
+	AIDestinationChangeTerm:int32;
+	AIThinkTargetTerm:int32;
+	AIAttackKind:[string];
+	AIIdleMode:int32;
+	AIIsAPC:int32;
+	AIIdleRand:int32;
+	AIIdleDuration:int32;
+	AIEscapeRand:int32;
+	AIWanderRand:int32;
+	AIWanderRange:int32;
+	AIWalkBackRange:int32;
+	AIYFirstRand:int32;
+	AIMaxWalkCmdCount:int32;
+	AIMaxIdleCmdCount:int32;
+	AIWeaponTag:int32;
+	APCIsSpecialConfig:int32;
+	APCWeaponRes:int32;
+	APCWeaponStrengthLevel:int32;
+	AIActionPath:string;
+	AIDestinationSelectPath:string;
+	AIEventPath:string;
+	AttackInModelStage:[string];
+}
+
+root_type UnitTable_Level;

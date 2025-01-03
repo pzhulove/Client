@@ -1,0 +1,22 @@
+namespace ProtoTable.FashionComposeSkyTable;
+enum eCrypt :int{
+	code = -1437044493,}
+
+namespace ProtoTable;
+table FashionComposeSkyTable{
+	ID:int32;
+	Index:int32;
+	SuitID:int32;
+	Occu:int32;
+	Part:int32;
+	Type:int32;
+	BaseWeight:int32;
+	FixRandRange:[int32];
+	HitMin:int32;
+	MaxWeight:int32;
+	HitWeight:int32;
+	IsShow:int32;
+	SuitName:string;
+}
+
+root_type FashionComposeSkyTable;

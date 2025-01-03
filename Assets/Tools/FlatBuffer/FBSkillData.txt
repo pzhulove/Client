@@ -1,0 +1,566 @@
+namespace FBSkillData;
+
+struct Vector2
+{
+    x:float;
+    y:float;
+}
+
+struct Vector3
+{
+    x:float;
+    y:float;
+    z:float;
+}
+
+struct Quaternion
+{
+    x:float;
+    y:float;
+    z:float;
+    w:float;
+}
+
+table ShapeBox
+{
+    size:Vector2;
+    center:Vector2;
+}
+
+table HurtDecisionBox
+{
+    boxs:[ShapeBox];
+    hasHit:bool;
+    blockToggle:bool;
+    zDim:float;
+    damage:int;
+    hurtID:int;
+}
+
+table DefenceDecisionBox
+{
+    boxs:[ShapeBox];
+    hasHit:bool;
+    blockToggle:bool;
+    type:int;
+}
+
+
+struct TransformParam
+{
+    localPosition:Vector3;
+    localRotation:Quaternion;
+    localScale:Vector3;
+}
+
+
+table EffectsFrames
+{
+    name:string;
+    startFrames:int;
+    endFrames:int;
+    attachname:string;
+    playtype:int;
+    timetype:int;
+    time:float;
+    //public GameObject        effectGameObjectPrefeb;
+    effectAsset:string;
+    attachPoint:int;
+    localPosition:Vector3;
+    localRotation:Quaternion;
+    localScale:Vector3;
+    effecttype:int;
+    loop:bool;
+    loopLoop:bool;//如果技能循环，这个特效要不要循环
+    onlyLocalSee:bool;//特效只有本地玩家才能看到
+}
+
+struct ShockInfo
+{
+    shockTime:float;
+    shockSpeed:float;
+    shockRangeX:float;
+    shockRangeY:float;
+}
+
+struct RandomLaunchInfo
+{
+	num:int;
+	isNumRand:bool;
+	numRandRange:Vector2;
+	interval:float;
+	rangeRadius:float;
+	isFullScene:bool;
+}
+
+table EntityFrames
+{
+    name:string;
+    resID:int;
+    type:int;
+    randomResID:bool;
+	resIDList:[int];
+    startFrames:int;
+ 
+    entityAsset:string;
+
+    gravity:Vector2;
+    speed:float;
+    angle:float;
+	isAngleWithEffect:bool;
+    emitposition:Vector2;
+    emitPositionZ:float;
+
+    axisType:int;
+
+    shockTime:float;
+    shockSpeed:float;
+    shockRangeX:float;
+    shockRangeY:float;
+
+    isRotation:bool;
+    rotateSpeed:float;
+    moveSpeed:float;
+    rotateInitDegree:int;
+
+    //public ShockInfo targetShock;
+    sceneShock:ShockInfo;
+
+    hitFallUP:int;
+    forceY:float;
+
+    hurtID:int;
+
+    lifeTime:float;
+    hitThrough:bool;
+    hitCount:int;
+    distance:float;
+		attackCountExceedPlayExtDead:bool;
+    hitGroundClick:bool;
+
+    delayDead:float;
+
+    offsetType:int;
+
+    targetChooseType:int;
+    range:Vector2;
+	boomerangeDistance:float;
+	stayDuration:float;
+
+	//抛物线
+	paraSpeed:float;
+	paraGravity:float;
+
+	offset:Vector2;
+
+	useRandomLaunch:bool;
+	randomLaunchInfo:RandomLaunchInfo;
+	
+	onCollideDie:bool;
+	onXInBlockDie:bool;
+	changeForceBehindOther:bool;
+	
+	changeFace:int;
+	
+	changeMaxAngle:float;
+	chaseTime:float;
+}
+
+table AnimationFrames
+{
+    start:float;
+    anim:string;
+    blend:float;
+    mode:int;
+    speed:float;
+    //clip:AnimationClip; 这里需要注意
+}
+
+table EntityAttachFrames
+{
+    name:string;
+    resID:int;
+    start:float;
+    end:float;
+    attachName:string;
+    entityAsset:string;
+    trans:TransformParam;
+    animations:[AnimationFrames];
+}
+
+table ChargeConfig
+{
+    repeatPhase:int;
+    changePhase:int;
+    switchPhaseID:int;
+    chargeDuration:float;
+    chargeMinDuration:float;
+    effect:string;
+    locator:string;
+	buffInfo:int;
+	playBuffAni:bool;
+}
+
+table OperationConfig
+{
+    changePhase:int;
+    changeSkillIDs:[int];
+}
+
+table SkillJoystickConfig
+{
+    mode:int;
+    notDisplayLineEffect:bool;
+    dontRemoveJoystick:bool;
+    effectName:string;
+	effectMoveRadius:int;
+    effectMoveSpeed:Vector3;
+}
+
+table SkillEvent
+{
+    eventType:int;
+    eventAction:int;
+    paramter:string;
+    workPhase:int;
+}
+
+table boolValue
+{
+    value:bool;
+}
+
+table floatValue
+{
+    value:float;
+}
+
+table intValue
+{
+    value:int;
+}
+
+table QuaternionValue
+{
+    value:Quaternion;
+}
+
+table uintValue
+{
+    value:uint;
+}
+
+table Vector3Value
+{
+    value:Vector3;
+}
+
+union WeaponClassesOrWhatever 
+{ 
+    boolValue,
+    floatValue,
+    intValue,
+    QuaternionValue,
+    uintValue,
+    Vector3Value 
+}
+
+table DSkillPropertyModify
+{
+    name:string;
+    startframe:int;
+    length:int;
+	tag:int;
+    modifyfliter:int;
+    value:float;
+    movedValue:float;
+    svalue:WeaponClassesOrWhatever;
+    jumpToTargetPos:bool;
+	joystickControl:bool;
+	valueAcc:float;
+	movedValueAcc:float;
+	modifyXBackward:int;
+    movedYValue:float;
+	movedYValueAcc:float;
+	eachFrameModify:bool;
+	useMovedYValue:bool;
+}
+
+table DSkillFrameTag
+{
+    name:string;
+    startframe:int;
+    length:int;
+    tag:int;
+    tagFlag:string;
+}
+
+table DSkillSfx
+{
+    name:string;
+    startframe:int;
+    length:int;
+    soundClipAsset:string;
+    loop:bool = false;
+	soundID:int;
+}
+
+table DSkillFrameEffect
+{
+    name:string;
+    startframe:int;
+    length:int;
+    effectID:int;
+    buffTime:float;
+    phaseDelete:bool = false;//阶段结束删除
+	finishDelete:bool = true;//技能结束或中断删除膝撞霸体Buff
+    finishDeleteAll:bool = false;//技能结束或中断删除帧效果添加的所有buff
+    useBuffAni:bool = true;//是否使用buff动画（霸体）
+    usePause:bool = false;
+    pauseTime:float;
+	mechanismId:int;
+}
+
+table DSkillCameraMove
+{
+    name:string;
+    startframe:int;
+    length:int;
+    offset:float;
+    duraction:float;
+}
+
+table DSkillWalkControl
+{
+    name:string;
+    startframe:int;
+    length:int;
+    walkMode:int;
+    walkSpeedPercent:float;
+	useSkillSpeed:bool;
+	walkSpeedPercent2:float;
+}
+
+table DSkillFrameGrap
+{
+    name:string;
+    startframe:int;
+    length:int;
+    op:int;
+	faceGraber:bool;
+    targetPos:Vector3;
+	targetAction:int;
+	targetAngle:int;
+}
+
+table DSkillFrameStateOp
+{
+    name:string;
+    startframe:int;
+    length:int;
+    op:int;
+    state:int;
+    idata1:int;
+    idata2:int;
+    fdata1:float;
+    fdata2:float;
+    statetag:int;
+}
+
+table DSkillFaceAttacker
+{
+    name:string;
+    startframe:int;
+    length:int;
+}
+
+table DSkillFrameEventSceneShock
+{
+    name:string;
+    startframe:int;
+    length:int;
+    time:float;
+    speed:float;
+    xrange:float;
+    yrange:float;
+	isNew:bool = false;
+	mode:int;
+	decelerate:bool = false;
+	xreduce:float;
+	yreduce:float;
+	radius:float;
+	num:int;
+}
+
+table DActionData
+{
+    name:string;
+    startframe:int;
+    length:int;
+	actionType:int;
+	duration:float;
+	deltaScale:float;
+	deltaPos:Vector3;
+	ignoreBlock:bool = true;//是否无视阻挡
+}
+
+table DSkillBuff
+{
+	name:string;
+    startframe:int;
+    length:int;
+	buffTime:float;
+	buffID:int;
+	phaseDelete:bool;
+	buffInfoList:[int];
+	finishDeleteAll:bool = false;
+	level:int;
+	levelBySkill:bool = false;
+}
+
+table DSkillSummon
+{
+	name:string;
+    startframe:int;
+    length:int;
+	summonID:int;
+	summonLevel:int;
+	levelGrowBySkill:bool;
+	summonNum:int;
+	posType:int;
+	posType2:[int];
+	isSameFace:bool = true;
+}
+
+table DSkillMechanism
+{
+	name:string;
+    startframe:int;
+    length:int;
+	id:int;
+	time:float;
+	level:int;
+	levelBySkill:bool;
+	phaseDelete:bool;
+	finishDeleteAll:bool;
+}
+
+table FBSkillData  
+{
+    _name:string;
+    skillID:int;
+    skillPriority:int;
+    skillPhases:[int]; //技能阶段
+	relatedAttackSpeed:bool = false;
+	attackSpeed:int = 0;
+    isLoop:int = 0;
+    notLoopLastFrame:bool = false;
+	loopAnimation:bool = false;
+    hitEffect:string;
+    goHitEffectAsset:string;
+    goSFXAsset:string;
+	hitSFXID:int;
+    hurtType:int;
+    hurtTime:float;
+    hurtPause:int;
+    hurtPauseTime:float;
+    forcex:float;
+    forcey:float;
+    dscription:string;
+    caracterAsset:string;
+    fps:int           = 60;
+    animationName:string;
+    moveName:string;
+    wapMode:int;
+    iterpolationSpeed:float  = 0;
+    animationSpeed:float     = 1;
+    totalFrames:int          = 15;
+    startUpFrames:int        = 5;
+    activeFrames:int         = 5;
+    rcoveryFrames:int        = 5;
+    ueSpellBar:bool          = false;
+	sellBarTime:float        = 0;
+
+    cmboStartFrame:int;
+    cmboSkillID:int;
+    skilltime:float;
+
+    cameraRestore:bool;
+	cameraRestoreTime:float;
+
+    //grab info
+    grabPosx:float;
+    grabPosy:float;
+    grabEndForceX:float;
+    grabEndForceY:float;
+    hitSpreadOut:bool;
+    grabTime:float;
+    grabEndEffectType:int;//0 hurt, 1 fall
+    grabAction:int;
+    grabNum:int;
+    grabMoveSpeed:float;
+	grabSupportQuickPressDismis:bool;
+	notGrabBati:bool;
+	notGrabGeDang:bool;
+	notUseGrabSetPos:bool;
+	notGrabToBlock:bool;
+	buffInfoId:int;
+	buffInfoIdToSelf:int;
+    buffInfoIdToOther:int;
+    //charge
+    isCharge:bool = false;
+    chargeConfig:ChargeConfig;
+
+    //speicalOperation
+    isSpeicalOperate:bool = false;   
+    operationConfig:OperationConfig;
+    isUseSelectSeatJoystick:bool = false;
+
+	actionSelectPhase:int;
+	actionSelect:[int];
+
+    //skill joystick
+    skillJoystickConfig:SkillJoystickConfig;
+
+    //事件
+    skillEvents:[SkillEvent];
+
+    triggerType:int;
+
+    HurtBlocks:[HurtDecisionBox];
+    DefenceBlocks:[DefenceDecisionBox];
+    attachFrames:[EntityAttachFrames];
+    effectFrames:[EffectsFrames];
+    entityFrames:[EntityFrames];
+
+    frameTags:[DSkillFrameTag];
+    frameGrap:[DSkillFrameGrap];
+    stateop:[DSkillFrameStateOp];
+    properModify:[DSkillPropertyModify];
+    shocks:[DSkillFrameEventSceneShock];
+    sfx :[DSkillSfx];
+    frameEffects:[DSkillFrameEffect];
+    cameraMoves:[DSkillCameraMove];
+    walkControl:[ DSkillWalkControl];
+    actions:[DActionData];
+	buffs:[DSkillBuff];
+	summons:[DSkillSummon];
+	mechanisms:[DSkillMechanism];
+}
+
+
+table FBSkillDataTable
+{
+    path:string;
+    type:string;
+    isCommon:bool;
+    data:FBSkillData;
+}
+
+table FBSkillDataCollection
+{
+    collection:[FBSkillDataTable];
+}
+
+root_type FBSkillDataCollection;
+file_identifier "SKIL";

@@ -1,0 +1,16 @@
+namespace ProtoTable.DungeonGuaranteeDropTable;
+enum eCrypt :int{
+	code = -677951575,}
+
+namespace ProtoTable;
+table DungeonGuaranteeDropTable{
+	ID:int32;
+	DungeonID:int32;
+	MinTimes:int32;
+	MaxTimes:int32;
+	DropSet:int32;
+	ResetType:int32;
+	VipLevelLimit:string;
+}
+
+root_type DungeonGuaranteeDropTable;

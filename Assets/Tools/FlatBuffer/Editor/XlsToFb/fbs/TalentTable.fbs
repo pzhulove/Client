@@ -1,0 +1,15 @@
+namespace ProtoTable.TalentTable;
+enum eCrypt :int{
+	code = -702688160,}
+
+namespace ProtoTable;
+table TalentTable{
+	ID:int32;
+	name:string;
+	SkillID:int32;
+	Icon:string;
+	Desp:string;
+	CanPvp:bool;
+}
+
+root_type TalentTable;

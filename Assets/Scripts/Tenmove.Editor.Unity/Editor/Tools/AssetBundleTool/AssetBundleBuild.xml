@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BuildData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <m_Compression>ChunkBasedCompression</m_Compression>
+  <m_DisableWriteTypeTree>false</m_DisableWriteTypeTree>
+  <m_DisableEncryption>false</m_DisableEncryption>
+  <m_OutputPath>J:/ald1.5/ald/Client/Assets/StreamingAssets/AssetBundles</m_OutputPath>
+</BuildData>

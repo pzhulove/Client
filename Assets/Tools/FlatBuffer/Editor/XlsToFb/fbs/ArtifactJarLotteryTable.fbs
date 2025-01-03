@@ -1,0 +1,15 @@
+namespace ProtoTable.ArtifactJarLotteryTable;
+enum eCrypt :int{
+	code = 1803631640,}
+
+namespace ProtoTable;
+table ArtifactJarLotteryTable{
+	ID:int32;
+	JarId:int32;
+	rewardItemId:int32;
+	rewardItemNum:int32;
+	weight:int32;
+	limitNum:int32;
+}
+
+root_type ArtifactJarLotteryTable;

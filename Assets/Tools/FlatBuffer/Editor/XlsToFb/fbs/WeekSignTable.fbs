@@ -1,0 +1,24 @@
+namespace ProtoTable.WeekSignTable;
+enum eCrypt :int{
+	code = 1571332953,}
+
+namespace ProtoTable;
+table WeekSignTable{
+	ID:int32;
+	opActType:int32;
+	rewardId:int32;
+	rewardNum:int32;
+	sortId:int32;
+	rewardWeight:int32;
+	serverLimit:int32;
+	roleLimit:int32;
+	vipRate:[string];
+	isBigReward:int32;
+	notifyId:int32;
+	SuperLink:int32;
+	refreshType:int32;
+	rewardUid:int32;
+	Preview:int32;
+}
+
+root_type WeekSignTable;

@@ -1,0 +1,38 @@
+namespace ProtoTable.RedPacketTable;
+enum eType:int { 
+	Type_None = 0,   // default
+	GUILD = 1,    // 公会红包
+	NEW_YEAR = 2,    // 新年红包
+}
+enum eSubType:int { 
+	SubType_None = 0,   // default
+	Buy = 1,    // 自费
+	System = 2,    // 系统
+}
+enum eThirdType:int { 
+	INVALID = 0,    // 无效
+	GUILD_ALL = 1,    // 全体公会成员
+	GUILD_BATTLE = 2,    // 参与公会战成员
+	GUILD_CROSS_BATTLE = 3,    // 参与跨服公会战成员
+	GUILD_DUNGEON = 4,    // 参与公会地下城成员
+}
+namespace ProtoTable.RedPacketTable;
+enum eCrypt :int{
+	code = -860454163,}
+
+namespace ProtoTable;
+table RedPacketTable{
+	ID:int32;
+	Desc:string;
+	Type:RedPacketTable.eType;
+	TotalMoney:int32;
+	Num:[int32];
+	MinMoney:int32;
+	MaxMoney:int32;
+	CostMoneyID:int32;
+	GetMoneyID:int32;
+	SubType:RedPacketTable.eSubType;
+	ThirdType:RedPacketTable.eThirdType;
+}
+
+root_type RedPacketTable;

@@ -1,0 +1,18 @@
+namespace ProtoTable.FashionComposeTable;
+enum eCrypt :int{
+	code = -263444806,}
+
+namespace ProtoTable;
+table FashionComposeTable{
+	ID:int32;
+	Occu:int32;
+	SuitID:int32;
+	Color:int32;
+	Part:int32;
+	ComposeColor:int32;
+	Weight:int32;
+	AvatarType:int32;
+	DefaultAvatar:int32;
+}
+
+root_type FashionComposeTable;

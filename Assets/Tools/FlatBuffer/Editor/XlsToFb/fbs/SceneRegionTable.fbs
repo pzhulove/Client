@@ -1,0 +1,37 @@
+namespace ProtoTable.SceneRegionTable;
+enum eType:int { 
+	BUFF = 0,    // 精灵
+	DOOR = 1,    // 传送门
+	TOWNDOOR = 2,    // 城镇传送门
+	TRAP = 3,    // 陷阱
+	LOOP = 4,    // 光环
+	RIDE = 5,    // 骑士效果
+}
+enum eDoorType:int { 
+	LEFT = 0,    // 左
+	DT_NONE = -1,    // 无
+	TOP = 1,    // 上
+	RIGHT = 2,    // 右
+	BUTTOM = 3,    // 下
+}
+namespace ProtoTable.SceneRegionTable;
+enum eCrypt :int{
+	code = 1166443832,}
+
+namespace ProtoTable;
+table SceneRegionTable{
+	ID:int32;
+	Name:string;
+	Type:SceneRegionTable.eType;
+	DoorType:SceneRegionTable.eDoorType;
+	ResID:int32;
+	ReplaceResID:int32;
+	EffectID:[int32];
+	RepeatTime:int32;
+	RepeatCount:int32;
+	FirstTimeToRepeat:int32;
+	ActivedEffect:string;
+	Desc:string;
+}
+
+root_type SceneRegionTable;

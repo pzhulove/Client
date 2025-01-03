@@ -1,0 +1,14 @@
+namespace ProtoTable.DungeonHellTable;
+enum eCrypt :int{
+	code = -2119833105,}
+
+namespace ProtoTable;
+table DungeonHellTable{
+	ID:int32;
+	Level:int32;
+	HardType:int32;
+	MonsterGroups:[int32];
+	Prob:int32;
+}
+
+root_type DungeonHellTable;

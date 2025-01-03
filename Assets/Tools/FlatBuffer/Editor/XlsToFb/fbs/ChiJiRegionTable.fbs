@@ -1,0 +1,12 @@
+namespace ProtoTable.ChiJiRegionTable;
+enum eCrypt :int{
+	code = 2099043363,}
+
+namespace ProtoTable;
+table ChiJiRegionTable{
+	ID:int32;
+	regionName:string;
+	regionDescribe:string;
+}
+
+root_type ChiJiRegionTable;

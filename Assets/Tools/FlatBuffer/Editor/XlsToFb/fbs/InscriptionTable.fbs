@@ -1,0 +1,31 @@
+namespace ProtoTable.InscriptionTable;
+enum eThirdType:int { 
+	ThirdType_None = 0,   // default
+	RedInscription = 800,    // 红色铭文
+	YellowInscription = 801,    // 黄色铭文
+	BlueInscription = 802,    // 蓝色铭文
+	DarkBlondInscription = 803,    // 暗金色铭文
+	BrilliantGoldenInscription = 804,    // 耀金色铭文
+	OrangeInscription = 805,    // 橙色铭文
+	GreenInscription = 806,    // 绿色铭文
+	VioletInscription = 807,    // 紫色铭文
+}
+namespace ProtoTable.InscriptionTable;
+enum eCrypt :int{
+	code = 60940446,}
+
+namespace ProtoTable;
+table InscriptionTable{
+	ID:int32;
+	Name:string;
+	Color:int32;
+	ThirdType:InscriptionTable.eThirdType;
+	PropType:[int32];
+	PropValue:[int32];
+	BuffID:[int32];
+	Score:int32;
+	InscriptionHole:[int32];
+	Occu:[int32];
+}
+
+root_type InscriptionTable;

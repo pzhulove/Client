@@ -1,0 +1,22 @@
+namespace ProtoTable.EquipSuitTable;
+enum eCrypt :int{
+	code = -2077694007,}
+
+namespace ProtoTable;
+table EquipSuitTable{
+	ID:int32;
+	Name:string;
+	SuitsLv:int32;
+	EquipIDs:[int32];
+	TwoEquipsAttrID:int32;
+	ThreeEquipsAttrID:int32;
+	FourEquipsAttrID:int32;
+	FiveEquipsAttrID:int32;
+	SixEquipsAttrID:int32;
+	EightEquipsAttrID:int32;
+	NineEquipsAttrID:int32;
+	Description:string;
+	Adjust:int32;
+}
+
+root_type EquipSuitTable;

@@ -1,0 +1,14 @@
+namespace ProtoTable.MallGiftPackTable;
+enum eCrypt :int{
+	code = 1422631907,}
+
+namespace ProtoTable;
+table MallGiftPackTable{
+	ID:int32;
+	activateCond:int32;
+	limitInterval:int32;
+	giftDesc:string;
+	extraParams:string;
+}
+
+root_type MallGiftPackTable;

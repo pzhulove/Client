@@ -1,0 +1,22 @@
+namespace ProtoTable.ChiJiGiftPackTable;
+enum eFilterType:int { 
+	None = 0,    // 无
+	Job = 1,    // 根据职业筛选
+	Random = 2,    // 随机获得N件
+	Custom = 3,    // 自定义选择N件
+	CustomWithJob = 4,    // 在职业符合的道具中，自定义选择N件
+	ChiJiEquip = 5,    // 吃鸡装备
+}
+namespace ProtoTable.ChiJiGiftPackTable;
+enum eCrypt :int{
+	code = -829597410,}
+
+namespace ProtoTable;
+table ChiJiGiftPackTable{
+	ID:int32;
+	FilterType:ChiJiGiftPackTable.eFilterType;
+	FilterCount:int32;
+	UIType:int32;
+}
+
+root_type ChiJiGiftPackTable;

@@ -1,0 +1,11 @@
+namespace ProtoTable.TipsTable;
+enum eCrypt :int{
+	code = 188128128,}
+
+namespace ProtoTable;
+table TipsTable{
+	ID:int32;
+	ObjectName:string;
+}
+
+root_type TipsTable;

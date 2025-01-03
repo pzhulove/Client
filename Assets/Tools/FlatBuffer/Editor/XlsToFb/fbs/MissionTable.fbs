@@ -1,0 +1,139 @@
+namespace ProtoTable.MissionTable;
+enum eTaskType:int { 
+	TT_DIALY = 0,    // 每日
+	TT_MAIN = 1,    // 主线
+	TT_BRANCH = 2,    // 支线
+	TT_ACHIEVEMENT = 3,    // 成就
+	TT_SYSTEM = 4,    // 系统
+	TT_ACTIVITY = 5,    // 活动
+	TT_EXTENTION = 6,    // 外传
+	TT_CHANGEJOB = 7,    // 转职
+	TT_AWAKEN = 8,    // 觉醒
+	TT_CYCLE = 9,    // 循环任务
+	TT_RED_PACKET = 10,    // 红包任务
+	TT_TITLE = 11,    // 称号任务
+	TT_LEGEND = 12,    // 传奇之路
+	TASK_MASTER_DAILY  = 13,    // 师门日常任务
+	TASK_MASTER_ACADEMIC = 14,    // 师门学业成长任务
+	TASK_ACCOUNT_ACHIEVEMENT = 15,    // 账号成就
+	TASK_ADVENTURE_TEAM_ACCOUNT_WEEKLY = 16,    // 佣兵团账号每周任务
+}
+enum eSubType:int { 
+	Daily_Null = 0,    // 无
+	Daily_Task = 1,    // 每日任务
+	Daily_Prove = 2,    // 每日试炼
+	Dungeon_Mission = 3,    // 章节任务
+	Dungeon_Chest = 4,    // 宝箱
+	Chapter_Change = 5,    // 章节过场
+	SummerNpc = 7,    // 召唤NPC任务
+	TST_COND_ROLE_NUM_CHANGE = 10,    // 条件角色数量改变任务
+	NewbieGuide_Mission = 100,    // 新手引导任务
+	Legend_PoKongShi = 1200,    // 破空石
+	Legend_BuMieZhiWang = 1201,    // 不灭之王
+	Legend_HeiAnZhiAiShang = 1202,    // 黑暗之哀伤
+	Legend_RongYaoShiShi = 1203,    // 荣耀史诗
+	Legend_ZhanGuoFengYun = 1204,    // 战国风云
+}
+enum eCycleType:int { 
+	CYCLE_INVALID = 0,    // 无效
+	CYCLE_DUNGEON = 1,    // 地下城
+	CYCLE_SET_ITEM = 2,    // 物资上交
+	CYCLE_STORY = 3,    // 对话
+}
+enum eDailyPoolType:int { 
+	DAILY_INVALID = 0,    // 无效
+	DAILY_SURE = 1,    // 必出
+	DAILY_DUNGEON = 2,    // 地下城
+	DAILY_FUNCTION = 3,    // 功能
+	DAILY_ACTIVITY = 4,    // 活动
+}
+enum eTaskLevelType:int { 
+	NPC_NONE = 0,    // 无
+	NPC_PROTECT = 1,    // NPC护送
+	NPC_FIND = 2,    // 寻找NPC
+}
+enum eTaskFinishType:int { 
+	TFT_KILL = 0,    // 杀怪
+	TFT_PASS = 1,    // 通关地下城
+	TFT_COLLECT = 2,    // 收集
+	TFT_TALK = 3,    // 对话
+	TFT_KILL_BY_TYPE = 4,    // 杀某种类型
+	TFT_FINISHMISSION_TYPE = 5,    // 完成其他任务
+	TFT_ACCESS_SHOP = 6,    // 访问商店
+	TFT_SUBMIT_ITEM = 7,    // 提交物品
+	TFT_LINKS = 8,    // 链接
+}
+enum eAcceptType:int { 
+	ACT_AUTO = 0,    // 自动接取
+	ACT_NPC = 1,    // NPC接取
+	ACT_UI = 2,    // 界面接取
+}
+enum eFinishType:int { 
+	FINISH_TYPE_AUTO = 0,    // 自动提交
+	FINISH_TYPE_NPC = 1,    // NPC
+	FINISH_TYPE_UI = 2,    // 界面提交
+}
+namespace ProtoTable.MissionTable;
+enum eCrypt :int{
+	code = -1977692534,}
+
+namespace ProtoTable;
+table MissionTable{
+	ID:int32;
+	TaskName:string;
+	IntParam0:int32;
+	SortID:int32;
+	TaskType:MissionTable.eTaskType;
+	SubType:MissionTable.eSubType;
+	CycleType:MissionTable.eCycleType;
+	CycleWeight:int32;
+	DailyPoolType:MissionTable.eDailyPoolType;
+	PoolID:int32;
+	TaskLevelType:MissionTable.eTaskLevelType;
+	TaskInformationText:string;
+	TaskInitText:string;
+	TaskAcceptedText:string;
+	TaskFinishText:string;
+	MapID:int32;
+	SeekingTarget:int32;
+	BefTaskDlgID:int32;
+	InTaskDlgID:int32;
+	AftTaskDlgID:int32;
+	PreTaskID:int32;
+	SeverTake:int32;
+	MaxPlayerLv:int32;
+	MinPlayerLv:int32;
+	JobID:int32;
+	TaskFinishType:MissionTable.eTaskFinishType;
+	LinkInfo:string;
+	LinkParam:int32;
+	OccuAward:string;
+	Award:string;
+	RewardAdapter:int32;
+	AfterID:int32;
+	Icon:string;
+	AcceptType:MissionTable.eAcceptType;
+	FinishType:MissionTable.eFinishType;
+	MissionTakeNpc:int32;
+	MissionFinishNpc:int32;
+	MissionNpcIcon:string;
+	IsAnnouncement:int32;
+	MaxSubmitCount:int32;
+	VitalityValue:int32;
+	MissionParam:string;
+	TemplateId:int32;
+	ScriptParam:string;
+	MissionOnOff:int32;
+	MonsterIDs:[int32];
+	MissionMaterials:[string];
+	MissionMaterialsKeyValue:[string];
+	PreIDs:[int32];
+	PreIDsConditionDesc:string;
+	IsNeedBuriedPoint:bool;
+	DungeonTableID:int32;
+	FinishRightNowLevel:int32;
+	FinishRightNowItemType:int32;
+	FinishRightNowItemNum:int32;
+}
+
+root_type MissionTable;

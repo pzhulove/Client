@@ -1,0 +1,17 @@
+namespace ProtoTable.ScoreWar2v2RewardTable;
+enum eCrypt :int{
+	code = 1747873531,}
+
+namespace ProtoTable;
+table ScoreWar2v2RewardTable{
+	ID:int32;
+	RewardId:int32;
+	BattleCount:int32;
+	WinCount:int32;
+	RankingBegin:int32;
+	RankingEnd:int32;
+	ItemReward:[string];
+	RewardPreview:[string];
+}
+
+root_type ScoreWar2v2RewardTable;

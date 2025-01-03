@@ -1,0 +1,11 @@
+namespace ProtoTable.TestFunctionConfigTable;
+enum eCrypt :int{
+	code = -746320344,}
+
+namespace ProtoTable;
+table TestFunctionConfigTable{
+	ID:int32;
+	Open:bool;
+}
+
+root_type TestFunctionConfigTable;

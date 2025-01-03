@@ -1,0 +1,54 @@
+namespace ProtoTable.PetTable;
+enum ePetType:int { 
+	PT_NONE = 0,    // 无
+	PT_ATTACK = 1,    // 攻击型
+	PT_PROPERTY = 2,    // 属性型
+	PT_SUPPORT = 3,    // 支援型
+}
+enum eQuality:int { 
+	QL_NONE = 0,    // 没有
+	QL_WHITE = 1,    // 普通
+	QL_BLUE = 2,    // 高级
+	QL_PURPLE = 3,    // 稀有
+	QL_GREEN = 4,    // 传承
+	QL_PINK = 5,    // 神器
+	QL_YELLOW = 6,    // 史诗
+}
+namespace ProtoTable.PetTable;
+enum eCrypt :int{
+	code = 483311095,}
+
+namespace ProtoTable;
+table PetTable{
+	ID:int32;
+	Name:string;
+	Desc:string;
+	PetType:PetTable.ePetType;
+	Quality:PetTable.eQuality;
+	MaxLv:int32;
+	InnateSkill:int32;
+	Skills:[int32];
+	PetEggID:int32;
+	ToDevourExp:int32;
+	MonsterID:int32;
+	ModeID:int32;
+	ChangedHeight:int32;
+	OpenEggHeight:int32;
+	ModelOrientation:int32;
+	OpenEggRotation:int32;
+	OpenEggAction:string;
+	OpenEggModelScale:[int32];
+	IconPath:string;
+	HungryDialogID:int32;
+	FeedDialogID:int32;
+	LowLevelDialogID:int32;
+	HighLevelDialogID:int32;
+	PetModelSize:int32;
+	PetDialogLocation:int32;
+	MaxLevelScore:int32;
+	PackageEffectPath:string;
+	PackageEffectOffset:[int32];
+	UseNewFunction:bool;
+}
+
+root_type PetTable;

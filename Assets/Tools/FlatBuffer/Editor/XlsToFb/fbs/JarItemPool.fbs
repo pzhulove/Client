@@ -1,0 +1,29 @@
+namespace ProtoTable.JarItemPool;
+enum eCrypt :int{
+	code = 1795474756,}
+
+namespace ProtoTable;
+table JarItemPool{
+	ID:int32;
+	JarType:int32;
+	SerialNumber:int32;
+	ItemID:int32;
+	Strength:[int32];
+	Occu:[int32];
+	ItemNum:int32;
+	ItemWeight:int32;
+	fix1:int32;
+	fix2:int32;
+	fix2Num:int32;
+	fixMax:int32;
+	fixMin:int32;
+	OpneCondition:int32;
+	Charge:int32;
+	GetNumLimite:int32;
+	NeedAnounce:int32;
+	ShowEffect:int32;
+	IsTreasure:int32;
+	JarGiftNeedAnount:int32;
+}
+
+root_type JarItemPool;

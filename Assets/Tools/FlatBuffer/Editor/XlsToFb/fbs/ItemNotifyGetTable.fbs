@@ -1,0 +1,11 @@
+namespace ProtoTable.ItemNotifyGetTable;
+enum eCrypt :int{
+	code = -1258183434,}
+
+namespace ProtoTable;
+table ItemNotifyGetTable{
+	ID:int32;
+	Desc:string;
+}
+
+root_type ItemNotifyGetTable;

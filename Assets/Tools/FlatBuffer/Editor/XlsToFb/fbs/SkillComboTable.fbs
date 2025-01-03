@@ -1,0 +1,29 @@
+namespace ProtoTable.SkillComboTable;
+enum eCrypt :int{
+	code = -1949726329,}
+
+namespace ProtoTable;
+table SkillComboTable{
+	ID:int32;
+	roomID:int32;
+	skillGroupID:int32;
+	skillID:int32;
+	skillLevel:int32;
+	skillSlot:int32;
+	description:string;
+	skillTime:int32;
+	startDialogID:int32;
+	endDialogID:int32;
+	guideTip:string;
+	joystick:int32;
+	waitInputTime:int32;
+	moveDir:int32;
+	moveTime:int32;
+	idletime:int32;
+	showUI:int32;
+	faceRight:int32;
+	sourceID:int32;
+	phase:int32;
+}
+
+root_type SkillComboTable;

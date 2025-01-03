@@ -1,0 +1,24 @@
+namespace ProtoTable.ItemConfigTable;
+enum eItemType:int { 
+	ItemType_None = 0,   // default
+	BattleDrugHP = 1,    // 回血
+	BattleDrugMP = 2,    // 回蓝
+	BattleDrugHPMP = 3,    // 回血和回蓝
+	BattleConsume = 4,    // 消耗品
+	BattleCoin = 5,    // 货币
+}
+namespace ProtoTable.ItemConfigTable;
+enum eCrypt :int{
+	code = -193024343,}
+
+namespace ProtoTable;
+table ItemConfigTable{
+	ID:int32;
+	ItemID:int32;
+	ItemType:ItemConfigTable.eItemType;
+	UseItemEffect:[string];
+	InvalidTipsID:int32;
+	DefualtUsePriority:int32;
+}
+
+root_type ItemConfigTable;

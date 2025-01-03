@@ -1,0 +1,237 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using System.Reflection;
+using System;
+using System.Runtime.InteropServices;
+
+[AttributeUsage(AttributeTargets.Class)]
+public class DSFFrameEventTypeAttribute : Attribute
+{
+    public DSFFrameEventTypeAttribute(string name)
+    {
+        this._name = name;
+    }
+
+    protected string _name;
+
+    public string name
+    {
+        get { return _name; }
+    }
+}
+
+#if UNITY_EDITOR 
+public class DSFFrameEventTypes
+{
+    public struct TypeEnum
+    {
+        public System.Type type;
+        public DSFFrameEventTypeAttribute attribute;
+    }
+
+    public static TypeEnum[] types  = null;
+    public static string[] showList = null;
+     
+    public static void Check()
+    {
+        if(types == null)
+        {
+            List<TypeEnum> datas = new List<TypeEnum>();
+            List<string> shows = new List<string>();
+
+            Assembly asmScripts = Assembly.GetAssembly(typeof(DSkillFrameEvent));
+            if (asmScripts != null)
+            {
+                System.Type[] typs = asmScripts.GetTypes();
+
+                for (int i = 0; i < typs.Length; ++i)
+                {
+                    System.Object[] cas = typs[i].GetCustomAttributes(typeof(DSFFrameEventTypeAttribute), false);
+                    if (cas.Length > 0)
+                    {
+                        DSFFrameEventTypeAttribute feta = cas[0] as DSFFrameEventTypeAttribute;
+                        TypeEnum t = new TypeEnum();
+                        t.type = typs[i];
+                        t.attribute = feta;
+                        datas.Add(t);
+                        shows.Add(feta.name);
+                    }
+
+                }
+            }
+
+            types = datas.ToArray();
+            showList = shows.ToArray();
+        }
+    }  
+}
+#endif
+
+[System.Serializable]
+<<<<<<< HEAD
+public class DSkillFrameEvent// : ScriptableObject
+=======
+public class DSkillFrameEvent
+>>>>>>> 9cee5639c7ee3f143228bccb36595382c5f33cce
+{
+    public string name;
+    public int startframe;
+    public int length = 1;
+
+    //add
+    /*
+    1 grap
+    2 state stack
+    3 frame tag
+    */
+    public int frameType;//frame类型
+    //抓取
+    public int grapOp;
+
+    //状态栈
+    public int                  op;
+    public int                  state;
+    public int                  idata1;
+    public int                  idata2;
+    public int                  fdata1;
+    public int                  fdata2;
+    public int                  statetag;
+
+    //帧tag
+    public int                  frameTag;
+}
+
+public enum DSkillPropertyModifyType
+{
+    SPEED_X = 1,
+    SPEED_Y,
+    SPEED_Z,
+    SPEED_XACC,
+    SPEED_YACC,
+    SPEED_ZACC
+}
+
+[System.Serializable]
+[StructLayout(LayoutKind.Explicit)]
+public struct SUnion
+{
+    [FieldOffset(0)]
+    public bool _bool;
+    [FieldOffset(0)]
+    public float _float;
+    [FieldOffset(0)]
+    public int _int;
+    [FieldOffset(0)]
+    public Quaternion _quat;
+    [FieldOffset(0)]
+    public uint _uint;
+    [FieldOffset(0)]
+    public Vector3 _vec3;
+}
+//速度修正
+[System.Serializable]
+[DSFFrameEventType("属性修改")]
+public class DSkillPropertyModify : DSkillFrameEvent
+{
+    public DSkillPropertyModifyType modifyfliter;
+    public float value;
+    public SUnion svalue;
+}
+
+//帧标签
+public enum DSFFrameTags
+{
+    TAG_NEWDAMAGE = 1 << 4,    //重置伤害
+    TAG_LOCKZSPEED = 1 << 1  //锁定Z轴
+ 
+}
+[System.Serializable]
+[DSFFrameEventType("帧标签")]
+public class DSkillFrameTag : DSkillFrameEvent
+{
+    public DSFFrameTags tag; 
+}
+
+
+public enum DSFGrapOp
+{
+    GRAP_JUDGE = 1,   //抓取判定
+    GRAP_EXECUTE = 1 << 1, //抓取执行
+    GRAP_RELEASE = 1 << 2,  //抓取释放
+    GRAP_INTERRUPT = 1 << 3,//抓取中断
+}
+
+//抓取帧
+[System.Serializable]
+[DSFFrameEventType("抓取帧")]
+public class DSkillFrameGrap : DSkillFrameEvent
+{
+    public DSFGrapOp op;
+}
+
+//状态操作
+public enum DSFEntityStates
+{
+    IDLE = 0,
+    ATTACK,
+    RUN,
+    WALK,
+    HURT,
+    JUMP,
+    JUMPBACK,
+    FALL,
+    CASTSKILL
+}
+
+public enum DSFEntityStateOp
+{
+    Push = 0,
+    Pop,
+    Clear,
+    Locomote
+}
+
+public enum DSFEntityStateTag
+{
+    CLEARSPEED = 1,
+    ACTIONHANDLE = 2,
+    MOVECTRL = 4,
+    GRAPRELEASE = 8
+}
+
+[System.Serializable]
+[DSFFrameEventType("状态操作帧")]
+public class DSkillFrameStateOp : DSkillFrameEvent
+{
+    public DSFEntityStateOp     op;
+    public DSFEntityStates      state;
+    public int                  idata1;
+    public int                  idata2;
+    public float                fdata1;
+    public float                fdata2;
+    public DSFEntityStateTag    statetag;
+}
+
+
+//振屏幕
+[System.Serializable]
+[DSFFrameEventType("震屏帧")]
+public class DSkillFrameEventSceneShock : DSkillFrameEvent
+{
+    public float time;
+    public float speed;
+    public float xrange;
+    public float yrange;
+}
+
+
+
+
+[System.Serializable]
+public class DSkillFrameEventTest
+{
+    public SUnion bo;
+    public SUnion vec;
+    public SUnion quat;
+}

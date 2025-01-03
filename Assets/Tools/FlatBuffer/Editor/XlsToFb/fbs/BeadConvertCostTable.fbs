@@ -1,0 +1,18 @@
+namespace ProtoTable.BeadConvertCostTable;
+enum eCrypt :int{
+	code = 494545148,}
+
+namespace ProtoTable;
+table BeadConvertCostTable{
+	ID:int32;
+	Colour:int32;
+	MoneyCostId:int32;
+	MoneyCostNum:int32;
+	BeadCost:int32;
+	BeadCostNum:int32;
+	DropId:int32;
+	BindDropId:int32;
+	ProduceBeadPreview:int32;
+}
+
+root_type BeadConvertCostTable;

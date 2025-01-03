@@ -1,0 +1,18 @@
+namespace ProtoTable.DungeonFinishTimeTable;
+enum eCrypt :int{
+	code = -1861192908,}
+
+namespace ProtoTable;
+table DungeonFinishTimeTable{
+	ID:int32;
+	DungeonID:int32;
+	Name:string;
+	Level:int32;
+	Level29:int32;
+	Level39:int32;
+	Level49:int32;
+	Level59:int32;
+	Level69:int32;
+}
+
+root_type DungeonFinishTimeTable;

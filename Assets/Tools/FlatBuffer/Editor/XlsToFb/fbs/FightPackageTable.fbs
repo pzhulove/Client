@@ -1,0 +1,52 @@
+namespace ProtoTable.FightPackageTable;
+enum eCrypt :int{
+	code = 1532815736,}
+
+namespace ProtoTable;
+table FightPackageTable{
+	ID:int32;
+	Name:string;
+	Power:int32;
+	Intellect:int32;
+	Streangth:int32;
+	Spirit:int32;
+	HP:int32;
+	MP:int32;
+	HPRecover:int32;
+	MPRecover:int32;
+	PhysicAttack:int32;
+	MagicAttack:int32;
+	PhysicDefence:int32;
+	MagicDefence:int32;
+	AttackSpeed:int32;
+	SpellSpeed:int32;
+	MoveSpeed:int32;
+	PhysicalCritical:int32;
+	MagicCritical:int32;
+	HitRate:int32;
+	MissRate:int32;
+	StarkValue:int32;
+	HardValue:int32;
+	LightAttack:int32;
+	FireAttack:int32;
+	IceAttack:int32;
+	DarkAttack:int32;
+	LightDefence:int32;
+	FireDefence:int32;
+	IceDefence:int32;
+	DarkDefence:int32;
+	AbormalResist:int32;
+	AbormalResists:[string];
+	Cold:int32;
+	HPLevel:int32;
+	MPLevel:int32;
+	PowerLevel:int32;
+	IntellectLevel:int32;
+	StrengthLevel:int32;
+	SpiritLevel:int32;
+	MPRecoverLevel:int32;
+	HardValueLevel:int32;
+	TransformAttirbuleAdd:int32;
+}
+
+root_type FightPackageTable;

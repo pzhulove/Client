@@ -1,0 +1,38 @@
+namespace ProtoTable.DrawPrizeTable;
+enum eRaffleTicketType:int { 
+	RaffleTicketType_None = 0,   // default
+	ST_PRIMARY_RAFFLE_TICKETS = 74,    // 初级抽奖券
+	ST_MIDDLE_RAFFLE_TICKETS = 75,    // 中级抽奖券
+	ST_SENIOR_RAFFLE_TICKETS = 76,    // 高级抽奖券
+}
+namespace ProtoTable.DrawPrizeTable;
+enum eCrypt :int{
+	code = 1049420298,}
+
+namespace ProtoTable;
+table DrawPrizeTable{
+	ID:int32;
+	Name:string;
+	ActivityId:int32;
+	OpActivityType:int32;
+	Type:int32;
+	ChannelName:string;
+	Open:int32;
+	BaseCount:int32;
+	ContinuousDays:int32;
+	RewardCount:int32;
+	RefreshInterval:int32;
+	RefreshTime:int32;
+	CountKey:string;
+	AllCountKey:string;
+	ContinuousKey:string;
+	RestCountKey:string;
+	RewardIDKey:string;
+	GetCountKey:string;
+	RaffleTicketType:DrawPrizeTable.eRaffleTicketType;
+	Prams:string;
+	RaffleTicketIconPath:string;
+	RaffleTicketNickName:string;
+}
+
+root_type DrawPrizeTable;

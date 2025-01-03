@@ -1,0 +1,16 @@
+namespace ProtoTable.EffectInfoTable;
+enum eCrypt :int{
+	code = 1327756299,}
+
+namespace ProtoTable;
+table EffectInfoTable{
+	ID:int32;
+	Description:string;
+	Path:string;
+	Locator:string;
+	Loop:bool;
+	Duration:int32;
+	Scale:int32;
+}
+
+root_type EffectInfoTable;

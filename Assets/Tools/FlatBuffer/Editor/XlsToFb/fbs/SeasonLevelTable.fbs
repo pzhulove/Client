@@ -1,0 +1,40 @@
+namespace ProtoTable.SeasonLevelTable;
+enum eMainLevel:int { 
+	MainLevel_None = 0,   // default
+	Bronze = 1,    // 青铜
+	Silver = 2,    // 白银
+	Gold = 3,    // 黄金
+	Platinum = 4,    // 铂金
+	Diamond = 5,    // 钻石
+	King = 6,    // 最强王者
+}
+namespace ProtoTable.SeasonLevelTable;
+enum eCrypt :int{
+	code = 1594614297,}
+
+namespace ProtoTable;
+table SeasonLevelTable{
+	ID:int32;
+	PreId:int32;
+	AfterId:int32;
+	MainLevel:SeasonLevelTable.eMainLevel;
+	SmallLevel:int32;
+	Star:int32;
+	MaxExp:int32;
+	MaxStar:int32;
+	HideScore:int32;
+	CanMatchRobot:int32;
+	IsFailLevelReduce:int32;
+	IsPromotion:int32;
+	PromotionRule:string;
+	CommonLevelReduce:string;
+	SeasonStartLevelReduce:int32;
+	DailyRewards:[string];
+	SeasonRewards:[string];
+	Icon:string;
+	SmallIcon:string;
+	SubLevelIcon:string;
+	AttrID:int32;
+}
+
+root_type SeasonLevelTable;

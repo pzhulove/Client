@@ -1,0 +1,15 @@
+namespace ProtoTable.AchievementGroupMainItemTable;
+enum eCrypt :int{
+	code = -1454208316,}
+
+namespace ProtoTable;
+table AchievementGroupMainItemTable{
+	ID:int32;
+	Name:string;
+	PureName:string;
+	Icon:string;
+	ChildTabs:[int32];
+	LinkInfo:string;
+}
+
+root_type AchievementGroupMainItemTable;

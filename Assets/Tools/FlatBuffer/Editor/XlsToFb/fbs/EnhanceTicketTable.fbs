@@ -1,0 +1,15 @@
+namespace ProtoTable.EnhanceTicketTable;
+enum eCrypt :int{
+	code = -1440573236,}
+
+namespace ProtoTable;
+table EnhanceTicketTable{
+	ID:int32;
+	Probility:int32;
+	Level:int32;
+	desc:string;
+	Compound:int32;
+	FuseValue:int32;
+}
+
+root_type EnhanceTicketTable;

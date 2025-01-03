@@ -1,0 +1,13 @@
+namespace ProtoTable.OverlondDeviceValueTable;
+enum eCrypt :int{
+	code = 578876886,}
+
+namespace ProtoTable;
+table OverlondDeviceValueTable{
+	ID:int32;
+	ItemDataID:int32;
+	SharpenLv:int32;
+	Weight:int32;
+}
+
+root_type OverlondDeviceValueTable;

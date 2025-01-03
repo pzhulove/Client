@@ -1,0 +1,21 @@
+namespace ProtoTable.LoadingResourcesTable;
+enum eType:int { 
+	AT_NONE = 0,    // 通用
+	AT_EQUIP = 1,    // 城镇
+	AT_DEFENCE = 2,    // 地下城
+}
+namespace ProtoTable.LoadingResourcesTable;
+enum eCrypt :int{
+	code = 654184969,}
+
+namespace ProtoTable;
+table LoadingResourcesTable{
+	ID:int32;
+	Name:string;
+	Type:LoadingResourcesTable.eType;
+	Level:int32;
+	Resources:string;
+	Text:string;
+}
+
+root_type LoadingResourcesTable;

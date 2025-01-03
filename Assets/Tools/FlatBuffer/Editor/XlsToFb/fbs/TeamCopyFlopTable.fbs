@@ -1,0 +1,15 @@
+namespace ProtoTable.TeamCopyFlopTable;
+enum eCrypt :int{
+	code = -1981605017,}
+
+namespace ProtoTable;
+table TeamCopyFlopTable{
+	ID:int32;
+	TeamCopyID:int32;
+	TeamGrade:int32;
+	Stage:int32;
+	TypeStage:int32;
+	DropId:int32;
+}
+
+root_type TeamCopyFlopTable;

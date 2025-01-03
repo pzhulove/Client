@@ -1,0 +1,13 @@
+namespace ProtoTable.AdventurePassSeasonTable;
+enum eCrypt :int{
+	code = -379814892,}
+
+namespace ProtoTable;
+table AdventurePassSeasonTable{
+	ID:int32;
+	StartTime:string;
+	EndTime:string;
+	MaxLevel:int32;
+}
+
+root_type AdventurePassSeasonTable;

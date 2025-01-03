@@ -1,0 +1,22 @@
+namespace ProtoTable.SuperLinkTable;
+enum eLinkType:int { 
+	LT_DESC = 0,    // 直接描述
+	LT_TABLE_NAME = 1,    // 根据表名字反射
+}
+namespace ProtoTable.SuperLinkTable;
+enum eCrypt :int{
+	code = -1907652381,}
+
+namespace ProtoTable;
+table SuperLinkTable{
+	ID:int32;
+	LinkType:SuperLinkTable.eLinkType;
+	LinkInfo:string;
+	Param:string;
+	FunctionType:int32;
+	LocalParam:[string];
+	Desc:string;
+	OpenLevel:[string];
+}
+
+root_type SuperLinkTable;

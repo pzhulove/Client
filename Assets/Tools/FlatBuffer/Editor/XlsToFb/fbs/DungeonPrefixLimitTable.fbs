@@ -1,0 +1,15 @@
+namespace ProtoTable.DungeonPrefixLimitTable;
+enum eCrypt :int{
+	code = 1552596403,}
+
+namespace ProtoTable;
+table DungeonPrefixLimitTable{
+	ID:int32;
+	Level:string;
+	Hard:int32;
+	TotalNum:[int32];
+	SeniorPrefixNum:int32;
+	LowPrefixNum:int32;
+}
+
+root_type DungeonPrefixLimitTable;

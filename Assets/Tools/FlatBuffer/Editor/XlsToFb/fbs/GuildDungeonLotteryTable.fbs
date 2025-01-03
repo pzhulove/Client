@@ -1,0 +1,15 @@
+namespace ProtoTable.GuildDungeonLotteryTable;
+enum eCrypt :int{
+	code = 17442364,}
+
+namespace ProtoTable;
+table GuildDungeonLotteryTable{
+	ID:int32;
+	rewardGroup:int32;
+	itemID:int32;
+	itemNum:int32;
+	weight:int32;
+	isHighVal:int32;
+}
+
+root_type GuildDungeonLotteryTable;

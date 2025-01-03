@@ -1,0 +1,23 @@
+namespace ProtoTable;
+
+
+enum UnionCellType:int{
+	union_helper = 0,
+	union_fix = 1,				//固定数值
+	union_fixGrow = 2, 		//固定成长
+	union_everyvalue = 3,	//每级数值
+}
+
+table EveryValue
+{
+	everyValues:[int];
+}
+
+table UnionCell
+{
+	valueType:UnionCellType ; 
+	eValues:EveryValue	;	 			//每级数值
+	fixValue :int 	;						//固定数值
+	fixInitValue:int	;	 			//固定成长初始值
+	fixLevelGrow :int	;  		//固定成长每级增长
+}

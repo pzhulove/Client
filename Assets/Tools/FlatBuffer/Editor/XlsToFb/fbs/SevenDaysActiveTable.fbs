@@ -1,0 +1,23 @@
+namespace ProtoTable.SevenDaysActiveTable;
+enum eSevenDaysActiveType:int { 
+	SevenDays_Null = 0,    // 无
+	SevenDays_Login = 1,    // 登陆
+	SevenDays_Target = 2,    // 目标
+	SevenDays_Gift = 3,    // 礼包
+	SevenDays_Charge = 4,    // 累充
+	SevenDays_Score = 5,    // 积分
+}
+namespace ProtoTable.SevenDaysActiveTable;
+enum eCrypt :int{
+	code = -1062807206,}
+
+namespace ProtoTable;
+table SevenDaysActiveTable{
+	ID:int32;
+	Desc:string;
+	SevenDaysActiveType:SevenDaysActiveTable.eSevenDaysActiveType;
+	Day:int32;
+	Name:string;
+}
+
+root_type SevenDaysActiveTable;

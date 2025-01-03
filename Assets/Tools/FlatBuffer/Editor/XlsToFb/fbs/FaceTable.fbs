@@ -1,0 +1,17 @@
+namespace ProtoTable.FaceTable;
+enum eGroup:int { 
+	Team = 0,    // 组队
+	Normal = 1,    // 普通
+}
+namespace ProtoTable.FaceTable;
+enum eCrypt :int{
+	code = 122095523,}
+
+namespace ProtoTable;
+table FaceTable{
+	ID:int32;
+	Group:FaceTable.eGroup;
+	Path:string;
+}
+
+root_type FaceTable;

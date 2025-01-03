@@ -1,0 +1,15 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.ChijiSkillMapTable;
+enum eCrypt :int{
+	code = -1988046502,}
+
+namespace ProtoTable;
+table ChijiSkillMapTable{
+	ID:int32;
+	Name:string;
+	RefreshTimePVP:UnionCell;
+	InitCDPVP:UnionCell;
+}
+
+root_type ChijiSkillMapTable;

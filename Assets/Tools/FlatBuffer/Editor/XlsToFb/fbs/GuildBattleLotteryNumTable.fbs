@@ -1,0 +1,11 @@
+namespace ProtoTable.GuildBattleLotteryNumTable;
+enum eCrypt :int{
+	code = 1295388832,}
+
+namespace ProtoTable;
+table GuildBattleLotteryNumTable{
+	ID:int32;
+	Num:int32;
+}
+
+root_type GuildBattleLotteryNumTable;

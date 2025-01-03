@@ -1,0 +1,11 @@
+namespace ProtoTable.DropItemVipLimitTable;
+enum eCrypt :int{
+	code = 448371292,}
+
+namespace ProtoTable;
+table DropItemVipLimitTable{
+	ID:int32;
+	VipLimit:string;
+}
+
+root_type DropItemVipLimitTable;

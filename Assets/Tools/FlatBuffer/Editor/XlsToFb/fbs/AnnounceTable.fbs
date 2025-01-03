@@ -1,0 +1,18 @@
+namespace ProtoTable.AnnounceTable;
+enum eCrypt :int{
+	code = 1712356129,}
+
+namespace ProtoTable;
+table AnnounceTable{
+	ID:int32;
+	NoticeText:string;
+	Interval:int32;
+	Times:int32;
+	Priority:int32;
+	Parameter:int32;
+	Effect:string;
+	Channel:int32;
+	IsSyncGuildEvent:int32;
+}
+
+root_type AnnounceTable;

@@ -1,0 +1,12 @@
+namespace ProtoTable.ChargeGearTable;
+enum eCrypt :int{
+	code = 1110766585,}
+
+namespace ProtoTable;
+table ChargeGearTable{
+	ID:int32;
+	Channel:string;
+	ProductIds:[string];
+}
+
+root_type ChargeGearTable;

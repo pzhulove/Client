@@ -1,0 +1,18 @@
+namespace ProtoTable.EquipRecoveryRewardTable;
+enum eCrypt :int{
+	code = 1145868590,}
+
+namespace ProtoTable;
+table EquipRecoveryRewardTable{
+	ID:int32;
+	Integral:int32;
+	IconPath:string;
+	Desc:string;
+	SpecialEffects:string;
+	Reward:string;
+	JarID:int32;
+	ShowID:int32;
+	IconPath2:string;
+}
+
+root_type EquipRecoveryRewardTable;

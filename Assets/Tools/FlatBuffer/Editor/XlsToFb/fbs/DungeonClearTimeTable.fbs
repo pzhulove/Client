@@ -1,0 +1,19 @@
+namespace ProtoTable.DungeonClearTimeTable;
+enum eCrypt :int{
+	code = -475196374,}
+
+namespace ProtoTable;
+table DungeonClearTimeTable{
+	ID:int32;
+	DungeonID:int32;
+	Name:string;
+	Level:int32;
+	Score:int32;
+	Level29:int32;
+	Level39:int32;
+	Level49:int32;
+	Level59:int32;
+	Level69:int32;
+}
+
+root_type DungeonClearTimeTable;

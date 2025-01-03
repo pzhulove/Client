@@ -1,0 +1,15 @@
+namespace ProtoTable.TeamRewardTable;
+enum eCrypt :int{
+	code = 1435926900,}
+
+namespace ProtoTable;
+table TeamRewardTable{
+	ID:int32;
+	Type:int32;
+	Reward:int32;
+	Num:int32;
+	Prob:int32;
+	DailyLimit:int32;
+}
+
+root_type TeamRewardTable;

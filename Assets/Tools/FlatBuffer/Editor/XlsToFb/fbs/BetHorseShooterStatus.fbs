@@ -1,0 +1,13 @@
+namespace ProtoTable.BetHorseShooterStatus;
+enum eCrypt :int{
+	code = -745360500,}
+
+namespace ProtoTable;
+table BetHorseShooterStatus{
+	ID:int32;
+	StatusType:int32;
+	statusType2:int32;
+	WinRate:int32;
+}
+
+root_type BetHorseShooterStatus;

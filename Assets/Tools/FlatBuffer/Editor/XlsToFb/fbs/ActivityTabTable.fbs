@@ -1,0 +1,12 @@
+namespace ProtoTable.ActivityTabTable;
+enum eCrypt :int{
+	code = 67498292,}
+
+namespace ProtoTable;
+table ActivityTabTable{
+	ID:int32;
+	Name:string;
+	ActivityIds:[int32];
+}
+
+root_type ActivityTabTable;

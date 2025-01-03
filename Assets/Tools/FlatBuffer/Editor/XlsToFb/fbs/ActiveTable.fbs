@@ -1,0 +1,43 @@
+namespace ProtoTable.ActiveTable;
+enum eCrypt :int{
+	code = -2128147130,}
+
+namespace ProtoTable;
+table ActiveTable{
+	ID:int32;
+	Desc:string;
+	PreTaskId:int32;
+	NextTaskId:int32;
+	Awards:string;
+	VipLv:int32;
+	DanymicAwards:string;
+	TemplateID:int32;
+	SortPriority:int32;
+	SortPriority2:int32;
+	TakeCost:int32;
+	Param1:int32;
+	DungeonId:int32;
+	InitDesc:string;
+	PrefabKey:string;
+	DoesWorkToRedPoint:int32;
+	RedPointWorkMode:int32;
+	LinkInfo:string;
+	LinkLimit:[int32];
+	UpdateDesc:string;
+	ReplaceID:[int32];
+	Param0:string;
+	LevelLimit:int32;
+	IsWorkWithFullLevel:int32;
+	Abandon:int32;
+	ConsumeItems:string;
+	TaskCycleCount:int32;
+	TaskCycleKey:string;
+	OverTaskNumKey:string;
+	FailedTaskNumKey:string;
+	ApplyChannel:string;
+	Belong:int32;
+	Param2:string;
+	AccountTotalSubmitLimit:int32;
+}
+
+root_type ActiveTable;

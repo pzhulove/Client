@@ -1,0 +1,16 @@
+namespace ProtoTable.EquipForgeTable;
+enum eCrypt :int{
+	code = -27132729,}
+
+namespace ProtoTable;
+table EquipForgeTable{
+	ID:int32;
+	Material:[string];
+	Price:[string];
+	MainTypeName:string;
+	SubTypeName:string;
+	RecommendLevel:int32;
+	RecommendJobs:[int32];
+}
+
+root_type EquipForgeTable;

@@ -1,0 +1,12 @@
+namespace ProtoTable.EquipRecoScUpConsRtiTable;
+enum eCrypt :int{
+	code = 1761517986,}
+
+namespace ProtoTable;
+table EquipRecoScUpConsRtiTable{
+	ID:int32;
+	TimesSection:[string];
+	Ratio:int32;
+}
+
+root_type EquipRecoScUpConsRtiTable;

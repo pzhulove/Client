@@ -1,0 +1,13 @@
+namespace ProtoTable.MysticalMerchantTable;
+enum eCrypt :int{
+	code = -1035970500,}
+
+namespace ProtoTable;
+table MysticalMerchantTable{
+	ID:int32;
+	ShopId:int32;
+	Weight:int32;
+	ShopNpcID:int32;
+}
+
+root_type MysticalMerchantTable;

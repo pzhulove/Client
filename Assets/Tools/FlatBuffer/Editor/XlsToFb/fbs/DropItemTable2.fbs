@@ -1,0 +1,36 @@
+namespace ProtoTable.DropItemTable2;
+enum eDropRandomFashionType:int { 
+	DRFT_RANDOM_INVALID = 0,    // 无效随机
+	DRFT_RANDOM_EXTRACTION = 1,    // 抽取随机
+	DRFT_RANDOM_COMPLETELY = 2,    // 完全随机
+}
+namespace ProtoTable.DropItemTable2;
+enum eCrypt :int{
+	code = 845765760,}
+
+namespace ProtoTable;
+table DropItemTable2{
+	ID:int32;
+	 GroupID:int32;
+	ChooseNumSet:[int32];
+	NumProbSet:[int32];
+	DropRandomFashionType:DropItemTable2.eDropRandomFashionType;
+	DataType:int32;
+	ItemID:int32;
+	ItemProb:int32;
+	ItemNum:[int32];
+	IsRareControl:int32;
+	TaskID:int32;
+	OccuAddition:[int32];
+	AdditionProb:int32;
+	DropItemType:int32;
+	DropNotice:int32;
+	Text:string;
+	ActivityID:int32;
+	Mark:string;
+	Vip:string;
+	VipDropLimitId:int32;
+	MonthCard:int32;
+}
+
+root_type DropItemTable2;

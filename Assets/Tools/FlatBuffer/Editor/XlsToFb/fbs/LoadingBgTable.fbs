@@ -1,0 +1,34 @@
+namespace ProtoTable.LoadingBgTable;
+enum eType:int { 
+	Null = 0,    // 无
+	GameInitialization = 1,    // 游戏初始化
+	SelectArea = 2,    // 选区
+	CreateRole = 3,    // 创角
+	SelectRole = 4,    // 选角（已有角色）
+	TownSwitch = 5,    // 城镇切换
+	EnterBallte = 6,    // 进入角斗场
+	LeaveBattle = 7,    // 离开角斗场
+	SeliaRoom = 8,    // 赛利亚房间
+	SendDoor = 9,    // 传送门
+	NormalMission = 10,    // 日常周常
+	Duplicate = 11,    // 团本
+	OutsideWorld = 12,    // 异界
+	Ancient = 13,    // 远古
+	Deepness = 14,    // 深渊
+	Chapter = 15,    // 章节
+}
+namespace ProtoTable.LoadingBgTable;
+enum eCrypt :int{
+	code = -1992388755,}
+
+namespace ProtoTable;
+table LoadingBgTable{
+	ID:int32;
+	Name:string;
+	Type:LoadingBgTable.eType;
+	Strategy:int32;
+	Path:string;
+	Tips:string;
+}
+
+root_type LoadingBgTable;

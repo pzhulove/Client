@@ -1,0 +1,16 @@
+namespace ProtoTable.DungeonDifficultyAdjustTable;
+enum eCrypt :int{
+	code = 255282508,}
+
+namespace ProtoTable;
+table DungeonDifficultyAdjustTable{
+	ID:int32;
+	DungeonID:int32;
+	PlayerNum:int32;
+	MonsterHPFactor:int32;
+	MonsterAttackFactor:int32;
+	BossHPFactor:int32;
+	BossAttackFactor:int32;
+}
+
+root_type DungeonDifficultyAdjustTable;

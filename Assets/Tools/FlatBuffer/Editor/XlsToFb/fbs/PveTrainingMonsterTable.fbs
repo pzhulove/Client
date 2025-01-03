@@ -1,0 +1,11 @@
+namespace ProtoTable.PveTrainingMonsterTable;
+enum eCrypt :int{
+	code = 647185045,}
+
+namespace ProtoTable;
+table PveTrainingMonsterTable{
+	ID:int32;
+	Name:string;
+}
+
+root_type PveTrainingMonsterTable;

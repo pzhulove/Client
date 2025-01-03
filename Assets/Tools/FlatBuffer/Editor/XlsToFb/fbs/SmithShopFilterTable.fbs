@@ -1,0 +1,14 @@
+namespace ProtoTable.SmithShopFilterTable;
+enum eCrypt :int{
+	code = -1466672683,}
+
+namespace ProtoTable;
+table SmithShopFilterTable{
+	ID:int32;
+	FilterItemType:int32;
+	Name:string;
+	Sort:int32;
+	Parameter:[int32];
+}
+
+root_type SmithShopFilterTable;

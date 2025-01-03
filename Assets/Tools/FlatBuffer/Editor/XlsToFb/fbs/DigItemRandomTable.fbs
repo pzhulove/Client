@@ -1,0 +1,15 @@
+namespace ProtoTable.DigItemRandomTable;
+enum eCrypt :int{
+	code = -986767962,}
+
+namespace ProtoTable;
+table DigItemRandomTable{
+	ID:int32;
+	Group:int32;
+	ItemID:int32;
+	Weight:int32;
+	RewardNum:int32;
+	IsAnnounce:int32;
+}
+
+root_type DigItemRandomTable;

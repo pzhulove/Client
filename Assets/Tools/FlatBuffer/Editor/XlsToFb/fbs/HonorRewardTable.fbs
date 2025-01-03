@@ -1,0 +1,16 @@
+namespace ProtoTable.HonorRewardTable;
+enum eCrypt :int{
+	code = -1987418915,}
+
+namespace ProtoTable;
+table HonorRewardTable{
+	ID:int32;
+	PvpType:int32;
+	RewardType:string;
+	VictoryReward:int32;
+	LostReward:int32;
+	RankReward:string;
+	KillReward:int32;
+}
+
+root_type HonorRewardTable;

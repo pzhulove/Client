@@ -1,0 +1,15 @@
+namespace ProtoTable.TAPQuestionnaireTable;
+enum eCrypt :int{
+	code = -427165796,}
+
+namespace ProtoTable;
+table TAPQuestionnaireTable{
+	ID:int32;
+	Type:int32;
+	QuestionIndex:int32;
+	QuestionDes:string;
+	AnswerIndex:int32;
+	AnswerDes:string;
+}
+
+root_type TAPQuestionnaireTable;

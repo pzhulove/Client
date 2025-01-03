@@ -1,0 +1,20 @@
+namespace ProtoTable.GuildRoundtableTable;
+enum eType:int { 
+	First = 0,    // 首次
+	Help = 1,    // 协助
+	FreeHelp = 2,    // 无偿协助
+}
+namespace ProtoTable.GuildRoundtableTable;
+enum eCrypt :int{
+	code = -194548911,}
+
+namespace ProtoTable;
+table GuildRoundtableTable{
+	ID:int32;
+	Type:GuildRoundtableTable.eType;
+	TimesLimit:int32;
+	GetItems:[string];
+	MailContentID:int32;
+}
+
+root_type GuildRoundtableTable;

@@ -1,0 +1,18 @@
+namespace ProtoTable.DropSmellControlTable;
+enum eCrypt :int{
+	code = 1666393919,}
+
+namespace ProtoTable;
+table DropSmellControlTable{
+	ID:int32;
+	Type:int32;
+	Lv:int32;
+	Color:int32;
+	Color2:int32;
+	DungeonSubType:[int32];
+	DungeonHard:[int32];
+	DungeonID:int32;
+	Probability:int32;
+}
+
+root_type DropSmellControlTable;

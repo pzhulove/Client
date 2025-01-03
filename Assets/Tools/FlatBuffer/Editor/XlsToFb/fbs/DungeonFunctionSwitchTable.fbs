@@ -1,0 +1,26 @@
+namespace ProtoTable.DungeonFunctionSwitchTable;
+enum eCrypt :int{
+	code = 105524042,}
+
+namespace ProtoTable;
+table DungeonFunctionSwitchTable{
+	ID:int32;
+	Desc:string;
+	DungeonMap:bool;
+	DungeonScore:bool;
+	Drug:bool;
+	SwitchEquipAndWeapon:bool;
+	Voice:bool;
+	Test:bool;
+	PvpCommon:bool;
+	PveCommon:bool;
+	ChampionName:bool;
+	PvpTrain:bool;
+	PveTrain:bool;
+	Pvp3v3:bool;
+	RedPacket:bool;
+	PauseBtn:bool;
+	CustomBattleUI:string;
+}
+
+root_type DungeonFunctionSwitchTable;

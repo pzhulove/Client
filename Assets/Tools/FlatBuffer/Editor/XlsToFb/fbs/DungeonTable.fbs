@@ -1,0 +1,149 @@
+include "Union.fbs"; 
+
+namespace ProtoTable.DungeonTable;
+enum eType:int { 
+	L_NORMAL = 0,    // 普通地下城
+	L_STORY = 1,    // 剧情地下城
+	L_ACTIVITY = 2,    // 活动地下城
+	L_DEADTOWER = 3,    // 死亡之塔
+}
+enum eSubType:int { 
+	S_NORMAL = 0,    // 普通地下城
+	S_YUANGU = 1,    // 远古地下城
+	S_NIUTOUGUAI = 2,    // 牛头怪乐园
+	S_NANBUXIGU = 3,    // 南部溪谷
+	S_SIWANGZHITA = 4,    // 死亡之塔
+	S_NEWBIEGUIDE = 5,    // 引导boss战斗
+	S_PK = 6,    // pk战斗
+	S_JINBI = 7,    // 金币地下城
+	S_HELL = 8,    // 深渊
+	S_GUILDPK = 9,    // 公会PVP
+	S_HELL_ENTRY = 10,    // 深渊入口
+	S_TEAM_BOSS = 11,    // 组队BOSS
+	S_MONEYREWARDS_PVP = 12,    // 赏金联赛0PVP
+	S_WUDAOHUI = 13,    // 武道会关卡
+	S_JUEWANGZHITA = 14,    // 绝望之塔
+	S_COMBOTRAINING = 15,    // 连招教学
+	S_CITYMONSTER = 16,    // 哥布林大王
+	S_DEVILDDOM = 17,    // 异界
+	S_GUILD_DUNGEON = 18,    // 公会副本
+	S_LIMIT_TIME_HELL = 19,    // 限时深渊
+	S_WEEK_HELL = 20,    // 周常深渊
+	S_WEEK_HELL_ENTRY = 22,    // 周常深渊入口
+	S_WEEK_HELL_PER = 23,    // 周常深渊前置关卡
+	S_FINALTEST_PVE = 24,    // 终极试炼
+	S_RAID_DUNGEON = 25,    // 团本
+	S_ANNIVERSARY_NORMAL = 26,    // 周年活动普通
+	S_ANNIVERSARY_HARD = 27,    // 周年活动深渊
+	S_TREASUREMAP = 28,    // 春节活动藏宝图副本
+	S_BATTLEGROUNDPVE = 29,    // 爬塔战场PVE
+	S_BATTLEGROUNDPVP = 30,    // 战场爬塔PVP
+	S_LIMIT_TIME__FREE_HELL = 31,    // 限时深渊（无消耗）
+}
+enum eThreeType:int { 
+	T_NORMAL = 0,    // 普通地下城
+	T_T_TEAM_ELITE = 1,    // 组队地下城
+	T_CHIJI_PK = 2,    // 吃鸡PK场景
+	T_LOST_DUNGEON_MONSTER = 3,    // 地牢小怪地下城
+}
+enum eCardType:int { 
+	None = 0,    // 无
+	Golden_Card = 1,    // 黄金翻牌
+	Yijie_Card = 2,    // 异界翻牌
+	Hundun_Card = 3,    // 周常深渊翻牌
+}
+enum eHard:int { 
+	NORMAL = 0,    // 普通
+	RISK = 1,    // 冒险
+	WARRIOR = 2,    // 勇士
+	KING = 3,    // 王者
+}
+namespace ProtoTable.DungeonTable;
+enum eCrypt :int{
+	code = -265276654,}
+
+namespace ProtoTable;
+table DungeonTable{
+	ID:int32;
+	Name:string;
+	Oldname:string;
+	TumbPath:string;
+	TumbChPath:string;
+	LoadingBgPath:string;
+	Description:string;
+	HardDescription:string;
+	Level:int32;
+	Type:DungeonTable.eType;
+	SubType:DungeonTable.eSubType;
+	ThreeType:DungeonTable.eThreeType;
+	CardType:DungeonTable.eCardType;
+	Hard:DungeonTable.eHard;
+	Tag:int32;
+	ResistMagic:int32;
+	RecommendLevel:string;
+	HardAdaptType:int32;
+	MaxHardAdaptLevel:int32;
+	SingleBarValue:int32;
+	DropItems:[int32];
+	HellDropItems:[int32];
+	MinLevel:int32;
+	storyTaskID:int32;
+	PreTaskID:int32;
+	storyDungeonIDs:[int32];
+	PreDungeonIDs:[int32];
+	DungeonLoadingConfig:string;
+	DungeonConfig:string;
+	IsExpAdapt:int32;
+	ExpReward:int32;
+	TimeSplitArg:UnionCell;
+	RebornSplitArg:UnionCell;
+	HitSplitArg:UnionCell;
+	TimeArg:int32;
+	BackHitArg:int32;
+	NormalMonsterDrop:[int32];
+	EliteMonsterDrop:[int32];
+	BossMonsterDrop:[int32];
+	DungeonDrop:[int32];
+	ActivityDrop:[int32];
+	DungeonFirstDrop:[int32];
+	DestructionDrop:[int32];
+	EasterEggDrop:[int32];
+	TaskDrop:[int32];
+	RollDropId:int32;
+	CostFatiguePerArea:int32;
+	TicketID:int32;
+	TicketNum:int32;
+	HellTicketNum:int32;
+	HellTask:int32;
+	HellDrop1:[int32];
+	HellDrop2:[int32];
+	RebornCount:int32;
+	TotalRebornCount:int32;
+	BGMPath:string;
+	EnvironmentBGMPath:string;
+	HellHardBGMPath:string;
+	HellDamnHardBGMPath:string;
+	RaceEndDropBaseMulti:[int32];
+	RaceEndDropMultiCost:[string];
+	ActivityID:int32;
+	DailyMaxTime:int32;
+	BuffDrugConfig:[int32];
+	MostCostStamina:int32;
+	HellSplitLevel:int32;
+	HellSplitLevelWeight:int32;
+	OpenAutoFight:int32;
+	OnlyRaceEndProfit:int32;
+	HasMasterExpAddition:int32;
+	dungeonLevelPath:string;
+	GuideTasks:string;
+	NeedForceGC:bool;
+	IsSingle:int32;
+	onlyRaceEndSettlement:int32;
+	ownerEntryId:int32;
+	weightEntry:int32;
+	PlayingDescription:string;
+	ExchangeStoreEntrance:string;
+	EliteDungeonPrevChapter:[string];
+}
+
+root_type DungeonTable;
